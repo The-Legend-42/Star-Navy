@@ -1,0 +1,24 @@
+
+
+
+Original Units:
+
+*Spaceborn Railgun
+*Patrol Ship
+
+Units:
+[Rocket Ship] https://cdn-icons-png.flaticon.com/512/6917/6917016.png
+[Colony Ship] https://www.flaticon.com/free-icon/apolo-project_96667
+[Planetary Colony Ship] https://www.flaticon.com/free-icon/apolo-project_96667
+
+Resource Icons:
+[Space Ice] https://www.flaticon.com/free-icon/ice-cube_2458112
+[Ancient Wood] https://www.flaticon.com/free-icon/tree_3260400
+[Zobbzob Bug] https://www.magnific.com/icon/computer_10224635#fromView=search&page=2&position=71&uuid=9faaf4be-41d4-4203-9172-3f107caa7779
+[Silicon] https://www.magnific.com/icon/silicon_9907008#fromView=search&page=1&position=8&uuid=b80d00af-aa36-45fb-8654-11c17ab2c972
+
+
+Reasorces from the base game:
+[Space Whale] Whale
+[Iron] Iron
+[Gold Ore] Gold Ore
