@@ -1,0 +1,89 @@
+[
+
+	{
+		"name": "Asteroid Mine",
+		"terrainsCanBeBuiltOn": ["Asteroid Field"],
+		"production": 1,
+		"turnsToBuild": 7,
+		"techRequired": "Asteroid Mining",
+		"uniques": ["Pillaging this improvement yields approximately [+20 Gold]"],
+		"shortcutKey": "M"
+	},
+	{
+		"name": "Planitary Mine",
+		"terrainsCanBeBuiltOn": ["Barren Planet", "Desert Planet", "Lush Planet"],
+		"production": 2,
+		"turnsToBuild": 7,
+		"techRequired": "Planetary Minning",
+		"uniques": ["Pillaging this improvement yields approximately [+20 Gold]"],
+		"shortcutKey": "M"
+	},
+	{
+		"name": "Farm",
+		"terrainsCanBeBuiltOn": ["Fertile Sands", "Lush Planet"],
+		"food": 1,
+		"turnsToBuild": 7,
+		"techRequired": "Planetary Minning",
+		"uniques": [
+					//"Can also be built on tiles adjacent to fresh water",
+					"Pillaging this improvement yields approximately [+28 Gold]"],
+		"shortcutKey": "F"
+	},
+	
+	
+	//Starfort
+	//Trade Station
+	{
+		"name": "Space Fort",
+		"terrainsCanBeBuiltOn": ["Void"],
+		"turnsToBuild": 8,
+		"culture": 1,
+		"techRequired": "Space Structures",
+		"uniques": ["Can be built outside your borders", "Gives a defensive bonus of [50]%", "[1] Sight"], //"[1] Sight"
+		"shortcutKey": "O"
+	},
+	{
+		"name": "Space Farm",
+		"terrainsCanBeBuiltOn": ["Void"],
+		"food": 1,
+		"turnsToBuild": 10,
+		"techRequired": "Space Structures",
+		"uniques": ["Pillaging this improvement yields approximately [+30 Gold]"],
+		"shortcutKey": "F"
+	},
+	{
+		"name": "Space Trading post",
+		"terrainsCanBeBuiltOn": ["Void"],
+		"gold": 1,
+		"turnsToBuild": 10,
+		"techRequired": "Space Structures",
+		"uniques": ["Can be built outside your borders", "Pillaging this improvement yields approximately [+45 Gold]", "[1] Sight"],
+		"shortcutKey": "T"
+	},
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	{
+		"name": "City center",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": ["Ensures a minimum tile yield of [+2 Food, +1 Production]",
+            "Unpillagable", "Irremovable", "Unbuildable", "Excluded from map editor"],
+        "civilopediaText": [
+			{"text":"Marks the center of a city"},
+			{"text":"Appearance changes with the technological era of the owning civilization"}
+		]
+	},
+]

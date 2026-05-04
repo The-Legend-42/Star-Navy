@@ -1,4 +1,6 @@
 [
+
+	/*
     {
         "name": "Settler",
         "unitType": "Civilian",
@@ -14,5 +16,271 @@
 		"rangedStrength": 7,
 		"cost": 40,
 		"attackSound": "shot"
-	}
+	},
+	*/
+		//Civies
+	{
+        "name": "Colony Ship",
+        "unitType": "Civilian",
+        "movement": 2,
+		"cost": 360,
+		"obsoleteTech": "Planetary Minning",
+		"upgradesTo": "Planetary Colony Ship",
+        "uniques": ["Founds a new city <by consuming this unit>","Requires at least [3] population"]
+    },
+	{
+        "name": "Planetary Colony Ship",
+        "unitType": "Civilian",
+        "movement": 3,
+		"cost": 360,
+		"requiredTech": "Planetary Minning",
+        "uniques": ["Founds a new city <by consuming this unit>","Requires at least [3] population"]
+    },
+	{
+        "name": "Simple Mining Ship",
+        "unitType": "Civilian",
+        "movement": 3,
+		"cost": 20,
+        "uniques": ["Can instantly construct a [Asteroid Mine] improvement <by consuming this unit>", "Automation is a primary action", "[-1] Sight"],
+		"requiredTech": "Asteroid Mining",
+		"upgradesTo": "Fast Mining Ship",
+    },
+	{
+        "name": "Fast Mining Ship",
+        "unitType": "Civilian",
+        "movement": 6,
+		"cost": 120,
+        "uniques": ["Can instantly construct a [Asteroid Mine] improvement <by consuming this unit>", "Automation is a primary action", "[-1] Sight"],
+		"requiredTech": "Fast Workships",
+    },
+	{
+        "name": "Planetary Mining Ship",
+        "unitType": "Civilian",
+        "movement": 3,
+	//	"cost": 200,
+		"cost": 150,
+        "uniques": [
+					"Can instantly construct a [Planitary Mine] improvement <by consuming this unit>", "Automation is a primary action"
+					"Can build [Farm] improvements on tiles <for [3] movement> <[2] times> <after which this unit is consumed>"],
+		"requiredTech": "Planetary Minning",
+    },
+	{
+        "name": "Deployable Space Station",
+        "unitType": "Civilian",
+        "movement": 1,
+		"cost": 300,
+		"requiredTech": "Space Structures",
+        "uniques": ["Requires at least [3] population",
+					"Can instantly construct a [Space Fort] improvement <by consuming this unit>",
+					"Can instantly construct a [Space Farm] improvement <by consuming this unit>",
+					"Can instantly construct a [Space Trading post] improvement <by consuming this unit>",
+					],
+    },
+	
+	
+	//Military
+	{
+		"name": "Rocket Ship",
+		"unitType": "Rocket Ship",
+		"movement": 2,
+		"strength": 5,
+		"cost": 40,
+		"obsoleteTech": "Lasers",
+		"upgradesTo": "Spaceborn Laser",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Deep Space Voyaging Ship",
+		"unitType": "Rocket Ship",
+		"movement": 5,
+		"strength": 15,
+		"cost": 180,
+		"requiredTech": "Deap Space Era Warships",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Spaceborn Railgun",
+		"unitType": "Space Artillery",
+		"movement": 1,
+		"strength": 3,
+        "range": 2,
+		"rangedStrength": 8,
+		"cost": 35,
+		"requiredTech": "Basic Warships",
+		"obsoleteTech": "Magnetic Launch Systems",
+		"upgradesTo": "Maggner Gun",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Maggner Gun",
+		"unitType": "Space Artillery",
+		"movement": 1,
+		"strength": 4,
+        "range": 2,
+		"rangedStrength": 14,
+		"cost": 100,
+		"requiredTech": "Magnetic Launch Systems",
+		"obsoleteTech": "Vector Artillery",
+		"upgradesTo": "Vector Maggner Gun",
+		"uniques": ["Can move after attacking"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Vector Maggner Gun",
+		"unitType": "Space Artillery",
+		"movement": 1,
+		"strength": 6,
+        "range": 2,
+		"rangedStrength": 33,
+		"cost": 125,
+		"requiredTech": "Vector Artillery",
+		"uniques": ["Can move after attacking"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Spaceborn Laser",
+		"unitType": "Space Laser",
+		"movement": 1,
+		"strength": 4,
+        "range": 3,
+		"rangedStrength": 24,
+		"cost": 120,
+		"requiredTech": "Lasers",
+		"obsoleteTech": "Laser Weaponry",
+		"upgradesTo": "Duel Lensed Spaceborn Laser",
+		"attackSound": "shot"	//Will change
+	},
+	{
+		"name": "Duel Lensed Spaceborn Laser",
+		"unitType": "Space Laser",
+		"movement": 1,
+		"strength": 4,
+        "range": 3,
+		"rangedStrength": 30,
+		"cost": 145,
+		"requiredTech": "Laser Weaponry",
+		"attackSound": "shot"	//Will change
+	},
+	{
+		"name": "Patrol Ship",
+		"unitType": "Recon",
+		"movement": 3,
+		"strength": 7,
+		"cost": 65,
+		"requiredTech": "Basic Warships",
+		"obsoleteTech": "Vector Engines",
+		"upgradesTo": "Mobile Patrol Ship",
+		"attackSound": "shot",
+	},
+	{
+		"name": "Mobile Patrol Ship",
+		"unitType": "Recon",
+		"movement": 4,
+		"strength": 10,
+		"cost": 85,
+		"requiredTech": "Vector Engines",
+		"obsoleteTech": "Fast Warships",
+		"upgradesTo": "Fast Patrol Ship",
+		"uniques": ["Can move after attacking"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Fast Patrol Ship",
+		"unitType": "Recon",
+		"movement": 4,
+		"strength": 16,
+		"cost": 85,
+		"requiredTech": "Fast Warships",
+		"uniques": ["Can move after attacking","[1] additional attacks per turn"],
+		"attackSound": "shot"
+	},
+		{
+		"name": "Simple Corvette",
+		"unitType": "Corvette",
+		"movement": 4,
+		"strength": 20,
+		"cost": 100,
+		"requiredResource": "Silicon",
+		"requiredTech": "Silicon Armaments",
+		"promotions": ["Electronic Countermeasures I"],		
+		"attackSound": "shot",
+	},
+	{
+		"name": "Simple Frigate",
+		"unitType": "Frigate",
+		"movement": 4,
+		"strength": 22,
+		"cost": 130,
+		"requiredTech": "Fast Warships",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Iron Head",
+		"unitType": "Destroyer",
+		"movement": 2,
+		"strength": 12,
+		"cost": 87,
+		"requiredResource": "Iron",
+		"requiredTech": "Iron Heads",
+		"obsoleteTech": "Solar Hardned Iron",
+		"upgradesTo": "Solar Hardned Iron Head",
+		"uniques": ["[+50]% Strength <vs cities>", "Requires at least [2] population"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Solar Hardned Iron Head",
+		"unitType": "Destroyer",
+		"movement": 2,
+		"strength": 18,
+		"cost": 122,
+		"requiredResource": "Iron",
+		"requiredTech": "Solar Hardned Iron",
+		"obsoleteTech": "Super Iron Heads",
+		"upgradesTo": "Super Iron Head",
+		"uniques": ["[+50]% Strength <vs cities>", "Requires at least [2] population"],	
+		"attackSound": "shot"
+	},
+	{
+		"name": "Super Iron Head",
+		"unitType": "Destroyer",
+		"movement": 3,
+		"strength": 28,
+		"cost": 125,
+		"requiredResource": "Iron",
+		"requiredTech": "Super Iron Heads",
+		"obsoleteTech": "Larger Warships",
+		"upgradesTo": "Simple Light cruiser",
+		"uniques": ["[+55]% Strength <vs cities>", "Requires at least [2] population"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Macer",
+		"unitType": "Destroyer",
+		"movement": 3,
+		"strength": 35,
+		"cost": 160,
+		"requiredTech": "Larger Warships",
+		"uniques": ["[+45]% Strength <vs cities>", "Requires at least [2] population"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Simple Light cruiser",
+		"unitType": "Light cruiser",
+		"movement": 2,
+		"strength": 48,
+		"cost": 200,
+		"requiredTech": "Larger Warships",
+		"uniques": ["Consumes [2] [Iron]", "Requires at least [3] population"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Simple cruiser",
+		"unitType": "Cruiser",
+		"movement": 2,
+		"strength": 56,
+		"cost": 240,
+		"requiredTech": "Deap Space Era Warships",
+		"uniques": ["Consumes [3] [Iron]", "Requires at least [5] population"],
+		"attackSound": "shot"
+	},
 ]

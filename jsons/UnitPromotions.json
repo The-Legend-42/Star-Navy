@@ -1,0 +1,46 @@
+[
+
+	/*
+	{
+		"name": "Repair Instantly",
+		"uniques": ["[This Unit] heals [50] HP", "Doing so will consume this opportunity to choose a Promotion"],
+		"unitTypes": ["Sword","Gunpowder","Mounted","Scout","Siege","Archery","Ranged Gunpowder","Armored","Melee Water","Ranged Water","Submarine","Melee Amphibious"],
+		"innerColor": [195,53,43],
+		"outerColor": [253,236,234],
+        "row": 0,
+        "column": 0
+    },
+    */
+	
+	
+	
+	// Smaller Warships
+	{
+		"name": "Electronic Countermeasures I",
+		"uniques": ["[+10]% Strength <when defending>","[+10]% Strength <when fighting in [Asteroid Field] tiles>"],
+		"unitTypes": ["Recon","Corvette","Frigate", "Destroyer"],
+        "column": 1,
+        "row": 1
+    },
+	{
+		"name": "Electronic Countermeasures II",
+		"prerequisites": ["Electronic Countermeasures I"],
+		"uniques": ["[+10]% Strength <when defending>","[+10]% Strength <when fighting in [Asteroid Field] tiles>"],
+		"unitTypes": ["Recon","Corvette","Frigate", "Destroyer"],
+        "column": 1,
+        "row": 2
+	},
+	{
+		"name": "Electronic Countermeasures III",
+		"prerequisites": ["Electronic Countermeasures II"],
+		"uniques": ["[+10]% Strength <when defending>","[+10]% Strength <when fighting in [Asteroid Field] tiles>"],
+		"unitTypes": ["Recon","Corvette","Frigate", "Destroyer"],
+        "column": 1,
+        "row": 3
+	},
+
+
+
+
+
+]

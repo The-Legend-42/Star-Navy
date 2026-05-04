@@ -1,0 +1,175 @@
+[
+
+/*
+
+	{
+		"name": "Experiment Code",
+		"cost": 1,
+		"science": 33,
+		"happiness": 8,
+		"culture": 4,
+		"food": 1,
+		"maintenance": 8,
+		"uniques": ["Destroyed when the city is captured"],
+	},
+	{
+		"name": "Tonk",
+		"cost": 0,
+		"maintenance": 5,
+		"uniques": ["Unbuildable", "Only available <when religion is enabled>","[+1 Happiness, +1 Faith, +1 Gold] per [5] population [in this city]",]
+	},
+*/
+
+	{ 
+		"name": "Servers",
+		"cost": 80,
+		"science": 1,
+		"culture": 1,
+		"production": 1,
+		"gold": 1,
+		"requiredTech": "Space Travel",
+		"uniques": [
+					//Gold
+					"[+1 Gold] [in this city] <after discovering [Basic Warships]>"
+					"[+1 Gold] [in this city] <after discovering [Laser Mining]>"
+					//Science
+					"[+1 Science] [in this city] <after discovering [Planetary Minning]>"
+					]
+	},
+	{ 
+		"name": "Greenhouse",
+		"cost": 35,
+		"food": 2,
+		"requiredTech": "Space Travel",
+	},
+	{ 
+		"name": "Flower Garden",
+		"food": 1,
+		"happiness": 1,
+		"requiredTech": "Entertainment Systems",
+	},
+	{ 
+		"name": "Cinema",
+		"cost": 65,
+		"happiness": 2,
+		"requiredTech": "Entertainment Systems",
+		"uniques": [
+				"[+1 Gold] [in this city] <after discovering [Lasers]>"
+				"[+1 Happiness] [in this city] <after discovering [Eco Domes]>"
+				],
+	},
+	{ 
+		"name": "Telescope",
+		"cost": 20,
+		"science": 1,
+		"requiredTech": "Lenses",
+	},
+	{ 
+		"name": "Photonic Computer",
+		"cost": 60,
+		"science": 2,
+		"production": 1,
+		"requiredTech": "Photonic Computing",
+	},
+	{ 
+		"name": "Asteroid Processing Plant",
+		"cost": 120,
+		"production": 3,
+		"gold": 2,
+		"uniques": ["Destroyed when the city is captured","Must have an owned [Asteroid Mine] within [3] tiles"],
+		"requiredTech": "Asteroid Processing",
+	},	
+	{ 
+		"name": "Virtual Chess Tournament",
+		"happiness": 1,
+		"culture": 1,
+		"science": 1,
+		"uniques": ["Destroyed when the city is captured"],
+		"requiredTech": "Tournaments",
+	},	
+	{ 
+		"name": "Starball Tournament",
+		"happiness": 1,
+		"culture": 1,
+		"gold": 1,
+		"uniques": ["Destroyed when the city is captured"],
+		"requiredTech": "Tournaments",
+	},	
+	{ 
+		"name": "Asteroid Statue",
+		"culture": 2,
+		"uniques": ["Destroyed when the city is captured","Must have an owned [Asteroid Mine] within [3] tiles"],
+		"requiredTech": "Asteroid Carving",
+	},
+	{ 
+		"name": "Bulk Fuel Tank",
+		"production": 1,
+		"gold": 1,
+		"uniques": ["Destroyed when the city is captured"],
+		"requiredTech": "Bulk Fuel Tanks",
+	},	
+	{ 
+		"name": "Eco Dome",
+		"cost": 225,
+		"food": 2,
+		"happiness": 1,
+		"culture": 1,
+		"maintenance": 1,
+		"uniques": ["Destroyed when the city is captured"],
+		"requiredTech": "Eco Domes",
+	},
+	{ 
+		"name": "Enlarged Greenhouse",
+		"food": 3,
+		"requiredTech": "Expanded Farming",
+	},
+	{ 
+		"name": "Advanced Greenhouse",
+		"food": 2,
+		"gold": 1,
+		"science": 1,
+		"requiredTech": "Expanded Farming",
+	},
+	// Planetary Farm
+	{ 
+		"name": "Planetary Farming Center",
+		"cost": 240,
+		"food": 2,
+		"requiredResource": "Iron", //Temporay
+		"uniques": [
+					//Limits
+					"Must have an owned [Desert Planet] within [3] tiles"
+					"Requires at least [7] population"
+					//Food Boosts\
+					"[+1 Food, +1 Gold] from [Lush Planet] tiles [in this city]"
+					"[+1 Food] from [Barren Planet] tiles [in this city]"
+					"[+1 Food] from [Desert Planet] tiles [in this city]"
+					"[+1 Food] from [Fertile Sands] tiles [in this city]"
+					//Other Boosts
+					"[+1 Production, +1 Gold] from [Farm] tiles [in this city]"
+					],
+		"requiredTech": "Expanded Farming",
+	},
+	
+	{ 
+		"name": "Laboratory",
+		"specialistSlots": {"Scientist": 1},
+		"science": 3,
+		"requiredTech": "Economic Specialists",
+	},
+	{ 
+		"name": "Currency Exchange",
+		"specialistSlots": {"Merchant": 1, "Economist": 1},
+		"gold": 2,
+		"production": 1,	
+		"requiredTech": "Economic Specialists",
+	},
+	{ 
+		"name": "Small Bank",
+		"percentStatBonus": {"Gold": 25},
+		"specialistSlots": {"Banker": 2},
+		"gold": 2,
+		"culture": 1,	
+		"requiredTech": "Economic Specialists",
+	},
+]

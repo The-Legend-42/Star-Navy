@@ -1,0 +1,264 @@
+[
+	{
+		"columnNumber": 0,
+		"era": "First Steps",
+		"techCost": 20,
+		"buildingCost": 40,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name": "Space Travel",
+				"row": 6,
+				"quote": "'Where tillage begins, other arts follow. The farmers therefore are the founders of human civilization.' - Daniel Webster",
+				"uniques": ["Starting tech"]
+			}
+		]
+	},
+	{
+		"columnNumber": 1,
+		"era": "First Steps",
+		"techCost": 20,
+		"buildingCost": 40,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name": "Lenses",
+				"row": 4,
+				"prerequisites": ["Space Travel"],
+				"quote": "'We prepare for war amongst the stars' - Spaceman"
+			},
+			{
+				"name": "Basic Warships",
+				"row": 5,
+				"prerequisites": ["Space Travel"],
+                "uniques": ["[+100]% weight to this choice for AI decisions"],
+				"quote": "'We prepare for war amongst the stars' - Spaceman"
+			},
+			{
+				"name": "Asteroid Mining",
+				"row": 7,
+				"prerequisites": ["Space Travel"],
+                "uniques": ["[+25]% weight to this choice for AI decisions"],
+				"quote": "'We prepare fto mine amongst the stars' - Spaceman"
+			},
+			{
+				"name": "Entertainment Systems",
+				"row": 8,
+				"prerequisites": ["Space Travel"],
+                "uniques": ["[+50]% weight to this choice for AI decisions"],
+				"quote": "'To live amongst the stars life must be worth living' - Spaceman"
+			},
+		]
+	},
+	{
+		"columnNumber": 2,
+		"era": "First Steps",
+		"techCost": 22,
+		"buildingCost": 50,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name": "Photonic Computing",
+				"row": 4,
+				"prerequisites": ["Lenses"],
+				"quote": "'Computing on light itself' - Spaceman"
+			},
+			{
+				"name": "Magnetic Launch Systems",
+				"row": 5,
+				"prerequisites": ["Lenses","Basic Warships"],
+				"quote": "'Weve always been flinging rocks at our enemies. Now we can do it using Magnatism!' - Spaceman"
+			},
+			{
+				"name": "Iron Heads",
+				"row": 6,
+				"prerequisites": ["Basic Warships","Asteroid Mining"],
+                "uniques": ["[+25]% weight to this choice for AI decisions"],
+				"quote": "'The mighty Iron Head, Reliable and Mighty' - Spaceman"
+			},
+			{
+				"name": "Asteroid Processing",
+				"row": 7,
+				"prerequisites": ["Asteroid Mining"],
+                "uniques": ["[+25]% weight to this choice for AI decisions"],
+				"quote": "'Someones gotta do it' - Spaceman"
+			},
+			{
+				"name": "Tournaments",
+				"row": 8,
+				"prerequisites": ["Entertainment Systems"],
+                "uniques": ["[+25]% weight to this choice for AI decisions"],
+				"quote": "'One one can be number one' - Spaceman"
+			},
+		]
+	},
+	{
+		"columnNumber": 3,
+		"era": "Early Era",
+		"techCost": 48,
+		"buildingCost": 80,
+		"wonderCost": 225,
+		"techs": [
+			{
+				"name": "Lasers",
+				"row": 4,
+				"prerequisites": ["Photonic Computing"],
+				"quote": "'A concentrated beam of light' - Spaceman"
+			},
+			{
+				"name": "Vector Engines",
+				"row": 5,
+				"prerequisites": ["Iron Heads","Magnetic Launch Systems"],
+				"quote": "'Theres allways been a need for speed' - Spaceman"
+			},
+			{
+				"name": "Solar Hardned Iron",
+				"row": 6,
+				"prerequisites": ["Iron Heads"],
+				"quote": "'Durability is a usefull thing' - Spaceman"
+			},
+			{
+				"name": "Water Conversion",
+				"row": 7,
+				"prerequisites": ["Asteroid Processing"],
+				"uniques": ["[+1 Food] from [Space Ice] tiles [in all cities]", "[1] free [Simple Mining Ship] units appear"],
+				"quote": "'Water is the essence of life' - Spaceman"
+			},
+			{
+				"name": "Asteroid Carving",
+				"row": 8,
+				"prerequisites": ["Asteroid Processing","Tournaments"],
+				"quote": "'Who wouldnt want to see a asteroid turned into a giant floating statue in space?' - Spaceman"
+			},
+		]
+	},
+	{
+		"columnNumber": 4,
+		"era": "Early Era",
+		"techCost": 62,
+		"buildingCost": 85,
+		"wonderCost": 225,
+		"techs": [
+					{
+				"name": "Laser Mining",
+				"row": 4,
+				"prerequisites": ["Lasers","Vector Engines"],
+			    "uniques": ["[+1 Production] from [Iron] tiles [in all cities]","[+25]% weight to this choice for AI decisions"],				
+				"quote": "'Minning with a concentrated beam of light' - Spaceman"
+			},
+			{
+				"name": "Vector Artillery",
+				"row": 5,
+				"prerequisites": ["Vector Engines"], //"Iron Heads",
+				"quote": "'The art of Artillery is to kill from far far artway' - Space Bozo"
+			},
+			{
+				"name": "Super Iron Heads",
+				"row": 6,
+				"prerequisites": ["Vector Engines","Solar Hardned Iron"],
+				"quote": "'The good ol Ironhead new and Improved' - Spaceman"
+			},
+			{
+				"name": "Bulk Fuel Tanks",
+				"row": 7,
+				"prerequisites": ["Solar Hardned Iron", "Water Conversion"],
+				"uniques": ["[1] free [Simple Mining Ship] units appear"],
+				"quote": "'Store up the fuel who knows when you'll need it' - Spaceman"
+			},
+			{
+				"name": "Planetary Minning",
+				"row": 8,
+				"prerequisites": ["Water Conversion","Asteroid Carving"],
+				"uniques": ["[1] free [Planetary Mining Ship] units appear", "[+50]% weight to this choice for AI decisions"]
+				"quote": "'Time to mine the worlds beneith our feet, No?' - Minner"
+			},
+		]
+	},
+	{
+		"columnNumber": 5,
+		"era": "Early Era",
+		"techCost": 74,
+		"buildingCost": 85,
+		"wonderCost": 225,
+		"techs": [
+			{
+				"name": "Laser Weaponry",
+				"row": 4,
+				"prerequisites": ["Laser Mining"],
+				"quote": "'Minning with a concentrated beam of light' - Spaceman"
+			},
+			{
+				"name": "Fast Warships",
+				"row": 5,
+				"prerequisites": ["Vector Artillery","Super Iron Heads"],	
+				"quote": "'Fater Faster Weeee!' - Space Bozo"
+			},
+			{
+				"name": "Larger Warships",
+				"row": 6,
+				"prerequisites": ["Super Iron Heads","Bulk Fuel Tanks"],	
+				"quote": "'Sometimes you just need alittle more gun' - Engineer"
+			},
+			{
+				"name": "Eco Domes",
+				"row": 7,
+				"prerequisites": ["Bulk Fuel Tanks","Planetary Minning"],	
+				"quote": "'Great view of nature, often in an otherwise unatural place' - Spaceman"
+			},
+			{
+				"name": "Expanded Farming",
+				"row": 8,
+				"prerequisites": ["Planetary Minning"],
+				"uniques": ["[+50]% weight to this choice for AI decisions"]
+				"quote": "'To expand into the stars we will need to be able to feed the people.' - Spaceman"
+			},
+		]
+	},
+	{
+		"columnNumber": 6,
+		"era": "Deep Space",
+		"techCost": 100,
+		"buildingCost": 100,
+		"wonderCost": 265,
+		"techs": [
+			{
+			//Addsuildings with Specialists
+				"name": "Economic Specialists",
+				"row": 4,
+				"prerequisites": ["Laser Weaponry", "Fast Warships"],
+				"quote": "'Some people are Special! Like Me!' - Space Bozo"
+			},
+			//Faster mining ship
+			{
+				"name": "Fast Workships",
+				"row": 5,
+				"prerequisites": ["Fast Warships"],	
+				"uniques": ["[1] free [Fast Mining Ship] units appear"],
+				"quote": "'The faster we can get to work the more work we can do in a given amount of time.' - Engineer"
+			},
+			//Cruiser + another warship
+			{	
+				"name": "Deap Space Era Warships",
+				"row": 6,
+				"prerequisites": ["Fast Warships", "Larger Warships", "Eco Domes" ],	
+				"quote": "'Its time we modernise to the Future' - Philosopher"
+			},
+			//Building in the void
+			{
+				"name": "Space Structures",
+				"row": 7,
+				"prerequisites": ["Eco Domes","Expanded Farming"],	
+				"uniques": ["[2] free [Deployable Space Station] units appear"],
+				"quote": "'Lets make stucures in the great void aroud us' - Spaceman"
+			},
+			//New materials
+			{
+				"name": "Silicon Armaments",
+				"row": 8,
+				"prerequisites": ["Expanded Farming"],
+				"quote": "'Did you think we would use it only for computing?' - Spaceman"
+			},
+		]
+	},
+
+]

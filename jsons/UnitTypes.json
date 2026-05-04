@@ -1,4 +1,5 @@
 [
+	//Civilian
     {
         "name": "Civilian",
         "movementType": "Land"
@@ -7,5 +8,57 @@
         "name": "Infantry",
         "movementType": "Land"
     }
-    
+	
+	
+	//Military
+    {
+        "name": "Rocket Ship",
+        "movementType": "Land"
+    }
+	{
+        "name": "Recon",
+		"uniques": ["[+2] Sight", "Warship"]
+        "movementType": "Land"
+    }
+	{
+        "name": "Corvette",
+		"uniques": ["Can move after attacking", "Warship"]
+        "movementType": "Land"
+    }
+	{
+        "name": "Frigate",
+		"uniques": ["[+1] Sight", "Can move after attacking", "Warship"]
+        "movementType": "Land"
+    }
+	{
+        "name": "Destroyer",
+		"uniques": ["[+1] Sight", "Warship"]
+        "movementType": "Land"
+    }
+	{
+        "name": "Light cruiser",
+        "movementType": "Land"
+    }
+	{
+        "name": "Cruiser",
+		"uniques": [
+					"Warship"
+					"[+20]% Strength <vs [Rocket Ship] units> <when attacking>"
+					"[+33]% Strength <vs [Recon] units> <when attacking>"
+					"[+50]% Strength <vs [Corvette] units> <when attacking>"
+					"[+40]% Strength <vs [Frigate] units> <when attacking>"
+					"[+25]% Strength <vs [Destroyer] units> <when attacking>"
+					],
+        "movementType": "Land"
+    }
+	{
+        "name": "Space Artillery",
+		"uniques": ["Artillery"]
+        "movementType": "Land"
+    }
+	{
+        "name": "Space Laser",
+		"uniques": ["Artillery"]
+        "movementType": "Land"
+    }
 ]

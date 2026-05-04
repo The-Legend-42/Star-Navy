@@ -1,0 +1,130 @@
+[
+	//Bonus
+	{
+		"name": "Space Ice",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Asteroid Field"],
+		"food": 1,
+		"improvement": "Asteroid Mine",
+		"improvementStats": {"production": 1},
+		"uniques": ["Generated on every [18] tiles <in [Asteroid Field] tiles>",
+					"Generated on every [35] tiles <in [Asteroid Field] tiles> <in [Asteroid Field] Regions>"
+					]
+	},
+	{
+		"name": "Ancient Wood",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Lush Planet"],
+		"production": 1,
+		"improvedBy": ["Farm", "Planitary Mine"], //Temporary
+		"improvementStats": {"production": 1},
+		"uniques": ["Generated on every [10] tiles <in [Lush Planet] tiles>",]
+	},
+	{
+		"name": "Xeno Animals",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Lush Planet","Fertile Sands"],
+		"food": 1,
+		"improvedBy": ["Farm", "Planitary Mine"], //Temporary
+		"improvementStats": {"production": 1, "science": 1,},
+		"uniques": [
+					"Generated with weight [30] <in [Lush Planet] tiles>",
+					"Generated with weight [6] <in [Fertile Sands] tiles>",		
+					]
+	},
+
+
+
+	//Strategic resources
+	{
+		"name": "Iron",
+		"resourceType": "Strategic",
+		"revealedBy": "Asteroid Mining",
+		"terrainsCanBeFoundOn": ["Asteroid Field","Desert Planet"],
+		"production": 1,
+		"improvedBy": ["Asteroid Mine", "Planitary Mine"],
+		"uniques": ["Guaranteed with Strategic Balance resource option",
+					"Generated with weight [26] <in [Asteroid Field] tiles>",
+					"Minor deposits generated with weight [18] <in [Barren Planet] tiles>",
+					"Minor deposits generated with weight [12] <in [Desert Planet] tiles>",
+					],
+		"majorDepositAmount": {"sparse": 3, "default": 4, "abundant": 5},
+		"minorDepositAmount": {"sparse": 1, "default": 2, "abundant": 3}
+	},
+		{
+		"name": "Silicon",
+		"resourceType": "Strategic",
+		"revealedBy": "Silicon Armaments",
+		"terrainsCanBeFoundOn": ["Asteroid Field","Desert Planet"],
+		"production": 1,
+		"improvedBy": ["Asteroid Mine", "Planitary Mine"],
+		"uniques": ["Guaranteed with Strategic Balance resource option",
+					"Generated with weight [12] <in [Asteroid Field] tiles>",
+					"Minor deposits generated with weight [12] <in [Barren Planet] tiles>",
+					"Minor deposits generated with weight [8] <in [Desert Planet] tiles>",
+					],
+		"majorDepositAmount": {"sparse": 2, "default": 4, "abundant": 4},
+		"minorDepositAmount": {"sparse": 1, "default": 2, "abundant": 2}
+	},
+	
+	
+	
+	
+	
+		//Luxury resources
+	{
+		"name": "Space Whale",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Void"],
+		"food": 1,
+		"science": 1,
+		"gold": 1,
+		"improvement": "Asteroid Mine", //Temporary
+		"improvementStats": {"gold": 1},
+		"uniques": ["Generated with weight [40] <in [Asteroid Field] Regions>",
+					"Generated with weight [10] <in [Void] Regions>",
+				//	"Generated near City States with weight [15]"
+					],
+	},
+	{
+		"name": "Letto Grass",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Fertile Sands"],
+		"gold": 2,
+		"improvedBy": ["Farm", "Planitary Mine"], //The second one is Temporary
+		"improvementStats": {"gold": 2},
+		"uniques": [
+					"Generated with weight [10] <in [Fertile Sands] tiles>",
+				//	"Generated near City States with weight [15]"
+					],
+	},
+	{
+		"name": "Gold Ore", // Not called "Gold" in order to not conflict with siege type units for translations
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Asteroid Field","Barren Planet","Desert Planet","Lush Planet"],
+		"gold": 2,
+		"improvementStats": {"gold": 2},
+		"improvedBy": ["Asteroid Mine", "Planitary Mine"],
+		"uniques": ["Generated with weight [10] <in [Asteroid Field] tiles>",
+					"Generated with weight [16]  <in [Barren Planet] tiles>",
+					"Generated with weight [8] <in [Desert Planet] tiles>",
+				//	"Generated near City States with weight [10]",
+					"Doesn't generate naturally <in [Desert Planet] tiles> <in [Fertile Sands] tiles>"
+					"Doesn't generate naturally <in [Lush Planet] tiles>"]
+	},
+	{
+		"name": "Zobbzob Bug",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Lush Planet","Fertile Sands"],
+		"culture": 1,
+		"gold": 1,
+		"improvedBy": ["Farm", "Planitary Mine"], //Both are temporary
+		"improvementStats": {"culture": 1},
+		"uniques": [
+					"Generated with weight [18] <in [Lush Planet] tiles>",
+					"Doesn't generate naturally <in [Fertile Sands] tiles>"
+					],
+	},
+	
+
+]
