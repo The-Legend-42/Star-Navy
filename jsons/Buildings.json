@@ -121,6 +121,7 @@
 	{ 
 		"name": "Enlarged Greenhouse",
 		"food": 3,
+		"requiredBuilding": "Greenhouse",
 		"requiredTech": "Expanded Farming",
 	},
 	{ 
@@ -128,6 +129,7 @@
 		"food": 2,
 		"gold": 1,
 		"science": 1,
+		"requiredBuilding": "Greenhouse",
 		"requiredTech": "Expanded Farming",
 	},
 	// Planetary Farm
@@ -171,5 +173,100 @@
 		"gold": 2,
 		"culture": 1,	
 		"requiredTech": "Economic Specialists",
+	},
+	{ 
+		"name": "Zoo",
+		"culture": 3,
+		"gold": 1,
+		"requiredNearbyImprovedResources": ["Zobbzob Bug","Xeno Animals"],
+		"uniques": [
+					"[+1 Happiness] from [Zobbzob Bug] tiles [in this city]",
+					"[+1 Happiness] from [Xeno Animals] tiles [in this city]",
+					],
+		"requiredTech": "Zoos",
+	},
+	{ 
+		"name": "Ecology Lab",
+		"specialistSlots": {"Ecologist": 1, "Scientist": 1},
+		"percentStatBonus": {"Science": 10, "Food": 5,},
+		"science": 3,
+		"food": 1,
+		"maintenance": 1,
+		"requiredNearbyImprovedResources": ["Zobbzob Bug","Xeno Animals"],
+		"uniques": [
+					"[+1 Science] from [Zobbzob Bug] tiles [in this city]",
+					"[+1 Science] from [Xeno Animals] tiles [in this city]",
+					],
+		"requiredBuilding": "Laboratory",
+		"requiredTech": "Scientific Specialists",
+	},
+	{ 
+		"name": "Space Telescope",
+		"specialistSlots": {"Astronomer": 2},
+		"percentStatBonus": {"Science": 15},
+		"science": 3,
+		"production": 1,
+		"maintenance": 1,
+		"uniques": [
+					"[+1 Science, +1 Gold] from [Space Ice] tiles [in this city]",
+					],
+		"requiredBuilding": "Telescope",
+		"requiredTech": "Scientific Specialists",
+	},
+	{ 
+		"name": "Local Collage",
+		"specialistSlots": {"Scientist": 1, "Economist": 1, "Professor": 1, "Lab Assistent": 1},
+		"percentStatBonus": {"Science": 10, "Culture": 5},
+		"science": 3,
+		"culture": 1,
+		"maintenance": 2,
+		"uniques": [
+					"[+1 Science] per [7] population [in this city]"
+					"Cost increases by [7] per owned city",
+					],
+		"requiredBuilding": "Laboratory",
+		"requiredTech": "Scientific Specialists",
+	},
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	//Wonders
+	{ 
+		"name": "Great Zoo",
+		"culture": 6,
+		"isWonder": true,
+		"requiredNearbyImprovedResources": ["Zobbzob Bug","Xeno Animals"],
+		"uniques": [
+					"Gain a free [Zoo] [in this city]"
+					"[+1 Gold] from [Zobbzob Bug] tiles [in this city]",
+					"[+1 Gold] from [Xeno Animals] tiles [in this city]",
+					],
+		"requiredTech": "Zoos",
 	},
 ]

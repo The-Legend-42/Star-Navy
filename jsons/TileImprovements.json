@@ -9,6 +9,7 @@
 		"uniques": ["Pillaging this improvement yields approximately [+20 Gold]"],
 		"shortcutKey": "M"
 	},
+	
 	{
 		"name": "Planitary Mine",
 		"terrainsCanBeBuiltOn": ["Barren Planet", "Desert Planet", "Lush Planet"],
@@ -18,6 +19,7 @@
 		"uniques": ["Pillaging this improvement yields approximately [+20 Gold]"],
 		"shortcutKey": "M"
 	},
+	
 	{
 		"name": "Farm",
 		"terrainsCanBeBuiltOn": ["Fertile Sands", "Lush Planet"],
@@ -42,6 +44,42 @@
 		"uniques": ["Can be built outside your borders", "Gives a defensive bonus of [50]%", "[1] Sight"], //"[1] Sight"
 		"shortcutKey": "O"
 	},
+	{
+		"name": "Small Starfort",
+		"terrainsCanBeBuiltOn": ["Void"],
+		"techRequired": "Introductory Starforts",
+		"turnsToBuild": 20,
+		"uniques": [
+			"Great Improvement",			
+			"Costs [1] [Gold] per turn"
+			"Gives a defensive bonus of [85]%", "[1] Sight"
+			"Can be built just outside your borders",			
+			"Adjacent enemy units ending their turn take [15] damage",
+			"Gain control over [all] tiles in a [1]-tile radius",
+			"Removes removable features when built",
+            "Will not be replaced by automated units"
+			],
+	},
+	
+	/*
+	{
+		"name": "Starfort",
+		"terrainsCanBeBuiltOn": ["Void"],
+	//	"techRequired": "Introductory Starforts",
+		"turnsToBuild": 25,
+		"uniques": [
+			"Great Improvement",			
+			"Costs [2] [Gold] per turn"
+			"Gives a defensive bonus of [100]%", "[1] Sight"
+			"Can be built just outside your borders",			
+			"Adjacent enemy units ending their turn take [30] damage",
+			"Gain control over [all] tiles in a [2]-tile radius",
+			"Removes removable features when built",
+            "Will not be replaced by automated units"
+			],
+	},
+	*/
+	
 	{
 		"name": "Space Farm",
 		"terrainsCanBeBuiltOn": ["Void"],

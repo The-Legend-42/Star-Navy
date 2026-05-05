@@ -260,5 +260,103 @@
 			},
 		]
 	},
+	{
+		"columnNumber": 7,
+		"era": "Deep Space",
+		"techCost": 125,
+		"buildingCost": 110,
+		"wonderCost": 285,
+		"techs": [
+			{
+			//Artilery units
+				"name": "Long Range Aiming Systems",
+				"row": 4,
+				"prerequisites": ["Economic Specialists", "Fast Workships",],
+				"quote": "'Sometimes you just need to blast your foes from affar!' - Spaceman"
+			},
+			{
+			//Wonder
+				"name": "Zoos",
+				"row": 5,
+				"prerequisites": ["Deap Space Era Warships", "Fast Workships",],
+				"quote": "'Sometimes people just wanna see something exotic and strange!' - Spaceman"
+			},	
+			//New Frigate, Desroyer, and Recon
+			{	
+				"name": "Lightweight Engines",
+				"row": 6,
+				"prerequisites": ["Deap Space Era Warships"],	
+				"quote": "'Lighter engines allow for faster ships. Faster ships just so happen to be harder to shoot down' - Spaceman"
+			},	
+			{
+			//Starfort
+				"name": "Introductory Starforts",
+				"row": 7,
+				"prerequisites": ["Deap Space Era Warships","Space Structures",],	
+				"uniques": ["[1] free [Deployable Starfort] units appear", "[1] free [Deployable Space Station] units appear"],
+				"quote": "'To create fortifications to protect us from the shelterless uncaring void of space' - Engineer"
+			},	
+			{
+			//New civvies
+				"name": "Reusable Workships",
+				"row": 8,
+				"prerequisites": ["Silicon Armaments"],
+				"uniques": ["[1] free [Reusable Spacework Ship] units appear"],				
+				"quote": "'It may be expensive but lets not be wastefull' - Spaceman"
+			},				
 
+		]
+	},
+	{
+		"columnNumber": 8,
+		"era": "Deep Space",
+		"techCost": 135,
+		"buildingCost": 125,
+		"wonderCost": 300,
+		"techs": [
+			{
+			//More Specialists 
+				"name": "Scientific Specialists",
+				"row": 4,
+				"prerequisites": ["Long Range Aiming Systems", "Zoos",],
+				"quote": "'Without Science we wouldn't be in Space!' - Spaceman"
+			},
+			{
+			//More food and new Luxary
+				"name": "Fertilizers",
+				"row": 5,
+				"prerequisites": ["Zoos",],
+                "uniques": ["[+1 Food] [in capital]", "[1] free [Deployable Space Station] units appear", "[+50]% weight to this choice for AI decisions",]				
+			//	"quote": "'Sometimes people just wanna see something exotic and strange!' - Spaceman"
+			},	
+			
+			//New Cruiser, Light Cruiser, and the first Heavy Cruiser is added. Battle Cruiser will be added later
+			{	
+				"name": "Heavy Cruisers",
+				"row": 6,
+				"prerequisites": ["Lightweight Engines", "Introductory Starforts"],	
+                "uniques": ["[+1 Production] [in capital]", "[+50]% weight to this choice for AI decisions",]
+				"quote": "'Take A Cruiser and incase it in even heavier armour, that is what i call a Heavy Cruiser' - Engineer"
+			},	
+			{	//Dipomacy and Spies
+				"name": "Diplomacy and Subterfuge",
+				"row": 7,
+				"prerequisites": ["Introductory Starforts"],	
+				"uniques": ["[+125]% weight to this choice for AI decisions", 
+							"Enables establishment of embassies", 
+							// "Gain an extra spy <when espionage is enabled> "
+							"[1] free [Deployable Starfort] units appear", "[1] free [Deployable Space Station] units appear"],
+				"quote": "'The birth of Diplomacy starts with a recognition and a humble embassy' - Diplomat & Spymaster Twins"
+			},
+			{
+			//New Resorce
+				"name": "Nuclear Electric Propulsion",
+				"row": 8,
+				"prerequisites": ["Introductory Starforts", "Reusable Workships"],	
+			//	"quote": "'Lets make stucures in the great void aroud us' - Spaceman"
+			},				
+		]
+	},
 ]
+
+

@@ -40,7 +40,7 @@
 		"name": "Iron",
 		"resourceType": "Strategic",
 		"revealedBy": "Asteroid Mining",
-		"terrainsCanBeFoundOn": ["Asteroid Field","Desert Planet"],
+		"terrainsCanBeFoundOn": ["Asteroid Field","Desert Planet","Barren Planet"],
 		"production": 1,
 		"improvedBy": ["Asteroid Mine", "Planitary Mine"],
 		"uniques": ["Guaranteed with Strategic Balance resource option",
@@ -55,20 +55,36 @@
 		"name": "Silicon",
 		"resourceType": "Strategic",
 		"revealedBy": "Silicon Armaments",
-		"terrainsCanBeFoundOn": ["Asteroid Field","Desert Planet"],
+		"terrainsCanBeFoundOn": ["Asteroid Field","Desert Planet","Barren Planet"],
 		"production": 1,
 		"improvedBy": ["Asteroid Mine", "Planitary Mine"],
 		"uniques": ["Guaranteed with Strategic Balance resource option",
 					"Generated with weight [12] <in [Asteroid Field] tiles>",
-					"Minor deposits generated with weight [12] <in [Barren Planet] tiles>",
+				//	"Minor deposits generated with weight [12] <in [Barren Planet] tiles>",
+					"Minor deposits generated with weight [6] <in [Barren Planet] tiles>",
 					"Minor deposits generated with weight [8] <in [Desert Planet] tiles>",
 					],
 		"majorDepositAmount": {"sparse": 2, "default": 4, "abundant": 4},
 		"minorDepositAmount": {"sparse": 1, "default": 2, "abundant": 2}
 	},
+	{
+		"name": "Uranium",
+		"resourceType": "Strategic",
+		"revealedBy": "Nuclear Electric Propulsion",
+		"terrainsCanBeFoundOn": ["Barren Planet"],
+		"production": 1,
+		"improvedBy": ["Planitary Mine"],
+		"uniques": ["Guaranteed with Strategic Balance resource option",
+					"Generated on every [12] tiles <in [Barren Planet] tiles>",
+					"Doesn't generate naturally <in [Lush Planet] tiles>"
+					],
+		"majorDepositAmount": {"sparse": 2, "default": 4, "abundant": 4},
+		"minorDepositAmount": {"sparse": 1, "default": 2, "abundant": 3}
+	},
+
 	
 	
-	
+
 	
 	
 		//Luxury resources
@@ -106,7 +122,7 @@
 		"improvementStats": {"gold": 2},
 		"improvedBy": ["Asteroid Mine", "Planitary Mine"],
 		"uniques": ["Generated with weight [10] <in [Asteroid Field] tiles>",
-					"Generated with weight [16]  <in [Barren Planet] tiles>",
+					"Generated with weight [16] <in [Barren Planet] tiles>",
 					"Generated with weight [8] <in [Desert Planet] tiles>",
 				//	"Generated near City States with weight [10]",
 					"Doesn't generate naturally <in [Desert Planet] tiles> <in [Fertile Sands] tiles>"
@@ -125,6 +141,18 @@
 					"Doesn't generate naturally <in [Fertile Sands] tiles>"
 					],
 	},
-	
+	{
+		"name": "Compost",
+		"resourceType": "Luxury",
+		"revealedBy": "Fertilizers",
+		"terrainsCanBeFoundOn": ["Lush Planet","Fertile Sands"],
+		"food": 2,
+		"improvedBy": ["Farm", "Planitary Mine"], //One is definetly temporary while the other is a maybe
+		"improvementStats": {"food": 1},
+		"uniques": [
+					"Generated with weight [10] <in [Lush Planet] tiles>",
+					"Generated with weight [1] <in [Fertile Sands] tiles>", //Super rare
+					],
+	},	
 
 ]

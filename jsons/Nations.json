@@ -67,7 +67,8 @@
 					//"[+1] Movement <for [Space Laser] units>",
 					"[+1] Movement <for [Artillery] units>",
 					"[+1] Sight <for [Artillery] units>",]			
-		"cities": ["Terras","Lunnari","Mari","Charos","Venn","Curiso","Juppa","Tassat","Tittor","Ernis","Palluki","Makremek","Sattric"]
+		"cities": ["Terras","Lunnari","Mari","Charos","Venn","Curiso","Juppa","Tassat","Tittor","Ernis","Palluki","Makremek","Sattric"
+		,"Urrani","Trittos"]
 	},
 
 	{
@@ -87,7 +88,7 @@
 		"innerColor": [255,215,57],
 		"uniqueName": "Happy Capital",
 		"uniques": ["[+5 Happiness] [in capital]"],
-		"cities": ["Cteraci","Iotto","Perchino","Cteroci","Chinono","Ctemmoci","Chornomo","Pettroci"]
+		"cities": ["Cteraci","Iotto","Perchino","Cteroci","Chinono","Ctemmoci","Chornomo","Pettroci","Chrotto","Sennegiso"]
 	},
 	
 	{
@@ -115,7 +116,7 @@
 					//Debuff
 					"[-2 Happiness] [in capital]"
 					"[-1 Happiness] [in all cities]"],
-		"cities": ["Bazzik Betta", "Luki", "Derrool","Reab", "Bazzik Zetta", "Crone-line", "Druk", "Helvess"]
+		"cities": ["Bazzik Betta", "Luki", "Derrool","Reab", "Bazzik Zetta", "Crone-line", "Druk", "Helvess", "Hyna"]
 	},
 	
 	{
@@ -140,31 +141,53 @@
 					"[+25]% Production when constructing [Destroyer] units [in capital]",
 					"[+33]% Production when constructing [Light cruiser] units [in capital]",
 					],
-		"cities": ["Teal Prime", "Talluan", "Tassic", "Rettal", "Tallias", "Teallisto", "Pailinty", "Taelosyn"]
+		"cities": ["Teal Prime", "Talluan", "Tassic", "Rettal", "Tallias", "Teallisto", "Pailinty", "Taelosyn", "Lainsy", "Cloris"]
 	},
 	
 	
 	{
 		"name": "Human Empire",
-		"adjective": ["Tealist"],	
-		"leaderName": "Vixerrella",
+		"adjective": ["Human"],	
+		"leaderName": "Gorge son of New Sol",
 		"preferredVictoryType": "Domination",
 
-		"startIntroPart1": "Sample text.",
-		"startIntroPart2": "Sample text.",
-		"declaringWar": "It is time we expand.",
-		"attacked": "Pfft! Prepare to die!",
+		"startIntroPart1": "You are playing as the Human Empire! A faction with a long hystory going all the way back to Earth itself as the first Humans of the Human Empire were some of those who fled the home system during the earlier phases of the second great solar system war. They were mostly scientists and their famililes with a couple engeniers here and there aswell, Yet Unfortunatly they this small population of scientitists soon found themselves in one of the most hostile and competative corners of the known universe.",
+		"startIntroPart2": "Thus to survive they became the Human Empire their sociotity was forced to militerise up leading to many growing pains yet ensuring their surviveal in such a hostile region of space. Despite this under all their militerisim their old habbits such as a strong desire to explore the stars have never died down but rather had risen from the ashes leading to a odd combination of scicne and warfare.",
+		"declaringWar": "We'll cut straight to the chase. We don't like you, and we intend to take action regarding that.",
+		"attacked": "We warrned you not to take our kindess for weakness. Now it is time you regret making this fatal mistake.",
 		"defeated": "Do you think you have won? Today perhaps but your tomorrow looks bleak",
 		"introduction": "Hello stranger! We come in peace, but should you mistake our kindess for weakness you will find out we can also come in war.",
-		"tradeRequest": "Heres an offer, Take it.",
+		"tradeRequest": "Heres an offer that may profit us both.",
 		"outerColor": [0,87,4],
 		"innerColor": [0, 212, 255],
 		"uniqueName": "Boundless Curiosity",
 		"uniques": [
-					"[+1 Science] from [Barren Planet] tiles [in all cities]"
-					"[+1 Science] from [Desert Planet] tiles [in all cities]"
-					"[+1 Science] from [Lush Planet] tiles [in all cities]"
+				//	"[+1 Science] from [Barren Planet] tiles [in all cities]"
+				//	"[+1 Science] from [Desert Planet] tiles [in all cities]"
+				//	"[+1 Science] from [Lush Planet] tiles [in all cities]"
+				"[+1 Science] from [Planet] tiles [in all cities]"
+				"[-75]% Gold cost of acquiring tiles [in all cities]"
 					],
-		"cities": ["Teal Prime", "Talluan", "Tassic", "Rettal", "Tallias", "Teallisto", "Pailinty", "Taelosyn"]
+		"cities": ["Earth 2", "Newmoon", "Redworld", "Veinly", "Little Mercury", "X", "Blueworld", "Skyless", "Rock", "EMC-775", "EMC-773", "EMC-778", "Wet World"]
+	},
+	
+	
+	{
+		"name": "Placeholder",
+		"leaderName": "Placeholder",
+		"preferredVictoryType": "Domination",
+
+		"startIntroPart1": "Sample text.",
+		"startIntroPart2": "Sample text.",
+		"declaringWar": "Placeholder",
+		"attacked": "Placeholder",
+		"defeated": "Placeholder",
+		"introduction": "Placeholder",
+		"tradeRequest": "Placeholder",
+		"outerColor": [0,0,4],
+		"innerColor": [0, 185, 120],
+		"uniqueName": "Boundless Placeholding",
+		"uniques": [],
+		"cities": ["Placeholder", "Place holder", "Place", "holder",]
 	},
 ]

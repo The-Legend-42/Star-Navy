@@ -41,6 +41,38 @@
 
 
 
+	//Artillery
+	{
+		"name": "Artillery Adjustments I",
+		"uniques": ["[+25]% Strength <when attacking>"],
+		"unitTypes": ["Space Artillery","Space Laser","Plasma Launcher"],
+        "column": 2,
+        "row": 1
+    },
+	{
+		"name": "Artillery Adjustments II",
+		"prerequisites": ["Artillery Adjustments I"],
+		"uniques": ["[+25]% Strength <when attacking>"],
+		"unitTypes": ["Space Artillery","Space Laser","Plasma Launcher"],
+        "column": 2,
+        "row": 2
+    },
+	{
+		"name": "Artillery Adjustments III",
+		"prerequisites": ["Artillery Adjustments II"],
+		"uniques": ["[+25]% Strength <when attacking>"],
+		"unitTypes": ["Space Artillery","Space Laser","Plasma Launcher"],
+        "column": 2,
+        "row": 3
+    },
 
+	//Other
+	
+	{
+		"name": "Harasser",
+		"uniques": ["[+10]% to Flank Attack bonuses","[+10]% Strength <vs [Wounded] units>"],
+    },
+	
+	
 
 ]

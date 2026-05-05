@@ -37,6 +37,14 @@
     }
 	{
         "name": "Light cruiser",
+		"uniques": [
+					"Warship"
+					"[+5]% Strength <vs [Rocket Ship] units> <when attacking>"
+					"[+5]% Strength <vs [Recon] units> <when attacking>"
+					"[+5]% Strength <vs [Corvette] units> <when attacking>"
+					"[+5]% Strength <vs [Frigate] units> <when attacking>"
+					"[+5]% Strength <vs [Destroyer] units> <when attacking>"
+					],
         "movementType": "Land"
     }
 	{
@@ -52,12 +60,29 @@
         "movementType": "Land"
     }
 	{
+        "name": "Heavy Cruiser",
+		"uniques": [
+					"Warship"
+					"[+22]% Strength <vs [Rocket Ship] units> <when attacking>"
+					"[+35]% Strength <vs [Recon] units> <when attacking>"
+					"[+52]% Strength <vs [Corvette] units> <when attacking>"
+					"[+42]% Strength <vs [Frigate] units> <when attacking>"
+					"[+27]% Strength <vs [Destroyer] units> <when attacking>"
+					],
+        "movementType": "Land"
+    }
+	{
         "name": "Space Artillery",
 		"uniques": ["Artillery"]
         "movementType": "Land"
     }
 	{
         "name": "Space Laser",
+		"uniques": ["Artillery"]
+        "movementType": "Land"
+    }
+	{
+        "name": "Plasma Launcher",
 		"uniques": ["Artillery"]
         "movementType": "Land"
     }

@@ -7,6 +7,38 @@
 	//	"greatPersonPoints": {"Great Scientist":3},
 		"color": [0,0,255]
 	},
+	{
+		"name":"Ecologist",
+		"science":2,
+		"food":1,
+	//	"greatPersonPoints": {"Great Scientist":3},
+		"color": [0,0,255]
+	},
+	{
+		"name":"Astronomer",
+		"science":2,
+		"happiness":1,
+	//	"greatPersonPoints": {"Great Scientist":3},
+		"color": [0,0,255]
+	},
+	{
+		"name":"Professor",
+		"science":2,
+		"culture":1,
+	//	"greatPersonPoints": {"Great Scientist":3},
+		"color": [0,0,255]
+	},
+	{
+		"name":"Lab Assistent",
+		"science":1,
+		"production":1,
+		"gold":1,
+	//	"greatPersonPoints": {"Great Scientist":3},
+		"color": [0,0,255]
+	},
+	
+	
+	
 	
 	
 	//Economic
