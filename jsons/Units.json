@@ -220,6 +220,7 @@
 		"requiredTech": "Basic Warships",
 		"obsoleteTech": "Vector Engines",
 		"upgradesTo": "Mobile Patrol Ship",
+		"uniques": ["Patrol Ship"],
 		"attackSound": "shot",
 	},
 	{
@@ -231,7 +232,7 @@
 		"requiredTech": "Vector Engines",
 		"obsoleteTech": "Fast Warships",
 		"upgradesTo": "Fast Patrol Ship",
-		"uniques": ["Can move after attacking"],
+		"uniques": ["Can move after attacking", "Patrol Ship"],
 		"attackSound": "shot"
 	},
 	{	//Not obsolete yet
@@ -242,7 +243,7 @@
 		"cost": 85,
 		"requiredTech": "Fast Warships",
 		"upgradesTo": "NEP Patrol Ship",
-		"uniques": ["Can move after attacking","[1] additional attacks per turn"],
+		"uniques": ["Can move after attacking","[1] additional attacks per turn", "Patrol Ship"],
 		"attackSound": "shot"
 	},
 	{
@@ -253,7 +254,7 @@
 		"cost": 85,
 		"requiredResource": "Uranium",
 		"requiredTech": "Nuclear Electric Propulsion",
-		"uniques": ["Can move after attacking","[1] additional attacks per turn"],
+		"uniques": ["Can move after attacking","[1] additional attacks per turn", "Patrol Ship"],
 		"promotions": ["Harasser"],			
 		"attackSound": "shot"
 	},

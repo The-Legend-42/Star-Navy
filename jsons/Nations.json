@@ -190,4 +190,57 @@
 		"uniques": [],
 		"cities": ["Placeholder", "Place holder", "Place", "holder",]
 	},
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	//Minor Factions
+	{
+		"name": "Orgol",
+		"adjective": ["Orgolian"],
+		"cityStateType": "Orgolic",
+
+		"declaringWar": "You leave us no choice. We must wage war against you.",
+		"attacked": "Very well, this shall be your end.",
+		"defeated": "Our time has come, you are next",
+		"outerColor": [0, 0, 0],
+		"innerColor": [127, 177, 236],
+		"uniqueName": "Orgolian Orgalic Orgalism",
+		"uniques": [
+				"[+5 Science] [in capital] <when not at war>",
+					],
+		"cities": ["Orgol"]
+	},
+	{
+		"name": "Orgellin",
+		"adjective": ["Orgellise"],
+		"cityStateType": "Orgolic",
+
+		"declaringWar": "You leave us little choice. We must wage war against you.",
+		"attacked": "Very well, your end nears.",
+		"defeated": "Our time has come, you will be next",
+		"outerColor": [0, 0, 0],
+		"innerColor": [236, 177, 127],
+		"uniqueName": "Orgellise Warfront",
+		"uniques": [
+					"[+100]% Production when constructing [Warship] units [in capital] <when at war>",
+					],
+		"cities": ["Orgellin"]
+	},
+	
+	
+	
+	
+	
+	
+
 ]

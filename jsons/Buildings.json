@@ -227,6 +227,58 @@
 		"requiredBuilding": "Laboratory",
 		"requiredTech": "Scientific Specialists",
 	},
+	{ 
+		"name": "Engineering Collage",
+		"specialistSlots": {"Professor": 1, "Engineer": 1,"Mathematician": 1,"Architect": 1, "Chemist": 1,},
+		"percentStatBonus": {"Production": 10, "Culture": 5},
+		"production": 3,
+		"culture": 1,
+		"maintenance": 2,
+		"uniques": [
+					"Destroyed when the city is captured",
+					"[+1 Production] per [10] population [in this city]",
+					"Cost increases by [10] per owned city",
+					],
+		"requiredBuilding": "Photonic Computer",
+		"requiredTech": "Engineering Specialists",
+	},
+	
+	{ 
+		"name": "Math Hall",
+		"specialistSlots": {"Economist": 2,"Mathematician": 2,},
+		"culture": 2,
+		"maintenance": 1,
+		"requiredBuilding": "Servers",
+		"requiredTech": "Engineering Specialists",
+	},
+	{ 
+		"name": "Xenolab",
+		"specialistSlots": {"Astronomer": 2,"Ecologist": 2,"Scientist": 1,"Lab Assistent": 1,},
+		"science": 3,
+		"food": 2,
+		"maintenance": 2,
+		"requiredNearbyImprovedResources": ["Zobbzob Bug","Xeno Animals","Space Whale","Letto Grass","Ancient Wood",],
+		"uniques": [
+					"Destroyed when the city is captured"
+					"Only available <if [Space Telescope] is constructed>",
+					"Only available <if [Laboratory] is constructed>",
+					"Only available <if [Servers] is constructed>",
+					"Only available <if [Greenhouse] is constructed>",
+					],
+		"requiredTech": "Xenolabs",
+	},
+	{ 
+		"name": "Automated Patrol Ship Factory",
+		"percentStatBonus": {"production": 5},
+		"production": 5,
+		"maintenance": 3,
+		"requiredResource": "Silicon",
+		"uniques": [
+					"Destroyed when the city is captured"
+					"[+25]% Production when constructing [Patrol Ship] units [in this city]",
+					],
+		"requiredTech": "Automated Patrol Ship Factories",
+	},
 	
 	
 	
@@ -243,6 +295,15 @@
 	
 	
 	
+	//National Wonders
+	{
+		"name": "Super Cenima",
+		"happiness": 5,
+		"culture": 1,
+		"isNationalWonder": true,
+		"uniques": ["Only available <if [Cinema] is constructed in all [non-[Puppeted]] cities>", "Cost increases by [30] per owned city"],
+		"requiredTech": "The Super Cenima"
+	},
 	
 	
 	
@@ -268,5 +329,22 @@
 					"[+1 Gold] from [Xeno Animals] tiles [in this city]",
 					],
 		"requiredTech": "Zoos",
+	},
+	{ 
+		"name": "Great Patrol Ship Factory",
+		"cityStrength": 3,
+		"cityHealth": 35,
+		"production": 4,
+		"gold": 2,
+		"isWonder": true,
+		"uniques": [
+					"[+25]% Production when constructing [Patrol Ship] units [in this city]",
+					"[1] free [Fast Patrol Ship] units appear",
+					"[+1 Production] from [Iron] tiles [in this city]",
+					"[+1 Production] from [Silicon] tiles [in this city]",
+					"[+1 Production] from [Uranium] tiles [in this city]",
+					"[+1 Production] from [Gold Ore] tiles [in this city]",
+					],
+		"requiredTech": "Automated Patrol Ship Factories",
 	},
 ]

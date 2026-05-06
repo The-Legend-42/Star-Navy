@@ -154,5 +154,20 @@
 					"Generated with weight [1] <in [Fertile Sands] tiles>", //Super rare
 					],
 	},	
+	{
+		"name": "Salt",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Asteroid Field","Barren Planet","Desert Planet",],
+		"gold": 2,
+		"happiness": 1,
+		"improvementStats": {"Food": 2, "Happiness": 1},
+		"improvedBy": ["Asteroid Mine", "Planitary Mine"],
+		"uniques": [
+					"Generated with weight [12] <in [Barren Planet] tiles>",
+					"Generated with weight [6] <in [Desert Planet] tiles>",		
+					"Generated with weight [8] <in [Asteroid Field] tiles>",
+					"Doesn't generate naturally <in [Desert Planet] tiles> <in [Fertile Sands] tiles>"
+					"Doesn't generate naturally <in [Barren Planet] tiles> <in [Frost] tiles>"]
+	},
 
 ]

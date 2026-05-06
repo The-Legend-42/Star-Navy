@@ -327,9 +327,8 @@
 				"row": 5,
 				"prerequisites": ["Zoos",],
                 "uniques": ["[+1 Food] [in capital]", "[1] free [Deployable Space Station] units appear", "[+50]% weight to this choice for AI decisions",]				
-			//	"quote": "'Sometimes people just wanna see something exotic and strange!' - Spaceman"
+				"quote": "'Sometimes people just wanna see something exotic and strange!' - Spaceman"
 			},	
-			
 			//New Cruiser, Light Cruiser, and the first Heavy Cruiser is added. Battle Cruiser will be added later
 			{	
 				"name": "Heavy Cruisers",
@@ -344,7 +343,7 @@
 				"prerequisites": ["Introductory Starforts"],	
 				"uniques": ["[+125]% weight to this choice for AI decisions", 
 							"Enables establishment of embassies", 
-							// "Gain an extra spy <when espionage is enabled> "
+							"Gain an extra spy <for [Major] Civilizations> <when espionage is enabled> "
 							"[1] free [Deployable Starfort] units appear", "[1] free [Deployable Space Station] units appear"],
 				"quote": "'The birth of Diplomacy starts with a recognition and a humble embassy' - Diplomat & Spymaster Twins"
 			},
@@ -353,8 +352,54 @@
 				"name": "Nuclear Electric Propulsion",
 				"row": 8,
 				"prerequisites": ["Introductory Starforts", "Reusable Workships"],	
-			//	"quote": "'Lets make stucures in the great void aroud us' - Spaceman"
+				"quote": "'Nuclear Electric Propulsion... Such an effiecnt way to proppel a spacecraft' - Spaceman"
 			},				
+		]
+	},
+	{
+		"columnNumber": 9,
+		"era": "Deep Space",
+		"techCost": 145,
+		"buildingCost": 135,
+		"wonderCost": 320,
+		"techs": [
+			{
+			//More Specialists 
+				"name": "Engineering Specialists",
+				"row": 4,
+				"prerequisites": ["Scientific Specialists",],
+				"quote": "'Ever since we left the caves Engineers such as I were required to maintain the modern lifestyle of each and every era' - Engineer"
+			},
+			{
+			//Building
+				"name": "Xenolabs",
+				"row": 5,
+				"prerequisites": ["Fertilizers","Scientific Specialists",],		
+				"quote": "'To study alien life. Plants, Animals, Bacteria, and anything inbetween.' - Spaceman"
+			},	
+
+			//Wonder + Building
+			{	
+				"name": "Automated Patrol Ship Factories",
+				"row": 6,
+				"prerequisites": ["Heavy Cruisers"],	
+                "uniques": ["[+10]% weight to this choice for AI decisions",]
+				"quote": "'Its faster to build in bulk,' - Engineer"
+			},		
+			{	//Food boost for space farming
+				"name": "Artificial Lighting",
+				"row": 7,
+				"prerequisites": ["Diplomacy and Subterfuge","Nuclear Electric Propulsion"],	
+				"uniques": ["[+10]% weight to this choice for AI decisions","[+1 Food] from [Space Farm] tiles [in all cities]"],
+				"quote": "'Food Food Food! Yumm Yumm Yumm! Light my home light my plant!' - Space Bozo"
+			},
+			{
+			//National Wonder
+				"name": "The Super Cenima",
+				"row": 8,
+				"prerequisites": ["Nuclear Electric Propulsion"],	
+				"quote": "'A bored socieoty is one that lacks creativity' - Philosopher"
+			},
 		]
 	},
 ]

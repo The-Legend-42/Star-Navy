@@ -130,6 +130,25 @@
 			"Considered [Desirable] when determining start locations"]
 	},
 	
+	{
+		"name": "Frost",
+		"type": "TerrainFeature",
+		"overrideStats": true,
+		"unbuildable": true,
+		"food": 1,
+		"production": 1,
+	//	"movementCost": 1,
+		"defenceBonus": 0.7,
+		"occursOn": ["Barren Planet"],
+		"uniques": [
+			"Always Fertility [1] for Map Generation",
+			"Rare feature"
+		    "Fresh water",
+			"Considered [Food] when determining start locations",
+			"Considered [Production] when determining start locations",
+			"Considered [Desirable] when determining start locations"]
+	},
+	
 	//Iron+Asteroid Mine
 	//Iron+Asteroid Mine
 	

@@ -1,0 +1,22 @@
+[
+
+   {
+    "name": "Conquer lesser power",
+    "description": "It's time to erase the lesser power of [cityState] from the map. You will be greatly rewarded for conquering them!",
+    "influence": 75,
+      "weightForCityStateType": {
+          "Hostile": 2,
+          "Friendly": 0.2,
+          "Orgolic": 1
+      }
+  },
+  {
+    "name": "Pledge to Defend",
+    "description": "We need your protection to stop the aggressions of [civName]. By ledging to Defend us you'll earn our loyalty and freindship.",
+    "influence": 25,
+    "duration": 33,
+      "weightForCityStateType": {
+          "Orgolic": 3.5,
+      }
+  },
+]
