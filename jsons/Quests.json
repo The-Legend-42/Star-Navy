@@ -8,6 +8,7 @@
           "Hostile": 2,
           "Friendly": 0.2,
           "Orgolic": 1
+		  "Errin": 0.3
       }
   },
   {
@@ -17,6 +18,23 @@
     "duration": 33,
       "weightForCityStateType": {
           "Orgolic": 3.5,
+		  "Errin": 1.5,
+      }
+  },
+  {
+    "name": "Construct Wonder",
+    "description": "We belive you to should start building [wonder] to show the whole world the strength of your civilization .",
+      "weightForCityStateType": {
+          "Orgolic": 0.1,
+		  "Errin": 1.5,
+      }
+  },
+    {
+    "name": "Errin War",
+    "description": "We are sick of the wickidness and the evil coming from [cityState]. Destroy them for us and Earn our greatest appreciation!",
+    "influence": 100,
+      "weightForCityStateType": {
+		  "Errin": 0.5
       }
   },
 ]

@@ -72,4 +72,15 @@
         ],
         "color": [127, 177, 236]
     },
+	{
+        "name": "Errin",
+        "friendBonusUniques": [
+			"[+1 Production] [in capital]",	
+        ],
+        "allyBonusUniques": [
+			"[+2 Production] [in capital]",	
+			"Provides military units every ≈[25] turns"
+        ],
+        "color": [136, 22, 24]
+    },
 ]

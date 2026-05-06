@@ -148,6 +148,56 @@
 			"Considered [Production] when determining start locations",
 			"Considered [Desirable] when determining start locations"]
 	},
+	{
+		"name": "Snowy",
+		"type": "TerrainFeature",
+		"food": -1,
+		"production": 1,
+	//	"movementCost": 1,
+		"occursOn": ["Lush Planet"],
+		"uniques": [
+		//	"Occurs at temperature between [-1] and [-0.8] and humidity between [0] and [1]"
+			"Always Fertility [-1] for Map Generation",
+			"Rare feature"
+		    "Fresh water",]
+	},	
+	{
+		"name": "Islands",
+		"type": "TerrainFeature",
+		"culture": 1,
+		"gold": 1,
+	//	"movementCost": 1,
+		"occursOn": ["Lush Planet"],
+		"uniques": [
+			"Always Fertility [1] for Map Generation",
+			"Rare feature"
+		    "Fresh water",]
+	},
+	{
+		"name": "Earth-Like",
+		"type": "TerrainFeature",
+		"happiness": 2,
+		"production": 1,		
+	//	"movementCost": 1,
+		"occursOn": ["Lush Planet"],
+		"uniques": [
+			"Always Fertility [1] for Map Generation",
+			"Rare feature"
+		    "Fresh water",]
+	},
+	{
+		"name": "Water-World",
+		"type": "TerrainFeature",
+		"production": -1,	
+		"gold": 2,
+	//	"movementCost": 1,
+		"occursOn": ["Lush Planet"],
+		"uniques": [
+		//	"Always Fertility [-1] for Map Generation",
+			"Rare feature"
+		    "Fresh water",]
+	},
+	
 	
 	//Iron+Asteroid Mine
 	//Iron+Asteroid Mine

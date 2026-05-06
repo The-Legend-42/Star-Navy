@@ -218,7 +218,7 @@
 		"uniques": [
 				"[+5 Science] [in capital] <when not at war>",
 					],
-		"cities": ["Orgol"]
+		"cities": ["Orgol", "Anti-Orgol"]
 	},
 	{
 		"name": "Orgellin",
@@ -234,9 +234,26 @@
 		"uniques": [
 					"[+100]% Production when constructing [Warship] units [in capital] <when at war>",
 					],
-		"cities": ["Orgellin"]
+		"cities": ["Orgellin","Anti-Orgellin"]
 	},
-	
+	{
+		"name": "Errin",
+		"adjective": ["Errin"],
+		"cityStateType": "Errin",
+
+		"declaringWar": "Enough is enough, It is time we stop your evil!",
+		"attacked": "You wicked fools! Your doom is neigh!",
+		"defeated": "We have fallen to the wicked ones, such a tragedy.",
+		"outerColor": [0, 0, 0],
+		"innerColor": [136, 22, 24],
+		"uniqueName": "The Errin way",
+		"uniques": [
+					"[+1 Food] [in capital]"
+					"[+10]% XP gained from combat"
+					"[+10]% City Strength from defensive buildings"
+					],
+		"cities": ["Errin Prime", "Little Errin"]
+	},	
 	
 	
 	
