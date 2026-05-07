@@ -4,6 +4,90 @@ size: 2048, 2048
 format: RGBA8888
 filter: MipMapLinearLinear, MipMapLinearLinear
 repeat: none
+Moons/Cold-Moon
+  rotate: false
+  xy: 1980, 1856
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+Moons/Cold-Moon BLOCK
+  rotate: false
+  xy: 4, 4
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+Moons/Complex-Moon
+  rotate: false
+  xy: 1148, 1044
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+Moons/Exotic-Moon
+  rotate: false
+  xy: 1564, 1460
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+Moons/Islands+Moon
+  rotate: false
+  xy: 220, 4
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+Moons/Magma-Moon
+  rotate: false
+  xy: 1464, 1296
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+Moons/Moon
+  rotate: false
+  xy: 328, 48
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+Moons/Rocky-Moon
+  rotate: false
+  xy: 472, 104
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+Moons/Sandy-Moon
+  rotate: false
+  xy: 1356, 1188
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+Moons/Strange-Moon
+  rotate: false
+  xy: 1328, 1124
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+Moons/Tectonic-Moon
+  rotate: false
+  xy: 1744, 1540
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+Moons/Water-Moon
+  rotate: false
+  xy: 1220, 1024
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
 NationIcons/Adelle Corp
   rotate: false
   xy: 4, 68
@@ -90,14 +174,14 @@ TechIcons/Fertilizers
   index: -1
 TileSets/HexaRealm/Lush Planet
   rotate: false
-  xy: 1564, 1460
+  xy: 1256, 1088
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Lush Planet
   rotate: false
-  xy: 1564, 1460
+  xy: 1256, 1088
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
@@ -123,128 +207,212 @@ TileSets/HexaRealm/Tiles/Barren Planet
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Desert Planet
-  rotate: false
-  xy: 1980, 1856
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Earth-Like
+TileSets/HexaRealm/Tiles/Cold-Moon
   rotate: false
   xy: 1980, 1792
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Fertile Sands
-  rotate: false
-  xy: 4, 4
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Frost
-  rotate: false
-  xy: 1148, 1044
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Ice+Asteroid Field
+TileSets/HexaRealm/Tiles/Complex-Moon
   rotate: false
   xy: 1256, 1152
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Space Ice+Asteroid Field
-  rotate: false
-  xy: 1256, 1152
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Iron+Asteroid Field
+TileSets/HexaRealm/Tiles/Desert Planet
   rotate: false
   xy: 1356, 1252
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Iron+Asteroid Mine
-  rotate: false
-  xy: 1356, 1252
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Islands
+TileSets/HexaRealm/Tiles/Earth-Like
   rotate: false
   xy: 1464, 1360
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Salt+Barren Planet
+TileSets/HexaRealm/Tiles/Exotic-Moon
   rotate: false
   xy: 1672, 1568
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Salt+Barren-Planet
-  rotate: false
-  xy: 1672, 1568
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Salt+Desert Planet
+TileSets/HexaRealm/Tiles/Fertile Sands
   rotate: false
   xy: 1772, 1668
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Salt+Desert-Planet
-  rotate: false
-  xy: 1772, 1668
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Snowy
+TileSets/HexaRealm/Tiles/Frost
   rotate: false
   xy: 328, 112
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Space Ice
+TileSets/HexaRealm/Tiles/Ice+Asteroid Field
   rotate: false
   xy: 1880, 1776
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Template
+TileSets/HexaRealm/Tiles/Space Ice+Asteroid Field
+  rotate: false
+  xy: 1880, 1776
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Iron+Asteroid Field
   rotate: false
   xy: 76, 4
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Void
+TileSets/HexaRealm/Tiles/Iron+Asteroid Mine
+  rotate: false
+  xy: 76, 4
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Islands
   rotate: false
   xy: 148, 4
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
+TileSets/HexaRealm/Tiles/Magma-Moon
+  rotate: false
+  xy: 1672, 1504
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Moon
+  rotate: false
+  xy: 400, 104
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Standard-Moon
+  rotate: false
+  xy: 400, 104
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rocky-Moon
+  rotate: false
+  xy: 544, 104
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Salt+Barren Planet
+  rotate: false
+  xy: 1880, 1712
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Salt+Barren-Planet
+  rotate: false
+  xy: 1880, 1712
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Salt+Desert Planet
+  rotate: false
+  xy: 1148, 980
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Salt+Desert-Planet
+  rotate: false
+  xy: 1148, 980
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Sandy-Moon
+  rotate: false
+  xy: 1564, 1396
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Snowy
+  rotate: false
+  xy: 1772, 1604
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Space Ice
+  rotate: false
+  xy: 1952, 1728
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Strange-Moon
+  rotate: false
+  xy: 1536, 1332
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Tectonic-Moon
+  rotate: false
+  xy: 1328, 1060
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Template
+  rotate: false
+  xy: 1536, 1268
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Tester Boi
+  rotate: false
+  xy: 1744, 1476
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Void
+  rotate: false
+  xy: 1844, 1648
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Water-Moon
+  rotate: false
+  xy: 1220, 960
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
 TileSets/HexaRealm/Tiles/Water-World
   rotate: false
-  xy: 220, 4
+  xy: 1428, 1232
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
