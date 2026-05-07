@@ -77,6 +77,26 @@
 	
 	/*
 	{
+		"name": "Moon",
+		"type": "Land",
+		"movementCost": 3,
+		"production": 1,
+		"defenceBonus": 0.55,
+        "RGB": [120, 120, 120],
+        "uniques": ["Moon"
+					"Rough terrain"
+					"Must be adjacent to [1] to [3] [Planet] tiles"
+					"Occurs in groups of [1] to [2] tiles"
+					"Has an elevation of [1] for visibility calculations",
+					"Blocks line-of-sight from tiles at same elevation",
+					"Always Fertility [0] for Map Generation",
+					"[1] Strength for cities built on this terrain"
+					"Considered [Desirable] when determining start locations",
+		],
+    }
+	*/
+	/*
+	{
 		"name": "Mountain",
 		"type": "Land",
 		"impassable": true,
@@ -116,7 +136,11 @@
 		]
 	},
 	
-		{
+	
+	
+	
+	//Planets
+	{
 		"name": "Fertile Sands",
 		"type": "TerrainFeature",
 		"food": 2,
@@ -205,15 +229,185 @@
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	//Moons
+	/*
+	{
+		"name": "Moon",
+		"type": "TerrainFeature",
+		"defenceBonus": 0.1,
+		"production": 1,	
+	//	"movementCost": 1,
+		"occursOn": ["Earth-Like","Desert Planet"],
+		"uniques": [
+			"Moons"
+			"Always Fertility [-1] for Map Generation",
+			"Rare feature",
+			],
+	},
+	*/	
+	{
+		"name": "Standard-Moon",
+		"type": "TerrainFeature",
+	//	"defenceBonus": 0.1, //Removed due to clashing with the planets bonus
+		"production": 1,	
+	//	"movementCost": 1,
+		"occursOn": ["Earth-Like","Desert Planet","Lush Planet",], //,"Desert Planet","Lush Planet",
+		"uniques": [
+			//"Moons"
+			"Moon"
+			"Considered [Production] when determining start locations", //Failed Temporary Fix
+			"Always Fertility [-1] for Map Generation",
+			"Rare feature",	//Only way to get it to spawn for some reason
+			//"Occurs on latitudes from [10] to [10] percent of distance equator to pole"
+			/*			
+			"Occurs at temperature between [-1] and [-0.9] and humidity between [0] and [1]",
+            "Occurs at temperature between [-0.9] and [-0.8] and humidity between [0] and [0.8]",
+            "Occurs at temperature between [-0.8] and [-0.7] and humidity between [0] and [0.6]",
+            "Occurs at temperature between [-0.7] and [-0.6] and humidity between [0] and [0.4]",
+            "Occurs at temperature between [-0.6] and [-0.5] and humidity between [0] and [0.2]",
+			*/
+			],
+	},
+	{
+		"name": "Water-Moon",
+		"type": "TerrainFeature",
+	//	"defenceBonus": 0.25,  //Removed due to clashing with the planets bonus
+		"food": 1,	
+	//	"movementCost": 1,
+		"occursOn": ["Earth-Like","Water-World","Islands","Lush Planet",],
+		"uniques": [
+			"Moon"
+			"Considered [Food] when determining start locations",
+			"Always Fertility [+1] for Map Generation",
+			"Rare feature",	//Only way to get it to spawn for some reason
+			],
+	},	
+	{
+		"name": "Cold-Moon",
+		"type": "TerrainFeature",
+	//	"defenceBonus": 0.2,  //Removed due to clashing with the planets bonus
+		"production": 1,		
+	//	"movementCost": 1,
+		"occursOn": ["Frost","Earth-Like","Snowy","Lush Planet","Barren Planet","Islands"],
+		"uniques": [
+			"Moon"
+			"Considered [Production] when determining start locations",
+			"Always Fertility [-1] for Map Generation",
+			"Rare feature",	//Only way to get it to spawn for some reason
+			],
+	},	
+	{
+		"name": "Complex-Moon",
+		"type": "TerrainFeature",
+	//	"defenceBonus": 0.15,  //Removed due to clashing with the planets bonus
+		"happiness": 1,		
+	//	"movementCost": 1,
+		"occursOn": ["Earth-Like","Snowy","Lush Planet","Barren Planet","Desert Planet", "Fertile Sands", "Islands", "Water-World"],
+		"uniques": [
+			"Moon" 
+			"Vegetation"
+			"Always Fertility [+2] for Map Generation",
+			"Rare feature",	//Only way to get it to spawn for some reason
+			],
+	},
+
+
+
+
+
+
+	//Locational Moons
+	{
+		"name": "Sandy-Moon",
+		"type": "TerrainFeature",
+		"gold": 1,		
+	//	"movementCost": 1,
+		"occursOn": ["Desert Planet", "Fertile Sands","Earth-Like","Barren Planet","Frost","Islands", "Water-World"],
+		"uniques": [
+			"Moon" 
+			"Vegetation"
+			"Always Fertility [-1] for Map Generation",
+			"Rare feature",	//Only way to get it to spawn for some reason
+			"Occurs on latitudes from [5] to [15] percent of distance equator to pole"
+			"Occurs on latitudes from [35] to [65] percent of distance equator to pole"
+			"Occurs on latitudes from [85] to [95] percent of distance equator to pole"
+			],
+	},
+	{
+		"name": "Magma-Moon",
+		"type": "TerrainFeature",
+		"production": 1,		
+	//	"movementCost": 1,
+		"occursOn": ["Desert Planet", "Fertile Sands","Barren Planet","Frost",],
+		"uniques": [
+			"Moon" 
+			"Always Fertility [-2] for Map Generation",
+			"Rare feature",	//Only way to get it to spawn for some reason
+			"Occurs on latitudes from [10] to [10] percent of distance equator to pole"
+			"Occurs on latitudes from [30] to [50] percent of distance equator to pole"
+			],
+	},
+	{
+		"name": "Rocky-Moon",
+		"type": "TerrainFeature",
+		"production": 1,		
+	//	"movementCost": 1,
+		"occursOn": ["Desert Planet", "Fertile Sands","Barren Planet","Frost","Lush Planet","Earth-Like","Snowy"],
+		"uniques": [
+			"Moon" 
+			"Always Fertility [-1] for Map Generation",
+			"Rare feature",	//Only way to get it to spawn for some reason
+			"Occurs on latitudes from [10] to [10] percent of distance equator to pole"
+			"Occurs on latitudes from [50] to [80] percent of distance equator to pole"
+			],
+	},
+	{
+		"name": "Tectonic-Moon",
+		"type": "TerrainFeature",
+		"science": 1,		
+	//	"movementCost": 1,
+		"occursOn": ["Desert Planet", "Fertile Sands","Barren Planet","Frost","Lush Planet","Earth-Like","Snowy","Islands"],
+		"uniques": [
+			"Moon" 
+			"Always Fertility [-1] for Map Generation",
+			"Rare feature",	//Only way to get it to spawn for some reason
+			"Occurs on latitudes from [10] to [10] percent of distance equator to pole"
+			"Occurs on latitudes from [15] to [75] percent of distance equator to pole"
+			],
+	},
+	{
+		"name": "Strange-Moon",
+		"type": "TerrainFeature",
+		"culture": 1,		
+	//	"movementCost": 1,
+		"occursOn": ["Desert Planet", "Fertile Sands","Barren Planet","Frost","Lush Planet","Earth-Like","Snowy","Water-World","Islands"],
+		"uniques": [
+			"Moon" 
+			"Vegetation"
+		//	"Always Fertility [-1] for Map Generation",
+			"Rare feature",	//Only way to get it to spawn for some reason
+			"Occurs on latitudes from [10] to [10] percent of distance equator to pole"
+			"Occurs on latitudes from [65] to [89] percent of distance equator to pole"
+			],
+	},
+
+	{
+		"name": "Exotic-Moon",
+		"type": "TerrainFeature",
+		"culture": 1,		
+	//	"movementCost": 1,
+		"occursOn": ["Desert Planet", "Fertile Sands","Barren Planet",],
+		"uniques": [
+			"Moon" 
+			"Vegetation"
+			//"Always Fertility [-1] for Map Generation",
+			"Rare feature",	//Only way to get it to spawn for some reason
+			"Occurs on latitudes from [10] to [90] percent of distance equator to pole"
+			],
+	},
+
+
+
 	
 	
 ]
