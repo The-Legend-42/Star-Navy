@@ -74,6 +74,20 @@
 		"requiredTech": "Planetary Minning",
     },
 	{
+        "name": "Amphibious Planetary Workship",
+        "unitType": "Civilian",
+        "movement": 3,
+	//	"cost": 200,
+		"cost": 150,
+        "uniques": [
+					"Automation is a primary action"
+					"Can instantly construct a [Planitary Mine] <for [3] movement> <[3] times> <after which this unit is consumed>",
+					"Can build [Farm] improvements on tiles <for [3] movement> <[3] times> <after which this unit is consumed>"
+					"Can instantly construct a [Fishery] <for [3] movement> <[3] times> <after which this unit is consumed>",					
+					],
+		"requiredTech": "Water Works",
+    },
+	{
         "name": "Deployable Space Station",
         "unitType": "Civilian",
         "movement": 1,
@@ -130,6 +144,15 @@
 		"requiredResource": "Uranium",
 		"requiredTech": "Nuclear Electric Propulsion",
 		"uniques": ["[-1] Sight"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Repair Ship",
+		"unitType": "Repair Ship",
+		"movement": 2,
+		"strength": 20,
+		"cost": 100,
+		"requiredTech": "Repair Ships",
 		"attackSound": "shot"
 	},
 	{
@@ -199,6 +222,19 @@
 		"upgradesTo": "Simple Plasma Launcher",
 		"attackSound": "shot"	//Will change
 	},
+	//New line
+	{
+		"name": "Wideplate Spaceborn Laser",
+		"unitType": "Space Laser",
+		"movement": 1,
+		"strength": 8,
+        "range": 2,
+		"rangedStrength": 65,
+		"cost": 128,
+		"requiredResource": "Iron",
+		"requiredTech": "Plasma Works",
+		"attackSound": "shot"	//Will change
+	},
 	{ //Sucessor to both the Railguns and the Lasers
 		"name": "Simple Plasma Launcher",
 		"unitType": "Plasma Launcher",
@@ -208,6 +244,20 @@
 		"rangedStrength": 45,
 		"cost": 150,
 		"requiredTech": "Long Range Aiming Systems",
+		"obsoleteTech": "Plasma Works",
+		"upgradesTo": "Plasma Launcher",
+		"uniques": ["Can move after attacking"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Plasma Launcher",
+		"unitType": "Plasma Launcher",
+		"movement": 2,
+		"strength": 12,
+        "range": 3,
+		"rangedStrength": 55,
+		"cost": 185,
+		"requiredTech": "Plasma Works",
 		"uniques": ["Can move after attacking"],
 		"attackSound": "shot"
 	},
@@ -391,7 +441,19 @@
 		"strength": 55,
 		"cost": 235,
 		"requiredTech": "Heavy Cruisers",
+		"obsoleteTech": "Smaller Cruisers",
+		"upgradesTo": "Smaller Light Cruiser",	
 		"uniques": ["[+25]% Strength <vs cities>", "Consumes [2] [Iron]", "Requires at least [3] population"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Smaller Light Cruiser",
+		"unitType": "Light cruiser",
+		"movement": 3,
+		"strength": 55,
+		"cost": 200,
+		"requiredTech": "Smaller Cruisers",
+		"uniques": ["[+25]% Strength <vs cities>", "Consumes [1] [Iron]", "Requires at least [3] population"],
 		"attackSound": "shot"
 	},
 	{
@@ -413,7 +475,19 @@
 		"strength": 67,
 		"cost": 265,
 		"requiredTech": "Heavy Cruisers",
+		"obsoleteTech": "Smaller Cruisers",
+		"upgradesTo": "Smaller Cruiser",
 		"uniques": ["[+25]% Strength <vs cities>", "Consumes [3] [Iron]", "Requires at least [5] population"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Smaller Cruiser",
+		"unitType": "Cruiser",
+		"movement": 2,
+		"strength": 67,
+		"cost": 225,
+		"requiredTech": "Smaller Cruisers",
+		"uniques": ["[+25]% Strength <vs cities>", "Consumes [2] [Iron]", "Requires at least [5] population"],
 		"attackSound": "shot"
 	},
 	{ //Bulkier than the crusier
@@ -424,7 +498,39 @@
 		"cost": 289,
 		"requiredResource": "Silicon",
 		"requiredTech": "Heavy Cruisers",
+		"obsoleteTech": "Battle Cruisers",
+		"upgradesTo": "Bulky Heavy Cruiser",
 		"uniques": ["[+25]% Strength <vs cities>", "Consumes [3] [Iron]", "Requires at least [6] population"],
 		"attackSound": "shot"
 	},
+	{
+		"name": "Bulky Heavy Cruiser",
+		"unitType": "Heavy Cruiser",
+		"movement": 2,
+		"strength": 87,
+		"cost": 300,
+		"requiredResource": "Silicon",
+		"requiredTech": "Battle Cruisers",
+		"uniques": ["[+25]% Strength <vs cities>", "[+10]% Strength <when defending>", "Consumes [3] [Iron]", "Requires at least [6] population"],
+		"attackSound": "shot"
+	},
+	//Bulkier than a Heavy crusier
+	{ 
+		"name": "Primitive Battle Cruiser",
+		"unitType": "Battle Cruiser",
+		"movement": 1,
+		"strength": 100,
+		"cost": 335,
+		"requiredResource": "Uranium",
+		"requiredTech": "Battle Cruisers",
+		"uniques": ["[+33]% Strength <vs cities>", "Consumes [3] [Iron]", "Requires at least [7] population"],
+		"attackSound": "shot"
+	},
+	
+	
+	
+	
+	
+	
+	
 ]

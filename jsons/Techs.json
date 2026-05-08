@@ -402,6 +402,58 @@
 			},
 		]
 	},
+	{
+		"columnNumber": 10,
+		"era": "Plasma Era",
+		"techCost": 205,
+		"buildingCost": 165,
+		"wonderCost": 400,
+		"techs": [
+				{
+			//Repair Ships Added 
+				"name": "Repair Ships",
+				"row": 3,
+				"prerequisites": ["Engineering Specialists",],
+				"quote": "'Fix the stars' - Engineer"
+			},	
+			{
+			//New Building + Plasma Launcher (Helium Using) + Laser (Iron Using)
+				"name": "Plasma Works",
+				"row": 4,
+				"prerequisites": ["Engineering Specialists",],
+				"quote": "'Birth of a new Era' - Spaceman"
+			},
+			{
+			//Moon Buildings + Military Improvement with Sight 3 
+				"name": "Early Warning",
+				"row": 5,
+				"prerequisites": ["Xenolabs","Engineering Specialists",],		
+				"quote": "'To beat your enemy you must see your enemy' - Spaceman"
+			},	
+
+			//Adds a Battle Cruiser and a new Heavy Cruiser
+			{	
+				"name": "Battle Cruisers",
+				"row": 6,
+				"prerequisites": ["Xenolabs", "Automated Patrol Ship Factories", "Artificial Lighting"],
+				"quote": "'Bigger Cruisers, Better Cruisers,' - Engineer"
+			},		
+			{	//New light Cruiser new Cruiser
+				"name": "Smaller Cruisers",
+				"row": 7,
+				"prerequisites": ["Automated Patrol Ship Factories","Artificial Lighting"],	
+				"quote": "'It takes great skill to make something smaller while remaining just as effective!' - Engineer"
+			},
+			{
+			//Allows a new improvment on water planets and also allows a Holodeck Building
+				"name": "Water Works",
+				"row": 8,
+				"uniques": ["[1] free [Amphibious Planetary Workship] units appear",],
+				"prerequisites": ["Artificial Lighting","The Super Cenima"],
+				"quote": "'Improving the sea' - Spaceman"
+			},
+		]
+	},
 ]
 
 

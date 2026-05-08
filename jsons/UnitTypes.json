@@ -10,31 +10,41 @@
     }
 	
 	
+	
+	
+	
 	//Military
     {
         "name": "Rocket Ship",
         "movementType": "Land"
-    }
+    },
+	
+	//Warship
+	{
+        "name": "Repair Ship",
+		"uniques": ["All adjacent units heal [+5] HP when healing"]
+        "movementType": "Land"
+    },
 	{
         "name": "Recon",
 		"uniques": ["[+2] Sight", "Warship"]
         "movementType": "Land"
-    }
+    },
 	{
         "name": "Corvette",
 		"uniques": ["Can move after attacking", "Warship"]
         "movementType": "Land"
-    }
+    },
 	{
         "name": "Frigate",
 		"uniques": ["[+1] Sight", "Can move after attacking", "Warship"]
         "movementType": "Land"
-    }
+    },
 	{
         "name": "Destroyer",
 		"uniques": ["[+1] Sight", "Warship"]
         "movementType": "Land"
-    }
+    },
 	{
         "name": "Light cruiser",
 		"uniques": [
@@ -46,7 +56,7 @@
 					"[+5]% Strength <vs [Destroyer] units> <when attacking>"
 					],
         "movementType": "Land"
-    }
+    },
 	{
         "name": "Cruiser",
 		"uniques": [
@@ -58,7 +68,7 @@
 					"[+25]% Strength <vs [Destroyer] units> <when attacking>"
 					],
         "movementType": "Land"
-    }
+    },
 	{
         "name": "Heavy Cruiser",
 		"uniques": [
@@ -70,20 +80,36 @@
 					"[+27]% Strength <vs [Destroyer] units> <when attacking>"
 					],
         "movementType": "Land"
-    }
+    },
+	{
+        "name": "Battle Cruiser",
+		"uniques": [
+					"Warship"
+					"[+25]% Strength <vs [Rocket Ship] units> <when attacking>"
+					"[+38]% Strength <vs [Recon] units> <when attacking>"
+					"[+55]% Strength <vs [Corvette] units> <when attacking>"
+					"[+45]% Strength <vs [Frigate] units> <when attacking>"
+					"[+30]% Strength <vs [Destroyer] units> <when attacking>"
+					],
+        "movementType": "Land"
+    },
+	
+	
+	
+	//Artillery
 	{
         "name": "Space Artillery",
 		"uniques": ["Artillery"]
         "movementType": "Land"
-    }
+    },
 	{
         "name": "Space Laser",
 		"uniques": ["Artillery"]
         "movementType": "Land"
-    }
+    },
 	{
         "name": "Plasma Launcher",
 		"uniques": ["Artillery"]
         "movementType": "Land"
-    }
+    },
 ]

@@ -41,7 +41,7 @@
 	{
 		"name": "Xeno Animals",
 		"resourceType": "Bonus",
-		"terrainsCanBeFoundOn": ["Lush Planet","Fertile Sands","Earth-Like","Islands","Snowy",],
+		"terrainsCanBeFoundOn": ["Fertile Sands","Lush Planet","Earth-Like","Islands","Snowy",],
 		"food": 1,
 		"improvedBy": ["Farm", "Planitary Mine"], //Temporary
 		"improvementStats": {"production": 1, "science": 1,},
@@ -58,7 +58,7 @@
 		"resourceType": "Bonus",
 		"terrainsCanBeFoundOn": ["Water-World","Lush Planet","Frost","Snowy","Earth-Like","Islands"],
 		"food": 1,
-		"improvedBy": ["Farm", "Planitary Mine"], //Temporary
+		"improvedBy": ["Fishery", "Farm", "Planitary Mine"], //The Latter two are Temporary
 		"improvementStats": {"food": 1, "science": 1,},
 		"uniques": [
 					"Generated with weight [36] <in [Water-World] tiles>",
@@ -76,11 +76,12 @@
 		"name": "Iron",
 		"resourceType": "Strategic",
 		"revealedBy": "Asteroid Mining",
-		"terrainsCanBeFoundOn": ["Asteroid Field","Desert Planet","Barren Planet","Earth-Like","Islands","Snowy",],
+		"terrainsCanBeFoundOn": ["Magma-Moon","Asteroid Field","Desert Planet","Barren Planet","Earth-Like","Islands","Snowy",],
 		"production": 1,
 		"improvedBy": ["Asteroid Mine", "Planitary Mine"],
 		"uniques": ["Guaranteed with Strategic Balance resource option",
 					//Major
+					"Generated with weight [33] <in [Magma-Moon] tiles>",
 					"Generated with weight [26] <in [Asteroid Field] tiles>",
 					"Generated with weight [12] <in [Earth-Like] tiles>",
 					//Minor
@@ -92,7 +93,7 @@
 		"majorDepositAmount": {"sparse": 3, "default": 4, "abundant": 5},
 		"minorDepositAmount": {"sparse": 1, "default": 2, "abundant": 3}
 	},
-		{
+	{
 		"name": "Silicon",
 		"resourceType": "Strategic",
 		"revealedBy": "Silicon Armaments",
@@ -132,6 +133,29 @@
 					],
 		"majorDepositAmount": {"sparse": 2, "default": 4, "abundant": 4},
 		"minorDepositAmount": {"sparse": 1, "default": 2, "abundant": 3}
+	},
+	{
+		"name": "Helium 3",
+		"resourceType": "Strategic",
+		"revealedBy": "Planetary Minning"
+		"terrainsCanBeFoundOn": ["Standard-Moon","Tectonic-Moon","Strange-Moon","Exotic-Moon","Earth-Like","Snowy","Complex-Moon",],
+		"production": 1,
+		"improvementStats": {"happiness": 1},
+		"improvement": "Planitary Mine",
+		"uniques": ["Guaranteed with Strategic Balance resource option",
+					//Major
+					"Generated with weight [33] <in [Standard-Moon] tiles>",
+					"Generated with weight [10] <in [Tectonic-Moon] tiles>",
+					"Generated with weight [7] <in [Strange-Moon] tiles>",
+					"Generated with weight [5] <in [Exotic-Moon] tiles>",
+					//Minor
+				//	"Minor deposits generated with weight [18] <in [Asteroid Field] tiles>",
+					"Minor deposits generated with weight [2] <in [Earth-Like] tiles>",
+					"Minor deposits generated with weight [2] <in [Snowy] tiles>",
+					"Minor deposits generated with weight [1] <in [Complex-Moon] tiles>",
+					],
+		"majorDepositAmount": {"sparse": 2, "default": 4, "abundant": 7},
+		"minorDepositAmount": {"sparse": 1, "default": 1, "abundant": 2}
 	},
 
 	
@@ -247,5 +271,50 @@
 					"Generated with weight [2] <in [Earth-Like] tiles>"					
 					"Generated with weight [1] <in [Islands] tiles>"],
 	},
+	{
+		"name": "Dimonds",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Magma-Moon","Tectonic-Moon","Rocky-Moon","Barren Planet","Frost","Exotic-Moon","Strange-Moon","Earth-Like","Snowy","Complex-Moon","Islands","Asteroid Field"],
+		"gold": 3,
+		"improvementStats": {"Happiness": 1, "Production": 1,},
+		"improvedBy": ["Asteroid Mine", "Planitary Mine"],
+		"uniques": [
+					"Generated with weight [28] <in [Magma-Moon] tiles>",
+					"Generated with weight [22] <in [Tectonic-Moon] tiles>",	
+					"Generated with weight [16] <in [Rocky-Moon] tiles>",
+					"Generated with weight [7] <in [{Featureless} {Barren Planet}] tiles>",
+					"Generated with weight [6] <in [Frost] tiles>",
+					"Generated with weight [4] <in [Exotic-Moon] tiles>",
+					"Generated with weight [2] <in [Strange-Moon] tiles>",					
+					"Generated with weight [2] <in [Earth-Like] tiles>"
+					"Generated with weight [2] <in [Snowy] tiles>",								
+					"Generated with weight [1] <in [Complex-Moon] tiles>",
+					"Generated with weight [1] <in [Islands] tiles>",
+					"Generated with weight [1] <in [Asteroid Field] tiles>",
+					],
+	},
+	{
+		"name": "Emeralds",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Magma-Moon","Tectonic-Moon","Earth-Like","Complex-Moon",],
+		"culture": 1,
+		"gold": 1,
+		"improvementStats": {"Gold": 1},
+		"improvement": "Planitary Mine",
+		"uniques": [
+					"Generated with weight [10] <in [Magma-Moon] tiles>",
+					"Generated with weight [8] <in [Tectonic-Moon] tiles>",					
+					"Generated with weight [2] <in [Earth-Like] tiles>"	
+					"Generated with weight [2] <in [Complex-Moon] tiles>",
+					],
+	},
+//		"terrainsCanBeFoundOn": ["Asteroid Field","Desert Planet","Barren Planet","Earth-Like","Islands","Snowy","Frost","Snowy","Water-World","Earth-Like","Islands",],
+
+
+
+
+
+
+
 
 ]

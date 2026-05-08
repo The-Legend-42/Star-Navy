@@ -41,4 +41,18 @@
         "citySound": "cityAncient",
         "iconRGB": [18, 22, 59]
     }
+	{
+        "name": "Plasma Era",
+        "researchAgreementCost": 420,
+        "startingSettlerCount": 2, 
+        "startingWorkerCount": 0,
+        "startingMilitaryUnitCount": 2,
+        "startingMilitaryUnit": "Macer",
+        "settlerPopulation": 1,
+        "baseUnitBuyCost": 500,
+        "embarkDefense": 40,
+        "startPercent": 0,
+        "citySound": "cityAncient",
+        "iconRGB": [0, 65, 255]
+    }
 ]

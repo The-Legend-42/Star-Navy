@@ -279,9 +279,18 @@
 					],
 		"requiredTech": "Automated Patrol Ship Factories",
 	},
-	
-	
-	
+	{ 
+		"name": "Plasma Factory",
+		"specialistSlots": {"Engineer": 2,"Mathematician": 1,"Scientist": 1,},
+		"production": 4,
+		"science": 1,
+		"requiredResource": "Helium 3"
+		"uniques": [
+					"Destroyed when the city is captured"
+					],
+		"requiredTech": "Plasma Works",
+	},
+
 	
 	
 	
