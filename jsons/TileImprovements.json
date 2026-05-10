@@ -36,18 +36,30 @@
 	},
 	{
 		"name": "Fishery",
-		"terrainsCanBeBuiltOn": ["Lush Planet"],
+		"terrainsCanBeBuiltOn": ["Lush Planet","Water-World","Water-Moon","Islands"],
 		"food": 1,
 		"turnsToBuild": 7,
 		"techRequired": "Water Works",
 		"uniques": [
 					//"Can only be built on tiles adjacent to fresh water",
+					"Aquatic Improvement"
 					"Planetoid Improvement"
 					"Pillaging this improvement yields approximately [+28 Gold]"],
 		"shortcutKey": "F"
 	},
-	
-	
+	{
+		"name": "Subsea Mine",
+		"terrainsCanBeBuiltOn": ["Water-World","Water-Moon","Islands"],
+		"production": 1,
+		"turnsToBuild": 14,
+		"techRequired": "Advanced Water Works",
+		"uniques": [
+					"Aquatic Improvement"
+					"Planetoid Improvement"
+					"Pillaging this improvement yields approximately [+35 Gold]"],
+		"shortcutKey": "M"
+	},	
+
 	
 	
 	
@@ -84,12 +96,10 @@
             "Will not be replaced by automated units"
 			],
 	},
-	
-	/*
 	{
 		"name": "Starfort",
 		"terrainsCanBeBuiltOn": ["Void"],
-	//	"techRequired": "Introductory Starforts",
+		"techRequired": "Starforts",
 		"turnsToBuild": 25,
 		"uniques": [
 			"Great Improvement",			
@@ -102,7 +112,7 @@
             "Will not be replaced by automated units"
 			],
 	},
-	*/
+
 	
 	{
 		"name": "Space Farm",

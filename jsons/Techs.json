@@ -448,12 +448,164 @@
 			//Allows a new improvment on water planets and also allows a Holodeck Building
 				"name": "Water Works",
 				"row": 8,
-				"uniques": ["[1] free [Amphibious Planetary Workship] units appear",],
 				"prerequisites": ["Artificial Lighting","The Super Cenima"],
+				"uniques": ["[1] free [Amphibious Planetary Workship] units appear",],
 				"quote": "'Improving the sea' - Spaceman"
 			},
 		]
 	},
+	{
+		"columnNumber": 11,
+		"era": "Plasma Era",
+		"techCost": 225,
+		"buildingCost": 185,
+		"wonderCost": 420,
+		"techs": [
+				{
+			//New Repair Ship Added 
+				"name": "Larger Repair Ships",
+				"row": 3,
+				"prerequisites": ["Repair Ships",],
+				"quote": "'Fix Fix Fix HAHA HAHA' - Space Bozo"
+			},	
+			{
+			//New Building
+				"name": "Simple Active Defence Systems",
+				"row": 4,
+				"prerequisites": ["Repair Ships","Plasma Works","Early Warning",],
+				"quote": "'To Intercept enemy attacks before they land on your cities' - Spaceman"
+			},
+			{
+			//Moon Buildings + New Ship
+				"name": "Long Range Radar Systems",
+				"row": 5,
+				"prerequisites": ["Early Warning","Battle Cruisers"],		
+				"quote": "'Improving our eyes in the dark' - Spaceman"
+			},	
+
+			//New Desroyer + New Frigate
+			{	
+				"name": "Verticy Speed Systems",
+				"row": 6,
+				"prerequisites": ["Battle Cruisers"],
+				"quote": "'Improved Thrust.' - Engineer"
+			},		
+			{	//Starforts
+				"name": "Starforts",
+				"row": 7,
+				"prerequisites": ["Battle Cruisers","Smaller Cruisers","Water Works",],	
+				"uniques": ["[1] free [Deployable Starfort] units appear", "[1] free [Deployable Space Station] units appear"],
+				"quote": "'To create even mightyer fortifications that shelter us from our enemies in the endless uncaring void of Space' - Engineer"
+			},
+			{
+			//Allows Next upgrade will allow a new building on water planets but this one allows a Holodeck Building
+				"name": "Holodecks",
+				"row": 8,
+				"prerequisites": ["Water Works"],
+				"quote": "'A holographic room that allows the creation of fake realities so real that one can be lost within them' - Spaceman"
+			},
+		]
+	},
+	{
+		"columnNumber": 12,
+		"era": "Plasma Era",
+		"techCost": 245,
+		"buildingCost": 195,
+		"wonderCost": 435,
+		"techs": [			
+			{
+			//New Building
+				"name": "Active Defence Systems",
+				"row": 4,
+				"prerequisites": ["Larger Repair Ships","Simple Active Defence Systems",],
+				"quote": "'Further improving our defences' - Spaceman"
+			},
+			
+			
+			{
+			//Ship/s with a defence bonus
+				"name": "Ship Based Active Defence Systems",
+				"row": 5,
+				"prerequisites": ["Simple Active Defence Systems", "Long Range Radar Systems"],		
+				"quote": "'Placing out Active Defence tecnologies on our spaceships' - Spaceman"
+			},	
+
+			//New Corvette + Recon
+			{	
+				"name": "Small Scale Plasmatic Propulsion",
+				"row": 6,
+				"prerequisites": ["Verticy Speed Systems", "Long Range Radar Systems",],
+				"quote": "'Plasma Based Thrust! Great on a small scale.' - Engineer"
+			},	
+
+			
+			{	//New (Cheep) Light Cruiser + Cruiser
+				"name": "Mass Production Cruisers",
+				"row": 7,
+				"prerequisites": ["Verticy Speed Systems", "Starforts",],	
+				"uniques": ["[1] free [Mass Production Light Cruiser] units appear"],
+				"quote": "'Maintaing high quality for each Production on a massive scale' - Engineer"
+			},
+			
+			{
+			//Allows Next upgrade will allow a new building on water planets
+				"name": "Seaweed Farms", //Advanced Water Works Next?
+				"row": 8,
+				"prerequisites": ["Starforts","Holodecks"],
+				"quote": "'He lives by the farm right over the sea!' - Space Bozo"
+			},
+		]
+	},
+	{
+		"columnNumber": 13,
+		"era": "Plasma Era",
+		"techCost": 250,
+		"buildingCost": 200,
+		"wonderCost": 465,
+		"techs": [			
+			{
+			//More war assets
+				"name": "Electronic Dischargers",
+				"row": 4,
+				"prerequisites": ["Active Defence Systems","Ship Based Active Defence Systems",],
+				"quote": "'Vital for improving our ships' - Engineer"
+			},
+			
+			{
+			//Ship/s with a defence bonus
+				"name": "The Plasma Lab",
+				"row": 5,
+				"prerequisites": ["Ship Based Active Defence Systems"],		
+				"quote": "'Plasma has birthed this Era and it will end it!' - Spaceman"
+			},	
+
+			//New (Cheep-ish) Heavy Cruiser + Battle Cruiser
+			{	
+				"name": "Large Scale Plasmatic Propulsion",
+				"row": 6,
+				"prerequisites": ["Mass Production Cruisers", "Small Scale Plasmatic Propulsion",],	
+				"quote": "'Plasmatic Propulsion brought to a large scale' - Engineer"
+			},
+			
+			//More Diplomacy
+			{	
+				"name": "Open Borders",
+				"row": 7,
+				"prerequisites": ["Mass Production Cruisers",],
+                "uniques": ["Enables Open Borders agreements", "[+50]% weight to this choice for AI decisions"],
+				"quote": "'Help your allies squash your enemies and make it easier for your forces to reach their enemies, That is the genius of this new card we've recived.' - Diplomat"
+			},
+			{
+			//Allows Next upgrade will allow a new building on water planets
+				"name": "Advanced Water Works",
+				"row": 8,
+				"prerequisites": ["Seaweed Farms"],
+				"quote": "'Mining under the oceans waves!' - Spaceman"
+			},
+		]
+	},
+	
+	
 ]
 
 

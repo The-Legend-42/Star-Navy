@@ -85,7 +85,20 @@
 					"Can build [Farm] improvements on tiles <for [3] movement> <[3] times> <after which this unit is consumed>"
 					"Can instantly construct a [Fishery] <for [3] movement> <[3] times> <after which this unit is consumed>",					
 					],
+		"obsoleteTech": "Advanced Water Works",
+		"upgradesTo": "Reusable Amphibious Planetary Workship",		
 		"requiredTech": "Water Works",
+    },
+	{
+        "name": "Reusable Amphibious Planetary Workship",
+        "unitType": "Civilian",
+        "movement": 4,
+		"cost": 250,
+        "uniques": [
+					"Automation is a primary action"
+					"Can build [Planetoid Improvement] improvements on tiles", "Automation is a primary action",	
+					],
+		"requiredTech": "Advanced Water Works",
     },
 	{
         "name": "Deployable Space Station",
@@ -107,6 +120,7 @@
 		"requiredTech": "Space Structures",
         "uniques": ["Unbuildable",
 					"Can instantly construct a [Small Starfort] improvement <by consuming this unit>",
+					"Can instantly construct a [Starfort] improvement <by consuming this unit>  <after discovering [Starforts]>",
 					],
     },
 	
@@ -143,7 +157,21 @@
 		"cost": 180,
 		"requiredResource": "Uranium",
 		"requiredTech": "Nuclear Electric Propulsion",
+		"obsoleteTech": "Ship Based Active Defence Systems",
+		"upgradesTo": "NEP Coloniser",
 		"uniques": ["[-1] Sight"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "NEP Coloniser",
+		"unitType": "Rocket Ship",
+		"movement": 6,
+		"strength": 25,
+		"cost": 400,
+		"requiredResource": "Uranium",
+		"requiredTech": "Ship Based Active Defence Systems",
+		"uniques": ["[-1] Sight","Founds a new city <by consuming this unit>","Requires at least [5] population"],
+		"promotions": ["Basic Active Defence Systems"],	
 		"attackSound": "shot"
 	},
 	{
@@ -153,6 +181,26 @@
 		"strength": 20,
 		"cost": 100,
 		"requiredTech": "Repair Ships",
+		"obsoleteTech": "Larger Repair Ships",
+		"upgradesTo": "Fast Repair Ship",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Fast Repair Ship",
+		"unitType": "Repair Ship",
+		"movement": 3,
+		"strength": 22,
+		"cost": 140,
+		"requiredTech": "Larger Repair Ships",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Large Repair Ship",
+		"unitType": "Repair Ship",
+		"movement": 2,
+		"strength": 40,
+		"cost": 200,
+		"requiredTech": "Larger Repair Ships",
 		"attackSound": "shot"
 	},
 	{
@@ -233,8 +281,23 @@
 		"cost": 128,
 		"requiredResource": "Iron",
 		"requiredTech": "Plasma Works",
+		"obsoleteTech": "Electronic Dischargers",
+		"upgradesTo": "Polished Wideplate Spaceborn Laser",
 		"attackSound": "shot"	//Will change
 	},
+	{
+		"name": "Polished Wideplate Spaceborn Laser",
+		"unitType": "Space Laser",
+		"movement": 1,
+		"strength": 10,
+        "range": 2,
+		"rangedStrength": 88,
+		"cost": 160,
+		"requiredResource": "Iron",
+		"requiredTech": "Electronic Dischargers",
+		"attackSound": "shot"	//Will change
+	},
+	
 	{ //Sucessor to both the Railguns and the Lasers
 		"name": "Simple Plasma Launcher",
 		"unitType": "Plasma Launcher",
@@ -257,6 +320,7 @@
         "range": 3,
 		"rangedStrength": 55,
 		"cost": 185,
+		"requiredResource": "Helium 3",
 		"requiredTech": "Plasma Works",
 		"uniques": ["Can move after attacking"],
 		"attackSound": "shot"
@@ -292,6 +356,7 @@
 		"strength": 16,
 		"cost": 85,
 		"requiredTech": "Fast Warships",
+		"obsoleteTech": "Small Scale Plasmatic Propulsion",
 		"upgradesTo": "NEP Patrol Ship",
 		"uniques": ["Can move after attacking","[1] additional attacks per turn", "Patrol Ship"],
 		"attackSound": "shot"
@@ -303,7 +368,20 @@
 		"strength": 21,
 		"cost": 85,
 		"requiredResource": "Uranium",
+		"upgradesTo": "Swift Patrol Ship",
 		"requiredTech": "Nuclear Electric Propulsion",
+		"obsoleteTech": "Small Scale Plasmatic Propulsion",
+		"uniques": ["Can move after attacking","[1] additional attacks per turn", "Patrol Ship"],
+		"promotions": ["Harasser"],			
+		"attackSound": "shot"
+	},
+	{
+		"name": "Swift Patrol Ship",
+		"unitType": "Recon",
+		"movement": 5,
+		"strength": 29,
+		"cost": 95,
+		"requiredTech": "Small Scale Plasmatic Propulsion",
 		"uniques": ["Can move after attacking","[1] additional attacks per turn", "Patrol Ship"],
 		"promotions": ["Harasser"],			
 		"attackSound": "shot"
@@ -315,7 +393,32 @@
 		"strength": 22,
 		"cost": 99,
 		"requiredTech": "Lightweight Engines",
-		"uniques": ["[1] Sight"],
+		"obsoleteTech": "Long Range Radar Systems",
+		"upgradesTo": "Cad Farseer",
+		"uniques": ["[+1] Sight"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Cad Farseer", 
+		"unitType": "Recon",
+		"movement": 3,
+		"strength": 27,
+		"cost": 134,
+		"requiredTech": "Long Range Radar Systems",
+		"obsoleteTech": "Electronic Dischargers",
+		"upgradesTo": "Guarded Farseer",
+		"uniques": ["[+2] Sight"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Guarded Farseer", 
+		"unitType": "Recon",
+		"movement": 3,
+		"strength": 33,
+		"cost": 145,
+		"requiredTech": "Electronic Dischargers",
+		"uniques": ["[+2] Sight"],
+		"promotions": ["Basic Active Defence Systems"],	
 		"attackSound": "shot"
 	},
 	{
@@ -359,8 +462,19 @@
 		"strength": 30,
 		"cost": 135,
 		"requiredTech": "Lightweight Engines",
+		"obsoleteTech": "Verticy Speed Systems",
+		"upgradesTo": "Frigate",
 		"attackSound": "shot"
 	},
+	{
+		"name": "Frigate",
+		"unitType": "Frigate",
+		"movement": 5,
+		"strength": 40,
+		"cost": 142,
+		"requiredTech": "Verticy Speed Systems",
+		"attackSound": "shot"
+	},	
 	{
 		"name": "Iron Head",
 		"unitType": "Destroyer",
@@ -419,9 +533,21 @@
 		"strength": 40,
 		"cost": 180,
 		"requiredTech": "Lightweight Engines",
+		"obsoleteTech": "Verticy Speed Systems",
+		"upgradesTo": "Bludgeoner",
 		"uniques": ["[+45]% Strength <vs cities>", "Requires at least [2] population"],
 		"attackSound": "shot"
-	},	
+	},
+	{
+		"name": "Bludgeoner",
+		"unitType": "Destroyer",
+		"movement": 4,
+		"strength": 50,
+		"cost": 185,
+		"requiredTech": "Verticy Speed Systems",
+		"uniques": ["[+45]% Strength <vs cities>", "Requires at least [2] population"],
+		"attackSound": "shot"
+	},		
 	{
 		"name": "Simple Light cruiser",
 		"unitType": "Light cruiser",
@@ -453,6 +579,18 @@
 		"strength": 55,
 		"cost": 200,
 		"requiredTech": "Smaller Cruisers",
+		"obsoleteTech": "Mass Production Cruisers",
+		"upgradesTo": "Mass Production Light Cruiser",	
+		"uniques": ["[+25]% Strength <vs cities>", "Consumes [1] [Iron]", "Requires at least [3] population"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Mass Production Light Cruiser",
+		"unitType": "Light cruiser",
+		"movement": 3,
+		"strength": 65,
+		"cost": 200,
+		"requiredTech": "Mass Production Cruisers",
 		"uniques": ["[+25]% Strength <vs cities>", "Consumes [1] [Iron]", "Requires at least [3] population"],
 		"attackSound": "shot"
 	},
@@ -487,7 +625,19 @@
 		"strength": 67,
 		"cost": 225,
 		"requiredTech": "Smaller Cruisers",
+		"obsoleteTech": "Mass Production Cruisers",	
+		"upgradesTo": "Mass Production Cruiser",
 		"uniques": ["[+25]% Strength <vs cities>", "Consumes [2] [Iron]", "Requires at least [5] population"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Mass Production Cruiser",
+		"unitType": "Cruiser",
+		"movement": 3,
+		"strength": 82,
+		"cost": 245,
+		"requiredTech": "Mass Production Cruisers",
+		"uniques": ["[+25]% Strength <vs cities>", "Consumes [2] [Iron]", "Requires at least [4] population"],
 		"attackSound": "shot"
 	},
 	{ //Bulkier than the crusier
@@ -511,7 +661,20 @@
 		"cost": 300,
 		"requiredResource": "Silicon",
 		"requiredTech": "Battle Cruisers",
+		"obsoleteTech": "Large Scale Plasmatic Propulsion",
+		"upgradesTo": "Mass Production Heavy Cruiser",
 		"uniques": ["[+25]% Strength <vs cities>", "[+10]% Strength <when defending>", "Consumes [3] [Iron]", "Requires at least [6] population"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Mass Production Heavy Cruiser",
+		"unitType": "Heavy Cruiser",
+		"movement": 2,
+		"strength": 95,
+		"cost": 305,
+		"requiredResource": "Silicon",
+		"requiredTech": "Large Scale Plasmatic Propulsion",
+		"uniques": ["[+28]% Strength <vs cities>", "[+5]% Strength <when defending>", "Consumes [2] [Iron]", "Requires at least [5] population"],
 		"attackSound": "shot"
 	},
 	//Bulkier than a Heavy crusier
@@ -523,10 +686,22 @@
 		"cost": 335,
 		"requiredResource": "Uranium",
 		"requiredTech": "Battle Cruisers",
+		"obsoleteTech": "Large Scale Plasmatic Propulsion",
+		"upgradesTo": "Battle Cruiser",
 		"uniques": ["[+33]% Strength <vs cities>", "Consumes [3] [Iron]", "Requires at least [7] population"],
 		"attackSound": "shot"
 	},
-	
+	{ 
+		"name": "Battle Cruiser",
+		"unitType": "Battle Cruiser",
+		"movement": 2,
+		"strength": 115,
+		"cost": 365,
+		"requiredResource": "Uranium",
+		"requiredTech": "Large Scale Plasmatic Propulsion",
+		"uniques": ["[+33]% Strength <vs cities>", "Consumes [3] [Iron]", "Requires at least [7] population"],
+		"attackSound": "shot"
+	},
 	
 	
 	

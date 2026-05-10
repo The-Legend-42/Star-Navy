@@ -1,5 +1,6 @@
 [
 	//Bonus
+	/*
 	{
 		"name": "Space Ice",
 		"resourceType": "Bonus",
@@ -11,6 +12,7 @@
 					"Generated on every [35] tiles <in [Asteroid Field] tiles> <in [Asteroid Field] Regions>"
 					]
 	},
+	*/
 	{
 		"name": "Space Ice",
 		"resourceType": "Bonus",
@@ -30,6 +32,7 @@
 		"improvedBy": ["Farm", "Planitary Mine"], //Temporary
 		"improvementStats": {"production": 1},
 		"uniques": [
+					"Plant",
 					//Every 10
 					"Generated on every [10] tiles <in [{Featureless}  {Lush Planet}] tiles>",
 					//Random
@@ -46,6 +49,7 @@
 		"improvedBy": ["Farm", "Planitary Mine"], //Temporary
 		"improvementStats": {"production": 1, "science": 1,},
 		"uniques": [
+					"Creatures",
 					"Generated with weight [30] <in [{Featureless}  {Lush Planet}] tiles>",
 					"Generated with weight [20] <in [Earth-Like] tiles>",
 					"Generated with weight [15] <in [Snowy] tiles>",
@@ -61,6 +65,7 @@
 		"improvedBy": ["Fishery", "Farm", "Planitary Mine"], //The Latter two are Temporary
 		"improvementStats": {"food": 1, "science": 1,},
 		"uniques": [
+					"Creatures",
 					"Generated with weight [36] <in [Water-World] tiles>",
 					"Generated with weight [26] <in [Islands] tiles>",
 					"Generated with weight [10] <in [Earth-Like] tiles>",
@@ -79,7 +84,8 @@
 		"terrainsCanBeFoundOn": ["Magma-Moon","Asteroid Field","Desert Planet","Barren Planet","Earth-Like","Islands","Snowy",],
 		"production": 1,
 		"improvedBy": ["Asteroid Mine", "Planitary Mine"],
-		"uniques": ["Guaranteed with Strategic Balance resource option",
+		"uniques": ["Metal",
+					"Guaranteed with Strategic Balance resource option",
 					//Major
 					"Generated with weight [33] <in [Magma-Moon] tiles>",
 					"Generated with weight [26] <in [Asteroid Field] tiles>",
@@ -121,7 +127,9 @@
 		"terrainsCanBeFoundOn": ["Barren Planet","Earth-Like","Islands","Snowy",],
 		"production": 1,
 		"improvedBy": ["Planitary Mine"],
-		"uniques": ["Guaranteed with Strategic Balance resource option",
+		"uniques": [
+					"Radioactive", "Metal",
+					"Guaranteed with Strategic Balance resource option",
 					//Every
 					"Generated on every [12] tiles <in [Barren Planet] tiles>",
 					//Weight
@@ -142,7 +150,9 @@
 		"production": 1,
 		"improvementStats": {"happiness": 1},
 		"improvement": "Planitary Mine",
-		"uniques": ["Guaranteed with Strategic Balance resource option",
+		"uniques": [
+					"Gas",
+					"Guaranteed with Strategic Balance resource option",
 					//Major
 					"Generated with weight [33] <in [Standard-Moon] tiles>",
 					"Generated with weight [10] <in [Tectonic-Moon] tiles>",
@@ -173,7 +183,9 @@
 		"gold": 1,
 		"improvement": "Asteroid Mine", //Temporary
 		"improvementStats": {"gold": 1},
-		"uniques": ["Generated with weight [40] <in [Asteroid Field] Regions>",
+		"uniques": [
+					"Creatures", "Exotic",
+					"Generated with weight [40] <in [Asteroid Field] Regions>",
 					"Generated with weight [10] <in [Void] Regions>",
 				//	"Generated near City States with weight [15]"
 					],
@@ -186,6 +198,7 @@
 		"improvedBy": ["Farm", "Planitary Mine"], //The second one is Temporary
 		"improvementStats": {"gold": 2},
 		"uniques": [
+					"Plant",
 					"Generated with weight [11] <in [Fertile Sands] tiles>",
 				//	"Generated near City States with weight [15]"
 					],
@@ -197,7 +210,9 @@
 		"gold": 2,
 		"improvementStats": {"gold": 2},
 		"improvedBy": ["Asteroid Mine", "Planitary Mine"],
-		"uniques": ["Generated with weight [10] <in [Asteroid Field] tiles>",
+		"uniques": [
+					"Metal",
+					"Generated with weight [10] <in [Asteroid Field] tiles>",
 					"Generated with weight [16] <in [Barren Planet] tiles>",
 					"Generated with weight [8] <in [Desert Planet] tiles>",
 					"Generated with weight [5] <in [Earth-Like] tiles>",
@@ -216,6 +231,7 @@
 		"improvedBy": ["Farm", "Planitary Mine"], //Both are temporary
 		"improvementStats": {"culture": 1},
 		"uniques": [
+					"Creatures", "Exotic",
 					"Generated with weight [18] <in [{Featureless}  {Lush Planet}] tiles>",
 					"Generated with weight [8] <in [Earth-Like] tiles>",
 					"Generated with weight [4] <in [Islands] tiles>",
@@ -265,6 +281,7 @@
 		"improvementStats": {"Happiness": 1},
 		"improvedBy": ["Asteroid Mine", "Planitary Mine"], //Both are Temporary
 		"uniques": [
+					"Gas",
 					"Generated with weight [16] <in [Frost] tiles>",
 					"Generated with weight [12] <in [Snowy] tiles>",					
 					"Generated with weight [8] <in [Water-World] tiles>",	
@@ -279,6 +296,7 @@
 		"improvementStats": {"Happiness": 1, "Production": 1,},
 		"improvedBy": ["Asteroid Mine", "Planitary Mine"],
 		"uniques": [
+					"Gem",
 					"Generated with weight [28] <in [Magma-Moon] tiles>",
 					"Generated with weight [22] <in [Tectonic-Moon] tiles>",	
 					"Generated with weight [16] <in [Rocky-Moon] tiles>",
@@ -302,12 +320,53 @@
 		"improvementStats": {"Gold": 1},
 		"improvement": "Planitary Mine",
 		"uniques": [
+					"Gem",
 					"Generated with weight [10] <in [Magma-Moon] tiles>",
 					"Generated with weight [8] <in [Tectonic-Moon] tiles>",					
 					"Generated with weight [2] <in [Earth-Like] tiles>"	
 					"Generated with weight [2] <in [Complex-Moon] tiles>",
 					],
 	},
+	{
+		"name": "Cinnamon",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Earth-Like","Complex-Moon",],
+		"food": 1,
+		"happiness": 1,
+		"improvementStats": {"Food": 1},
+		"improvement": "Planitary Mine",	//Temporary
+		"uniques": [
+					"Spice", "Plant",
+					"Generated with weight [2] <in [Earth-Like] tiles>"	
+					"Generated with weight [1] <in [Complex-Moon] tiles>",
+					],
+		"majorDepositAmount": {"sparse": 2, "default": 2, "abundant": 2},
+		"minorDepositAmount": {"sparse": 1, "default": 1, "abundant": 1}
+	},	
+	{
+		"name": "Blunderock",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Magma-Moon","Rocky-Moon","Tectonic-Moon","Water-World",],
+		"gold": 2,
+		"improvementStats": {"Gold": 1},
+		"improvement": "Planitary Mine",
+		"uniques": [
+					"Gem", //Rock
+					"Generated with weight [9] <in [Tectonic-Moon] tiles>",	
+					"Generated with weight [7] <in [Rocky-Moon] tiles>",				
+					"Generated with weight [3] <in [Magma-Moon] tiles>",
+					"Generated with weight [1] <in [Water-World] tiles>", //Under water deposits
+					],
+	},
+	
+	
+	
+	
+	
+	
+	
+	
+	
 //		"terrainsCanBeFoundOn": ["Asteroid Field","Desert Planet","Barren Planet","Earth-Like","Islands","Snowy","Frost","Snowy","Water-World","Earth-Like","Islands",],
 
 

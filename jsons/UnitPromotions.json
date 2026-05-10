@@ -14,12 +14,55 @@
 	
 	
 	
+	// Repair Ships
+	{
+		"name": "Experienced Repair Crew I",
+		"uniques": ["All adjacent units heal [+2] HP when healing"],
+		"unitTypes": ["Repair Ship"],
+        "column": 1,
+        "row": 1
+    },
+	{
+		"name": "Experienced Repair Crew II",
+		"prerequisites": ["Experienced Repair Crew I"],
+		"uniques": ["All adjacent units heal [+2] HP when healing"],
+		"unitTypes": ["Repair Ship"],
+        "column": 1,
+        "row": 2
+	},
+	{
+		"name": "Experienced Repair Crew III",
+		"prerequisites": ["Experienced Repair Crew II"],
+		"uniques": ["All adjacent units heal [+2] HP when healing"],
+		"unitTypes": ["Repair Ship"],
+        "column": 1,
+        "row": 3
+	},
+	{
+		"name": "Experienced Repair Crew IV",
+		"prerequisites": ["Experienced Repair Crew III"],
+		"uniques": ["All adjacent units heal [+2] HP when healing"],
+		"unitTypes": ["Repair Ship"],
+        "column": 1,
+        "row": 4
+	},
+	{
+		"name": "Experienced Repair Crew V",
+		"prerequisites": ["Experienced Repair Crew IV"],
+		"uniques": ["All adjacent units heal [+2] HP when healing"],
+		"unitTypes": ["Repair Ship"],
+        "column": 1,
+        "row": 5
+	},
+	
+	
+	
 	// Smaller Warships
 	{
 		"name": "Electronic Countermeasures I",
 		"uniques": ["[+10]% Strength <when defending>","[+10]% Strength <when fighting in [Asteroid Field] tiles>"],
 		"unitTypes": ["Recon","Corvette","Frigate", "Destroyer"],
-        "column": 1,
+        "column": 2,
         "row": 1
     },
 	{
@@ -27,7 +70,7 @@
 		"prerequisites": ["Electronic Countermeasures I"],
 		"uniques": ["[+10]% Strength <when defending>","[+10]% Strength <when fighting in [Asteroid Field] tiles>"],
 		"unitTypes": ["Recon","Corvette","Frigate", "Destroyer"],
-        "column": 1,
+        "column": 2,
         "row": 2
 	},
 	{
@@ -35,7 +78,7 @@
 		"prerequisites": ["Electronic Countermeasures II"],
 		"uniques": ["[+10]% Strength <when defending>","[+10]% Strength <when fighting in [Asteroid Field] tiles>"],
 		"unitTypes": ["Recon","Corvette","Frigate", "Destroyer"],
-        "column": 1,
+        "column": 2,
         "row": 3
 	},
 
@@ -46,7 +89,7 @@
 		"name": "Artillery Adjustments I",
 		"uniques": ["[+25]% Strength <when attacking>"],
 		"unitTypes": ["Space Artillery","Space Laser","Plasma Launcher"],
-        "column": 2,
+        "column": 3,
         "row": 1
     },
 	{
@@ -54,7 +97,7 @@
 		"prerequisites": ["Artillery Adjustments I"],
 		"uniques": ["[+25]% Strength <when attacking>"],
 		"unitTypes": ["Space Artillery","Space Laser","Plasma Launcher"],
-        "column": 2,
+        "column": 3,
         "row": 2
     },
 	{
@@ -62,7 +105,7 @@
 		"prerequisites": ["Artillery Adjustments II"],
 		"uniques": ["[+25]% Strength <when attacking>"],
 		"unitTypes": ["Space Artillery","Space Laser","Plasma Launcher"],
-        "column": 2,
+        "column": 3,
         "row": 3
     },
 
@@ -73,6 +116,10 @@
 		"uniques": ["[+10]% to Flank Attack bonuses","[+10]% Strength <vs [Wounded] units>"],
     },
 	
+	{
+		"name": "Basic Active Defence Systems",
+		"uniques": ["[+25]% Strength <when defending>"],
+    },	
 	
 
 ]

@@ -287,10 +287,80 @@
 		"requiredResource": "Helium 3"
 		"uniques": [
 					"Destroyed when the city is captured"
+					"[+1 Production] from [Helium 3] tiles [in this city]",
 					],
 		"requiredTech": "Plasma Works",
 	},
-
+	{ 
+		"name": "Moon Base",
+		"science": 3,
+		"cityStrength": 1,
+		"cityHealth": 10,
+		"maintenance": 3,
+		"uniques": ["Destroyed when the city is captured"
+					"Must be on [Moon]"],
+		"requiredTech": "Early Warning",
+	},
+	{ 
+		"name": "Simple Interception System",
+		"cityStrength": 3,
+		"cityHealth": 30,
+		"maintenance": 1,
+		"uniques": ["Destroyed when the city is captured"],
+		"requiredTech": "Simple Active Defence Systems",
+	},
+	{ 
+		"name": "Moon Radar Base",
+		"science": 2,
+		"cityStrength": 2,
+		"cityHealth": 20,
+		"maintenance": 2,
+		"requiredTech": "Early Warning",
+		"uniques": ["Destroyed when the city is captured",
+					"Must be on [Moon]"],
+		"requiredBuilding": "Moon Base",
+	},
+	{ 
+		"name": "Holodeck",
+		"happiness": 5,
+		"maintenance": 1,
+		"uniques": ["Destroyed when the city is captured",
+				//	"[+5 Happiness] [in this city]  <after discovering [A Giant Gorrila Eating T-Rex flavoured Bannana //Why are you even reading this]>"
+		],
+		"requiredTech": "Holodecks",
+	},	
+	{ 
+		"name": "Defencive Interception System",
+		"cityStrength": 5,
+		"cityHealth": 50,
+		"maintenance": 1,
+		"uniques": ["Destroyed when the city is captured"],
+		"requiredTech": "Active Defence Systems",
+		"requiredBuilding": "Simple Interception System",
+	},
+	{ 
+		"name": "Seaweed Farm",
+		"food": 2,	
+		"science": 1,
+		"requiredTech": "Seaweed Farms",
+		"uniques": ["Must be on [Water-World]"], //Temporay  
+		//Aquatic
+	},	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -313,6 +383,20 @@
 		"uniques": ["Only available <if [Cinema] is constructed in all [non-[Puppeted]] cities>", "Cost increases by [30] per owned city"],
 		"requiredTech": "The Super Cenima"
 	},
+	{ 
+		"name": "Plasma Lab",
+		"specialistSlots": {"Scientist": 3, "Lab Assistent": 3},
+		"percentStatBonus": {"Science": 25},
+		"science": 10,
+		"maintenance": 4,
+		"isNationalWonder": true,
+		"uniques": [
+		"Free Technology"
+		"Only available <if [Laboratory] is constructed in all [non-[Puppeted]] cities>", 
+		"Cost increases by [35] per owned city"
+		],
+		"requiredTech": "The Plasma Lab",
+	},	
 	
 	
 	
@@ -356,4 +440,8 @@
 					],
 		"requiredTech": "Automated Patrol Ship Factories",
 	},
+
+	
+	
+	
 ]
