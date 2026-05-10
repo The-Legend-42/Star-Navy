@@ -20,8 +20,14 @@ Resource Icons:
 [Zobbzob Bug] https://www.magnific.com/icon/computer_10224635#fromView=search&page=2&position=71&uuid=9faaf4be-41d4-4203-9172-3f107caa7779
 [Silicon] https://www.magnific.com/icon/silicon_9907008#fromView=search&page=1&position=8&uuid=b80d00af-aa36-45fb-8654-11c17ab2c972
 [Compost] https://www.magnific.com/icon/fertilizer_16968415#fromView=search&page=1&position=59&uuid=d54395d8-d568-4bb4-9390-2e18c886aed4
+[Emeralds] https://www.flaticon.com/free-icon/emerald_1949695
+[Cinnamon] https://www.flaticon.com/free-icon/cinnamon_18128074
+
+
 
 Resources from the base game:
 [Space Whale] Whale
 [Iron] Iron
 [Gold Ore] Gold Ore
+[Uranium] Uranium
+[Diamonds] Gems
