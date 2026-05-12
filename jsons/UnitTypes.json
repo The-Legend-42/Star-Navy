@@ -22,33 +22,33 @@
 	//Warship
 	{
         "name": "Repair Ship",
-		"uniques": ["All adjacent units heal [+5] HP when healing"]
+		"uniques": ["All adjacent units heal [+5] HP when healing", "Escort"]
         "movementType": "Land"
     },
 	{
         "name": "Recon",
-		"uniques": ["[+2] Sight", "Warship"]
+		"uniques": ["[+2] Sight", "Warship", "Escort"]
         "movementType": "Land"
     },
 	{
         "name": "Corvette",
-		"uniques": ["Can move after attacking", "Warship"]
+		"uniques": ["Can move after attacking", "Warship", "Escort"]
         "movementType": "Land"
     },
 	{
         "name": "Frigate",
-		"uniques": ["[+1] Sight", "Can move after attacking", "Warship"]
+		"uniques": ["[+1] Sight", "Can move after attacking", "Warship", "Escort"]
         "movementType": "Land"
     },
 	{
         "name": "Destroyer",
-		"uniques": ["[+1] Sight", "Warship"]
+		"uniques": ["[+1] Sight", "Warship", "Escort"]
         "movementType": "Land"
     },
 	{
         "name": "Light cruiser",
 		"uniques": [
-					"Warship"
+					"Warship", "Cruisers"
 					"[+5]% Strength <vs [Rocket Ship] units> <when attacking>"
 					"[+5]% Strength <vs [Recon] units> <when attacking>"
 					"[+5]% Strength <vs [Corvette] units> <when attacking>"
@@ -60,7 +60,7 @@
 	{
         "name": "Cruiser",
 		"uniques": [
-					"Warship"
+					"Warship", "Cruisers"
 					"[+20]% Strength <vs [Rocket Ship] units> <when attacking>"
 					"[+33]% Strength <vs [Recon] units> <when attacking>"
 					"[+50]% Strength <vs [Corvette] units> <when attacking>"
@@ -72,7 +72,7 @@
 	{
         "name": "Heavy Cruiser",
 		"uniques": [
-					"Warship"
+					"Warship", "Cruisers"
 					"[+22]% Strength <vs [Rocket Ship] units> <when attacking>"
 					"[+35]% Strength <vs [Recon] units> <when attacking>"
 					"[+52]% Strength <vs [Corvette] units> <when attacking>"
@@ -84,7 +84,7 @@
 	{
         "name": "Battle Cruiser",
 		"uniques": [
-					"Warship"
+					"Warship", "Cruisers"
 					"[+25]% Strength <vs [Rocket Ship] units> <when attacking>"
 					"[+38]% Strength <vs [Recon] units> <when attacking>"
 					"[+55]% Strength <vs [Corvette] units> <when attacking>"
@@ -93,7 +93,15 @@
 					],
         "movementType": "Land"
     },
-	
+	{
+        "name": "Battleship",
+		"uniques": [
+					"Warship"
+					"[+25]% Strength <vs [Escort] units> <when attacking>"				
+					"[+25]% Strength <vs [Cruisers] units> <when attacking>"
+					],
+        "movementType": "Land"
+    },
 	
 	
 	//Artillery

@@ -1,1 +1,17 @@
-{"isBaseRuleset":true,"modUrl":"https://github.com/The-Legend-42/Star-Navy","defaultBranch":"master/jsons","author":"The-Legend-42"}
+{
+	"isBaseRuleset":true,
+	"modUrl":"https://github.com/The-Legend-42/Star-Navy",
+	"defaultBranch":"master/jsons","author":"The-Legend-42",
+	
+	"uniques": [
+		
+		//"Can trade civilization introductions for [100000000000000000000000000000000000000000000000000000000] Gold",
+		//"Suppress warning [Subsea Mine can be built on terrain Waters which does not exist]",
+				
+					],
+	
+
+	
+	
+	
+}

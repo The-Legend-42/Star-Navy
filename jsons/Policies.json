@@ -1,0 +1,63 @@
+[
+    {
+        "name": "Gardening", //Originally called Agrarian
+        "era": "Plasma Era",
+        "priorities": {
+            "Neutral": 5,
+        //     "Cultural": 5,
+        //    "Diplomatic": 5,
+            "Domination": 5,
+        //    "Scientific": 5
+        },
+        "uniques": [
+            "[+1 Culture, +1 Food] [in capital]",
+        ],
+        "policies": [
+            {
+                "name": "Central Farm",
+                "uniques": ["[+3 Food] [in capital]"],
+                "row": 1,
+                "column": 1
+            },
+            {
+                "name": "Micro Gardens",
+                "uniques": [
+                    "[+1 Food] per [10] population [in all cities]"
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Helping Hands",
+                "uniques": ["Units in cities cost no Maintenance",],
+                "row": 1,
+                "column": 5
+            },
+            {
+                "name": "Elite Gardeners", //Originally Elite Farmers
+                "uniques": ["[+1 Food] [in all cities]"],
+                "requires": ["Central Farm","Helping Hands",],
+                "row": 2,
+                "column": 2
+            },
+            {
+                "name": "Gardening Culture",
+                "uniques": [
+                    "[+1 Food, +1 Happiness, +1 Culture] per [10] population [in all cities]"
+                ],
+                "requires": ["Micro Gardens"],
+                "row": 2,
+                "column": 4
+            },
+            {
+                "name": "Gardening Complete",
+                "uniques": [
+                    "[+5]% growth [in all cities]",
+                    "Provides a [Flower Garden] in your first [5] cities for free",
+                    "Get the leader title of [Garden Lord [leaderName]]"
+                ]
+            }
+        ]
+    },
+
+]

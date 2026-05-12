@@ -47,7 +47,7 @@
 	}
 	*/
 	
-	{
+	{ //A coalition of Humans Living machines, and uplifted animals (earth) / extra terestrial animals + a bunch of other minor groups
 		"name": "Giannic Alliance",
 		"adjective": ["Giannic"],			
 		"leaderName": "Davon",
@@ -63,15 +63,16 @@
 		"outerColor": [251,255,143],
 		"innerColor": [203,119,35],
 		"uniqueName": "Ranged Mastery",
-		"uniques": [//"[+1] Movement <for [Space Artillery] units>",
-					//"[+1] Movement <for [Space Laser] units>",
+		"uniques": [
 					"[+1] Movement <for [Artillery] units>",
-					"[+1] Sight <for [Artillery] units>",]			
+					"[+1] Sight <for [Artillery] units>",
+					"Humans", "Machines", "Uplifted", "Clones", "AIs", "Bio Machines",
+					]			
 		"cities": ["Terras","Lunnari","Mari","Charos","Venn","Curiso","Juppa","Tassat","Tittor","Ernis","Palluki","Makremek","Sattric"
 		,"Urrani","Trittos"]
 	},
 
-	{
+	{	//Giant Aliens from the Iota Persei System
 		"name": "Iota Persei",
 		"adjective": ["Iota Perseian"],	
 		"leaderName": "Cevu'ac",
@@ -87,11 +88,14 @@
 		"outerColor": [171,0,255],
 		"innerColor": [255,215,57],
 		"uniqueName": "Happy Capital",
-		"uniques": ["[+5 Happiness] [in capital]"],
+		"uniques": [
+					"[+5 Happiness] [in capital]"
+					"Iota Perseains",
+					],
 		"cities": ["Cteraci","Iotto","Perchino","Cteroci","Chinono","Ctemmoci","Chornomo","Pettroci","Chrotto","Sennegiso"]
 	},
 	
-	{
+	{ //A civilisation ruled by criminals
 		"name": "Crime Lords of Bazzik",
 		"adjective": ["Bazzikian"],	
 		"leaderName": "Mezzibiz",
@@ -115,13 +119,16 @@
 					"[+1] Movement <for [Corvette] units>",
 					//Debuff
 					"[-2 Happiness] [in capital]"
-					"[-1 Happiness] [in all cities]"],
+					"[-1 Happiness] [in all cities]"
+					//Species Tags
+					"Bazzikians", "Bazziktites"
+					],
 		"cities": ["Bazzik Betta", "Luki", "Derrool","Reab", "Bazzik Zetta", "Crone-line", "Druk", "Helvess", "Hyna"]
 	},
 	
-	{
+	{	//Purple/Bluish skinned aliens with green/azure spikes covering much of their bodies. Materialistic and Militeristic.
 		"name": "Teal Empire",
-		"adjective": ["Tealist"],	
+		"adjective": ["Tealist"],	//Nationality not speices
 		"leaderName": "Vixerrella",
 		"preferredVictoryType": "Domination",
 
@@ -140,12 +147,14 @@
 					"[+10]% Production when constructing [Frigate] units [in capital]",
 					"[+25]% Production when constructing [Destroyer] units [in capital]",
 					"[+33]% Production when constructing [Light cruiser] units [in capital]",
+					
+					"Teallerians",
 					],
 		"cities": ["Teal Prime", "Talluan", "Tassic", "Rettal", "Tallias", "Teallisto", "Pailinty", "Taelosyn", "Lainsy", "Cloris"]
 	},
 	
 	
-	{
+	{	//Humans only faction
 		"name": "Human Empire",
 		"adjective": ["Human"],	
 		"leaderName": "Gorge son of New Sol",
@@ -167,9 +176,101 @@
 				//	"[+1 Science] from [Lush Planet] tiles [in all cities]"
 				"[+1 Science] from [Planet] tiles [in all cities]"
 				"[-75]% Gold cost of acquiring tiles [in all cities]"
+				"Humans",
 					],
 		"cities": ["Earth 2", "Newmoon", "Redworld", "Veinly", "Little Mercury", "X", "Blueworld", "Skyless", "Rock", "EMC-775", "EMC-773", "EMC-778", "Wet World"]
 	},
+	
+	{	//An aquatic alian speicies that prefare to be left alone. They live on cold enviorments.
+		"name": "Terrevik Union",
+		"adjective": ["Terrevikian"],	
+		"leaderName": "Ta'harrnax",
+		"preferredVictoryType": "Domination",
+
+		"startIntroPart1": "Sample text.",
+		"startIntroPart2": "Sample text.",
+		"declaringWar": "We've had enough of you, die!",
+		"attacked": "You fool. This will be your end.",
+		"defeated": "The oceans have waves be carefull not to dorwn in their storms.",
+		"introduction": "Greetings, Good now we have met stay away from us and we shall do the same for you.",
+		"tradeRequest": "We don't usually make offers so its best to accept.",
+		"outerColor": [214,214,214],
+		"innerColor": [98, 0, 164],
+		"uniqueName": "Hermits by choice",
+		"uniques": [
+					//Prefared Enviroments
+					"[+1 Production] from [Water-World] tiles [in all cities]"
+					"[+1 Production] from [Water-Moon] tiles [in all cities]"
+					"[+1 Production] from [Frost] tiles [in all cities]"					
+					"[+1 Production] from [Snowy] tiles [in all cities]"					
+					"[+1 Production] from [Cold-Moon] tiles [in all cities]"
+					"[+1 Production] from [Islands] tiles [in all cities]"					
+					//Hermates
+					"[+1 Production] [in all cities] <when at war>",
+					"[+3 Food] [in capital] <when not at war>",
+					"Humans",
+					],
+		"cities": ["Trevvik Nor", "Terrevon", "Gar Tervo", "Gur Harnar", "Trezikas", "Tonhas", "Ta'Hatta", "Gar Nevos", "Trevvik Kusc", "Yal Hatta", "Gar Ovter", "Gur Garrnon",]
+	},	
+	
+	
+	
+	
+	{	//A mysterious faction
+		"name": "Gezoic",
+		"adjective": ["Gezoic"],	
+		"leaderName": "The Unkown One",
+		"preferredVictoryType": "Domination",
+
+		"startIntroPart1": "Sample text.",
+		"startIntroPart2": "Sample text.",
+		"declaringWar": "Your fate is of two",
+		"attacked": "And so time rolls",
+		"defeated": "We shall see you another time",
+		"introduction": "Hello to the ones beyond the veil, We see you and we see that you have glipsed upon us aswell",
+		"tradeRequest": "Our offer, your choice.",
+		"outerColor": [33, 2, 225],
+		"innerColor": [98, 0, 164], // 15 0 112 was too dark may be used for a diffrent faction instead
+		"uniqueName": "The living voids",
+		"uniques": [
+					//Base Boosts
+					//"Starts with [???] adopted",	//May not add maybe will
+					"[-10]% Science cost of researching new Technologies",
+					"Each city founded increases Science cost of Technologies [+10]% less than normal", //Confusing
+					"May heal outside of friendly territory <during a Golden Age>"
+				 // "Notified of new Barbarian encampments" //Currently there are no Barbarians so this is innactive				
+					//Onlt During Golden ages:	
+					"No damage penalty for wounded units <during a Golden Age>",
+					"All healing effects doubled <during a Golden Age>",
+					"May heal outside of friendly territory <during a Golden Age>"
+					"[+1] Movement <during a Golden Age>",
+					],
+		"cities": ["Singular Prime", "Second Eye", "Third Echo", "The Sqaure", "Fith Eye", "Sith Direction", "Cursed Void", "Sword", "Eghith World", "Largest Singular"]
+	},	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	{

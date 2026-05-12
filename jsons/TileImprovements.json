@@ -47,19 +47,37 @@
 					"Pillaging this improvement yields approximately [+28 Gold]"],
 		"shortcutKey": "F"
 	},
+	/*
 	{
 		"name": "Subsea Mine",
-		"terrainsCanBeBuiltOn": ["Water-World","Water-Moon","Islands"],
+		"terrainsCanBeBuiltOn": ["Waters"], //"Water-World","Water-Moon","Islands", 
 		"production": 1,
 		"turnsToBuild": 14,
 		"techRequired": "Advanced Water Works",
 		"uniques": [
-					"Aquatic Improvement"
-					"Planetoid Improvement"
-					"Pillaging this improvement yields approximately [+35 Gold]"],
+					"Aquatic Improvement",
+					"Planetoid Improvement",
+					"Pillaging this improvement yields approximately [+35 Gold]",
+					],
 		"shortcutKey": "M"
 	},	
-
+	*/
+	
+	{
+		"name": "Subsea Mine",
+		"terrainsCanBeBuiltOn": ["Water-World","Water-Moon","Islands",],
+		"production": 1,
+		"turnsToBuild": 14,
+		"techRequired": "Advanced Water Works",
+		"uniques": [
+					"Aquatic Improvement",
+					"Planetoid Improvement",
+					"Pillaging this improvement yields approximately [+35 Gold]",
+					],
+		"shortcutKey": "M"
+	},	
+	
+	
 	
 	
 	
@@ -134,7 +152,7 @@
 					"Can be built outside your borders", "Pillaging this improvement yields approximately [+45 Gold]", "[1] Sight"],
 		"shortcutKey": "T"
 	},
-		{
+	{
 		"name": "Space Monitoring Station",
 		"terrainsCanBeBuiltOn": ["Void"],
 		"turnsToBuild": 10,

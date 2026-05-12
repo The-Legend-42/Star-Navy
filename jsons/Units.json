@@ -429,7 +429,7 @@
 		"cost": 100,
 		"requiredResource": "Silicon",
 		"requiredTech": "Silicon Armaments",
-		"upgradesTo": "Speedy Frigate",
+		"upgradesTo": "NEP Corvette",
 		"promotions": ["Electronic Countermeasures I"],		
 		"attackSound": "shot",
 	},
@@ -444,6 +444,20 @@
 		"promotions": ["Electronic Countermeasures I", "Harasser"],		
 		"attackSound": "shot",
 	},
+	{
+		"name": "Detection Corvette",
+		"unitType": "Corvette",
+		"movement": 4,
+		"strength": 28,
+		"cost": 125,
+		"requiredResource": "Silicon",
+		"requiredTech": "Ultra Low Frequency Transmitters",
+		"upgradesTo": "NEP Corvette",
+		"uniques": ["[+1] Sight"],
+		"promotions": ["Electronic Countermeasures I"],		
+		"attackSound": "shot",
+	},	
+	//Frigs
 	{
 		"name": "Simple Frigate",
 		"unitType": "Frigate",
@@ -691,7 +705,7 @@
 		"uniques": ["[+33]% Strength <vs cities>", "Consumes [3] [Iron]", "Requires at least [7] population"],
 		"attackSound": "shot"
 	},
-	{ 
+	{ 	//Not obsolete just yet
 		"name": "Battle Cruiser",
 		"unitType": "Battle Cruiser",
 		"movement": 2,
@@ -699,13 +713,23 @@
 		"cost": 365,
 		"requiredResource": "Uranium",
 		"requiredTech": "Large Scale Plasmatic Propulsion",
+		"upgradesTo": "Early Battleship",
 		"uniques": ["[+33]% Strength <vs cities>", "Consumes [3] [Iron]", "Requires at least [7] population"],
 		"attackSound": "shot"
 	},
 	
-	
-	
-	
-	
-	
+	{ 
+		"name": "Early Battleship",
+		"unitType": "Battleship",
+		"movement": 1,
+        "range": 2,
+		"rangedStrength": 125,
+		"strength": 125,
+		"cost": 385,
+		"requiredResource": "Uranium",
+		"requiredTech": "Battleships",
+		"uniques": ["[+33]% Strength <vs cities>", "Consumes [5] [Iron]", "Requires at least [10] population"],
+		"attackSound": "shot"
+	},	
+
 ]

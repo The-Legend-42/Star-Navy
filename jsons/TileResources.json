@@ -83,7 +83,7 @@
 		"revealedBy": "Asteroid Mining",
 		"terrainsCanBeFoundOn": ["Magma-Moon","Asteroid Field","Desert Planet","Barren Planet","Earth-Like","Islands","Snowy",],
 		"production": 1,
-		"improvedBy": ["Asteroid Mine", "Planitary Mine"],
+		"improvedBy": ["Asteroid Mine", "Planitary Mine", "Subsea Mine",],
 		"uniques": ["Metal",
 					"Guaranteed with Strategic Balance resource option",
 					//Major
@@ -167,6 +167,29 @@
 		"majorDepositAmount": {"sparse": 2, "default": 4, "abundant": 7},
 		"minorDepositAmount": {"sparse": 1, "default": 1, "abundant": 2}
 	},
+	{
+		"name": "Ethelium",
+		"resourceType": "Strategic",
+		"revealedBy": "Ethelium Research"
+		"terrainsCanBeFoundOn": ["Strange-Moon","Exotic-Moon","Frost",],
+		"production": 1,
+		"improvementStats": {"production": 1},
+		"improvement": "Planitary Mine",
+		"uniques": [
+					"Guaranteed with Strategic Balance resource option",
+					//Major
+					"Generated with weight [16] <in [Strange-Moon] tiles>",
+					"Generated with weight [5] <in [Exotic-Moon] tiles>",
+					//Minor
+					"Minor deposits generated with weight [16] <in [Frost] tiles>",
+					],
+		"majorDepositAmount": {"sparse": 2, "default": 5, "abundant": 6},
+		"minorDepositAmount": {"sparse": 1, "default": 2, "abundant": 2}
+	},
+
+
+
+
 
 	
 	
@@ -279,7 +302,7 @@
 		"terrainsCanBeFoundOn": ["Frost","Snowy","Water-World","Earth-Like","Islands",],
 		"production": 1,
 		"improvementStats": {"Happiness": 1},
-		"improvedBy": ["Asteroid Mine", "Planitary Mine"], //Both are Temporary
+		"improvedBy": ["Subsea Mine", "Asteroid Mine", "Planitary Mine"], //The latter is Temporary
 		"uniques": [
 					"Gas",
 					"Generated with weight [16] <in [Frost] tiles>",
@@ -289,7 +312,7 @@
 					"Generated with weight [1] <in [Islands] tiles>"],
 	},
 	{
-		"name": "Dimonds",
+		"name": "Diamonds",
 		"resourceType": "Luxury",
 		"terrainsCanBeFoundOn": ["Magma-Moon","Tectonic-Moon","Rocky-Moon","Barren Planet","Frost","Exotic-Moon","Strange-Moon","Earth-Like","Snowy","Complex-Moon","Islands","Asteroid Field"],
 		"gold": 3,

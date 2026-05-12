@@ -346,12 +346,28 @@
 		"uniques": ["Must be on [Water-World]"], //Temporay  
 		//Aquatic
 	},	
+	{ 
+		"name": "Regular Bank",
+		"percentStatBonus": {"Gold": 33},
+		"specialistSlots": {"Banker": 3},
+		"gold": 5,
+		"requiredTech": "Trade Centers",
+		"requiredBuilding": "Small Bank",
+	},
+	{ 
+		"name": "Trade Center",
+		"percentStatBonus": {"Gold": 10},
+		"specialistSlots": {"Trader": 2, "Merchant": 2, "Economist": 2},
+		"gold": 5,
+		"uniques": [
+					"[+1 Gold] from [Luxury] tiles [in this city]",
+					],
+		"requiredTech": "Trade Centers",
+		"requiredBuilding": "Small Bank", //Probbably won't change
+	},	
 	
 	
-	
-	
-	
-	
+
 	
 	
 	
@@ -397,8 +413,21 @@
 		],
 		"requiredTech": "The Plasma Lab",
 	},	
-	
-	
+	{ 
+		"name": "National Trade Center",
+		"percentStatBonus": {"Gold": 25},
+		"specialistSlots": {"Trader": 4, "Merchant": 3, "Economist": 3},
+		"gold": 10,
+		"happiness": 2,
+		"culture": 1,
+		"science": 1,
+		"isNationalWonder": true,
+		"uniques": [
+					"Only available <if [Trade Center] is constructed in all [non-[Puppeted]] cities>", 
+					"[+1 Gold] from [Luxury] tiles [in this city]",
+					],
+		"requiredTech": "Trade Centers",
+	},	
 	
 	
 	
@@ -442,6 +471,22 @@
 	},
 
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	//Enemy [mapUnitFilter] units must spend [positiveAmount] extra movement points when inside your territory
 	
 	
 ]

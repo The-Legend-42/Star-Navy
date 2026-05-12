@@ -62,7 +62,14 @@
 	//	"greatPersonPoints": {"Great Merchant":3},
 		"color": [255,215,0]
 	},
-	
+	{
+		"name":"Trader",
+		"gold":2,
+		"production":1,
+		"science":1,
+	//	"greatPersonPoints": {"Great Merchant":3},
+		"color": [255,215,0]
+	},	
 	
 	
 	

@@ -604,6 +604,58 @@
 			},
 		]
 	},
+	{
+		"columnNumber": 14,
+		"era": "Battleship Era",
+		"techCost": 265,
+		"buildingCost": 220,
+		"wonderCost": 485,
+		"techs": [			
+			{			//More buildings for ecenomic Specialists
+				"name": "Trade Centers",
+				"row": 4,
+				"prerequisites": ["Electronic Dischargers","The Plasma Lab",],
+				"quote": "'Bring out the MONEY! Money money money money cash cash! caching! Bling Bling!' - Space Bozo"
+			},
+			
+			{ 			//New Material
+				"name": "Ethelium Research",
+				"row": 5,
+				"prerequisites": ["The Plasma Lab"],		
+				"quote": "'Its a rare exotic material.' - Spaceman"
+			},	
+
+			{			//Battleships
+				"name": "Battleships",
+				"row": 6,
+				"prerequisites": ["The Plasma Lab", "Large Scale Plasmatic Propulsion",],	
+				"quote": "'The age of Battleships is upon us' - Spaceman"
+			},
+			
+			
+			{			//Self Explanitory	
+				"name": "Second Spy",
+				"row": 7,
+				"prerequisites": ["Open Borders",],
+                "uniques": [
+							"Gain an extra spy <for [Major] Civilizations> <when espionage is enabled>", 
+							"[+33]% weight to this choice for AI decisions"
+							],
+				"quote": "'Keep your freinds close and your enemies closer' - Spymaster"
+			},
+				
+			{ 			//New Corvette + 2 free one use consstruction units
+				"name": "Ultra Low Frequency Transmitters",
+				"row": 8,
+				"prerequisites": ["Advanced Water Works","Open Borders"],
+                "uniques": [
+							"[1] free [Deployable Starfort] units appear", 
+							"[1] free [Deployable Space Station] units appear"
+							],
+				"quote": "'Improving our detection and communication cappabilities.' - Spaceman"
+			},
+		] 
+	},
 	
 	
 ]
