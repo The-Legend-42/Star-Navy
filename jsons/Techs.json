@@ -656,8 +656,250 @@
 			},
 		] 
 	},
+	{
+		"columnNumber": 15,
+		"era": "Battleship Era",
+		"techCost": 285,
+		"buildingCost": 240,
+		"wonderCost": 500,
+		"techs": [
+	
+			{	//+1 gold Buff from Lux Tiles
+				"name": "Luxary Market",
+				"row": 3,
+				"prerequisites": ["Trade Centers"],
+				"uniques": ["[+1 Gold] from [Luxary] tiles [in all cities]",],
+				"quote": "'What is life without a little pleasure?' - Philosopher"
+			},
+			{
+				"name": "Iron Recycling",
+				"row": 4,
+				"prerequisites": ["Trade Centers", "Ethelium Research"],
+				"uniques": ["[+1 Gold] from [Luxary] tiles [in all cities]",],
+				"quote": "'Lets recycle the materials around us to produce some more Iron' - Spaceman"
+			},			
+			{
+				"name": "Ethelium Tecnology",
+				"row": 5,
+				"prerequisites": ["Ethelium Research","Battleships"],
+				"quote": "'Now that we know of Ethelium we need to figure out how to use it.' - Spaceman"
+			},		
+			{
+				"name": "Mega Railguns",
+				"row": 6,
+				"prerequisites": ["Battleships",],	
+				"quote": "'Lets do Railguns but better' - Engineer"
+			},			
+			{
+				"name": "Collaborative Multinational Research Teams",
+				"row": 7,
+				"prerequisites": ["Battleships","Second Spy"],
+                "uniques": [
+							"Enables Research agreements",
+							"Empire enters a [10]-turn Golden Age <for [Major] Civilizations>"						
+							"[+33]% weight to this choice for AI decisions",
+							],
+				"quote": "'Lets work with our allies to avance our Civilizations together' - Diplomat"
+			},
+			{
+				"name": "Discovering Red Spice",
+				"row": 8,
+				"prerequisites": ["Ultra Low Frequency Transmitters"],
+                "uniques": ["[-10]% weight to this choice for AI decisions",],
+				"quote": "'They Hunger for the red spice.' - Philosopher"
+			},
+		] 
+	},	
+	{
+		"columnNumber": 16,
+		"era": "Battleship Era",
+		"techCost": 300,
+		"buildingCost": 250,
+		"wonderCost": 515,
+		"techs": [
+	
+			{
+				"name": "Combat Repair Ships",
+				"row": 3,
+				"prerequisites": ["Luxary Market","Iron Recycling"],
+				"quote": "'Repair Ships that can put up a fight' - Spaceman"
+			},
+			{
+				"name": "Ethelium Wideplates",
+				"row": 4,
+				"prerequisites": ["Iron Recycling", "Ethelium Tecnology"],
+				"quote": "'Better Weapons' - Spaceman"
+			},
+			{
+				"name": "Ethelium Destroyers",
+				"row": 5,
+				"prerequisites": ["Ethelium Tecnology"],
+				"quote": "'Destroyers powered by Ethelium engines and protected by Ethelium armour.' - Spaceman"
+			},
+			{
+				"name": "Efficient Production Methodology",
+				"row": 6,
+				"prerequisites": ["Mega Railguns","Collaborative Multinational Research Teams"],
+                "uniques": ["[+75]% weight to this choice for AI decisions"],				
+				"quote": "'Let us make things more efficiently' - Engineer"
+			},	
+			{
+				"name": "Ecological Greenhouses",
+				"row": 7,
+				"prerequisites": ["Collaborative Multinational Research Teams"],
+				"quote": "'Ecological Greenhouses is a nice thing to have, for those living in the dephs of space.' - Spaceman"
+			},
+			{
+				"name": "Industrial Repair Ships"
+				"row": 8,
+				"prerequisites": ["Collaborative Multinational Research Teams", "Discovering Red Spice",],
+				"quote": "'Why shouldn't the ship that fixes stuff also produce new stuff?' - Engineer"
+			},
+		] 
+	},	
+	{
+		"columnNumber": 17,
+		"era": "Battleship Era",
+		"techCost": 315,
+		"buildingCost": 265,
+		"wonderCost": 525,
+		"techs": [
+	
+			{
+				"name": "Festivals", //Added festival fields where festivals are held due to the production to happniess bug
+				"row": 3,
+				"prerequisites": ["Combat Repair Ships"],
+                "uniques": ["Enables conversion of city production to [Happiness]", "[+100]% weight to this choice for AI decisions"],
+				"quote": "'Party Party People!' - Space Bozo"
+			},
+			{
+				"name": "Food Specialists",
+				"row": 4,
+				"prerequisites": ["Ethelium Wideplates"],
+				"quote": "'People who specilise in feeding the masses' - Spaceman"
+			},
+			
+			{
+				"name": "Artificial Ethelium",
+				"row": 5,
+				"prerequisites": ["Ethelium Wideplates","Ethelium Destroyers"],
+				"quote": "'Destroyers powered by Ethelium engines and protected by Ethelium armour.' - Spaceman"
+			},
+			{
+				"name": "Ethelium Battleships",
+				"row": 6,
+				"prerequisites": ["Ethelium Destroyers","Efficient Production Methodology"],
+                "uniques": ["[+50]% weight to this choice for AI decisions"],				
+				"quote": "'Let us make things more efficiently' - Engineer"
+			},	
+			{
+				"name": "National Bonds",
+				"row": 7,
+				"prerequisites": ["Ecological Greenhouses"],
+	                "uniques": ["Enables conversion of city production to [Gold]", "[+50]% weight to this choice for AI decisions"],			
+				"quote": "'Simple yet affective' - Spaceman"
+			},
+			{
+				"name": "Discovering Yellow Spice",
+				"row": 8,
+				"prerequisites": ["Industrial Repair Ships",],
+				"quote": "'A new Spice is now demanded by the masses.' - Spaceman"
+			},
+		] 
+	},
 	
 	
+	{
+		"columnNumber": 18,
+		"era": "Carrier Era",
+		"techCost": 333,
+		"buildingCost": 285,
+		"wonderCost": 555,
+		"techs": [
+	
+			//Evolution that mixed the fast repair ship line with the Farseer line to create a ship with both sight bonuses and repair capabilities
+			{
+				"name": "Support Ships",
+				"row": 4,
+				"prerequisites": ["Festivals","Food Specialists"],
+                "uniques": ["[+25]% weight to this choice for AI decisions"],	
+				"quote": "'Ships built to support the rest of the fleet' - Spaceman"
+			},
+			//New Defencive Building and a new Laser Unit
+			{
+				"name": "Improved Active Defence Systems",
+				"row": 5,
+				"prerequisites": ["Artificial Ethelium"],
+                "uniques": ["[+25]% weight to this choice for AI decisions"],	
+				"quote": "'Better utilising lasers to defend against incoming attacks' - Spaceman"
+			},
+			//Prerequisite for the carriers wich will need support ships + Improved defence systems + Starfighters
+			{
+				"name": "First Starfighters",
+				"row": 6,
+				"prerequisites": ["Ethelium Battleships"],
+                "uniques": ["[+25]% weight to this choice for AI decisions"],				
+				"quote": "'A lot of firepower in a small yet mobile package' - Spaceman"
+			},
+			{
+				"name": "Stock Exchange",
+				"row": 7,
+				"prerequisites": ["National Bonds"],
+				"quote": "'Lets build wealth even faster than before' - Spaceman"				
+			},
+			{
+				"name": "Civilian Scientists",
+				"row": 8,
+				"prerequisites": ["Discovering Yellow Spice", "National Bonds"],
+                "uniques": ["Enables conversion of city production to [Science]", "[+100]% weight to this choice for AI decisions"],
+				"quote": "'Some people do science as a hobby, I think we should assist them.' - Spaceman"
+			},
+		] 
+	},
+	{
+		"columnNumber": 19,
+		"era": "Carrier Era",
+		"techCost": 350,
+		"buildingCost": 300,
+		"wonderCost": 575,
+		"techs": [
+	
+			{
+				"name": "Anti Starfighter Systems",
+				"row": 4,
+				"prerequisites": ["Support Ships"],
+                "uniques": ["[+10]% weight to this choice for AI decisions"],	
+				"quote": "'We need to set up some defences against those pesky fighters!' - Spaceman"
+			},
+			{
+				"name": "Carriers",
+				"row": 5,
+				"prerequisites": ["Support Ships", "Improved Active Defence Systems", "First Starfighters"],
+                "uniques": ["[+50]% weight to this choice for AI decisions"],	
+				"quote": "'Ships built not to fight direcrtly but rather carry Starfighters to fight in their stead.' - Spaceman"
+			},
+			{
+				"name": "Fighter Wings",
+				"row": 6,
+				"prerequisites": ["First Starfighters","Stock Exchange"],
+                "uniques": ["[+25]% weight to this choice for AI decisions"],				
+				"quote": "'Mo ships mo guns!' - Space Bozo"
+			},
+			{
+				"name": "3D printing factories",
+				"row": 7,
+				"prerequisites": ["Stock Exchange","Civilian Scientists"],
+				"quote": "'Lets get creative' - Space Bozo"				
+			},
+			{
+				"name": "Discovering Blue Spice",
+				"row": 8,
+				"prerequisites": ["Civilian Scientists"],
+				"quote": "'Spice, but blue too!' - Spaceman"
+			},
+		] 
+	},
 ]
 
 
+//Entertainers?

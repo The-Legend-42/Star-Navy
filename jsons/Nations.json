@@ -247,7 +247,33 @@
 					],
 		"cities": ["Singular Prime", "Second Eye", "Third Echo", "The Sqaure", "Fith Eye", "Sith Direction", "Cursed Void", "Sword", "Eghith World", "Largest Singular"]
 	},	
-	
+	{ //A coalition of Mechanicals
+		"name": "Mechan Alliance",
+		"adjective": ["Mechan"],			
+		"leaderName": "01110010-00110001",
+		"preferredVictoryType": "Domination",
+		
+		"startIntroPart1": "Sample text.",
+		"startIntroPart2": "Sample text.",
+		"declaringWar": "It is time for 01010111 01100001 01100010!",
+		"attacked": "So 01010111 01100001 01100010 has come to us. 01000100 01101001 01100101!",
+		"defeated": "01000111 01101111 01101111 01100100 01100010 01111001 01100101",
+		"introduction": "01001000 01100101 01101100 01101100 01101111! Greetings to new one we are the Mechan Alliance!",
+		"tradeRequest": "We come to you with an offer. 01000111 01101111 01101111 01100100?",
+		"innerColor": [200,200,200],
+		"outerColor": [50,50,50],
+		"uniqueName": "Mechanical Production"
+		"uniques": [
+					"[+1 Production] per [4] population [in all cities]"
+					"Machines", "AIs",
+					]			
+		"cities": [	"01000001","01000010","01000011","01000100","01000101",
+					"01000110", "01000111", "01001000", "01001001", "01001010",
+					"01001011", "01001100", "01001101", "01001110", "01001111",
+					"01010000", "01010001", "01010010", "01010011", "01010100",	
+					"01010101", "01010110", "01010111", "01011000", "01011001", "01011010"
+					],
+	},	
 
 	
 	

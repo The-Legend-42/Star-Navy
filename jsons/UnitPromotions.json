@@ -18,7 +18,7 @@
 	{
 		"name": "Experienced Repair Crew I",
 		"uniques": ["All adjacent units heal [+2] HP when healing"],
-		"unitTypes": ["Repair Ship"],
+		"unitTypes": ["Repair Ship", "Support Ship"],
         "column": 1,
         "row": 1
     },
@@ -26,7 +26,7 @@
 		"name": "Experienced Repair Crew II",
 		"prerequisites": ["Experienced Repair Crew I"],
 		"uniques": ["All adjacent units heal [+2] HP when healing"],
-		"unitTypes": ["Repair Ship"],
+		"unitTypes": ["Repair Ship", "Support Ship"],
         "column": 1,
         "row": 2
 	},
@@ -34,7 +34,7 @@
 		"name": "Experienced Repair Crew III",
 		"prerequisites": ["Experienced Repair Crew II"],
 		"uniques": ["All adjacent units heal [+2] HP when healing"],
-		"unitTypes": ["Repair Ship"],
+		"unitTypes": ["Repair Ship", "Support Ship"],
         "column": 1,
         "row": 3
 	},
@@ -88,7 +88,7 @@
 	{
 		"name": "Artillery Adjustments I",
 		"uniques": ["[+25]% Strength <when attacking>"],
-		"unitTypes": ["Space Artillery","Space Laser","Plasma Launcher"],
+		"unitTypes": ["Space Artillery","Space Laser","Plasma Launcher",],
         "column": 3,
         "row": 1
     },

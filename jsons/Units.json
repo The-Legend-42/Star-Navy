@@ -18,6 +18,13 @@
 		"attackSound": "shot"
 	},
 	*/
+	
+	
+	
+	
+	
+	
+	
 		//Civies
 	{
         "name": "Colony Ship",
@@ -43,6 +50,7 @@
 		"cost": 20,
         "uniques": ["Can instantly construct a [Asteroid Mine] improvement <by consuming this unit>", "Automation is a primary action", "[-1] Sight"],
 		"requiredTech": "Asteroid Mining",
+		"obsoleteTech": "Industrial Repair Ships",
 		"upgradesTo": "Fast Mining Ship",
     },
 	{
@@ -127,7 +135,56 @@
 	
 	
 	
-	//Military
+	
+	
+	
+	
+	
+	
+	
+		//Fighters and other Smallcraft
+	//Lone Fighters
+	{
+		"name": "Primitive Starfighter",
+		"unitType": "Starfighter",
+		"movement": 1,
+		"strength": 25,
+		"rangedStrength": 25,
+		"range": 4,
+		"interceptRange": 4,
+		"cost": 200,
+		"requiredTech": "First Starfighters",
+		"uniques": ["[10]% chance to intercept air attacks"],
+		"attackSound": "machinegun"
+	},
+	//Fighter Wings
+	{
+		"name": "Primitive Starfighter Wing",
+		"unitType": "Starfighter",
+		"movement": 1,
+		"strength": 75,
+		"rangedStrength": 75,
+		"range": 4,
+		"interceptRange": 4,
+		"cost": 500,
+		"requiredTech": "Fighter Wings",
+		"uniques": ["[15]% chance to intercept air attacks"],
+		"attackSound": "machinegun"
+	},	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	//Military (Escorts, Warships, and Carriers,)
 	{
 		"name": "Rocket Ship",
 		"unitType": "Rocket Ship",
@@ -174,6 +231,7 @@
 		"promotions": ["Basic Active Defence Systems"],	
 		"attackSound": "shot"
 	},
+	//Repair ships
 	{
 		"name": "Repair Ship",
 		"unitType": "Repair Ship",
@@ -192,8 +250,11 @@
 		"strength": 22,
 		"cost": 140,
 		"requiredTech": "Larger Repair Ships",
+		"obsoleteTech": "Support Ships",
+		"upgradesTo": "Support Ship",
 		"attackSound": "shot"
 	},
+	//Seperate Line
 	{
 		"name": "Large Repair Ship",
 		"unitType": "Repair Ship",
@@ -201,8 +262,61 @@
 		"strength": 40,
 		"cost": 200,
 		"requiredTech": "Larger Repair Ships",
+		"obsoleteTech": "Combat Repair Ships",
+		"upgradesTo": "Combat Repair Ship",
 		"attackSound": "shot"
 	},
+	{
+		"name": "Combat Repair Ship",
+		"unitType": "Repair Ship",
+		"movement": 2,
+		"strength": 60,
+		"cost": 250,
+		"requiredTech": "Combat Repair Ships",		
+		"attackSound": "shot"
+	},
+	//Seperate from the repair ships abouve
+	{
+		"name": "Industrial Repair Ship",
+		"unitType": "Repair Ship",
+		"movement": 3,
+		"strength": 25,
+		"cost": 225,
+		"uniques": ["Can build [Void] improvements on tiles",],	
+		"requiredTech": "Industrial Repair Ships",
+		"attackSound": "shot"
+	},
+	//Suport Ships
+	{
+		"name": "Support Ship",
+		"unitType": "Support Ship",
+		"movement": 3,
+	//	"strength": 30,
+		"strength": 33,
+		"cost": 150,
+		"requiredTech": "Support Ships",
+		"uniques": ["All adjacent units heal [+4] HP when healing", "[+2] Sight"],
+		"promotions": ["Basic Active Defence Systems"],		
+		"attackSound": "shot"
+	},
+	{
+		"name": "Iron Fixer",
+		"unitType": "Repair Ship",
+        "replaces": "Support Ship",
+		"uniqueTo": "Mechan Alliance",
+		"movement": 2,
+		"strength": 30,
+		"cost": 120,
+		"requiredResource": "Iron",
+		"requiredTech": "Support Ships",
+		"uniques": ["All adjacent units heal [+5] HP when healing", "[+1] Sight" //+10 Hp when healind de facto
+		"Earn [50]% of killed [Military] unit's [Strength] as [Gold]"		],  
+		"promotions": ["Basic Active Defence Systems"],		
+		"attackSound": "shot"
+	},
+	
+	
+	//Railguns
 	{
 		"name": "Spaceborn Railgun",
 		"unitType": "Space Artillery",
@@ -244,6 +358,35 @@
 		"uniques": ["Can move after attacking"],
 		"attackSound": "shot"
 	},
+	//New line
+	{
+		"name": "Advanced Spaceborn Railgun",
+		"unitType": "Space Artillery",
+		"movement": 2,
+		"strength": 12,
+        "range": 3,
+		"rangedStrength": 100,
+		"cost": 155,
+		"requiredTech": "Mega Railguns",
+		"obsoleteTech": "Ethelium Battleships",
+		"upgradesTo": "Super Railgun",
+		"uniques": ["Can move after attacking"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Super Railgun",
+		"unitType": "Space Artillery",
+		"movement": 2,
+		"strength": 15,
+        "range": 3,
+		"rangedStrength": 120,
+		"cost": 188,
+		"requiredTech": "Ethelium Battleships",
+		"uniques": ["Can move after attacking"],
+		"promotions": ["Artillery Adjustments I"]
+		"attackSound": "shot"
+	},
+	//Lasers
 	{
 		"name": "Spaceborn Laser",
 		"unitType": "Space Laser",
@@ -295,9 +438,36 @@
 		"cost": 160,
 		"requiredResource": "Iron",
 		"requiredTech": "Electronic Dischargers",
+		"obsoleteTech": "Ethelium Wideplates",
+		"upgradesTo": "Ethelium Wideplate Spaceborn Laser",
 		"attackSound": "shot"	//Will change
 	},
-	
+	{
+		"name": "Ethelium Wideplate Spaceborn Laser",
+		"unitType": "Space Laser",
+		"movement": 1,
+		"strength": 10,
+        "range": 2,
+		"rangedStrength": 125,
+		"cost": 170,
+		"requiredResource": "Ethelium",
+		"requiredTech": "Ethelium Wideplates",
+		"obsoleteTech": "Improved Active Defence Systems",
+		"upgradesTo": "Ethelium Wideplate Slicer",
+		"attackSound": "shot"	//Will change
+	},
+	{
+		"name": "Ethelium Wideplate Slicer",
+		"unitType": "Space Laser",
+		"movement": 1,
+		"strength": 14,
+        "range": 2,
+		"rangedStrength": 150,
+		"cost": 170,
+		"requiredResource": "Ethelium",
+		"requiredTech": "Improved Active Defence Systems",
+		"attackSound": "shot"
+	},	
 	{ //Sucessor to both the Railguns and the Lasers
 		"name": "Simple Plasma Launcher",
 		"unitType": "Plasma Launcher",
@@ -322,6 +492,8 @@
 		"cost": 185,
 		"requiredResource": "Helium 3",
 		"requiredTech": "Plasma Works",
+		"obsoleteTech": "Mega Railguns",
+		"upgradesTo": "Advanced Spaceborn Railgun",
 		"uniques": ["Can move after attacking"],
 		"attackSound": "shot"
 	},
@@ -349,7 +521,7 @@
 		"uniques": ["Can move after attacking", "Patrol Ship"],
 		"attackSound": "shot"
 	},
-	{	//Not obsolete yet
+	{
 		"name": "Fast Patrol Ship",
 		"unitType": "Recon",
 		"movement": 4,
@@ -417,10 +589,13 @@
 		"strength": 33,
 		"cost": 145,
 		"requiredTech": "Electronic Dischargers",
+		"obsoleteTech": "Support Ships",
+		"upgradesTo": "Support Ship",
 		"uniques": ["[+2] Sight"],
 		"promotions": ["Basic Active Defence Systems"],	
 		"attackSound": "shot"
 	},
+	//Corvette
 	{
 		"name": "Simple Corvette",
 		"unitType": "Corvette",
@@ -486,9 +661,23 @@
 		"movement": 5,
 		"strength": 40,
 		"cost": 142,
-		"requiredTech": "Verticy Speed Systems",
+		"requiredTech": "Lightweight Engines",
+		"obsoleteTech": "Anti Starfighter Systems",
+		"upgradesTo": "Anti Starfighter Frigate",
 		"attackSound": "shot"
 	},	
+	{
+		"name": "Anti Starfighter Frigate",
+		"unitType": "Frigate",
+		"movement": 5,
+		"strength": 40,
+		"interceptRange": 1,
+		"cost": 145,
+		"requiredTech": "Anti Starfighter Systems",
+		"uniques": ["[40]% chance to intercept air attacks","[+60]% Strength <vs [Smallcraft] units>"],
+		"attackSound": "shot"
+	},	
+	//Destroyers
 	{
 		"name": "Iron Head",
 		"unitType": "Destroyer",
@@ -559,9 +748,49 @@
 		"strength": 50,
 		"cost": 185,
 		"requiredTech": "Verticy Speed Systems",
+		"obsoleteTech": "Efficient Production Methodology",
+		"upgradesTo": "Efficient Bludgeoner",
 		"uniques": ["[+45]% Strength <vs cities>", "Requires at least [2] population"],
 		"attackSound": "shot"
-	},		
+	},
+	{
+		"name": "Efficient Bludgeoner",
+		"unitType": "Destroyer",
+		"movement": 4,
+		"strength": 55,
+		"cost": 170,
+		"requiredTech": "Efficient Production Methodology",
+		"uniques": ["[+45]% Strength <vs cities>", "Requires at least [2] population"],
+		"attackSound": "shot"
+	},
+	// New Line
+	{
+		"name": "Anti Fighter Destroyer",
+		"unitType": "Destroyer",
+		"movement": 4,
+		"strength": 60,
+		"interceptRange": 2,
+		"cost": 170,
+		"requiredTech": "Anti Starfighter Systems",
+		"uniques": [
+					"Requires at least [2] population"
+					"[40]% chance to intercept air attacks",
+					"[+60]% Strength <vs [Smallcraft] units>"],
+		"attackSound": "shot"
+	},	
+	// New Line
+	{
+		"name": "Ethelium Destroyer",
+		"unitType": "Destroyer",
+		"movement": 4,
+		"strength": 65,
+		"cost": 185,
+		"requiredResource": "Ethelium",
+		"requiredTech": "Ethelium Destroyers",
+		"uniques": ["[+35]% Strength <vs cities>", "Requires at least [3] population"],
+		"attackSound": "shot"
+	},	
+	
 	{
 		"name": "Simple Light cruiser",
 		"unitType": "Light cruiser",
@@ -605,9 +834,35 @@
 		"strength": 65,
 		"cost": 200,
 		"requiredTech": "Mass Production Cruisers",
+		"obsoleteTech": "Efficient Production Methodology",
+		"upgradesTo": "Efficient Light Cruiser",
 		"uniques": ["[+25]% Strength <vs cities>", "Consumes [1] [Iron]", "Requires at least [3] population"],
 		"attackSound": "shot"
 	},
+	{
+		"name": "Efficient Light Cruiser",
+		"unitType": "Light cruiser",
+		"movement": 3,
+		"strength": 78,
+		"cost": 198,
+		"requiredTech": "Efficient Production Methodology",
+		"obsoleteTech": "Ethelium Battleships",
+		"upgradesTo": "Ethelium Based Light Cruiser",
+		"uniques": ["[+25]% Strength <vs cities>", "Consumes [1] [Iron]", "Requires at least [3] population"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Ethelium Based Light Cruiser", //Merges the Cruisers with the Light Cruisers
+		"unitType": "Light cruiser",
+		"movement": 3,
+		"strength": 88,
+		"cost": 215,
+		"requiredResource": "Ethelium",
+		"requiredTech": "Ethelium Battleships",
+		"uniques": ["[+25]% Strength <vs cities>", "Consumes [1] [Iron]", "Requires at least [3] population"],
+		"attackSound": "shot"
+	},	
+	//The standard Cruisers	
 	{
 		"name": "Simple cruiser",
 		"unitType": "Cruiser",
@@ -651,10 +906,25 @@
 		"strength": 82,
 		"cost": 245,
 		"requiredTech": "Mass Production Cruisers",
+		"obsoleteTech": "Efficient Production Methodology",
+		"upgradesTo": "Efficient Cruiser",
 		"uniques": ["[+25]% Strength <vs cities>", "Consumes [2] [Iron]", "Requires at least [4] population"],
 		"attackSound": "shot"
 	},
-	{ //Bulkier than the crusier
+	{
+		"name": "Efficient Cruiser",
+		"unitType": "Cruiser",
+		"movement": 3,
+		"strength": 90,
+		"cost": 240,
+		"requiredTech": "Efficient Production Methodology",
+		"obsoleteTech": "Ethelium Battleships",
+		"upgradesTo": "Ethelium Based Light Cruiser",
+		"uniques": ["[+25]% Strength <vs cities>", "Consumes [2] [Iron]", "Requires at least [4] population"],
+		"attackSound": "shot"
+	},
+	 //Heavy Cruiser: A Bulkier Form of Crusier
+	{
 		"name": "Heavy Cruiser",
 		"unitType": "Heavy Cruiser",
 		"movement": 2,
@@ -688,9 +958,25 @@
 		"cost": 305,
 		"requiredResource": "Silicon",
 		"requiredTech": "Large Scale Plasmatic Propulsion",
+		"obsoleteTech": "Efficient Production Methodology",
+		"upgradesTo": "Efficient Heavy Cruiser",
 		"uniques": ["[+28]% Strength <vs cities>", "[+5]% Strength <when defending>", "Consumes [2] [Iron]", "Requires at least [5] population"],
 		"attackSound": "shot"
 	},
+	{
+		"name": "Efficient Heavy Cruiser",
+		"unitType": "Heavy Cruiser",
+		"movement": 2,
+		"strength": 110,
+		"cost": 300,
+		"requiredResource": "Silicon",
+		"requiredTech": "Large Scale Plasmatic Propulsion",
+		"obsoleteTech": "Efficient Production Methodology",
+		"uniques": ["[+28]% Strength <vs cities>", "[+5]% Strength <when defending>", "Consumes [2] [Iron]", "Requires at least [5] population"],
+		"attackSound": "shot"
+	},
+	
+	
 	//Bulkier than a Heavy crusier
 	{ 
 		"name": "Primitive Battle Cruiser",
@@ -705,7 +991,7 @@
 		"uniques": ["[+33]% Strength <vs cities>", "Consumes [3] [Iron]", "Requires at least [7] population"],
 		"attackSound": "shot"
 	},
-	{ 	//Not obsolete just yet
+	{ 
 		"name": "Battle Cruiser",
 		"unitType": "Battle Cruiser",
 		"movement": 2,
@@ -713,11 +999,24 @@
 		"cost": 365,
 		"requiredResource": "Uranium",
 		"requiredTech": "Large Scale Plasmatic Propulsion",
+		"obsoleteTech": "Ethelium Tecnology",
 		"upgradesTo": "Early Battleship",
 		"uniques": ["[+33]% Strength <vs cities>", "Consumes [3] [Iron]", "Requires at least [7] population"],
 		"attackSound": "shot"
 	},
-	
+	//New Line
+	{ 	
+		"name": "Ethelium Based Battle Cruiser",
+		"unitType": "Battle Cruiser",
+		"movement": 2,
+		"strength": 130,
+		"cost": 365,
+		"requiredResource": "Ethelium",
+		"requiredTech": "Ethelium Tecnology",
+		"uniques": ["[+33]% Strength <vs cities>", "Consumes [3] [Iron]", "Requires at least [7] population"],
+		"attackSound": "shot"
+	},	
+	//Battleships
 	{ 
 		"name": "Early Battleship",
 		"unitType": "Battleship",
@@ -728,8 +1027,74 @@
 		"cost": 385,
 		"requiredResource": "Uranium",
 		"requiredTech": "Battleships",
+		"obsoleteTech": "Mega Railguns",
+		"upgradesTo": "Mega Railgun Battleship",
 		"uniques": ["[+33]% Strength <vs cities>", "Consumes [5] [Iron]", "Requires at least [10] population"],
 		"attackSound": "shot"
 	},	
+	{ 
+		"name": "Mega Railgun Battleship",
+		"unitType": "Battleship",
+		"movement": 1,
+        "range": 2,
+		"rangedStrength": 145,
+		"strength": 140,
+		"cost": 400,
+		"requiredResource": "Uranium",
+		"requiredTech": "Mega Railguns",
+		"obsoleteTech": "Efficient Production Methodology",
+		"upgradesTo": "Battleship",
+		"uniques": ["[+33]% Strength <vs cities>", "Consumes [5] [Iron]", "Requires at least [10] population"],
+		"promotions": ["Basic Active Defence Systems", "Artillery Adjustments I"], //Usually battleships shouldn't have Artillery abilities but this ones an exeption	
+		"attackSound": "shot"
+	},
+	{ 
+		"name": "Battleship",
+		"unitType": "Battleship",
+		"movement": 1,
+        "range": 2,
+		"rangedStrength": 165,
+		"strength": 150,
+	//	"cost": 421,
+		"cost": 400,
+		"requiredResource": "Uranium",
+		"requiredTech": "Efficient Production Methodology",
+		"obsoleteTech": "Ethelium Battleships",
+		"upgradesTo": "Ethelium Battleship",
+		"uniques": ["[+33]% Strength <vs cities>", "Consumes [5] [Iron]", "Requires at least [10] population"],
+		"promotions": ["Basic Active Defence Systems"],
+		"attackSound": "shot"
+	},
+	{ 
+		"name": "Ethelium Battleship",
+		"unitType": "Battleship",
+		"movement": 2,
+        "range": 2,
+		"rangedStrength": 170,
+		"strength": 160,
+		"cost": 421,
+		"requiredResource": "Ethelium",
+		"requiredTech": "Ethelium Battleships",
+		"uniques": ["[+33]% Strength <vs cities>", "Consumes [5] [Iron]", "Requires at least [10] population"],
+		"promotions": ["Basic Active Defence Systems"],
+		"attackSound": "shot"
+	},
+
+
+	//The First Carrier line
+	{
+		"name": "Primitive Carrier",
+		"unitType": "Standard Carrier",
+		"movement": 2,
+		"strength": 44,
+	//	"strength": 40,
+		"cost": 340,
+		"requiredTech": "Carriers",
+		"uniques": ["Cannot attack", "Can carry [1] [Smallcraft] units"]
+		"promotions": ["Basic Active Defence Systems"],
+	},
+
+
+
 
 ]

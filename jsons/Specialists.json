@@ -109,5 +109,54 @@
 	//	"greatPersonPoints": {"Great Engineer":3},
 		"color": [139,69,19]
 	},
+	
+	
+	
+	//0, 127, 14,
+	//56, 255, 112,
+	
+	//23, 191, 73,
+	
+	
+			//Food
+	{
+		"name":"Farmer",
+		"food":4,
+	//	"greatPersonPoints": {"Great Feeder":3},
+		"color": [23,191,73]
+	},
+	{
+		"name":"Baker",
+		"food": 3,
+		"culture": 1,
+	//	"greatPersonPoints": {"Great Feeder":3},
+		"color": [23,191,73]
+	},
+	{
+		"name":"Chef",
+		"food": 2,
+		"happiness": 1,
+		"culture": 1,
+	//	"greatPersonPoints": {"Great Feeder":3},
+		"color": [23,191,73]
+	},
+	{
+		"name":"Fisherman",
+		"food": 3,
+		"gold": 1,
+	//	"greatPersonPoints": {"Great Feeder":3},
+		"color": [23,191,73]
+	},
+	{
+		"name":"Agronomist",
+		"food": 3,
+		"science": 1,
+	//	"greatPersonPoints": {"Great Feeder":3},
+		"color": [23,191,73]
+	},
+	
+	
+	
+	
 
 ]

@@ -13,16 +13,43 @@
 	
 	
 	
-	//Military
+		////Military///
+	
+	
+	//Smallcraft
+	{
+        "name": "Starfighter",
+        "movementType": "Air",
+        "uniques": ["[+1] Sight","Can perform Air Sweep","Smallcraft"]
+    },
+	
+	
+	
+	
+	//General
     {
         "name": "Rocket Ship",
         "movementType": "Land"
     },
+	{
+        "name": "Support Ship",
+		"uniques": ["[+1] Sight","Escort"]
+        "movementType": "Land"
+    },	
+	{
+        "name": "Standard Carrier",
+		"uniques": ["Carrier",]
+        "movementType": "Land"
+    },		
 	
-	//Warship
+	
+	
+	
+	
+	//Direct Warship
 	{
         "name": "Repair Ship",
-		"uniques": ["All adjacent units heal [+5] HP when healing", "Escort"]
+		"uniques": ["All adjacent units heal [+5] HP when healing", "Warship", "Escort"]
         "movementType": "Land"
     },
 	{

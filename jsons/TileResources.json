@@ -381,12 +381,97 @@
 					"Generated with weight [1] <in [Water-World] tiles>", //Under water deposits
 					],
 	},
+	{
+		"name": "Red Spice",
+		"resourceType": "Luxury",
+		"revealedBy": "Discovering Red Spice",
+		"terrainsCanBeFoundOn": ["Barren Planet","Desert Planet","Lush Planet","Fertile Sands","Lush Planet","Earth-Like","Tectonic-Moon","Exotic-Moon","Complex-Moon","Sandy-Moon","Rocky-Moon","Strange-Moon",],
+		"gold": 1,
+		"improvementStats": {"Production": 1},
+		"improvement": "Planitary Mine",	//Temporary
+		"uniques": [
+					"Spice",
+					
+					//May generate more than 1
+					"Generated with weight [10] <in [Barren Planet] tiles>"	
+					"Generated with weight [10] <in [Desert Planet] tiles>"	
+					"Generated with weight [9] <in [Lush Planet] tiles>"	
+					"Generated with weight [10] <in [Fertile Sands] tiles>"	
+					"Generated with weight [10] <in [Earth-Like] tiles>"	
+					"Generated with weight [2] <in [Tectonic-Moon] tiles>"
+					
+					//Will always only have 1,
+					"Minor deposits generated with weight [2] <in [Exotic-Moon] tiles>",					
+					"Minor deposits generated with weight [1] <in [Complex-Moon] tiles>",
+					"Minor deposits generated with weight [1] <in [Sandy-Moon] tiles>",
+					"Minor deposits generated with weight [1] <in [Rocky-Moon] tiles>",
+					"Minor deposits generated with weight [1] <in [Strange-Moon] tiles>",
+					],
+		"majorDepositAmount": {"sparse": 1, "default": 2, "abundant": 3},
+		"minorDepositAmount": {"sparse": 1, "default": 1, "abundant": 1}
+	},	
+	{
+		"name": "Yellow Spice",
+		"resourceType": "Luxury",
+		"revealedBy": "Discovering Yellow Spice",
+		"terrainsCanBeFoundOn": ["Barren Planet","Desert Planet","Lush Planet","Fertile Sands","Earth-Like","Frost","Snowy","Sandy-Moon","Exotic-Moon","Complex-Moon","Sandy-Moon","Rocky-Moon","Strange-Moon","Islands",],
+		"gold": 1,
+		"improvementStats": {"Production": 1},
+		"improvement": "Planitary Mine",	//Temporary
+		"uniques": [
+					"Spice",
+					
+					//May generate more than 1
+					"Generated with weight [9] <in [Barren Planet] tiles>"	
+					"Generated with weight [9] <in [Desert Planet] tiles>"	
+					"Generated with weight [8] <in [Lush Planet] tiles>"	
+					"Generated with weight [9] <in [Fertile Sands] tiles>"	
+					"Generated with weight [8] <in [Earth-Like] tiles>"	
+					"Generated with weight [2] <in [Frost] tiles>"
+					"Generated with weight [1] <in [Snowy] tiles>"
+					
+					//Will always only have 1,
+					"Minor deposits generated with weight [2] <in [Sandy-Moon] tiles>",
+					"Minor deposits generated with weight [1] <in [Exotic-Moon] tiles>"					
+					"Minor deposits generated with weight [1] <in [Complex-Moon] tiles>",
+					"Minor deposits generated with weight [1] <in [Rocky-Moon] tiles>",
+					"Minor deposits generated with weight [1] <in [Strange-Moon] tiles>",
+					"Minor deposits generated with weight [1] <in [Islands] tiles>",
+					],
+		"majorDepositAmount": {"sparse": 1, "default": 2, "abundant": 3},
+		"minorDepositAmount": {"sparse": 1, "default": 1, "abundant": 1}
+	},		
 	
 	
-	
-	
-	
-	
+	{
+		"name": "Blue Spice",
+		"resourceType": "Luxury",
+		"revealedBy": "Discovering Blue Spice",
+		"terrainsCanBeFoundOn": ["Water-World","Islands","Lush Planet","Earth-Like","Frost","Snowy","Water-Moon","Cold-Moon","Complex-Moon",],
+		"gold": 1,
+		"improvementStats": {"Production": 1,"Happiness": 1,},
+		"improvedBy": ["Subsea Mine", "Planitary Mine"],	//Temporary?
+		"uniques": [
+					"Spice",
+					
+					//May generate more than 1
+					"Generated with weight [8] <in [Water-World] tiles>",	
+					"Generated with weight [8] <in [Islands] tiles>",
+					"Generated with weight [6] <in [Lush Planet] tiles>"	
+					"Generated with weight [6] <in [Earth-Like] tiles>"	
+					"Generated with weight [6] <in [Frost] tiles>"
+					"Generated with weight [6] <in [Snowy] tiles>"
+					
+					//Will always only have 1,
+					"Minor deposits generated with weight [3] <in [Water-Moon] tiles>",
+					"Minor deposits generated with weight [2] <in [Cold-Moon] tiles>"					
+					"Minor deposits generated with weight [1] <in [Complex-Moon-Moon] tiles>"	
+					
+					],
+		"majorDepositAmount": {"sparse": 1, "default": 2, "abundant": 2},
+		"minorDepositAmount": {"sparse": 1, "default": 1, "abundant": 1}
+	},		
+
 	
 	
 	

@@ -47,7 +47,7 @@
         "startingSettlerCount": 2, 
         "startingWorkerCount": 0,
         "startingMilitaryUnitCount": 2,
-        "startingMilitaryUnit": "Macer",
+        "startingMilitaryUnit": "Mobile Macer",
         "settlerPopulation": 1,
         "baseUnitBuyCost": 500,
         "embarkDefense": 40,
@@ -68,5 +68,19 @@
         "startPercent": 0,
         "citySound": "cityAncient",
         "iconRGB": [209, 34, 5]
+    }
+	{
+        "name": "Carrier Era",
+        "researchAgreementCost": 520,
+        "startingSettlerCount": 2, 
+        "startingWorkerCount": 0,
+        "startingMilitaryUnitCount": 2,
+        "startingMilitaryUnit": "Efficient Bludgeoner",
+        "settlerPopulation": 1,
+        "baseUnitBuyCost": 650,
+        "embarkDefense": 90,
+        "startPercent": 0,
+        "citySound": "cityAncient",
+        "iconRGB": [105, 105, 105]
     }
 ]
