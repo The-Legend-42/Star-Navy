@@ -899,7 +899,102 @@
 			},
 		] 
 	},
+	{
+		"columnNumber": 20,
+		"era": "Carrier Era",
+		"techCost": 375,
+		"buildingCost": 313,
+		"wonderCost": 600,
+		"techs": [
+	
+			{
+				"name": "Repair & Support Advancments",
+				"row": 4,
+				"prerequisites": ["Anti Starfighter Systems"],
+				"quote": "'Lets improve our supportive capabilities' - Spaceman"
+			},
+			{
+				"name": "Carrier Era Warships",
+				"row": 5,
+				"prerequisites": ["Anti Starfighter Systems","Carriers"],
+                "uniques": ["[+10]% weight to this choice for AI decisions"],	
+				"quote": "'The warships to fight along side the carriers of this era' - Spaceman"
+			},
+			{
+				"name": "Early Carriers",
+				"row": 6,
+				"prerequisites": ["Fighter Wings","Carriers"],			
+				"quote": "Lets improve our Carriers' - Spaceman"
+			},
+			{
+				"name": "Iron Warehouses",
+				"row": 7,
+				"prerequisites": ["3D printing factories"],
+				"uniques": ["[1] free [Deployable Starfort] units appear",],
+				"quote": "'To store excess Iron' - Space Bozo"				
+			},
+			{
+				"name": "Silicon Warehouses",
+				"row": 8,
+				"prerequisites": ["Discovering Blue Spice"],
+				"uniques": ["[1] free [Deployable Starfort] units appear",],
+				"quote": "'To store excess Silicon!' - Spaceman"
+			},
+		] 
+	},
+	{
+		"columnNumber": 21,
+		"era": "Carrier Era",
+		"techCost": 388,
+		"buildingCost": 323,
+		"wonderCost": 610,
+		"techs": [
+	
+			{
+				"name": "Gunnary & Plasma",
+				"row": 4,
+				"prerequisites": ["Repair & Support Advancments","Carrier Era Warships"],
+				"quote": "'Improving our gunnary capabilities aswell as our plasma weaponry.' - Spaceman"
+			},
+			{
+				"name": "First Starbombers",
+				"row": 5,
+				"prerequisites": ["Carrier Era Warships"],
+                "uniques": ["[+20]% weight to this choice for AI decisions"],	
+				"quote": "'After fights come the bombers.' - Spaceman"
+			},
+			{
+				"name": "Double Hangared Carriers",
+				"row": 6,
+				"prerequisites": ["Carrier Era Warships","Early Carriers"],			
+				"quote": "'A larger carrier cappable of carring more Starfighters!' - Spaceman"
+			},
+			{
+				"name": "Protectorates & Military Alliances",
+				"row": 7,
+				"prerequisites": ["Iron Warehouses","Early Carriers"],
+                "uniques": ["Enables Defensive Pacts", "[+150]% weight to this choice for AI decisions"],
+				"quote": "'Gain influence by protecting the weak, and work with Allies to protect yourselves from the larger threats out there' - Diplomat"	
+			},
+			{
+				"name": "Helium Tanks",
+				"row": 8,
+				"prerequisites": ["Iron Warehouses","Silicon Warehouses"],
+				"uniques": ["[1] free [Deployable Starfort] units appear",],
+				"quote": "'To store excess Helium' - Space Bozo"		
+			},
+		] 
+	},	
+	
+	
+	
+	
+	
 ]
 
-
+//News
 //Entertainers?
+//Diplomatic --> Pacts
+
+
+//Cold Industries?

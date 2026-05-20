@@ -20,9 +20,13 @@
 	{
         "name": "Starfighter",
         "movementType": "Air",
-        "uniques": ["[+1] Sight","Can perform Air Sweep","Smallcraft"]
+        "uniques": ["[+1] Sight","Can perform Air Sweep","Smallcraft","Fighter"]
     },
-	
+	{
+        "name": "Starbomber",
+        "movementType": "Air",
+        "uniques": ["[+1] Sight","Smallcraft","Bomber"]
+    },	
 	
 	
 	

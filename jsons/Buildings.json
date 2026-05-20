@@ -20,6 +20,33 @@
 	},
 */
 
+
+	//Specials
+	{ 
+		"name": "Handcrafting Workshop",
+		"cost": 280,
+		"production": 2,
+		"happiness": 1,
+		"uniques": [
+					//Restriction
+					"Only available <after adopting [Handcrafting Workshops]>"
+					//Bonuses
+					"[+1 Production] [in this city] <after discovering [Iron Recycling]>"
+					"[+1 Gold] [in this city] <after discovering [Luxary Market]>"					
+					"[+1 Culture] [in this city] <after discovering [Festivals]>"
+					]
+	},
+
+
+
+
+
+
+
+
+
+
+	//Regulars
 	{ 
 		"name": "Servers",
 		"cost": 80,
@@ -521,10 +548,41 @@
 		"maintenance": 3,
 		"requiredTech": "3D printing factories",
 	},		
-	
-	
-	
-	
+	{ 
+		"name": "Iron Warehouses",
+		"production": 2,
+		"requiredNearbyImprovedResources": ["Iron",],
+		"uniques": [
+					"Destroyed when the city is captured"
+					"Provides [1] [Iron]"
+					"[+1 Production] from [Iron] tiles [in this city]",
+					],
+		"requiredTech": "Iron Warehouses",
+	},	
+	{ 
+		"name": "Silicon Warehouses",
+		"production": 2,
+		"requiredNearbyImprovedResources": ["Silicon",],
+		"uniques": [
+					"Destroyed when the city is captured"
+					"Provides [1] [Silicon]"
+					"[+1 Production] from [Silicon] tiles [in this city]",
+					],
+		"requiredTech": "Silicon Warehouses",
+	},		
+	{ 
+		"name": "Helium 3 Tanks",
+		"production": 1,
+		"happiness": 1,
+		"maintenance": 1,
+		"requiredNearbyImprovedResources": ["Helium 3",],
+		"uniques": [
+					"Destroyed when the city is captured"
+					"Provides [1] [Helium 3]"
+					"[+1 Production] from [Helium 3] tiles [in this city]",
+					],
+		"requiredTech": "Helium Tanks",
+	},		
 	
 	
 	

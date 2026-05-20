@@ -171,8 +171,19 @@
 		"uniques": ["[15]% chance to intercept air attacks"],
 		"attackSound": "machinegun"
 	},	
-	
-	
+	//Bombers
+	{
+		"name": "Primitive Starbomber",
+		"unitType": "Starbomber", 
+		"movement": 1,
+		"strength": 50,
+		"rangedStrength": 85,
+		"range": 4,
+		"cost": 250,
+		"requiredTech": "First Starbombers",
+		"attackSound": "machinegun" //Will change
+	},
+
 	
 	
 	
@@ -272,7 +283,20 @@
 		"movement": 2,
 		"strength": 60,
 		"cost": 250,
-		"requiredTech": "Combat Repair Ships",		
+		"requiredTech": "Combat Repair Ships"
+		"obsoleteTech": "Repair & Support Advancments",
+		"upgradesTo": "Sturdy Combat Repair Ship",		
+		"attackSound": "shot"
+	},
+	{
+		"name": "Sturdy Combat Repair Ship",
+		"unitType": "Repair Ship",
+		"movement": 2,
+		"strength": 64,
+		"interceptRange": 1,
+		"cost": 250,
+		"requiredTech": "Repair & Support Advancments",	
+		"uniques": ["[10]% chance to intercept air attacks",],		
 		"attackSound": "shot"
 	},
 	//Seperate from the repair ships abouve
@@ -295,6 +319,8 @@
 		"strength": 33,
 		"cost": 150,
 		"requiredTech": "Support Ships",
+		"obsoleteTech": "Repair & Support Advancments",
+		"upgradesTo": "Modernized Support Ship",
 		"uniques": ["All adjacent units heal [+4] HP when healing", "[+2] Sight"],
 		"promotions": ["Basic Active Defence Systems"],		
 		"attackSound": "shot"
@@ -309,11 +335,26 @@
 		"cost": 120,
 		"requiredResource": "Iron",
 		"requiredTech": "Support Ships",
-		"uniques": ["All adjacent units heal [+5] HP when healing", "[+1] Sight" //+10 Hp when healind de facto
-		"Earn [50]% of killed [Military] unit's [Strength] as [Gold]"		],  
+		"obsoleteTech": "Repair & Support Advancments",
+		"upgradesTo": "Modernized Support Ship",	
+		"uniques": ["All adjacent units heal [+5] HP when healing",  //+10 Hp when healind de facto
+					"[+1] Sight"
+					"Earn [50]% of killed [Military] unit's [Strength] as [Gold]",],  
 		"promotions": ["Basic Active Defence Systems"],		
 		"attackSound": "shot"
 	},
+	{
+		"name": "Modernized Support Ship",
+		"unitType": "Support Ship",
+		"movement": 3,
+		"strength": 35,
+		"cost": 145,
+		"requiredTech": "Repair & Support Advancments",
+		"uniques": ["All adjacent units heal [+4] HP when healing", "[+2] Sight"],
+		"promotions": ["Basic Active Defence Systems"],		
+		"attackSound": "shot"
+	},	
+
 	
 	
 	//Railguns
@@ -382,10 +423,25 @@
 		"rangedStrength": 120,
 		"cost": 188,
 		"requiredTech": "Ethelium Battleships",
+		"upgradesTo": "Ultra Railgun",
+		"obsoleteTech": "Gunnary & Plasma",
 		"uniques": ["Can move after attacking"],
 		"promotions": ["Artillery Adjustments I"]
 		"attackSound": "shot"
 	},
+	{
+		"name": "Ultra Railgun",
+		"unitType": "Plasma Launcher",
+		"movement": 2,
+		"strength": 16,
+        "range": 3,
+		"rangedStrength": 135,
+		"cost": 195,
+		"requiredTech": "Gunnary & Plasma",
+		"uniques": ["Can move after attacking"],
+		"promotions": ["Artillery Adjustments I"]
+		"attackSound": "shot"
+	},	
 	//Lasers
 	{
 		"name": "Spaceborn Laser",
@@ -497,6 +553,23 @@
 		"uniques": ["Can move after attacking"],
 		"attackSound": "shot"
 	},
+	//New Line
+	{
+		"name": "Plasma Slinger",
+		"unitType": "Plasma Launcher",
+		"movement": 2,
+		"strength": 16,
+        "range": 3,
+		"rangedStrength": 140,
+		"cost": 230,
+		"requiredResource": "Helium 3",
+		"requiredTech": "Gunnary & Plasma",
+		"uniques": ["[+10]% Strength <vs cities>", "Can move after attacking"],
+		"attackSound": "shot"
+	},	
+	
+	
+	//Patrol Vessels
 	{
 		"name": "Patrol Ship",
 		"unitType": "Recon",
@@ -760,6 +833,8 @@
 		"strength": 55,
 		"cost": 170,
 		"requiredTech": "Efficient Production Methodology",
+		"obsoleteTech": "Carrier Era Warships",
+		"upgradesTo": "Super Bludgeoner",
 		"uniques": ["[+45]% Strength <vs cities>", "Requires at least [2] population"],
 		"attackSound": "shot"
 	},
@@ -787,10 +862,24 @@
 		"cost": 185,
 		"requiredResource": "Ethelium",
 		"requiredTech": "Ethelium Destroyers",
+		"obsoleteTech": "Carrier Era Warships",
+		"upgradesTo": "Improved Ethelium Destroyer",
+		"uniques": ["[+35]% Strength <vs cities>", "Requires at least [3] population"],
+		"attackSound": "shot"
+	},	
+	{
+		"name": "Improved Ethelium Destroyer",
+		"unitType": "Destroyer",
+		"movement": 4,
+		"strength": 70,
+		"cost": 189,
+		"requiredResource": "Ethelium",
+		"requiredTech": "Carrier Era Warships",
 		"uniques": ["[+35]% Strength <vs cities>", "Requires at least [3] population"],
 		"attackSound": "shot"
 	},	
 	
+	//Smaller faster cheeper Cruisers
 	{
 		"name": "Simple Light cruiser",
 		"unitType": "Light cruiser",
@@ -859,7 +948,34 @@
 		"cost": 215,
 		"requiredResource": "Ethelium",
 		"requiredTech": "Ethelium Battleships",
+		"obsoleteTech": "Carrier Era Warships",
+		"upgradesTo": "Ethelium Based Cruiser",	
 		"uniques": ["[+25]% Strength <vs cities>", "Consumes [1] [Iron]", "Requires at least [3] population"],
+		"attackSound": "shot"
+	},
+	//New-Ish Line
+	{
+		"name": "Super Bludgeoner",
+		"unitType": "Light cruiser",
+		"movement": 4,
+		"strength": 92,
+		"cost": 212,
+		"requiredResource": "Iron",
+		"requiredTech": "Carrier Era Warships",
+		"obsoleteTech": "Gunnary & Plasma",
+		"upgradesTo": "Ultra Bludgeoner",	
+		"uniques": ["[+25]% Strength <vs cities>", "Requires at least [3] population"],
+		"attackSound": "shot"
+	},	
+	{
+		"name": "Ultra Bludgeoner",
+		"unitType": "Light cruiser",
+		"movement": 4,
+		"strength": 100,
+		"cost": 235,
+		"requiredResource": "Iron",
+		"requiredTech": "Gunnary & Plasma",
+		"uniques": ["[+25]% Strength <vs cities>", "Requires at least [3] population"],
 		"attackSound": "shot"
 	},	
 	//The standard Cruisers	
@@ -921,6 +1037,30 @@
 		"obsoleteTech": "Ethelium Battleships",
 		"upgradesTo": "Ethelium Based Light Cruiser",
 		"uniques": ["[+25]% Strength <vs cities>", "Consumes [2] [Iron]", "Requires at least [4] population"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Ethelium Based Cruiser",
+		"unitType": "Cruiser",
+		"movement": 3,
+		"strength": 100,
+		"cost": 250,
+		"requiredResource": "Ethelium",
+		"requiredTech": "Carrier Era Warships",
+		"obsoleteTech": "Gunnary & Plasma",
+		"upgradesTo": "Ethelium Plasma Cruiser",
+		"uniques": ["[+25]% Strength <vs cities>", "Consumes [2] [Iron]", "Requires at least [4] population"],
+		"attackSound": "shot"
+	},	
+	{
+		"name": "Ethelium Plasma Cruiser",
+		"unitType": "Cruiser",
+		"movement": 3,
+		"strength": 120,
+		"cost": 265,
+		"requiredResource": "Ethelium",
+		"requiredTech": "Gunnary & Plasma",
+		"uniques": ["[+25]% Strength <vs cities>", "Consumes [2] [Iron]", "Consumes [1] [Helium 3]", "Requires at least [4] population"],
 		"attackSound": "shot"
 	},
 	 //Heavy Cruiser: A Bulkier Form of Crusier
@@ -1005,7 +1145,7 @@
 		"attackSound": "shot"
 	},
 	//New Line
-	{ 	
+	{ 	//Not obsolete Yet
 		"name": "Ethelium Based Battle Cruiser",
 		"unitType": "Battle Cruiser",
 		"movement": 2,
@@ -1013,9 +1153,21 @@
 		"cost": 365,
 		"requiredResource": "Ethelium",
 		"requiredTech": "Ethelium Tecnology",
+		"upgradesTo": "Ethelium Plasma Battle Cruiser",
 		"uniques": ["[+33]% Strength <vs cities>", "Consumes [3] [Iron]", "Requires at least [7] population"],
 		"attackSound": "shot"
 	},	
+	{
+		"name": "Ethelium Plasma Battle Cruiser",
+		"unitType": "Cruiser",
+		"movement": 2,
+		"strength": 145,
+		"cost": 365,
+		"requiredResource": "Ethelium",
+		"requiredTech": "Gunnary & Plasma",
+		"uniques": ["[+33]% Strength <vs cities>", "Consumes [3] [Iron]", "Consumes [1] [Helium 3]", "Requires at least [7] population"],
+		"attackSound": "shot"
+	},
 	//Battleships
 	{ 
 		"name": "Early Battleship",
@@ -1090,11 +1242,31 @@
 	//	"strength": 40,
 		"cost": 340,
 		"requiredTech": "Carriers",
+		"upgradesTo": "Early Carrier",
 		"uniques": ["Cannot attack", "Can carry [1] [Smallcraft] units"]
 		"promotions": ["Basic Active Defence Systems"],
 	},
-
-
+	{
+		"name": "Early Carrier",
+		"unitType": "Standard Carrier",
+		"movement": 2,
+		"strength": 50,
+		"cost": 345,
+		"requiredTech": "Early Carriers",
+		"uniques": ["Cannot attack", "All adjacent units heal [+1] HP when healing", "Can carry [1] [Smallcraft] units"]
+		"promotions": ["Basic Active Defence Systems"],
+	},
+	//Seperate Line
+	{
+		"name": "Early Double Hangared Carrier",
+		"unitType": "Standard Carrier",
+		"movement": 2,
+		"strength": 65,
+		"cost": 500,
+		"requiredTech": "Double Hangared Carriers",
+		"uniques": ["Cannot attack", "All adjacent units heal [+1] HP when healing", "Can carry [2] [Smallcraft] units"]
+		"promotions": ["Basic Active Defence Systems"],
+	},
 
 
 ]
