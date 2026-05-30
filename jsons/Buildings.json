@@ -583,13 +583,124 @@
 					],
 		"requiredTech": "Helium Tanks",
 	},		
-	
-	
-	
-	
-	
-	
-	
+	{ 
+		"name": "Pub",
+		"specialistSlots": {"Chef": 1, "Baker": 1},
+		"food": 2,
+		"happiness": 1,
+		"gold": 1,
+		"requiredTech": "Entertainers",
+		"requiredBuilding": "Cinema",
+	},	
+	{ 
+		"name": "Comedy Pub",
+		"specialistSlots": {"Chef": 1, "Comedian": 1},
+		"happiness": 2,
+		"food": 2,
+		"gold": 1,
+		"requiredTech": "Entertainers",
+		"requiredBuilding": "Pub",
+	},
+	{ 
+		"name": "Cinema Hall",
+		"specialistSlots": {"Movie Star": 1, "Celebrity": 1},
+		"cost": 750,
+		"happiness": 5,
+		"science": 1,
+		"maintenance": 3,	
+		"requiredTech": "Entertainers",
+		"requiredBuilding": "Cinema",
+	},
+	{ 
+		"name": "Comedy Hall",
+		"specialistSlots": {"Comedian": 1, "Entertainer": 1},
+		"cost": 300,
+		"happiness": 4,
+		"maintenance": 1,	
+		"requiredTech": "Entertainers",
+	},
+	{ 
+		"name": "Sports Field",
+		"specialistSlots": {"Athlete": 2},
+		"cost": 850,
+		"happiness": 2,
+		"culture": 2,
+		"science": 1,
+		"maintenance": 3,	
+		"uniques": [
+					"Destroyed when the city is captured"
+					"[-5]% Unhappiness from [Specialists] [in this city]"
+					],
+		"requiredTech": "Entertainers",
+		"requiredBuilding": "Festival Field",
+	},
+	{ 
+		"name": "Podcast Recording Studio",
+		"specialistSlots": {"Podcaster": 1},	
+		"culture": 3,	
+		"science": 1,		
+		"requiredTech": "Entertainers",
+	},
+	{ 
+		"name": "Simple Theater",
+		"specialistSlots": {"Muscitian": 1, "Comedian": 1,"Writer": 1,},
+		"happiness": 2,
+		"food": 2,
+		"gold": 1,
+		"requiredTech": "Culture Specialists",
+	},	
+	{ 
+		"name": "Publishing house",
+		"specialistSlots": {"Author": 3},
+		"culture": 5,		
+		"happiness": 1,
+		"gold": 1,
+		"requiredTech": "Culture Specialists",
+	},		
+	{ 
+		"name": "Art Auction House",
+		"specialistSlots": {"Artist": 3, "Merchant": 1, "Trader": 1},
+		"cost": 400,
+		"culture": 3,		
+		"gold": 3,
+		"requiredTech": "Culture Specialists",
+	},	
+	{ 
+		"name": "Super Farm",
+		"specialistSlots": {"Farmer": 4, "Agronomist": 1, "Ecologist": 1},
+		"cost": 600,
+		"food": 7,		
+		"gold": 3,
+		"production": 3,
+		"science": 3,
+		"happiness": 2,
+		"requiredResource": "Compost", //Consumes a Luxary
+		"requiredTech": "Architectural Shift",
+		"requiredBuilding": "Farming Complex",
+	},	
+	{ 
+		"name": "Iconic Tower",
+		"culture": 4,	
+	//	"uniques": ["[+1 Science] [in this city] <after discovering [                                              ]>"]
+		"requiredTech": "Architectural Shift",
+	},	
+	{ 
+		"name": "Observation Tower",
+		"culture": 2,	
+		"gold": 2,	
+		"requiredTech": "Architectural Shift",
+	},	
+	{
+		"name": "Ancient Monument",
+		"faith": 1,
+		"requiredTech": "Birth of Faith"
+	},		
+	{
+		"name": "Religious Monument",
+		"faith": 1,
+		"requiredTech": "Religious Monuments"
+		"requiredBuilding": "Ancient Monument",
+	},	
 	
 	
 	
@@ -669,7 +780,42 @@
 		"isNationalWonder": true,
 		"uniques": ["Only available <if [Stock Exchange] is constructed in all [non-[Puppeted]] cities>"],
 		"requiredTech": "Stock Exchange",
+	},
+	{ 
+		"name": "National Super Farm",
+		"specialistSlots": {"Farmer": 6, "Agronomist": 1, "Ecologist": 1},
+		"cost": 600,
+		"food": 10,
+		"production": 6,		
+		"gold": 5,
+		"science": 4,
+		"happiness": 4,
+		"isNationalWonder": true,
+		"requiredResource": "Compost", //Consumes a Luxary
+		//"Only available <if [Super Farm] is constructed in all [non-[Puppeted]] cities>", "Cost increases by [30] per owned city"/
+		"requiredTech": "Architectural Shift",
+		"requiredBuilding": "Farming Complex",
 	},	
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
 
 
 	
@@ -719,6 +865,90 @@
 		"uniques": ["Provides [1] [Ethelium]"],
 		"requiredTech": "Artificial Ethelium",
 	},
+	{ 
+		"name": "Holofilm Entertainment Hub", 
+		"specialistSlots": {"Movie Star": 3, "Celebrity": 2, "Entertainer": 2, "Comedian": 1, "Writer": 2, "Muscitian": 1},
+		"happiness": 10,
+		"culture": 7,
+		"gold": 2,
+		"isWonder": true,
+		"requiredBuilding": "Holodeck",
+		"requiredTech": "Culture Specialists",
+	},	
+	{ 
+		"name": "Defencive Production Ring",
+		"cityStrength": 5,
+		"cityHealth": 100,
+		"production": 6,
+		"culture": 1,
+		"science": 1,
+		"maintenance": 4,
+		"isWonder": true,
+		"uniques": [
+				//Perminant Rewards
+				"New [Artillery] units start with [15] XP [in this city]"
+				"[+10]% Production when constructing [Artillery] units [in this city]",
+				"[+10]% Production when constructing [Starfighter] units [in this city]",
+				"[+5]% Production when constructing [Starbomber] units [in this city]",
+				//Completion Reward
+			//	"[2] free [Ultra Railgun] units appear",
+				"[1] free [Early Carrier] units appear",
+				"[1] free [Primitive Starfighter Wing] units appear",
+				//Restriction
+				"Consumes [1] [Iron]","Consumes [1] [Silicon]"
+				],
+		"requiredTech": "Architectural Shift",
+	},
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/////////////////Other or/and Specials//////////////////
+	
+	
+	{
+		"name": "Muegin",
+		"cost": 0,
+		"gold": 2,
+		"faith": 1,
+		"food": 1,
+		"uniques": ["Unbuildable", "Only available <when religion is enabled>",
+					"Provides [1] [Iron] <after discovering [The Great Shift]>", //Just because the founder has crossed The great Shift does not mean the follower has
+					]
+	},
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

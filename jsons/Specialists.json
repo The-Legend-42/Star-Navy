@@ -41,6 +41,7 @@
 	
 	
 	
+	
 	//Economic
 	{
 		"name":"Merchant",
@@ -158,5 +159,103 @@
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	//happiness
+	
+	{
+		"name":"Comedian",
+		"happiness": 4,
+	//	"greatPersonPoints": {"Great Entertainer":3},
+		"color": [160,130,209]
+	},
+	{
+		"name":"Entertainer",
+		"happiness":3,
+		"culture": 1,
+	//	"greatPersonPoints": {"Great Entertainer":3},
+		"color": [160,130,209]
+	},
+	{
+		"name":"Movie Star",
+		"happiness": 2,
+		"culture": 1,
+		"gold": 1,
+	//	"greatPersonPoints": {"Great Entertainer":3},
+		"color": [160,130,209]
+	},
+	{
+		"name":"Celebrity",
+		"happiness":3,
+		"gold": 1,
+	//	"greatPersonPoints": {"Great Entertainer":3},
+		"color": [160,130,209]
+	},
+	{
+		"name":"Athlete",
+		"happiness": 2,
+		"science": 1,	
+		"gold": 1,			
+	//	"greatPersonPoints": {"Great Entertainer":3},
+		"color": [160,130,209]
+	},	
+	{
+		"name":"Podcaster",
+		"happiness":2,
+		"culture": 1,
+		"science": 1,
+	//	"greatPersonPoints": {"Great Entertainer":3},
+		"color": [160,130,209]
+	},
 
+
+
+
+
+
+
+
+
+
+
+	//Culture
+	{
+		"name":"Artist",
+		"culture": 4,
+	//	"greatPersonPoints": {"Great Artist":3},
+		"color": [160,32,240]
+	},	
+	{
+		"name":"Muscitian",
+		"culture": 2,
+		"happiness": 1,
+		"gold": 1,
+	//	"greatPersonPoints": {"Great Artist":3},
+		"color": [160,32,240]
+	},
+	{
+		"name":"Author",
+		"culture": 2,
+		"production": 1,
+		"gold": 1,
+	//	"greatPersonPoints": {"Great Artist":3},
+		"color": [160,32,240]
+	},	
+	{
+		"name":"Writer", //As in the people who write scipts in movies and games
+		"culture": 2,
+		"production": 1,
+		"science": 1,
+	//	"greatPersonPoints": {"Great Artist":3},
+		"color": [160,32,240]
+	},	
 ]

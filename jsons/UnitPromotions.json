@@ -14,7 +14,7 @@
 	
 	
 	
-	// Repair Ships
+	// Repair Ships & Support Ships
 	{
 		"name": "Experienced Repair Crew I",
 		"uniques": ["All adjacent units heal [+2] HP when healing"],
@@ -81,6 +81,55 @@
         "column": 2,
         "row": 3
 	},
+	
+	
+	
+	
+	
+	
+	//Carriers
+	{
+		"name": "Carrier Plating I",
+		"uniques": ["[+15]% Strength <when defending>"],
+		"unitTypes": ["Standard Carrier"],
+        "column": 3,
+        "row": 1
+    },
+	{
+		"name": "Carrier Plating II",
+		"prerequisites": ["Carrier Plating I"],
+		"uniques": ["[+15]% Strength <when defending>"],
+		"unitTypes": ["Standard Carrier"],
+        "column": 3,
+        "row": 2
+	},
+	{
+		"name": "Additional Hangar I", //May be moved to a seperate coloum in the future
+		"prerequisites": ["Carrier Plating II"],
+		"uniques": [
+					//Boost
+					"Can carry [1] extra [Smallcraft] units"
+					//Restriction
+					 "Only available <after discovering [Double Hangared Carriers]>"
+					]
+		"unitTypes": ["Standard Carrier"],
+        "column": 3,
+        "row": 3
+	},	
+	{
+		"name": "Additional Hangar II",
+		"prerequisites": ["Additional Hangar I"],
+		"uniques": [
+					//Boost
+					"Can carry [1] extra [Smallcraft] units"
+					//Restriction
+					 "Only available <after discovering [Double Hangared Carriers]>"
+					]
+		"unitTypes": ["Standard Carrier"],
+        "column": 3,
+        "row": 4
+	},	
+	
 
 
 
@@ -89,7 +138,7 @@
 		"name": "Artillery Adjustments I",
 		"uniques": ["[+25]% Strength <when attacking>"],
 		"unitTypes": ["Space Artillery","Space Laser","Plasma Launcher",],
-        "column": 3,
+        "column": 4,
         "row": 1
     },
 	{
@@ -97,7 +146,7 @@
 		"prerequisites": ["Artillery Adjustments I"],
 		"uniques": ["[+25]% Strength <when attacking>"],
 		"unitTypes": ["Space Artillery","Space Laser","Plasma Launcher"],
-        "column": 3,
+        "column": 4,
         "row": 2
     },
 	{
@@ -105,9 +154,16 @@
 		"prerequisites": ["Artillery Adjustments II"],
 		"uniques": ["[+25]% Strength <when attacking>"],
 		"unitTypes": ["Space Artillery","Space Laser","Plasma Launcher"],
-        "column": 3,
+        "column": 4,
         "row": 3
     },
+
+
+
+
+
+
+
 
 	//Other
 	

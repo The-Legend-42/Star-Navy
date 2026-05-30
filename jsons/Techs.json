@@ -22,6 +22,13 @@
 		"wonderCost": 185,
 		"techs": [
 			{
+				"name": "Birth of Faith",
+				"row": 1,
+			//	"prerequisites": ["The Great Shift"],
+	            "uniques": ["Only available <after discovering [The Great Shift]>"],			
+				"quote": "'We prepare for war amongst the stars' - Spaceman"
+			},
+			{
 				"name": "Lenses",
 				"row": 4,
 				"prerequisites": ["Space Travel"],
@@ -57,6 +64,13 @@
 		"buildingCost": 50,
 		"wonderCost": 185,
 		"techs": [
+			{
+				"name": "Religious Monuments",
+				"row": 1,
+				"prerequisites": ["Birth of Faith"],		
+	            "uniques": ["Only available <after discovering [The Great Shift]>"],			
+				"quote": "'We prepare for war amongst the stars' - Spaceman"
+			},
 			{
 				"name": "Photonic Computing",
 				"row": 4,
@@ -985,16 +999,80 @@
 			},
 		] 
 	},	
+	{
+		"columnNumber": 22,
+		"era": "Great Transformation",
+	//	"techCost": 402,	//ORIGINAL COST
+		"techCost": 420,
+		"buildingCost": 333,
+		"wonderCost": 625,
+		"techs": [
 	
+			{
+				"name": "Entertainers"
+				"row": 5,
+				"prerequisites": ["Gunnary & Plasma","First Starbombers"],
+				"quote": "'Are you entertained?' - Space Bozo"
+			},
+			{
+				"name": "Bomber Wings",
+				"row": 6,
+				"prerequisites": ["First Starbombers","Double Hangared Carriers","Protectorates & Military Alliances",],			
+				"quote": "'Bombers in groups!' - Spaceman"
+			},
+			{
+				"name": "Architectural Shift",
+				"row": 7,
+				"prerequisites": ["Protectorates & Military Alliances","Helium Tanks",],
+				"quote": "'A massive shift in the way we make our Buildings' - Engineer"		
+			},
+		] 
+	},		
+	{
+		"columnNumber": 23,
+		"era": "Great Transformation",
+	//  "techCost": 412,	//ORIGINAL COST
+		"techCost": 500,
+		"buildingCost": 335,
+		"wonderCost": 635,
+		"techs": [
 	
-	
+			{
+				"name": "Culture Specialists",
+				"row": 5,
+				"prerequisites": ["Entertainers","Bomber Wings"],
+				"quote": "'Specialists who advance the arts and out culutre.' - Spaceman"
+			},
+			{
+				"name": "Military Shift",
+				"row": 7,
+				"prerequisites": ["Bomber Wings","Architectural Shift",],
+				"quote": "'A shift in the way we fight our wars and the weapons we use to do so.' - Engineer"		
+			},
+		] 
+	},		
+		{
+		"columnNumber": 24,
+		"era": "Great Shift",
+		"techCost": 2000,
+		"buildingCost": 335, //same
+		"wonderCost": 635, //same
+		"techs": [
+			{
+				"name": "The Great Shift",
+				"row": 6,
+				"prerequisites": ["Culture Specialists","Military Shift" ],
+                "uniques": ["Cannot be hurried"],
+				//"Only available
+				"quote": "'It has all lead up to this' - Spaceman"		
+			},
+		] 
+	},	
 	
 	
 ]
 
 //News
-//Entertainers?
-//Diplomatic --> Pacts
-
+//"[+1 Culture] from [Great Improvement] tiles [in all cities]",
 
 //Cold Industries?

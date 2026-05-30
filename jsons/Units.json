@@ -154,7 +154,31 @@
 		"interceptRange": 4,
 		"cost": 200,
 		"requiredTech": "First Starfighters",
-		"uniques": ["[10]% chance to intercept air attacks"],
+		"obsoleteTech": "Military Shift",
+		"upgradesTo": "Early Starfighter",
+		"uniques": [//Combat
+					"[10]% chance to intercept air attacks"
+					//Type
+					"Solo"
+					],
+		"attackSound": "machinegun"
+	},
+	
+	{
+		"name": "Early Starfighter",
+		"unitType": "Starfighter",
+		"movement": 1,
+		"strength": 45,
+		"rangedStrength": 45,
+		"range": 4,
+		"interceptRange": 4,
+		"cost": 200,
+		"requiredTech": "Military Shift",
+		"uniques": [//Combat
+					"[15]% chance to intercept air attacks"
+					//Type
+					"Solo"
+					],
 		"attackSound": "machinegun"
 	},
 	//Fighter Wings
@@ -168,7 +192,30 @@
 		"interceptRange": 4,
 		"cost": 500,
 		"requiredTech": "Fighter Wings",
-		"uniques": ["[15]% chance to intercept air attacks"],
+		"obsoleteTech": "Military Shift",
+		"upgradesTo": "Early Starfighter Wing",
+		"uniques": [//Combat
+					"[15]% chance to intercept air attacks"
+					//Type
+					"Swarm"
+					],
+		"attackSound": "machinegun"
+	},	
+	{
+		"name": "Early Starfighter Wing",
+		"unitType": "Starfighter",
+		"movement": 1,
+		"strength": 120,
+		"rangedStrength": 120,
+		"range": 4,
+		"interceptRange": 4,
+		"cost": 500,
+		"requiredTech": "Military Shift",
+		"uniques": [//Combat
+					"[25]% chance to intercept air attacks"
+					//Type
+					"Swarm"
+					],
 		"attackSound": "machinegun"
 	},	
 	//Bombers
@@ -181,11 +228,58 @@
 		"range": 4,
 		"cost": 250,
 		"requiredTech": "First Starbombers",
+		"obsoleteTech": "Military Shift",
+		"upgradesTo": "Early Starbomber",
+		"uniques": [//Type
+					"Solo"
+					],
 		"attackSound": "machinegun" //Will change
 	},
-
-	
-	
+	{
+		"name": "Early Starbomber",
+		"unitType": "Starbomber", 
+		"movement": 1,
+		"strength": 65,
+		"rangedStrength": 90,
+		"range": 5,
+		"cost": 250,
+		"requiredTech": "Military Shift",
+		"uniques": [//Type
+					"Solo"
+					],
+		"attackSound": "machinegun" //Will change
+	},
+	//Bomber Wings
+	{
+		"name": "Primitive Starbomber Wing",
+		"unitType": "Starbomber", 
+		"movement": 1,
+		"strength": 100,
+		"rangedStrength": 135,
+		"range": 4,
+		"cost": 500,
+		"requiredTech": "Bomber Wings",
+		"obsoleteTech": "Military Shift",
+		"upgradesTo": "Early Starbomber",
+		"uniques": [//Type
+					"Swarm"
+					],
+		"attackSound": "machinegun" //Will change
+	},	
+	{
+		"name": "Early Starbomber Wing",
+		"unitType": "Starbomber", 
+		"movement": 1,
+		"strength": 110,
+		"rangedStrength": 150,
+		"range": 5,
+		"cost": 550,
+		"requiredTech": "Military Shift",
+		"uniques": [//Type
+					"Swarm"
+					],
+		"attackSound": "machinegun" //Will change
+	},
 	
 
 	
@@ -522,8 +616,22 @@
 		"cost": 170,
 		"requiredResource": "Ethelium",
 		"requiredTech": "Improved Active Defence Systems",
-		"attackSound": "shot"
+		"obsoleteTech": "Military Shift",
+		"upgradesTo": "Ethelium Wideplate Super Slicer",
+		"attackSound": "shot"	//Will change
 	},	
+	{
+		"name": "Ethelium Wideplate Super Slicer",
+		"unitType": "Space Laser",
+		"movement": 1,
+		"strength": 14,
+        "range": 2,
+		"rangedStrength": 300,
+		"cost": 175,
+		"requiredResource": "Ethelium",
+		"requiredTech": "Military Shift",
+		"attackSound": "shot"	//Will change
+	},
 	{ //Sucessor to both the Railguns and the Lasers
 		"name": "Simple Plasma Launcher",
 		"unitType": "Plasma Launcher",
@@ -626,7 +734,9 @@
 		"movement": 5,
 		"strength": 29,
 		"cost": 95,
+		"upgradesTo": "Assaulter",
 		"requiredTech": "Small Scale Plasmatic Propulsion",
+		"obsoleteTech": "Military Shift",
 		"uniques": ["Can move after attacking","[1] additional attacks per turn", "Patrol Ship"],
 		"promotions": ["Harasser"],			
 		"attackSound": "shot"
@@ -678,6 +788,7 @@
 		"requiredResource": "Silicon",
 		"requiredTech": "Silicon Armaments",
 		"upgradesTo": "NEP Corvette",
+		"obsoleteTech": "Ultra Low Frequency Transmitters",
 		"promotions": ["Electronic Countermeasures I"],		
 		"attackSound": "shot",
 	},
@@ -688,6 +799,8 @@
 		"strength": 23,
 		"cost": 100,
 		"requiredTech": "Nuclear Electric Propulsion",
+		"obsoleteTech": "Silicon Warehouses",
+		"upgradesTo": "Detection Corvette",
 		"uniques": ["Consumes [1] [Silicon]","Consumes [1] [Uranium]"],
 		"promotions": ["Electronic Countermeasures I", "Harasser"],		
 		"attackSound": "shot",
@@ -700,7 +813,8 @@
 		"cost": 125,
 		"requiredResource": "Silicon",
 		"requiredTech": "Ultra Low Frequency Transmitters",
-		"upgradesTo": "NEP Corvette",
+		"obsoleteTech": "Military Shift",
+		"upgradesTo": "Assaulter",
 		"uniques": ["[+1] Sight"],
 		"promotions": ["Electronic Countermeasures I"],		
 		"attackSound": "shot",
@@ -747,7 +861,25 @@
 		"interceptRange": 1,
 		"cost": 145,
 		"requiredTech": "Anti Starfighter Systems",
+		"obsoleteTech": "Military Shift",
+		"upgradesTo": "Assaulter",
 		"uniques": ["[40]% chance to intercept air attacks","[+60]% Strength <vs [Smallcraft] units>"],
+		"attackSound": "shot"
+	},
+	//New Line
+	{
+		"name": "Assaulter",
+		"unitType": "Frigate",
+		"movement": 6,
+		"strength": 55,
+		"interceptRange": 2,
+		"cost": 150,
+		"requiredTech": "Military Shift",
+		"uniques": [
+					//Offencive
+				"[1] additional attacks per turn","[+15]% Strength <vs [Escort] units>",
+					//Defencive
+				"[35]% chance to intercept air attacks", "[+65]% Strength <vs [Smallcraft] units>",]
 		"attackSound": "shot"
 	},	
 	//Destroyers
@@ -790,6 +922,7 @@
 		"uniques": ["[+55]% Strength <vs cities>", "Requires at least [2] population"],
 		"attackSound": "shot"
 	},
+	//New Line
 	{
 		"name": "Macer",
 		"unitType": "Destroyer",
@@ -847,6 +980,22 @@
 		"interceptRange": 2,
 		"cost": 170,
 		"requiredTech": "Anti Starfighter Systems",
+		"obsoleteTech": "Military Shift",
+		"upgradesTo": "Fast Destroyer",
+		"uniques": [
+					"Requires at least [2] population"
+					"[40]% chance to intercept air attacks",
+					"[+60]% Strength <vs [Smallcraft] units>"],
+		"attackSound": "shot"
+	},	
+	{
+		"name": "Fast Destroyer",
+		"unitType": "Destroyer",
+		"movement": 5,
+		"strength": 70,
+		"interceptRange": 2,
+		"cost": 200,
+		"requiredTech": "Military Shift",
 		"uniques": [
 					"Requires at least [2] population"
 					"[40]% chance to intercept air attacks",
@@ -875,10 +1024,11 @@
 		"cost": 189,
 		"requiredResource": "Ethelium",
 		"requiredTech": "Carrier Era Warships",
+		"obsoleteTech": "Military Shift",
+		"upgradesTo": "Fast Destroyer",
 		"uniques": ["[+35]% Strength <vs cities>", "Requires at least [3] population"],
 		"attackSound": "shot"
 	},	
-	
 	//Smaller faster cheeper Cruisers
 	{
 		"name": "Simple Light cruiser",
@@ -1145,7 +1295,7 @@
 		"attackSound": "shot"
 	},
 	//New Line
-	{ 	//Not obsolete Yet
+	{
 		"name": "Ethelium Based Battle Cruiser",
 		"unitType": "Battle Cruiser",
 		"movement": 2,
@@ -1153,21 +1303,26 @@
 		"cost": 365,
 		"requiredResource": "Ethelium",
 		"requiredTech": "Ethelium Tecnology",
+	//	"obsoleteTech": "Military Shift",
 		"upgradesTo": "Ethelium Plasma Battle Cruiser",
 		"uniques": ["[+33]% Strength <vs cities>", "Consumes [3] [Iron]", "Requires at least [7] population"],
 		"attackSound": "shot"
 	},	
 	{
 		"name": "Ethelium Plasma Battle Cruiser",
-		"unitType": "Cruiser",
+		"unitType": "Battle Cruiser",
 		"movement": 2,
 		"strength": 145,
 		"cost": 365,
 		"requiredResource": "Ethelium",
 		"requiredTech": "Gunnary & Plasma",
+	//	"obsoleteTech": "Military Shift",
+		"upgradesTo": "Ethelium Powered Railgun Battleship",
 		"uniques": ["[+33]% Strength <vs cities>", "Consumes [3] [Iron]", "Consumes [1] [Helium 3]", "Requires at least [7] population"],
 		"attackSound": "shot"
 	},
+	
+	
 	//Battleships
 	{ 
 		"name": "Early Battleship",
@@ -1227,12 +1382,27 @@
 		"cost": 421,
 		"requiredResource": "Ethelium",
 		"requiredTech": "Ethelium Battleships",
+		"obsoleteTech": "Military Shift",
+		"upgradesTo": "Ethelium Powered Railgun Battleship",
 		"uniques": ["[+33]% Strength <vs cities>", "Consumes [5] [Iron]", "Requires at least [10] population"],
 		"promotions": ["Basic Active Defence Systems"],
 		"attackSound": "shot"
 	},
-
-
+	{ 
+		"name": "Ethelium Powered Railgun Battleship",
+		"unitType": "Battleship",
+		"movement": 2,
+        "range": 2,
+		"rangedStrength": 185,
+		"strength": 165,
+		"cost": 425,
+		"requiredResource": "Ethelium",
+		"requiredTech": "Ethelium Tecnology",
+		"upgradesTo": "Ethelium Plasma Battle Cruiser",
+		"uniques": ["[+33]% Strength <vs cities>", "Consumes [5] [Iron]", "Requires at least [10] population"],
+		"promotions": ["Basic Active Defence Systems", "Artillery Adjustments I"], //Usually battleships shouldn't have Artillery abilities but this ones an exeption	
+		"attackSound": "shot"
+	},	
 	//The First Carrier line
 	{
 		"name": "Primitive Carrier",
@@ -1243,6 +1413,7 @@
 		"cost": 340,
 		"requiredTech": "Carriers",
 		"upgradesTo": "Early Carrier",
+		"obsoleteTech": "Military Shift",
 		"uniques": ["Cannot attack", "Can carry [1] [Smallcraft] units"]
 		"promotions": ["Basic Active Defence Systems"],
 	},
@@ -1253,8 +1424,20 @@
 		"strength": 50,
 		"cost": 345,
 		"requiredTech": "Early Carriers",
+		"obsoleteTech": "Military Shift",
+		"upgradesTo": "Standard Carrier", 
 		"uniques": ["Cannot attack", "All adjacent units heal [+1] HP when healing", "Can carry [1] [Smallcraft] units"]
 		"promotions": ["Basic Active Defence Systems"],
+	},
+	{
+		"name": "Standard Carrier",
+		"unitType": "Standard Carrier",
+		"movement": 2,
+		"strength": 80,
+		"cost": 400,
+		"requiredTech": "Military Shift",
+		"uniques": ["Cannot attack", "All adjacent units heal [+1] HP when healing", "Can carry [1] [Smallcraft] units"]
+		"promotions": ["Basic Active Defence Systems", "Additional Hangar I"],
 	},
 	//Seperate Line
 	{
@@ -1264,9 +1447,69 @@
 		"strength": 65,
 		"cost": 500,
 		"requiredTech": "Double Hangared Carriers",
+		"obsoleteTech": "Military Shift",
+		"upgradesTo": "Standard Carrier", 
+		"uniques": ["Cannot attack", "All adjacent units heal [+1] HP when healing", "Can carry [2] [Smallcraft] units"]
+		"promotions": ["Basic Active Defence Systems"],
+	},
+	{
+		"name": "Standard Double Hangared Carrier",
+		"unitType": "Standard Carrier",
+		"movement": 2,
+		"strength": 95,
+		"cost": 520,
+		"requiredTech": "Military Shift",	
 		"uniques": ["Cannot attack", "All adjacent units heal [+1] HP when healing", "Can carry [2] [Smallcraft] units"]
 		"promotions": ["Basic Active Defence Systems"],
 	},
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		///other
+		
+	{
+		"name": "Religious Founder",
+		"unitType": "Civilian",
+		"uniques": [
+        //   "Can instantly construct a [Holy site] improvement <by consuming this unit> <if it hasn't used other actions yet>",
+        //    "Can Spread Religion <for [2] movement> <[4] times> <after which this unit is consumed>",
+		//	"Removes other religions when spreading religion",
+		//     "[This Unit] gets a name from the [Prophet] group",
+		//	"May enter foreign tiles without open borders", "[-1] Sight", 
+			"Great Person - [Faith]",
+            "May found a religion <by consuming this unit> <if it hasn't used other actions yet>",
+            "May enhance a religion <by consuming this unit>  <if it hasn't used other actions yet>",
+            "Is part of Great Person group [Prophet]",
+			"Unbuildable", "Religious Unit", "Only available <when religion is enabled>",
+			"Takes your religion over the one in their birth city"],
+		"movement": 2,
+		"religiousStrength": 1000
+	},
 
 ]

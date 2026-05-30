@@ -83,4 +83,32 @@
         "citySound": "cityAncient",
         "iconRGB": [105, 105, 105]
     }
+	{
+        "name": "Great Transformation",
+        "researchAgreementCost": 525,
+        "startingSettlerCount": 2, 
+        "startingWorkerCount": 0,
+        "startingMilitaryUnitCount": 2,
+        "startingMilitaryUnit": "Anti Fighter Destroyer",
+        "settlerPopulation": 1,
+        "baseUnitBuyCost": 660,
+        "embarkDefense": 90,
+        "startPercent": 0,
+        "citySound": "cityAncient",
+        "iconRGB": [153, 37, 153]
+    }
+	{
+        "name": "Great Shift",
+        "researchAgreementCost": 525,
+        "startingSettlerCount": 2, 
+        "startingWorkerCount": 0,
+        "startingMilitaryUnitCount": 2,
+        "startingMilitaryUnit": "Assaulter",
+        "settlerPopulation": 1,
+        "baseUnitBuyCost": 660,
+        "embarkDefense": 90,
+        "startPercent": 0,
+        "citySound": "cityAncient",
+        "iconRGB": [71, 0, 97]
+    }
 ]

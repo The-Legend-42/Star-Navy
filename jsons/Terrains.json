@@ -49,6 +49,7 @@
 		"defenceBonus": 1,
         "RGB": [163, 0, 0],
         "uniques": ["Planet"	
+					"Sands"
 					"Rough terrain"
 					"Occurs in chains at high elevations",
 					"Has an elevation of [1] for visibility calculations",
@@ -137,6 +138,7 @@
 		"uniques": ["Always Fertility [5] for Map Generation",
 			"Rare feature"
 		    "Fresh water",
+			"Sands"
 			"Considered [Food] when determining start locations",
 			"Considered [Desirable] when determining start locations"]
 	},
@@ -331,7 +333,8 @@
 	//	"movementCost": 1,
 		"occursOn": ["Desert Planet", "Fertile Sands","Earth-Like","Barren Planet","Frost","Islands", "Water-World"],
 		"uniques": [
-			"Moon" 
+			"Moon"
+			"Sands"
 			"Vegetation"
 			"Fresh water", //In small amounts
 			"Always Fertility [-1] for Map Generation",

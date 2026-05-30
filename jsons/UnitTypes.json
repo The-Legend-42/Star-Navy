@@ -20,12 +20,12 @@
 	{
         "name": "Starfighter",
         "movementType": "Air",
-        "uniques": ["[+1] Sight","Can perform Air Sweep","Smallcraft","Fighter"]
+        "uniques": ["[+1] Sight", "Can perform Air Sweep", "Smallcraft", "Fighter"]
     },
 	{
         "name": "Starbomber",
         "movementType": "Air",
-        "uniques": ["[+1] Sight","Smallcraft","Bomber"]
+        "uniques": ["[+1] Sight", "Smallcraft", "Bomber"]
     },	
 	
 	
@@ -37,7 +37,7 @@
     },
 	{
         "name": "Support Ship",
-		"uniques": ["[+1] Sight","Escort"]
+		"uniques": ["[+1] Sight", "Escort"]
         "movementType": "Land"
     },	
 	{
