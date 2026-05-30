@@ -11,6 +11,10 @@ Units:
 [Colony Ship] https://www.flaticon.com/free-icon/apolo-project_96667
 [Planetary Colony Ship] https://www.flaticon.com/free-icon/apolo-project_96667
 
+Religions:
+[God Emperor] Edited version of https://www.magnific.com/icon/eagle_4600694#fromView=search&page=2&position=6&uuid=648ab6e0-af7a-4368-92f5-66da8d48e537
+
+
 Techs:
 [Fertilizers] https://www.magnific.com/icon/compostable_5367849#fromView=search&page=1&position=7&uuid=d54395d8-d568-4bb4-9390-2e18c886aed4
 
@@ -31,3 +35,7 @@ Resources from the base game:
 [Gold Ore] Gold Ore
 [Uranium] Uranium
 [Diamonds] Gems
+
+
+Religious Icons from the base game:
+[Space Jew] Judaism
