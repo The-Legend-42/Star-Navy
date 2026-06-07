@@ -13,6 +13,8 @@
 					]
 	},
 	*/
+	
+	
 	{
 		"name": "Space Ice",
 		"resourceType": "Bonus",
@@ -74,6 +76,7 @@
 					"Doesn't generate naturally <in [Frost] tiles>"
 					]
 	},
+
 
 
 	//Strategic resources
@@ -379,6 +382,19 @@
 					"Generated with weight [7] <in [Rocky-Moon] tiles>",				
 					"Generated with weight [3] <in [Magma-Moon] tiles>",
 					"Generated with weight [1] <in [Water-World] tiles>", //Under water deposits
+					],
+	},
+	{
+		"name": "Solar Incense",
+		"resourceType": "Luxury",
+		"revealedBy": "Solar Holy Incense",
+		"terrainsCanBeFoundOn": ["Asteroid Field",],
+		"gold": 1,
+		"improvementStats": {"Gold": 1},
+		"improvement": "Asteroid Mine",
+		"uniques": [
+					"[+1 Faith] <when religion is enabled>"
+					"Generated with weight [3] <in [Asteroid Field] tiles>",
 					],
 	},
 	{

@@ -1,5 +1,66 @@
 [
     {
+        "name": "Tourism",
+        "era": "Early Era",
+        "priorities": {
+            "Neutral": 5,
+        //     "Cultural": 5,
+        //    "Diplomatic": 5,
+            "Domination": 5,
+        //    "Scientific": 5
+        },
+        "uniques": [
+            "[+1 Culture, +1 Food] [in capital]",
+        ],
+        "policies": [
+            {
+                "name": "Relaxation Pods",
+                "uniques": ["[+1 Happiness, +1 Science] [in capital]"],
+                "row": 1,
+                "column": 2
+            },
+            {
+                "name": "Massage Pods",
+                "uniques": ["[+1 Happiness, +1 Gold] [in capital]"],
+                "requires": ["Relaxation Pods"],
+                "row": 2,
+                "column": 2
+            },
+            {
+                "name": "Hotels",
+                "uniques": ["May buy [Hotel] buildings with [Gold] [in all cities]"],
+                "row": 1,
+                "column": 4
+            },
+            {
+                "name": "Motels",
+                "uniques": ["May buy [Motel] buildings with [Gold] [in all cities]"],
+                "requires": ["Hotels"],
+                "row": 2,
+                "column": 4
+            },
+            {
+                "name": "Tourism Complete",
+                "uniques": [
+					"Empire enters a [15]-turn Golden Age"
+					"Provides a [Hotel] in your first [2] cities for free",
+                    "Get the leader title of [Travaler [leaderName]]"
+                ]
+            }
+        ]
+    },
+
+
+
+
+
+
+
+
+
+
+
+    {
         "name": "Gardening", //Originally called Agrarian
         "era": "Plasma Era",
         "priorities": {

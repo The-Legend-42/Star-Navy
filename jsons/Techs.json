@@ -26,7 +26,7 @@
 				"row": 1,
 			//	"prerequisites": ["The Great Shift"],
 	            "uniques": ["Only available <after discovering [The Great Shift]>"],			
-				"quote": "'We prepare for war amongst the stars' - Spaceman"
+				"quote": "'The great shift has set the foundations required to initiate the birth of our beliefs' - Holy One"
 			},
 			{
 				"name": "Lenses",
@@ -69,7 +69,7 @@
 				"row": 1,
 				"prerequisites": ["Birth of Faith"],		
 	            "uniques": ["Only available <after discovering [The Great Shift]>"],			
-				"quote": "'We prepare for war amongst the stars' - Spaceman"
+				"quote": "'Monuments of our faith' - Holy One"
 			},
 			{
 				"name": "Photonic Computing",
@@ -114,6 +114,26 @@
 		"wonderCost": 225,
 		"techs": [
 			{
+				"name": "Altars",
+				"row": 1,
+				"prerequisites": ["Religious Monuments"],		
+	            "uniques": ["Only available <after discovering [The Great Shift]>"],			
+				"quote": "'Altars for the faithul' - Holy One"
+			},
+			{
+				"name": "Religious backing",
+				"row": 2,
+				"prerequisites": ["Religious Monuments"],					
+	            "uniques": [
+							//Great Shift
+							"Only available <after discovering [The Great Shift]>", 
+							//Buff
+							"Gain [100] [Gold]","Gain [25] [Culture]","Gain [10] [Faith]","[1] Free Social Policies","Free Technology",
+							//Weight
+							"[-50]% weight to this choice for AI decisions"],			
+				"quote": "'Support the faithful and they will back you' - Holy Two"
+			},
+			{
 				"name": "Lasers",
 				"row": 4,
 				"prerequisites": ["Photonic Computing"],
@@ -153,7 +173,27 @@
 		"buildingCost": 85,
 		"wonderCost": 225,
 		"techs": [
-					{
+				{
+				"name": "Great Altars",
+				"row": 1,
+				"prerequisites": ["Altars"],		
+	            "uniques": ["Only available <after discovering [The Great Shift]>"],			
+				"quote": "'Greater Altars for us all!' - Holy One"
+			},
+			{
+				"name": "Religious-backed policies",
+				"row": 2,
+				"prerequisites": ["Religious backing"],		
+	            "uniques": [
+							//Great Shift
+							"Only available <after discovering [The Great Shift]>"
+							//Policies
+							"[2] Free Social Policies", 
+							//Weight
+							"[-33]% weight to this choice for AI decisions"],			
+				"quote": "'The Faithful shall suport you and your Policies' - Holy Two"
+			},
+			{
 				"name": "Laser Mining",
 				"row": 4,
 				"prerequisites": ["Lasers","Vector Engines"],
@@ -195,6 +235,20 @@
 		"buildingCost": 85,
 		"wonderCost": 225,
 		"techs": [
+				{
+				"name": "Solar Holy Incense", //Solar Incense
+				"row": 1,
+				"prerequisites": ["Great Altars", "Religious-backed policies"],		
+	            "uniques": ["Only available <after discovering [The Great Shift]>"],			
+				"quote": "'Solar Incense to worship the devine' - Holy One"
+			},
+			{
+				"name": "Holy Scolls",
+				"row": 2,
+				"prerequisites": ["Religious-backed policies"],		
+	            "uniques": ["Only available <after discovering [The Great Shift]>", "[+1 Faith] [in capital]"],			
+				"quote": "'Scroll of Faith' - Holy Two"
+			},
 			{
 				"name": "Laser Weaponry",
 				"row": 4,
@@ -235,6 +289,13 @@
 		"buildingCost": 100,
 		"wonderCost": 265,
 		"techs": [
+			{
+				"name": "Spreading The Scolls",
+				"row": 1,
+				"prerequisites": ["Solar Holy Incense","Holy Scolls"],		
+	            "uniques": ["[+1 Faith] [in all cities]"],			
+				"quote": "'More Scrolls Spread through out your space' - Holy One"
+			},
 			{
 			//Addsuildings with Specialists
 				"name": "Economic Specialists",

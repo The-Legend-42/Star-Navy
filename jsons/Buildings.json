@@ -701,9 +701,13 @@
 		"requiredTech": "Religious Monuments"
 		"requiredBuilding": "Ancient Monument",
 	},	
-	
-	
-	
+	{
+		"name": "Altar",
+		"culture": 1,
+		"faith": 1,
+		"maintenance": 1,
+		"requiredTech": "Altars"
+	},		
 	
 	
 	
@@ -796,6 +800,19 @@
 		"requiredTech": "Architectural Shift",
 		"requiredBuilding": "Farming Complex",
 	},	
+	{
+		"name": "Great Altar",
+		"faith": 4,
+		"happiness": 2,
+		"culture": 2,
+		"maintenance": 4,
+		"isNationalWonder": true,
+		"uniques": [
+					"Only available <if [Altar] is constructed in all [non-[Puppeted]] cities>", 
+					"Only available <in cities without a [The Grand Altar]>"
+					"Cost increases by [20] per owned city"],
+		"requiredTech": "Great Altars"
+	},
 
 
 
@@ -899,7 +916,32 @@
 				],
 		"requiredTech": "Architectural Shift",
 	},
-
+	{
+		"name": "The Grand Altar",
+		"cost": 1000,
+		"faith": 10,
+		"happiness": 4,
+		"culture": 4,
+		"maintenance": 5,
+		"isWonder": true,
+		"uniques": [
+					//Altar Boost
+					"[+2 Gold] from every [Altar]"
+					//population Boosts
+					"[+1 Faith] per [5] population [in this city]"
+					"[+1 Gold] per [7] population [in this city]"
+					//Limitation
+					"Only available <in cities without a [Great Altar]>"
+					],
+		"requiredTech": "Great Altars"
+		"requiredBuilding": "Altar",
+	},
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -918,7 +960,7 @@
 	
 	/////////////////Other or/and Specials//////////////////
 	
-	
+		////from religion////
 	{
 		"name": "Muegin",
 		"cost": 0,
@@ -930,9 +972,27 @@
 					]
 	},
 	
+		////from policies////
 	
-	
-	
+	{
+		"name": "Hotel",
+		"cost": 0,
+		"gold": 3,
+		"happiness": 2,
+		"culture": 1,
+		"uniques": ["Unbuildable", 
+					"Only available <after adopting [Motels]>"
+					]
+	},
+	{
+		"name": "Motel",
+		"cost": 0,
+		"gold": 1,
+		"happiness": 1,
+		"uniques": ["Unbuildable",
+					"Only available <after adopting [Motels]>"
+					]
+	},
 	
 	
 	
