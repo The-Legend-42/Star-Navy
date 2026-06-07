@@ -35,6 +35,7 @@ Resources from the base game:
 [Gold Ore] Gold Ore
 [Uranium] Uranium
 [Diamonds] Gems
+[Solar Incense] Incense
 
 
 Religious Icons from the base game:
