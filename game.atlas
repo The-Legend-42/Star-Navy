@@ -6,42 +6,56 @@ filter: MipMapLinearLinear, MipMapLinearLinear
 repeat: none
 NationIcons/Crime Lords of Bazzik
   rotate: false
-  xy: 1460, 1356
+  xy: 4, 1252
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 NationIcons/Gezoic
   rotate: false
-  xy: 836, 628
+  xy: 1252, 524
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 NationIcons/Giannic Alliance
   rotate: false
-  xy: 1044, 524
+  xy: 1460, 524
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 NationIcons/Human Empire
   rotate: false
-  xy: 1668, 524
+  xy: 212, 420
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 NationIcons/Iota Persei
   rotate: false
-  xy: 628, 420
+  xy: 1044, 316
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 NationIcons/Mechan Alliance
   rotate: false
-  xy: 836, 212
+  xy: 1252, 108
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+TechIcons/Asteroid Mining
+  rotate: false
+  xy: 1044, 1564
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+TechIcons/Basic Warships
+  rotate: false
+  xy: 1252, 1564
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
@@ -83,35 +97,35 @@ UnitIcons/Assaulter
   index: -1
 UnitIcons/Battle Cruiser
   rotate: false
-  xy: 1044, 1564
+  xy: 1460, 1564
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Battleship
   rotate: false
-  xy: 1252, 1564
+  xy: 1668, 1564
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Bludgeoner
   rotate: false
-  xy: 1460, 1564
+  xy: 1044, 1356
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Bulky Heavy Cruiser
   rotate: false
-  xy: 1668, 1564
+  xy: 1252, 1356
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Cad Farseer
   rotate: false
-  xy: 1044, 1356
+  xy: 1460, 1356
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
@@ -125,390 +139,383 @@ UnitIcons/Colony Ship
   index: -1
 UnitIcons/Combat Repair Ship
   rotate: false
-  xy: 1252, 1356
+  xy: 1668, 1356
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Cruiser
   rotate: false
-  xy: 1668, 1356
+  xy: 212, 1252
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Deep Space Voyaging Ship
   rotate: false
-  xy: 4, 1252
+  xy: 420, 1252
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Deployable Space Station
   rotate: false
-  xy: 212, 1252
+  xy: 628, 1252
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Detection Corvette
   rotate: false
-  xy: 420, 1252
+  xy: 836, 1252
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Duel Lensed Spaceborn Laser
   rotate: false
-  xy: 628, 1252
+  xy: 1044, 1148
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Early Battleship
   rotate: false
-  xy: 836, 1252
+  xy: 1252, 1148
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Early Carrier
   rotate: false
-  xy: 1044, 1148
+  xy: 1460, 1148
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Early Double Hangared Carrier
   rotate: false
-  xy: 1252, 1148
+  xy: 1668, 1148
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Early Starbomber
   rotate: false
-  xy: 1460, 1148
+  xy: 4, 1044
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Early Starbomber Wing
   rotate: false
-  xy: 1668, 1148
+  xy: 212, 1044
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Early Starfighter
   rotate: false
-  xy: 4, 1044
+  xy: 420, 1044
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Early Starfighter Wing
   rotate: false
-  xy: 212, 1044
+  xy: 628, 1044
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Efficient Bludgeoner
   rotate: false
-  xy: 420, 1044
+  xy: 836, 1044
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Efficient Cruiser
   rotate: false
-  xy: 628, 1044
+  xy: 1044, 940
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Efficient Heavy Cruiser
   rotate: false
-  xy: 836, 1044
+  xy: 1252, 940
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Efficient Light Cruiser
   rotate: false
-  xy: 1044, 940
+  xy: 1460, 940
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Ethelium Based Battle Cruiser
   rotate: false
-  xy: 1252, 940
+  xy: 1668, 940
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Ethelium Based Cruiser
   rotate: false
-  xy: 1460, 940
+  xy: 4, 836
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Ethelium Based Light Cruiser
   rotate: false
-  xy: 1668, 940
+  xy: 212, 836
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Ethelium Battleship
   rotate: false
-  xy: 4, 836
+  xy: 420, 836
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Ethelium Destroyer
   rotate: false
-  xy: 212, 836
+  xy: 628, 836
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Ethelium Plasma Battle Cruiser
   rotate: false
-  xy: 420, 836
+  xy: 836, 836
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Ethelium Plasma Cruiser
   rotate: false
-  xy: 628, 836
+  xy: 1044, 732
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Ethelium Powered Railgun Battleship
   rotate: false
-  xy: 836, 836
+  xy: 1252, 732
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Ethelium Wideplate Slicer
   rotate: false
-  xy: 1044, 732
+  xy: 1460, 732
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Ethelium Wideplate Spaceborn Laser
   rotate: false
-  xy: 1252, 732
+  xy: 1668, 732
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Ethelium Wideplate Super Slicer
   rotate: false
-  xy: 1460, 732
+  xy: 4, 628
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Farseer
   rotate: false
-  xy: 1668, 732
+  xy: 212, 628
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Fast Mining Ship
   rotate: false
-  xy: 4, 628
+  xy: 420, 628
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Fast Patrol Ship
   rotate: false
-  xy: 212, 628
+  xy: 628, 628
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Fast Repair Ship
   rotate: false
-  xy: 420, 628
+  xy: 836, 628
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Frigate
   rotate: false
-  xy: 628, 628
+  xy: 1044, 524
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Guarded Farseer
   rotate: false
-  xy: 1252, 524
+  xy: 1668, 524
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Heavy Cruiser
   rotate: false
-  xy: 1460, 524
+  xy: 4, 420
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Improved Ethelium Destroyer
   rotate: false
-  xy: 4, 420
+  xy: 420, 420
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Industrial Repair Ship
   rotate: false
-  xy: 212, 420
+  xy: 628, 420
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Infantry
   rotate: false
-  xy: 420, 420
+  xy: 836, 420
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Iron Fixer
   rotate: false
-  xy: 836, 420
+  xy: 1252, 316
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/Iron Head
   rotate: false
-  xy: 1044, 316
+  xy: 1460, 316
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Large Repair Ship
-  rotate: false
-  xy: 1252, 316
-  size: 200, 200
-  orig: 200, 200
-  offset: 0, 0
-  index: -1
-UnitIcons/Light cruiser
+TechIcons/Iron Heads
   rotate: false
   xy: 1460, 316
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Macer
+UnitIcons/Large Repair Ship
   rotate: false
   xy: 1668, 316
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Maggner Gun
+UnitIcons/Light cruiser
   rotate: false
   xy: 4, 212
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Mass Production Cruiser
+UnitIcons/Macer
   rotate: false
   xy: 212, 212
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Mass Production Heavy Cruiser
+UnitIcons/Maggner Gun
   rotate: false
   xy: 420, 212
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Mass Production Light Cruiser
+UnitIcons/Mass Production Cruiser
   rotate: false
   xy: 628, 212
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Mega Railgun Battleship
+UnitIcons/Mass Production Heavy Cruiser
+  rotate: false
+  xy: 836, 212
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+UnitIcons/Mass Production Light Cruiser
   rotate: false
   xy: 1044, 108
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Mobile Macer
-  rotate: false
-  xy: 1252, 108
-  size: 200, 200
-  orig: 200, 200
-  offset: 0, 0
-  index: -1
-UnitIcons/Mobile Patrol Ship
+UnitIcons/Mega Railgun Battleship
   rotate: false
   xy: 1460, 108
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Modernized Support Ship
+UnitIcons/Mobile Macer
   rotate: false
   xy: 1668, 108
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/NEP Coloniser
+UnitIcons/Mobile Patrol Ship
   rotate: false
   xy: 4, 4
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/NEP Corvette
+UnitIcons/Modernized Support Ship
   rotate: false
   xy: 212, 4
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/NEP Patrol Ship
+UnitIcons/NEP Coloniser
   rotate: false
   xy: 420, 4
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/NEP Voyaging Ship
+UnitIcons/NEP Corvette
   rotate: false
   xy: 628, 4
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Patrol Ship
+UnitIcons/NEP Patrol Ship
   rotate: false
   xy: 836, 4
   size: 200, 200
@@ -530,196 +537,231 @@ filter: MipMapLinearLinear, MipMapLinearLinear
 repeat: none
 NationIcons/Teal Empire
   rotate: false
-  xy: 1460, 1840
+  xy: 212, 384
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 NationIcons/Terrevik Union
   rotate: false
-  xy: 4, 176
+  xy: 420, 592
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 ReligionIcons/God Emperor
   rotate: false
-  xy: 1776, 1940
+  xy: 1460, 1516
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+ReligionIcons/Machine God
+  rotate: false
+  xy: 1568, 1516
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ReligionIcons/Space Jew
   rotate: false
-  xy: 1568, 1732
+  xy: 1360, 1316
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ReligionIcons/Triple Star Spirits
   rotate: false
-  xy: 320, 276
+  xy: 1576, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Ancient Wood
   rotate: false
-  xy: 1044, 1316
+  xy: 1460, 1732
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Aquatic Xeno Animals
   rotate: false
-  xy: 1252, 1524
+  xy: 1668, 1940
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Blue Spice
   rotate: false
-  xy: 1460, 1732
+  xy: 4, 68
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Blunderock
   rotate: false
-  xy: 1668, 1940
+  xy: 212, 276
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Cinnamon
   rotate: false
-  xy: 4, 68
+  xy: 420, 484
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Compost
   rotate: false
-  xy: 212, 276
+  xy: 628, 692
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Diamonds
   rotate: false
-  xy: 420, 484
+  xy: 836, 900
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Dimonds
   rotate: false
-  xy: 420, 484
+  xy: 836, 900
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Emeralds
   rotate: false
-  xy: 628, 692
+  xy: 1044, 1108
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Ethelium
   rotate: false
-  xy: 836, 900
+  xy: 1460, 1624
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Helium 3
   rotate: false
-  xy: 1044, 1100
+  xy: 1884, 1940
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Letto Grass
   rotate: false
-  xy: 1884, 1940
+  xy: 1568, 1624
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Red Spice
   rotate: false
-  xy: 1152, 1316
+  xy: 528, 484
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Silicon
   rotate: false
-  xy: 1152, 1208
+  xy: 736, 692
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Solar Incense
   rotate: false
-  xy: 1152, 1100
+  xy: 944, 900
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Space Ice
   rotate: false
-  xy: 1360, 1524
+  xy: 1152, 1108
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Space Whale
   rotate: false
-  xy: 112, 68
+  xy: 1468, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Xeno Animals
   rotate: false
-  xy: 528, 484
+  xy: 1468, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Yellow Spice
   rotate: false
-  xy: 736, 692
+  xy: 1576, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Zobbzob Bug
   rotate: false
-  xy: 944, 900
+  xy: 220, 168
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+TechIcons/Entertainment Systems
+  rotate: false
+  xy: 1252, 1316
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Fertilizers
   rotate: false
-  xy: 1044, 1208
+  xy: 1776, 1940
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+TechIcons/Lenses
+  rotate: false
+  xy: 1568, 1732
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+TechIcons/Magnetic Launch Systems
+  rotate: false
+  xy: 112, 68
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+TechIcons/Photonic Computing
+  rotate: false
+  xy: 320, 276
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Lush Planet
   rotate: false
-  xy: 1740, 1876
+  xy: 908, 836
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Lush Planet
   rotate: false
-  xy: 1740, 1876
+  xy: 908, 836
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
@@ -740,483 +782,497 @@ TileSets/HexaRealm/Tiles/Asteroid Field
   index: -1
 TileSets/HexaRealm/Tiles/Barren Planet
   rotate: false
-  xy: 1252, 1460
+  xy: 1668, 1876
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Cold-Moon
   rotate: false
-  xy: 1460, 1668
+  xy: 420, 420
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Complex-Moon
   rotate: false
-  xy: 1668, 1876
+  xy: 628, 628
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Desert Planet
   rotate: false
-  xy: 212, 212
+  xy: 836, 836
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Earth-Like
   rotate: false
-  xy: 420, 420
+  xy: 1044, 1044
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Exotic-Moon
   rotate: false
-  xy: 628, 628
+  xy: 1252, 1252
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Fertile Sands
   rotate: false
-  xy: 836, 836
+  xy: 220, 104
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Frost
   rotate: false
-  xy: 1044, 1036
+  xy: 76, 4
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Ice+Asteroid Field
   rotate: false
-  xy: 76, 4
+  xy: 1740, 1876
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Space Ice+Asteroid Field
   rotate: false
-  xy: 76, 4
+  xy: 1740, 1876
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Iron+Asteroid Field
   rotate: false
-  xy: 1324, 1460
+  xy: 492, 420
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Iron+Asteroid Mine
   rotate: false
-  xy: 1324, 1460
+  xy: 492, 420
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Islands
   rotate: false
-  xy: 1532, 1668
+  xy: 700, 628
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Magma-Moon
   rotate: false
-  xy: 284, 212
+  xy: 1116, 1044
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Rocky-Moon
   rotate: false
-  xy: 492, 420
+  xy: 1324, 1252
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Salt+Barren Planet
   rotate: false
-  xy: 700, 628
+  xy: 1396, 1252
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Salt+Barren-Planet
   rotate: false
-  xy: 700, 628
+  xy: 1396, 1252
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Salt+Desert Planet
   rotate: false
-  xy: 908, 836
+  xy: 148, 4
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Salt+Desert-Planet
   rotate: false
-  xy: 908, 836
+  xy: 148, 4
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Sandy-Moon
   rotate: false
-  xy: 1116, 1036
+  xy: 220, 40
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Snowy
   rotate: false
-  xy: 148, 4
+  xy: 1812, 1876
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Space Ice
   rotate: false
-  xy: 1396, 1460
+  xy: 564, 420
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Standard-Moon
   rotate: false
-  xy: 1604, 1668
+  xy: 772, 628
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Strange-Moon
   rotate: false
-  xy: 1812, 1876
+  xy: 980, 836
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Tectonic-Moon
   rotate: false
-  xy: 356, 212
+  xy: 1188, 1044
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Template
   rotate: false
-  xy: 564, 420
+  xy: 1884, 1876
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Tester Boi
   rotate: false
-  xy: 772, 628
+  xy: 1468, 1236
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Void
   rotate: false
-  xy: 980, 836
+  xy: 1540, 1236
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Water-Moon
   rotate: false
-  xy: 1188, 1036
+  xy: 1612, 1236
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Water-World
   rotate: false
-  xy: 1884, 1876
+  xy: 1676, 1812
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-UnitIcons/Planetary Colony Ship
+UnitIcons/NEP Voyaging Ship
   rotate: false
   xy: 4, 1840
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Planetary Mining Ship
+UnitIcons/Patrol Ship
   rotate: false
   xy: 4, 1632
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Plasma Launcher
+UnitIcons/Planetary Colony Ship
   rotate: false
   xy: 212, 1840
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Plasma Slinger
+UnitIcons/Planetary Mining Ship
   rotate: false
   xy: 4, 1424
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Polished Wideplate Spaceborn Laser
+UnitIcons/Plasma Launcher
   rotate: false
   xy: 212, 1632
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Primitive Battle Cruiser
+UnitIcons/Plasma Slinger
   rotate: false
   xy: 420, 1840
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Primitive Carrier
+UnitIcons/Polished Wideplate Spaceborn Laser
   rotate: false
   xy: 4, 1216
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Primitive Starbomber
+UnitIcons/Primitive Battle Cruiser
   rotate: false
   xy: 212, 1424
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Primitive Starbomber Wing
+UnitIcons/Primitive Carrier
   rotate: false
   xy: 420, 1632
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Primitive Starfighter
+UnitIcons/Primitive Starbomber
   rotate: false
   xy: 628, 1840
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Primitive Starfighter Wing
+UnitIcons/Primitive Starbomber Wing
   rotate: false
   xy: 4, 1008
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Repair Ship
+UnitIcons/Primitive Starfighter
   rotate: false
   xy: 212, 1216
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Reusable Amphibious Planetary Workship
+UnitIcons/Primitive Starfighter Wing
   rotate: false
   xy: 420, 1424
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Reusable Spacework Ship
+UnitIcons/Repair Ship
   rotate: false
   xy: 628, 1632
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Settler
+UnitIcons/Reusable Amphibious Planetary Workship
   rotate: false
   xy: 836, 1840
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Simple Corvette
+UnitIcons/Reusable Spacework Ship
   rotate: false
   xy: 4, 800
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Simple Frigate
+UnitIcons/Settler
   rotate: false
   xy: 212, 1008
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Simple Light cruiser
+UnitIcons/Simple Corvette
   rotate: false
   xy: 420, 1216
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Simple Mining Ship
+UnitIcons/Simple Frigate
   rotate: false
   xy: 628, 1424
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Simple Plasma Launcher
+UnitIcons/Simple Light cruiser
   rotate: false
   xy: 836, 1632
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Simple cruiser
+UnitIcons/Simple Mining Ship
   rotate: false
   xy: 1044, 1840
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Smaller Cruiser
+UnitIcons/Simple Plasma Launcher
   rotate: false
   xy: 4, 592
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Smaller Light Cruiser
+UnitIcons/Simple cruiser
   rotate: false
   xy: 212, 800
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Solar Hardned Iron Head
+UnitIcons/Smaller Cruiser
   rotate: false
   xy: 420, 1008
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Spaceborn Laser
+UnitIcons/Smaller Light Cruiser
   rotate: false
   xy: 628, 1216
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Spaceborn Railgun
+UnitIcons/Solar Hardned Iron Head
   rotate: false
   xy: 836, 1424
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Speedy Frigate
+UnitIcons/Spaceborn Laser
   rotate: false
   xy: 1044, 1632
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Standard Carrier
+UnitIcons/Spaceborn Railgun
   rotate: false
   xy: 1252, 1840
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Standard Double Hangared Carrier
+UnitIcons/Speedy Frigate
   rotate: false
   xy: 4, 384
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Sturdy Combat Repair Ship
+UnitIcons/Standard Carrier
   rotate: false
   xy: 212, 592
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Super Bludgeoner
+UnitIcons/Standard Double Hangared Carrier
   rotate: false
   xy: 420, 800
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Super Iron Head
+UnitIcons/Sturdy Combat Repair Ship
   rotate: false
   xy: 628, 1008
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Super Railgun
+UnitIcons/Super Bludgeoner
   rotate: false
   xy: 836, 1216
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Support Ship
+UnitIcons/Super Iron Head
   rotate: false
   xy: 1044, 1424
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Swift Patrol Ship
+UnitIcons/Super Railgun
   rotate: false
   xy: 1252, 1632
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
+UnitIcons/Support Ship
+  rotate: false
+  xy: 1460, 1840
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+UnitIcons/Swift Patrol Ship
+  rotate: false
+  xy: 4, 176
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
 UnitIcons/Ultra Bludgeoner
-  rotate: false
-  xy: 212, 384
-  size: 200, 200
-  orig: 200, 200
-  offset: 0, 0
-  index: -1
-UnitIcons/Ultra Railgun
-  rotate: false
-  xy: 420, 592
-  size: 200, 200
-  orig: 200, 200
-  offset: 0, 0
-  index: -1
-UnitIcons/Vector Maggner Gun
   rotate: false
   xy: 628, 800
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
-UnitIcons/Wideplate Spaceborn Laser
+UnitIcons/Ultra Railgun
   rotate: false
   xy: 836, 1008
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+UnitIcons/Vector Maggner Gun
+  rotate: false
+  xy: 1044, 1216
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+UnitIcons/Wideplate Spaceborn Laser
+  rotate: false
+  xy: 1252, 1424
   size: 200, 200
   orig: 200, 200
   offset: 0, 0

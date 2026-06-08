@@ -13,10 +13,12 @@ Units:
 
 Religions:
 [God Emperor] Edited version of https://www.magnific.com/icon/eagle_4600694#fromView=search&page=2&position=6&uuid=648ab6e0-af7a-4368-92f5-66da8d48e537
-
+[Machine God] Re-coloured Version of https://www.flaticon.com/free-icon/gear_17784401
 
 Techs:
 [Fertilizers] https://www.magnific.com/icon/compostable_5367849#fromView=search&page=1&position=7&uuid=d54395d8-d568-4bb4-9390-2e18c886aed4
+[Magnetic Launch Systems] https://www.magnific.com/icon/rotate_10591040#fromView=search&page=1&position=5&uuid=24a9f83c-3129-4c26-8f44-a80a58bab250
+
 
 Resource Icons:
 [Space Ice] https://www.flaticon.com/free-icon/ice-cube_2458112
