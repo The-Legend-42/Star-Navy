@@ -16,6 +16,13 @@
         "type": "Pantheon",
         "uniques": ["[+1 Happiness, +1 Faith] from every [Space Whale]"]
     },
+    {
+        "name": "Mandate of Heaven",
+        "type": "Pantheon",
+        "uniques": ["[+5 Production] [in cities following this religion] <during a Golden Age>",
+					"[-1 Production] [in cities following this religion] <when not in a Golden Age>",
+					]
+    },
 ///////////////////////////////////////// Follower beliefs /////////////////////////////////////////
     {
         "name": "Ancient Wonders",
@@ -31,6 +38,11 @@
         "name": "Divine Proof",
         "type": "Follower",
         "uniques": ["[+2 Science] from every [Telescope] <in cities with at least [4] [Followers of this Religion]>"]
+    },
+    {
+        "name": "Divine inspiration",
+        "type": "Follower",
+        "uniques": ["[+2 Faith] from every [Wonder]"]
     },
 ///////////////////////////////////////// Founder beliefs //////////////////////////////////////////
 
@@ -48,6 +60,11 @@
         "name": "Initiation Rites",
         "type": "Founder",
         "uniques": ["[+125 Gold] when a city adopts this religion for the first time <(modified by game speed)>"]
+    },
+    {
+        "name": "Religious Donations",
+        "type": "Founder",
+        "uniques": ["[+3 Gold] for each global city following this religion <when below [1250] [Gold]>"] //3000 //2500
     },
     ////////////////////////////////////// Enhancer beliefs ///////////////////////////////////////
 	/*
@@ -71,5 +88,10 @@
         "name": "Cultural Teamwork",
         "type": "Enhancer",
         "uniques": ["[+3]% [Culture] from every follower, up to [+12]%", "[+2]% [Science] from every follower, up to [+10]%", "[+1]% [Gold] from every follower, up to [+10]%"]
+    },
+    {
+        "name": "Study of the Holy Books",
+        "type": "Enhancer",
+        "uniques": ["[+5]% [Culture] from every follower, up to [+35]%"]
     },
 ]

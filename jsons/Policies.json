@@ -10,7 +10,7 @@
         //    "Scientific": 5
         },
         "uniques": [
-            "[+1 Culture, +1 Food] [in capital]",
+            "[+1 Gold, +1 Culture] [in capital]",
         ],
         "policies": [
             {

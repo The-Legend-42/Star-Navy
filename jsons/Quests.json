@@ -1,5 +1,5 @@
 [
-
+	/*
    {
     "name": "Conquer lesser power",
     "description": "It's time to erase the lesser power of [cityState] from the map. You will be greatly rewarded for conquering them!",
@@ -37,4 +37,69 @@
 		  "Errin": 0.5
       }
   },
+  
+  */
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	//The original quests did not work and thus were replaced with ~similar-ish vannila equivelents 
+  
+  
+
+  
+  
+  
+  
+  
+    {
+    "name": "Bully City State",
+    "description": "We are tired of the pretensions of [cityState]. If someone were to put them in their place by Demanding Tribute from them, they would be rewarded.",
+    "duration": 30,
+      "weightForCityStateType": {
+          "Hostile": 2,
+          "Friendly": 0.2,
+          "Orgolic": 1
+		  "Errin": 0.3
+      }
+  },
+  {
+    "name": "Conquer City State",
+    "description": "It's time to erase the City-State of [cityState] from the map. You will be greatly rewarded for conquering them!",
+    "influence": 80,
+      "weightForCityStateType": {
+          "Hostile": 2,
+          "Friendly": 0.2,
+          "Orgolic": 1
+		  "Errin": 0.3
+      }
+  },
+  {
+    "name": "Pledge to Protect",
+    "description": "We need your protection to stop the aggressions of [civName]. By signing a Pledge of Protection, you'll confirm the bond that ties us.",
+    "influence": 20,
+    "duration": 30,
+      "weightForCityStateType": {
+          "Orgolic": 3.5,
+		  "Errin": 1.5,
+      }
+  },
+   {
+    "name": "Construct Wonder",
+    "description": "We recommend you to start building [wonder] to show the whole world your civilization strength.",
+      "weightForCityStateType": {
+          "Orgolic": 0.1,
+		  "Errin": 1.5,
+      }
+  },
+  
+  
+  
 ]

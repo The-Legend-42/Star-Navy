@@ -7,7 +7,7 @@
 		"terrainsCanBeFoundOn": ["Asteroid Field"],
 		"food": 1,
 		"improvement": "Asteroid Mine",
-		"improvementStats": {"production": 1},
+		"improvementStats": {"Production": 1},
 		"uniques": ["Generated on every [18] tiles <in [Asteroid Field] tiles>",
 					"Generated on every [35] tiles <in [Asteroid Field] tiles> <in [Asteroid Field] Regions>"
 					]
@@ -287,7 +287,7 @@
 		"terrainsCanBeFoundOn": ["Water-World","Islands","Earth-Like","Barren Planet","Asteroid Field","Desert Planet",],
 		"gold": 2,
 		"happiness": 1,
-		"improvementStats": {"Food": 2, "Happiness": 1},
+		"improvementStats": {"food": 2, "happiness": 1},
 		"improvedBy": ["Asteroid Mine", "Planitary Mine"],
 		"uniques": [
 					"Generated with weight [22] <in [Water-World] tiles>",
@@ -304,7 +304,7 @@
 		"resourceType": "Luxury",
 		"terrainsCanBeFoundOn": ["Frost","Snowy","Water-World","Earth-Like","Islands",],
 		"production": 1,
-		"improvementStats": {"Happiness": 1},
+		"improvementStats": {"happiness": 1},
 		"improvedBy": ["Subsea Mine", "Asteroid Mine", "Planitary Mine"], //The latter is Temporary
 		"uniques": [
 					"Gas",
@@ -319,7 +319,7 @@
 		"resourceType": "Luxury",
 		"terrainsCanBeFoundOn": ["Magma-Moon","Tectonic-Moon","Rocky-Moon","Barren Planet","Frost","Exotic-Moon","Strange-Moon","Earth-Like","Snowy","Complex-Moon","Islands","Asteroid Field"],
 		"gold": 3,
-		"improvementStats": {"Happiness": 1, "Production": 1,},
+		"improvementStats": {"happiness": 1, "production": 1,},
 		"improvedBy": ["Asteroid Mine", "Planitary Mine"],
 		"uniques": [
 					"Gem",
@@ -343,7 +343,7 @@
 		"terrainsCanBeFoundOn": ["Magma-Moon","Tectonic-Moon","Earth-Like","Complex-Moon",],
 		"culture": 1,
 		"gold": 1,
-		"improvementStats": {"Gold": 1},
+		"improvementStats": {"gold": 1},
 		"improvement": "Planitary Mine",
 		"uniques": [
 					"Gem",
@@ -359,7 +359,7 @@
 		"terrainsCanBeFoundOn": ["Earth-Like","Complex-Moon",],
 		"food": 1,
 		"happiness": 1,
-		"improvementStats": {"Food": 1},
+		"improvementStats": {"food": 1},
 		"improvement": "Planitary Mine",	//Temporary
 		"uniques": [
 					"Spice", "Plant",
@@ -374,7 +374,7 @@
 		"resourceType": "Luxury",
 		"terrainsCanBeFoundOn": ["Magma-Moon","Rocky-Moon","Tectonic-Moon","Water-World",],
 		"gold": 2,
-		"improvementStats": {"Gold": 1},
+		"improvementStats": {"gold": 1},
 		"improvement": "Planitary Mine",
 		"uniques": [
 					"Gem", //Rock
@@ -390,7 +390,7 @@
 		"revealedBy": "Solar Holy Incense",
 		"terrainsCanBeFoundOn": ["Asteroid Field",],
 		"gold": 1,
-		"improvementStats": {"Gold": 1},
+		"improvementStats": {"gold": 1},
 		"improvement": "Asteroid Mine",
 		"uniques": [
 					"[+1 Faith] <when religion is enabled>"
@@ -403,7 +403,7 @@
 		"revealedBy": "Discovering Red Spice",
 		"terrainsCanBeFoundOn": ["Barren Planet","Desert Planet","Lush Planet","Fertile Sands","Lush Planet","Earth-Like","Tectonic-Moon","Exotic-Moon","Complex-Moon","Sandy-Moon","Rocky-Moon","Strange-Moon",],
 		"gold": 1,
-		"improvementStats": {"Production": 1},
+		"improvementStats": {"production": 1},
 		"improvement": "Planitary Mine",	//Temporary
 		"uniques": [
 					"Spice",
@@ -432,7 +432,7 @@
 		"revealedBy": "Discovering Yellow Spice",
 		"terrainsCanBeFoundOn": ["Barren Planet","Desert Planet","Lush Planet","Fertile Sands","Earth-Like","Frost","Snowy","Sandy-Moon","Exotic-Moon","Complex-Moon","Sandy-Moon","Rocky-Moon","Strange-Moon","Islands",],
 		"gold": 1,
-		"improvementStats": {"Production": 1},
+		"improvementStats": {"production": 1},
 		"improvement": "Planitary Mine",	//Temporary
 		"uniques": [
 					"Spice",
@@ -465,7 +465,7 @@
 		"revealedBy": "Discovering Blue Spice",
 		"terrainsCanBeFoundOn": ["Water-World","Islands","Lush Planet","Earth-Like","Frost","Snowy","Water-Moon","Cold-Moon","Complex-Moon",],
 		"gold": 1,
-		"improvementStats": {"Production": 1,"Happiness": 1,},
+		"improvementStats": {"production": 1,"happiness": 1,},
 		"improvedBy": ["Subsea Mine", "Planitary Mine"],	//Temporary?
 		"uniques": [
 					"Spice",

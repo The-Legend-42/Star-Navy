@@ -1359,6 +1359,7 @@
     "expansion": 6,
     "denounceWillingness": 6,
     "priorities": {
+	  "Tourism": 8,
       "Gardening": 5,
 	  "Handcrafting": 4,
 				  }
@@ -1381,6 +1382,7 @@
     "expansion": 2,
     "denounceWillingness": 9,
     "priorities": {
+	  "Tourism": 3,
       "Gardening": 8,
 	  "Handcrafting": 7,
 				  }
@@ -1403,6 +1405,7 @@
     "expansion": 4,
     "denounceWillingness": 3,
     "priorities": {
+	  "Tourism": 2,
       "Gardening": 1,
 	  "Handcrafting": 3,
 				  }
@@ -1425,6 +1428,7 @@
     "expansion": 8,
     "denounceWillingness": 6,
     "priorities": {
+	  "Tourism": 6,
       "Gardening": 4,
 	  "Handcrafting": 4,
 				  }
@@ -1447,6 +1451,7 @@
     "expansion": 8,
     "denounceWillingness": 5,
     "priorities": {
+	  "Tourism": 7,
       "Gardening": 5,
 	  "Handcrafting": 6,
 				  }

@@ -342,6 +342,13 @@
 		"buildingCost": 110,
 		"wonderCost": 285,
 		"techs": [
+					{
+				"name": "Holy Instruments",
+				"row": 1,
+				"prerequisites": ["Spreading The Scolls"],		
+	            "uniques": ["[+1 Faith] [in capital]"],			
+				"quote": "'More Scrolls Spread through out your space' - Holy One"
+			},
 			{
 			//Artilery units
 				"name": "Long Range Aiming Systems",
