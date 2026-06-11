@@ -110,6 +110,7 @@
 		"defenceBonus": 0.50,
 		"occursOn": ["Void"],
 		"uniques": [
+			"Asteroid"
 			"Rough terrain",		
 			"Rare feature",
 			"Blocks line-of-sight from tiles at same elevation",

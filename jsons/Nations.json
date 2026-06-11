@@ -247,6 +247,8 @@
 					],
 		"cities": ["Singular Prime", "Second Eye", "Third Echo", "The Sqaure", "Fith Eye", "Sith Direction", "Cursed Void", "Sword", "Eghith World", "Largest Singular"]
 	},	
+	
+	
 	{ //A coalition of Mechanicals
 		"name": "Mechan Alliance",
 		"adjective": ["Mechan"],			
@@ -277,6 +279,83 @@
 
 	
 	
+	{	//A corporation 
+		"name": "Stellar Corp",
+		"adjective": ["Stelleric"],			
+		"leaderName": "Vlootwic",
+		"preferredVictoryType": "Domination", //~Will be changed
+		
+		"startIntroPart1": "Sample text.",
+		"startIntroPart2": "Sample text.",
+		"declaringWar": "Our intrests no longer align.",
+		"attacked": "You dare attuck us!? We will show you how big of a mistake you have made!",
+		"defeated": "We were the best, sadly there will never be another as daring or succesful as us...",
+		"introduction": "Greetings stranger, are you open for some commerce?",
+		"tradeRequest": "I think our offer will bennefit us  both.",
+		"innerColor": [172,172,172],
+		"outerColor": [245,236,196],
+		"uniqueName": "???"
+		"uniques": [
+					"[+10 Gold] [In Capital]" //temporary and will be changed
+					]			
+		"cities": [	"Starpost A", "Starpost B", "Starpost C", "Starpost D", "Starpost E", "Starpost F", "Starpost G", "Starpost H",
+					"Starpost I", "Starpost J", "Starpost K", "Starpost L", "Starpost M", "Starpost N", "Starpost O", "Starpost P",
+					"Starpost Q", "Starpost R", "Starpost S", "Starpost T", "Starpost U", "Starpost V", "Starpost W", "Starpost X",
+					"Starpost Y", "Starpost Z", 
+					"Starpost 1", "Starpost 2", "Starpost 3", "Starpost 4", "Starpost 5", "Starpost 6", "Starpost 7", "Starpost 8", "Starpost 9", "Starpost 10",
+					"Starpost Ansuz", "Starpost Aleph", "Starpost Alpha", "Starpost Ayb", "Starpost An", "Starpost Az", "Starpost Alif", "Starpost Ailm", "Starpost Alfa",
+					],
+	},	
+	
+	{ 	//A loose coalition of minor powers scatterd through out the milky way
+		"name": "Galactic Union",
+		"adjective": ["Gallaric"],			
+		"leaderName": "Chancellor Irgos III",
+		"preferredVictoryType": "Domination", //Will definetly be changed
+		
+		"startIntroPart1": "Sample text.",
+		"startIntroPart2": "Sample text.",
+		"declaringWar": "Our tollarance for you has ended.",
+		"attacked": "You have kicked the hydra and now you shall pay!",
+		"defeated": "United we are strong but perhaps our union was to lose to stop the scattering of our force",
+		"introduction": "We are many and few, a coalition of the small spread to a galactic scale, may we ask are you freind to us or foe?",
+		"tradeRequest": "",
+		"innerColor": [135,  0,126],
+		"outerColor": [ 25,135, 40],
+		"uniqueName": "Scattered Union"
+		"uniques": [
+					 "[3] units cost no maintenance <after discovering [Deap Space Era Warships]>",
+					 "[7] units cost no maintenance <after discovering [Double Hangared Carriers]>", //10 total
+					 "No Maintenance costs for improvements in [Planet] tiles",
+					 "No Maintenance costs for improvements in [Asteroid] tiles",
+					]			
+		"cities": [	"Yabyab", "Holleris", "Yakko", "Mooj", "Vestalla", "Ulleris", "Hettko", "Vootak", "Mrokko", "Yazellos", "Helion",
+					"Skanntra", "Olberin Priso", "Nasha Nacha", "Kantellac", "Cosspia", "Hezziso", "Ziotonit", "Tenngoso", "Zooris",
+					],
+	},		
+	
+	
+		{ 	//A primitive group of tribes that have enslaved aliens to create spaceships for them
+		"name": "Ermmer Tribes",
+		"adjective": ["Ermmerish"],			
+		"leaderName": "Hakkutah of War",
+		"preferredVictoryType": "Domination", //Will definetly be changed
+		
+		"startIntroPart1": "Sample text.",
+		"startIntroPart2": "Sample text.",
+		"declaringWar": "Die.",
+		"attacked": "UGH!? Die!!!",
+		"defeated": "BAD",
+		"introduction": "WHO YOU!?",
+		"tradeRequest": "",
+		"innerColor": [255,245,  3],
+		"outerColor": [125, 31, 32],
+		"uniqueName": "Savages"
+		"uniques": [
+					"No movement cost to pillage"
+					]			
+		"cities": [	"Gooka", "Rooka", "Grudoo", "Groopoo", "Rookan", "Rarookoo", "Narun", "Gooroon", "Garra", "Gorro", "Girru", "Ruttu", "Groomoo",],
+	}
 	
 	
 	
@@ -284,13 +363,7 @@
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
+		//	"outerColor": [12, 31, 32],
 	
 	
 	
