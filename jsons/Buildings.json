@@ -708,10 +708,55 @@
 		"maintenance": 1,
 		"requiredTech": "Altars"
 	},		
-	
-	
-	
-	
+	{
+		"name": "Shrine",
+		"specialistSlots": {"Theologian": 1},
+		"cost": 120,
+		"faith": 2,
+		"maintenance": 1,
+		"uniques": ["Only available <when religion is enabled>"]
+		"requiredTech": "Shrines",
+	},
+	{
+		"name": "Temple",
+		"specialistSlots": {"Theologian": 2},
+		"cost": 340,
+		"faith": 4,
+		"requiredBuilding": "Shrine",
+		"maintenance": 2,
+		"uniques": [
+					"Only available <when religion is enabled>", 
+					"Destroyed when the city is captured",
+					],
+		"requiredTech": "Religious Specialists",
+		"requiredBuilding": "Shrine",
+	},
+	{
+		"name": "Philosophy Hall",
+		"specialistSlots": {"Philosopher": 2},
+		"cost": 340,
+		"culture": 2,
+		"maintenance": 1,
+		"uniques": [
+					"Only available <when religion is enabled>", 
+					"Destroyed when the city is captured",
+					],
+		"requiredTech": "Religious Specialists",
+	},
+	{
+		"name": "Hall of Faith",
+		"specialistSlots": {"Spiritual Leader": 1, "Philosopher": 1, "Theologian": 1},
+		"cost": 800,
+		"faith": 2,
+		"culture": 2,
+		"maintenance": 1,
+		"uniques": [
+					"Only available <when religion is enabled>", 
+					"Destroyed when the city is captured",
+					],
+		"requiredTech": "Religious Specialists",
+		"requiredBuilding": "Temple",
+	},
 	
 	
 	

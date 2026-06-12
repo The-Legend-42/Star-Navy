@@ -2,6 +2,38 @@
 
 	//science
 	{
+		"name":"Theologian",
+		"science":4,
+	//	"greatPersonPoints": {"Great Thinker?":3},
+		"color": [0,188,255]
+	},
+	{
+		"name":"Spiritual Leader",
+		"faith":3,
+		"happiness":1,
+	//	"greatPersonPoints": {"Great Thinker?":3},
+		"color": [0,188,255]
+	},
+	{
+		"name":"Philosopher",
+		"faith":3,
+		"culture":1,
+	//	"greatPersonPoints": {Great Thinker?3},
+		"color": [0,188,255]
+	},
+
+	
+	
+
+
+
+
+
+
+
+
+	//science
+	{
 		"name":"Scientist",
 		"science":4,
 	//	"greatPersonPoints": {"Great Scientist":3},

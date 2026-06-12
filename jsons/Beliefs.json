@@ -23,6 +23,14 @@
 					"[-1 Production] [in cities following this religion] <when not in a Golden Age>",
 					]
     },
+	{
+        "name": "Moon Worship",
+        "type": "Pantheon",
+        "uniques": [
+					 "[+1 Happiness, +1 Faith] from every [Moons]"
+					]
+    },
+	
 ///////////////////////////////////////// Follower beliefs /////////////////////////////////////////
     {
         "name": "Ancient Wonders",
@@ -43,6 +51,23 @@
         "name": "Divine inspiration",
         "type": "Follower",
         "uniques": ["[+2 Faith] from every [Wonder]"]
+    },
+	{
+        "name": "Zen",
+        "type": "Follower",
+        "uniques": [
+					"[-100]% Unhappiness from [Unemployed] [in cities following this religion]"
+					"[-100]% Food consumption by [Unemployed] [in cities following this religion]"
+					"[-35]% weight to this choice for AI decisions"
+					]
+    },
+	{
+        "name": "Hive Production",
+        "type": "Follower",
+        "uniques": ["[+5]% Production towards any buildings that already exist in the Capital",
+					"[+5]% Production towards any buildings that already exist in the Capital <when not at war>",
+					"[+5]% Production towards any buildings that already exist in the Capital <during a Golden Age>",
+					]
     },
 ///////////////////////////////////////// Founder beliefs //////////////////////////////////////////
 
@@ -66,6 +91,16 @@
         "type": "Founder",
         "uniques": ["[+3 Gold] for each global city following this religion <when below [1250] [Gold]>"] //3000 //2500
     },
+    {
+        "name": "Cultural Exchange",
+        "type": "Founder",
+        "uniques": [
+					"Allied City-States provide [Culture] equal to [+20]% of what they produce for themselves",
+					"Gain [100] [Culture] <after enhancing a religion>",
+					"[-100]% weight to this choice for AI decisions <when number of [Remaining [City-State] Civilizations] is less than [1]>",
+					"[-60]% weight to this choice for AI decisions <when number of [Remaining [City-State] Civilizations] is less than [3]>",
+					]
+    }
     ////////////////////////////////////// Enhancer beliefs ///////////////////////////////////////
 	/*
     {
@@ -94,4 +129,10 @@
         "type": "Enhancer",
         "uniques": ["[+5]% [Culture] from every follower, up to [+35]%"]
     },
+    {			//May or may not rename to Spies of the Inquisition
+        "name": "Eyes of the Inquisition", //Originally called: Religions Surveillance (may reuse that name in the future)
+        "type": "Enhancer",
+        "uniques": ["Gain an extra spy"]
+    },
+
 ]

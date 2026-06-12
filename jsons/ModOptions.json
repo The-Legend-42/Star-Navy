@@ -11,7 +11,10 @@
 					],
 	
 
-	
+	 "constants": {
+		
+	//	"minimumValueForFoundingCity": 20
+	}
 	
 	
 }

@@ -347,7 +347,7 @@
 				"row": 1,
 				"prerequisites": ["Spreading The Scolls"],		
 	            "uniques": ["[+1 Faith] [in capital]"],			
-				"quote": "'More Scrolls Spread through out your space' - Holy One"
+				"quote": "'The sound of faith' - Holy One"
 			},
 			{
 			//Artilery units
@@ -396,6 +396,35 @@
 		"buildingCost": 125,
 		"wonderCost": 300,
 		"techs": [
+			/*
+			{
+				"name": "Religious Specialists",
+				"row": 1,
+				"prerequisites": ["Holy Instruments"],		
+	            "uniques": ["[1] free [Holy Emissary] units appear","[+50]% weight to this choice for AI decisions",],			
+				"quote": "'' - Holy One"
+			},
+			{
+				"name": "Holy Emissaries",
+				"row": 2,
+				"prerequisites": ["Holy Instruments"],		
+	            "uniques": ["[1] free [Holy Emissary] units appear",]			
+				"quote": "'To spread the faith we require an emissary if not a vast number' - Holy Two"
+			},
+			*/
+			{
+				"name": "Shrines",
+				"row": 1,
+				"prerequisites": ["Holy Instruments"],				
+				"quote": "'Shrine to show our Faith' - Holy One"
+			},
+			{
+				"name": "First Emissary",
+				"row": 2,
+				"prerequisites": ["Holy Instruments"],		
+	            "uniques": ["[1] free [Holy Emissary] units appear","[-25]% weight to this choice for AI decisions",],			
+				"quote": "'To spread the faith we require an emissary if not a vast number... but starting with one will do for now.' - Holy Two"
+			},
 			{
 			//More Specialists 
 				"name": "Scientific Specialists",
@@ -445,6 +474,19 @@
 		"buildingCost": 135,
 		"wonderCost": 320,
 		"techs": [
+			{
+				"name": "Religious Specialists",
+				"row": 1,
+				"prerequisites": ["Shrines"],				
+				"quote": "'Experts of the faith' - Holy One"
+			},
+			{
+				"name": "Holy Emissaries",
+				"row": 2,
+				"prerequisites": ["First Emissary"],		
+	            "uniques": ["[1] free [Holy Emissary] units appear", "[+75]% weight to this choice for AI decisions"],			
+				"quote": "'Now we will be able to train more Emissaries' - Holy Two"
+			},
 			{
 			//More Specialists 
 				"name": "Engineering Specialists",

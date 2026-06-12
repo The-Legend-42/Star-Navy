@@ -134,7 +134,7 @@
 	
 	{
 		"name": "Space Farm",
-		"terrainsCanBeBuiltOn": ["Void"],
+		"terrainsCanBeBuiltOn": ["Void", "Asteroid Field"], //The latter may be replaced by asteroid farms in the feuture 
 		"food": 1,
 		"turnsToBuild": 10,
 		"techRequired": "Space Structures",

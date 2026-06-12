@@ -20,7 +20,7 @@
 		"type": "Land",
 		"movementCost": 1.0,
         "RGB": [10, 10, 10],
-        "uniques": []
+        "uniques": ["[-1] to Fertility for Map Generation",]
     }
 	
 	{
@@ -36,7 +36,7 @@
 					"Has an elevation of [1] for visibility calculations",
 					"Blocks line-of-sight from tiles at same elevation",
 					"[3] Strength for cities built on this terrain"
-					"Always Fertility [-2] for Map Generation",
+					"[+3] to Fertility for Map Generation",
 					"Considered [Desirable] when determining start locations",
 					"Considered [Production] when determining start locations",	
 		],
@@ -54,7 +54,7 @@
 					"Occurs in chains at high elevations",
 					"Has an elevation of [1] for visibility calculations",
 					"Blocks line-of-sight from tiles at same elevation",
-					"Always Fertility [-1] for Map Generation",
+					"[+4] to Fertility for Map Generation",
 					"[3] Strength for cities built on this terrain"
 					"Considered [Desirable] when determining start locations",
 					"Considered [Production] when determining start locations",	
@@ -73,7 +73,7 @@
 					"Occurs in chains at high elevations",
 					"Has an elevation of [1] for visibility calculations",
 					"Blocks line-of-sight from tiles at same elevation",
-					"Always Fertility [3] for Map Generation",
+					"[+5] to Fertility for Map Generation",
 					"[5] Strength for cities built on this terrain"
 					"Considered [Desirable] when determining start locations",
 					"Considered [Food] when determining start locations",	
@@ -116,7 +116,7 @@
 			"Blocks line-of-sight from tiles at same elevation",
 			"Considered [Desirable] when determining start locations",
 			"Considered [Production] when determining start locations",	
-			"[+1] to Fertility for Map Generation",
+			"[+2] to Fertility for Map Generation",
 		//	"A Region is formed with at least [25]% [Asteroid Field] tiles, with priority [5]",
 		//	"[+1] to Fertility for Map Generation",
 		//	"A Region can not contain more [Asteroid Feild] tiles than [Void] tiles",
@@ -133,15 +133,24 @@
 		"name": "Fertile Sands",
 		"type": "TerrainFeature",
 		"food": 2,
-	//	"movementCost": 1,
-		"defenceBonus": -0.3,
+		"overrideStats": true,
+		//May become buildable if i ever add teraforming
+		"movementCost": 3,
+		"food": 2,
+		"production": 1,
+		"defenceBonus": 0.7,
 		"occursOn": ["Desert Planet"],
-		"uniques": ["Always Fertility [5] for Map Generation",
+		"uniques": [
+			"[+5] to Fertility for Map Generation",
 			"Rare feature"
+			"Planet"
 		    "Fresh water",
 			"Sands"
+			"Rough terrain"
+			"Has an elevation of [1] for visibility calculations",
 			"Considered [Food] when determining start locations",
-			"Considered [Desirable] when determining start locations"]
+			"Considered [Desirable] when determining start locations"
+			"Considered [Production] when determining start locations",	]
 	},
 	
 	{
@@ -155,13 +164,17 @@
 		"defenceBonus": 0.7,
 		"occursOn": ["Barren Planet"],
 		"uniques": [
-			"Always Fertility [1] for Map Generation",
+			"[+3] to Fertility for Map Generation",
 			"Rare feature"
+			"Rough terrain"
 		    "Fresh water",
+			"Waters" // Contains large bodies of water such as Seas or Oceans
+			"Has an elevation of [1] for visibility calculations",
+			"Blocks line-of-sight from tiles at same elevation",
 			"Considered [Food] when determining start locations",
 			"Considered [Production] when determining start locations",
 			"Considered [Desirable] when determining start locations"
-			"Waters" // Contains large bodies of water such as Seas or Oceans
+			
 			]
 	},
 	{
@@ -173,7 +186,7 @@
 		"occursOn": ["Lush Planet"],
 		"uniques": [
 		//	"Occurs at temperature between [-1] and [-0.8] and humidity between [0] and [1]"
-			"Always Fertility [-1] for Map Generation",
+			"[+4] to Fertility for Map Generation",
 			"Rare feature"
 		    "Fresh water",
 			"Waters" // Contains large bodies of water such as Seas or Oceans
@@ -187,7 +200,7 @@
 	//	"movementCost": 1,
 		"occursOn": ["Lush Planet"],
 		"uniques": [
-			"Always Fertility [1] for Map Generation",
+			"[+5] to Fertility for Map Generation",
 			"Rare feature"
 		    "Fresh water",
 			"Aquatic" 	//Water-World //This ones close enough to bearly count
@@ -202,7 +215,7 @@
 	//	"movementCost": 1,
 		"occursOn": ["Lush Planet"],
 		"uniques": [
-			"Always Fertility [1] for Map Generation",
+			"[+6] to Fertility for Map Generation",
 			"Rare feature"
 		    "Fresh water",
 			"Waters" // Contains large bodies of water such as Seas or Oceans
@@ -221,6 +234,7 @@
 		    "Fresh water",
 			"Aquatic" 	//Water-World
 			"Waters" // Contains large bodies of water such as Seas or Oceans
+			"[+5] to Fertility for Map Generation",
 			],
 	},
 	
@@ -242,7 +256,7 @@
 		"occursOn": ["Earth-Like","Desert Planet"],
 		"uniques": [
 			"Moons"
-			"Always Fertility [-1] for Map Generation",
+			"[+1] to Fertility for Map Generation",
 			"Rare feature",
 			],
 	},
@@ -259,7 +273,7 @@
 			"Moon"
 			//"Fresh water", //Subteranian water
 			"Considered [Production] when determining start locations", //Failed Temporary Fix
-			"Always Fertility [-1] for Map Generation",
+			"[+1] to Fertility for Map Generation",
 			"Rare feature",	//Only way to get it to spawn for some reason
 			//"Occurs on latitudes from [10] to [10] percent of distance equator to pole"
 			/*			
@@ -284,7 +298,7 @@
 			"Aquatic" 	//Water-World
 			"Waters" // Contains large bodies of water such as Seas or Oceans
 			"Considered [Food] when determining start locations",
-			"Always Fertility [+1] for Map Generation",
+			"[+2] to Fertility for Map Generation",
 			"Rare feature",	//Only way to get it to spawn for some reason
 			],
 	},	
@@ -300,7 +314,7 @@
 			//"Fresh water", //Once unfrozen perhaps
 			"Waters" // Contains large bodies of water such as Seas or Oceans
 			"Considered [Production] when determining start locations",
-			"Always Fertility [-1] for Map Generation",
+			"[+1] to Fertility for Map Generation",
 			"Rare feature",	//Only way to get it to spawn for some reason
 			],
 	},	
@@ -316,7 +330,7 @@
 			"Vegetation"
 			"Fresh water",
 			"Waters" // Contains large bodies of water such as Seas or Oceans
-			"Always Fertility [+2] for Map Generation",
+			"[+3] to Fertility for Map Generation",
 			"Rare feature",	//Only way to get it to spawn for some reason
 			],
 	},
@@ -338,7 +352,7 @@
 			"Sands"
 			"Vegetation"
 			"Fresh water", //In small amounts
-			"Always Fertility [-1] for Map Generation",
+			"[+1] to Fertility for Map Generation",
 			"Rare feature",	//Only way to get it to spawn for some reason
 			"Occurs on latitudes from [5] to [15] percent of distance equator to pole"
 			"Occurs on latitudes from [35] to [65] percent of distance equator to pole"
@@ -353,7 +367,7 @@
 		"occursOn": ["Desert Planet", "Fertile Sands","Barren Planet","Frost",],
 		"uniques": [
 			"Moon" 
-			"Always Fertility [-2] for Map Generation",
+			"[+1] to Fertility for Map Generation",
 			"Rare feature",	//Only way to get it to spawn for some reason
 			"Occurs on latitudes from [10] to [10] percent of distance equator to pole"
 			"Occurs on latitudes from [30] to [50] percent of distance equator to pole"
@@ -367,7 +381,7 @@
 		"occursOn": ["Desert Planet", "Fertile Sands","Barren Planet","Frost","Lush Planet","Earth-Like","Snowy"],
 		"uniques": [
 			"Moon" 
-			"Always Fertility [-1] for Map Generation",
+			"[+1] to Fertility for Map Generation",
 			//"Fresh water", //Perhaps Subteranian
 			"Rare feature",	//Only way to get it to spawn for some reason
 			"Occurs on latitudes from [10] to [10] percent of distance equator to pole"
@@ -382,7 +396,7 @@
 		"occursOn": ["Desert Planet", "Fertile Sands","Barren Planet","Frost","Lush Planet","Earth-Like","Snowy","Islands"],
 		"uniques": [
 			"Moon" 
-			"Always Fertility [-1] for Map Generation",
+			"[+1] to Fertility for Map Generation",
 			"Rare feature",	//Only way to get it to spawn for some reason
 			"Occurs on latitudes from [10] to [10] percent of distance equator to pole"
 			"Occurs on latitudes from [15] to [75] percent of distance equator to pole"
@@ -397,7 +411,7 @@
 		"uniques": [
 			"Moon" 
 			"Vegetation"
-		//	"Always Fertility [-1] for Map Generation",
+			"[+1] to Fertility for Map Generation",
 			"Rare feature",	//Only way to get it to spawn for some reason
 			"Occurs on latitudes from [10] to [10] percent of distance equator to pole"
 			"Occurs on latitudes from [65] to [89] percent of distance equator to pole"
@@ -414,7 +428,7 @@
 			"Moon" 
 			"Vegetation"
 			"Fresh water", //In small amounts
-			//"Always Fertility [-1] for Map Generation",
+			"[+1] to Fertility for Map Generation",
 			"Rare feature",	//Only way to get it to spawn for some reason
 			"Occurs on latitudes from [10] to [90] percent of distance equator to pole"
 			],
