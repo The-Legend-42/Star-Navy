@@ -693,11 +693,13 @@
 	{
 		"name": "Ancient Monument",
 		"faith": 1,
+		"uniques": ["Only available <when religion is enabled>"]
 		"requiredTech": "Birth of Faith"
 	},		
 	{
 		"name": "Religious Monument",
 		"faith": 1,
+		"uniques": ["Only available <when religion is enabled>"]
 		"requiredTech": "Religious Monuments"
 		"requiredBuilding": "Ancient Monument",
 	},	
@@ -706,6 +708,7 @@
 		"culture": 1,
 		"faith": 1,
 		"maintenance": 1,
+		"uniques": ["Altars"]	
 		"requiredTech": "Altars"
 	},		
 	{
@@ -853,6 +856,7 @@
 		"maintenance": 4,
 		"isNationalWonder": true,
 		"uniques": [
+					"Altars"
 					"Only available <if [Altar] is constructed in all [non-[Puppeted]] cities>", 
 					"Only available <in cities without a [The Grand Altar]>"
 					"Cost increases by [20] per owned city"],
@@ -969,7 +973,7 @@
 		"culture": 4,
 		"maintenance": 5,
 		"isWonder": true,
-		"uniques": [
+		"uniques": ["Altars"
 					//Altar Boost
 					"[+2 Gold] from every [Altar]"
 					//population Boosts
@@ -1012,7 +1016,8 @@
 		"gold": 2,
 		"faith": 1,
 		"food": 1,
-		"uniques": ["Unbuildable", "Only available <when religion is enabled>",
+		"uniques": [
+					"Unbuildable", "Only available <when religion is enabled>",
 					"Provides [1] [Iron] <after discovering [The Great Shift]>", //Just because the founder has crossed The great Shift does not mean the follower has
 					]
 	},

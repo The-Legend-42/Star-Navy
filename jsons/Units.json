@@ -160,6 +160,8 @@
 					"[10]% chance to intercept air attacks"
 					//Type
 					"Solo"
+					//Alternate Upgrades:
+					"Can upgrade to [Primitive Starfighter Wing]"
 					],
 		"attackSound": "machinegun"
 	},
@@ -178,6 +180,8 @@
 					"[15]% chance to intercept air attacks"
 					//Type
 					"Solo"
+					//Alternate Upgrades:
+					"Can upgrade to [Early Starfighter Wing]"
 					],
 		"attackSound": "machinegun"
 	},
@@ -232,6 +236,8 @@
 		"upgradesTo": "Early Starbomber",
 		"uniques": [//Type
 					"Solo"
+					//Alternate Upgrades:
+					"Can upgrade to [Primitive Starbomber Wing]"
 					],
 		"attackSound": "machinegun" //Will change
 	},
@@ -246,6 +252,8 @@
 		"requiredTech": "Military Shift",
 		"uniques": [//Type
 					"Solo"
+					//Alternate Upgrades:
+					"Can upgrade to [Early Starbomber Wing]"
 					],
 		"attackSound": "machinegun" //Will change
 	},
@@ -298,6 +306,7 @@
 		"cost": 40,
 		"obsoleteTech": "Lasers",
 		"upgradesTo": "Spaceborn Laser",
+		"uniques": ["Can upgrade to [Deep Space Voyaging Ship]"],
 		"attackSound": "shot"
 	},
 	{
@@ -357,6 +366,7 @@
 		"requiredTech": "Larger Repair Ships",
 		"obsoleteTech": "Support Ships",
 		"upgradesTo": "Support Ship",
+		"uniques": ["Can upgrade to [Industrial Repair Ship]"],
 		"attackSound": "shot"
 	},
 	//Seperate Line
@@ -393,7 +403,7 @@
 		"uniques": ["[10]% chance to intercept air attacks",],		
 		"attackSound": "shot"
 	},
-	//Seperate from the repair ships abouve
+	//Seperate line from the repair ships abouve
 	{
 		"name": "Industrial Repair Ship",
 		"unitType": "Repair Ship",
@@ -490,7 +500,7 @@
 		"requiredTech": "Vector Artillery",
 		"obsoleteTech": "Long Range Aiming Systems",
 		"upgradesTo": "Simple Plasma Launcher",
-		"uniques": ["Can move after attacking"],
+		"uniques": ["Can move after attacking", "Can upgrade to [Advanced Spaceborn Railgun]"],
 		"attackSound": "shot"
 	},
 	//New line
@@ -1449,7 +1459,9 @@
 		"requiredTech": "Double Hangared Carriers",
 		"obsoleteTech": "Military Shift",
 		"upgradesTo": "Standard Carrier", 
-		"uniques": ["Cannot attack", "All adjacent units heal [+1] HP when healing", "Can carry [2] [Smallcraft] units"]
+		"uniques": [
+					"Cannot attack", "All adjacent units heal [+1] HP when healing", "Can carry [2] [Smallcraft] units",
+					"Can upgrade to [Standard Double Hangared Carrier]"],
 		"promotions": ["Basic Active Defence Systems"],
 	},
 	{
@@ -1463,6 +1475,7 @@
 		"promotions": ["Basic Active Defence Systems"],
 	},
 
+// "Can upgrade to [Standard Double Hangared Carrier]"
 
 
 
@@ -1491,8 +1504,10 @@
 
 
 
-		///other
+		///others:
 		
+		
+	///	Religion ///
 	{
 		"name": "Religious Founder",
 		"unitType": "Civilian",
@@ -1523,6 +1538,66 @@
 		"religiousStrength": 1000
 	},
 	//Holy Emissaries
+	
+	
+	
+	
+	
+	
+	
+	///City State Exclusives///
+	 //		
+
+	{
+		"name": "Primitive Quasaric Railgun",
+		"unitType": "Space Artillery",
+		"movement": 1,
+		"strength": 3,
+        "range": 3,
+		"rangedStrength": 10,
+		"cost": 30,
+	//	"techRequired": "Basic Warships",
+	//	"obsoleteTech": "Vector Artillery",
+		"upgradesTo": "Early Quasaric Railgun",
+		"uniques": [
+					"Only available to civs with unique [Quasar Culture]"
+					"Only available <after discovering [Basic Warships]> <before discovering [Vector Artillery]>"
+					],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Early Quasaric Railgun",
+		"unitType": "Space Artillery",
+		"movement": 1,
+		"strength": 6,
+        "range": 4,
+		"rangedStrength": 40,
+		"cost": 100,
+	//	"techRequired": "Vector Artillery",
+	//	"obsoleteTech": "Mega Railguns",
+		"upgradesTo": "Quasaric Railgun",
+		"uniques": ["Only available to civs with unique [Quasar Culture]"
+					"Only available <after discovering [Vector Artillery]> <before discovering [Mega Railguns]>"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Quasaric Railgun",
+		"unitType": "Space Artillery",
+		"movement": 1,
+		"strength": 10,
+        "range": 5,
+		"rangedStrength": 100,
+		"cost": 100,
+		"techRequired": "Mega Railguns",
+	//	"obsoleteTech": "Gunnary & Plasma", //Temporary
+	//	"upgradesTo": "Plasma Slinger",	//Temporary
+		"uniques": ["Only available to civs with unique [Quasar Culture]"
+					"Only available <after discovering [Mega Railguns]> <before discovering [Gunnary & Plasm]>"],
+		"attackSound": "shot"
+	}, 
+	 
+	 
+	 
 	
 	
 

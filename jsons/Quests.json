@@ -68,6 +68,7 @@
           "Friendly": 0.2,
           "Orgolic": 1
 		  "Errin": 0.3
+		  "Quasaric": 0.1
       }
   },
   {
@@ -79,6 +80,7 @@
           "Friendly": 0.2,
           "Orgolic": 1
 		  "Errin": 0.3
+		  "Quasaric": 0.1
       }
   },
   {
@@ -89,6 +91,7 @@
       "weightForCityStateType": {
           "Orgolic": 3.5,
 		  "Errin": 1.5,
+		  "Quasaric": 0.5
       }
   },
    {
@@ -97,6 +100,19 @@
       "weightForCityStateType": {
           "Orgolic": 0.1,
 		  "Errin": 1.5,
+		  "Quasaric": 4
+      }
+  },
+  {
+    "name": "Contest Technologies",
+    "description": "The civilization with the largest number of new Technologies researched will gain a reward.",
+    "type": "Global",
+    "duration": 30,
+    "minimumCivs": 3,
+      "weightForCityStateType": {
+          "Orgolic": 0.1,
+		  "Errin": 0.2,
+		  "Quasaric": 4
       }
   },
   

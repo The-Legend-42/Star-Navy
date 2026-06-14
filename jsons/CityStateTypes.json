@@ -83,4 +83,21 @@
         ],
         "color": [136, 22, 24]
     },
+	
+	{
+        "name": "Quasaric",
+        "friendBonusUniques": [
+			"[+1 Science] from every specialist [in all cities]"
+			"Provides military units every ≈[45] turns <starting from the [Plasma Era]> <when at war>"		
+        ],
+        "allyBonusUniques": [
+			"[+2 Science] from every specialist [in all cities]"
+			"Provides military units every ≈[20] turns <starting from the [Battleship Era]> <when not at war>"
+			"Provides military units every ≈[10] turns <starting from the [Plasma Era]> <when at war>"
+        ],
+        "color": [0, 224, 255]
+    },	
+	
+	
+	
 ]

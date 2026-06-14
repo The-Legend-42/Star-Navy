@@ -30,6 +30,44 @@
 					 "[+1 Happiness, +1 Faith] from every [Moons]"
 					]
     },
+	/*
+	{
+        "name": "Luddites",
+        "type": "Pantheon",
+        "uniques": [
+					"[+20]% [Food] in all cities <for civs without unique [Machines]>",
+					"[-100]% weight to this choice for AI decisions <for civs with unique [Machines]>",
+					]
+    },	
+	{
+	  "name": "Robotic Love",
+	  "beliefType": "Pantheon",
+	  "uniques": [
+		"[+10]% [Production] in all cities <for civs with unique [Machines]>",
+		"[+10]% [Science] in all cities <for civs with unique [AIs]>",
+		"[-100]% weight to this choice for AI decisions" //The latter two overpower this if the civ is compatible
+		"[+300]% weight to this choice for AI decisions <for civs with unique [Machines]>",
+		"[+300]% weight to this choice for AI decisions <for civs with unique [AIs]>",
+	  ]
+	},
+	*/
+	
+	{
+	  "name": "God of Metalworking",
+      "type": "Pantheon",
+	  "uniques": [		//may change to +1 for all "Metal" and -1 for all "plant", the problem is most plants are luxaries that dont provide production.
+		//Buff
+		"[+1 Production] from every [Iron]",
+		"[+1 Production] from every [Uranium]",
+		"[+1 Production] from every [Gold Ore]",
+		"[-1 Production] from every [Ancient Wood]",		
+	  ]
+	},					
+    {
+        "name": "Dance of the Aurora",
+        "type": "Pantheon",
+        "uniques": ["[+1 Happiness, +1 Faith] from every [Freezing]"]
+    },
 	
 ///////////////////////////////////////// Follower beliefs /////////////////////////////////////////
     {
@@ -69,6 +107,22 @@
 					"[+5]% Production towards any buildings that already exist in the Capital <during a Golden Age>",
 					]
     },
+    {
+        "name": "Sacraficial Altars",
+        "type": "Follower",
+        "uniques": ["[+1 Faith] from every [Altars] <in cities with at least [10] [Followers of this Religion]>"]
+    },
+    {
+        "name": "Shared Meals",
+        "type": "Follower",
+        "uniques": [
+					"[+1 Food] from every [Temple] <in cities with at least [7] [Followers of this Religion]>"
+					"[+1 Food] from every [Hall of Faith] <in cities with at least [25] [Followers of this Religion]>"
+					"[5]% Food is carried over after population increases [in cities following this religion]"
+					"[-20]% weight to this choice for AI decisions"
+					]
+    },		
+	
 ///////////////////////////////////////// Founder beliefs //////////////////////////////////////////
 
     {
@@ -100,7 +154,13 @@
 					"[-100]% weight to this choice for AI decisions <when number of [Remaining [City-State] Civilizations] is less than [1]>",
 					"[-60]% weight to this choice for AI decisions <when number of [Remaining [City-State] Civilizations] is less than [3]>",
 					]
-    }
+    },
+    {
+        "name": "Great Golden Age",
+        "type": "Founder",
+        "uniques": ["Empire enters a [120]-turn Golden Age"]
+    },
+	
     ////////////////////////////////////// Enhancer beliefs ///////////////////////////////////////
 	/*
     {
@@ -134,5 +194,17 @@
         "type": "Enhancer",
         "uniques": ["Gain an extra spy"]
     },
+    {
+        "name": "Hand of production",
+        "type": "Enhancer",
+        "uniques": ["Provides the cheapest [Production] building in your first [10] cities for free"]
+    },
+	/*
+    {
+        "name": "Endless Expansion",
+        "type": "Enhancer",
+        "uniques": ["Free [Colony Ship] appears <upon entering a new era>"]
+    },
+	*/
 
 ]

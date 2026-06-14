@@ -87,9 +87,12 @@
 		"tradeRequest": "Heres an offer, do you accept?",
 		"outerColor": [171,0,255],
 		"innerColor": [255,215,57],
+		"favoredReligion": "Triple Star Spirits",
 		"uniqueName": "Happy Capital",
 		"uniques": [
+					//Buffs
 					"[+5 Happiness] [in capital]"
+					//Species Tags
 					"Iota Perseains",
 					],
 		"cities": ["Cteraci","Iotto","Perchino","Cteroci","Chinono","Ctemmoci","Chornomo","Pettroci","Chrotto","Sennegiso"]
@@ -109,8 +112,8 @@
 		"introduction": "If you need anything Illegal done we are who you call.",
 		"tradeRequest": "Here's an offer you better accept.",
 		"outerColor": [155,155,155],
-		"uniqueName": "Crimesight",
 		"innerColor": [235,18,33],
+		"uniqueName": "Crimesight",		
 		"uniques": [
 					//Recon
 					"[+1] Sight <for [Recon] units>","[+1] Movement <for [Recon] units>",
@@ -141,6 +144,7 @@
 		"tradeRequest": "Heres an offer, Take it.",
 		"outerColor": [219,201,255],
 		"innerColor": [0, 128, 128],
+		"favoredReligion": "God Emperor", // Or Emperris in the Teal Empires case
 		"uniqueName": "Materialistic Militarism",
 		"uniques": ["[1] Happiness from each type of luxury resource",
 					"[+10]% Production when constructing [Corvette] units [in capital]",
@@ -169,6 +173,7 @@
 		"tradeRequest": "Heres an offer that may profit us both.",
 		"outerColor": [0,87,4],
 		"innerColor": [0, 212, 255],
+		"favoredReligion": "Space Jew",
 		"uniqueName": "Boundless Curiosity",
 		"uniques": [
 				//	"[+1 Science] from [Barren Planet] tiles [in all cities]"
@@ -181,7 +186,7 @@
 		"cities": ["Earth 2", "Newmoon", "Redworld", "Veinly", "Little Mercury", "X", "Blueworld", "Skyless", "Rock", "EMC-775", "EMC-773", "EMC-778", "Wet World"]
 	},
 	
-	{	//An aquatic alian speicies that prefare to be left alone. They live on cold enviorments.
+	{	//An aquatic alien speicies that prefare to be left alone. They live on cold enviorments.
 		"name": "Terrevik Union",
 		"adjective": ["Terrevikian"],	
 		"leaderName": "Ta'harrnax",
@@ -196,6 +201,7 @@
 		"tradeRequest": "We don't usually make offers so its best to accept.",
 		"outerColor": [214,214,214],
 		"innerColor": [98, 0, 164],
+		"favoredReligion": "The Answer",
 		"uniqueName": "Hermits by choice",
 		"uniques": [
 					//Prefared Enviroments
@@ -231,6 +237,7 @@
 		"tradeRequest": "Our offer, your choice.",
 		"outerColor": [33, 2, 225],
 		"innerColor": [98, 0, 164], // 15 0 112 was too dark may be used for a diffrent faction instead
+		"favoredReligion": "Spode",
 		"uniqueName": "The living voids",
 		"uniques": [
 					//Base Boosts
@@ -264,6 +271,7 @@
 		"tradeRequest": "We come to you with an offer. 01000111 01101111 01101111 01100100?",
 		"innerColor": [200,200,200],
 		"outerColor": [50,50,50],
+		"favoredReligion": "Machine God",		
 		"uniqueName": "Mechanical Production"
 		"uniques": [
 					"[+1 Production] per [4] population [in all cities]"
@@ -454,9 +462,42 @@
 					],
 		"cities": ["Errin Prime", "Little Errin"]
 	},	
-	
-	
-	
+	{
+		"name": "Quasar Union",
+		"adjective": ["Quasarian"],
+		"cityStateType": "Quasaric",
+
+		"declaringWar": "It is time for war!",
+		"attacked": "You fool!",
+		"defeated": "This is a sad, sad and very sad day",
+		"outerColor": [0, 0, 0],
+		"innerColor": [0, 70, 194],
+		"uniqueName": "Quasarics",
+		"uniques": [
+					"Quasar Culture",
+					"Free [Planetary Colony Ship] appears <after discovering [The Great Shift]>",
+					"[+1 Production, +1 Food, +1 Science, +1 Culture] from [Void] tiles [in all cities] <starting from the [Great Transformation]>", //Was way to op so nerfed
+					],
+		"cities": ["Pōniuāʻena", "UHZ1", "Ton 618"]
+	},	
+	{
+		"name": "Quasar Coalition",
+		"adjective": ["Quasaric"],
+		"cityStateType": "Quasaric",
+
+		"declaringWar": "Time for war has come...",
+		"attacked": "Are you stupid?",
+		"defeated": "What a sad day.",
+		"outerColor": [0, 0, 0],
+		"innerColor": [0, 245, 32],
+		"uniqueName": "Quasarics",
+		"uniques": [
+					"Quasar Culture",
+					"Free [Planetary Colony Ship] appears <after discovering [The Great Shift]>",
+					"[+1 Production, +1 Food, +1 Science, +1 Culture] from [Void] tiles [in all cities] <starting from the [Great Transformation]>",  //<starting from the [Plasma Era]>"
+					],
+		"cities": ["Cloverleaf ", "Double H", "T-Cup Galaxy"]
+	},		
 	
 	
 

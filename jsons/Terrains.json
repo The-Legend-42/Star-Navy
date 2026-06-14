@@ -169,6 +169,7 @@
 			"Rough terrain"
 		    "Fresh water",
 			"Waters" // Contains large bodies of water such as Seas or Oceans
+			"Freezing"
 			"Has an elevation of [1] for visibility calculations",
 			"Blocks line-of-sight from tiles at same elevation",
 			"Considered [Food] when determining start locations",
@@ -190,6 +191,7 @@
 			"Rare feature"
 		    "Fresh water",
 			"Waters" // Contains large bodies of water such as Seas or Oceans
+			"Freezing"
 			]
 	},	
 	{
@@ -311,6 +313,7 @@
 		"occursOn": ["Frost","Earth-Like","Snowy","Lush Planet","Barren Planet","Islands"],
 		"uniques": [
 			"Moon"
+			"Freezing"
 			//"Fresh water", //Once unfrozen perhaps
 			"Waters" // Contains large bodies of water such as Seas or Oceans
 			"Considered [Production] when determining start locations",
