@@ -13,7 +13,7 @@
 
 	 "constants": {
 		
-		"minimumValueForFoundingCity": 15
+		"minimumValueForFoundingCity": 10,
 	}
 	
 	

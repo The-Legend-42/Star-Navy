@@ -56,6 +56,20 @@
 	},
 	
 	
+
+
+	//Destroyers + Larger Warships + Artillery
+	/*
+	{
+		"name": "Anti City", //Destructive Fire
+		"uniques": ["[+50]% Strength <vs cities>"],
+		"unitTypes": ["Destroyer","Light cruiser", "Cruiser", "Battle Cruiser", "Battleship","Space Artillery","Space Laser","Plasma Launcher",],
+        "column": 20,
+        "row": 1
+    },	
+	*/
+	
+	
 	
 	// Smaller Warships
 	{
@@ -87,12 +101,47 @@
 	
 	
 	
+	
+	
+	//Larger Warships
+	{
+		"name": "Thick Plating I",
+		"uniques": ["[+25]% Strength <when defending>"],
+		"unitTypes": ["Light cruiser", "Cruiser", "Battle Cruiser", "Battleship"],
+        "column": 3,
+        "row": 1
+    },
+	{
+		"name": "Thick Plating II",
+		"prerequisites": ["Carrier Plating I"],
+		"uniques": ["[+25]% Strength <when defending>"],
+		"unitTypes": ["Light cruiser", "Cruiser", "Battle Cruiser", "Battleship"],
+        "column": 3,
+        "row": 2
+    },
+	{
+		"name": "Thick Plating III",
+		"prerequisites": ["Carrier Plating I"],
+		"uniques": ["[+25]% Strength <when defending>"],
+		"unitTypes": ["Light cruiser", "Cruiser", "Battle Cruiser", "Battleship"],
+        "column": 3,
+        "row": 3
+    },		
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	//Carriers
 	{
 		"name": "Carrier Plating I",
 		"uniques": ["[+15]% Strength <when defending>"],
 		"unitTypes": ["Standard Carrier"],
-        "column": 3,
+        "column": 4,
         "row": 1
     },
 	{
@@ -100,7 +149,7 @@
 		"prerequisites": ["Carrier Plating I"],
 		"uniques": ["[+15]% Strength <when defending>"],
 		"unitTypes": ["Standard Carrier"],
-        "column": 3,
+        "column": 4,
         "row": 2
 	},
 	{
@@ -113,7 +162,7 @@
 					 "Only available <after discovering [Double Hangared Carriers]>"
 					]
 		"unitTypes": ["Standard Carrier"],
-        "column": 3,
+        "column": 4,
         "row": 3
 	},	
 	{
@@ -126,10 +175,12 @@
 					 "Only available <after discovering [Double Hangared Carriers]>"
 					]
 		"unitTypes": ["Standard Carrier"],
-        "column": 3,
+        "column": 4,
         "row": 4
 	},	
 	
+	
+
 
 
 
@@ -138,7 +189,7 @@
 		"name": "Artillery Adjustments I",
 		"uniques": ["[+25]% Strength <when attacking>"],
 		"unitTypes": ["Space Artillery","Space Laser","Plasma Launcher",],
-        "column": 4,
+        "column": 5,
         "row": 1
     },
 	{
@@ -146,7 +197,7 @@
 		"prerequisites": ["Artillery Adjustments I"],
 		"uniques": ["[+25]% Strength <when attacking>"],
 		"unitTypes": ["Space Artillery","Space Laser","Plasma Launcher"],
-        "column": 4,
+        "column": 5,
         "row": 2
     },
 	{
@@ -154,10 +205,24 @@
 		"prerequisites": ["Artillery Adjustments II"],
 		"uniques": ["[+25]% Strength <when attacking>"],
 		"unitTypes": ["Space Artillery","Space Laser","Plasma Launcher"],
-        "column": 4,
+        "column": 5,
         "row": 3
     },
-
+	{
+		"name": "Artillery Engines",
+		"uniques": ["[+1] Movement"],
+		"unitTypes": ["Space Artillery","Space Laser","Plasma Launcher"],
+        "column": 6,
+        "row": 2
+    },
+	{
+		"name": "Escape Engines",
+		"uniques": ["Can move after attacking", "[-50]% weight to this choice for AI decisions"],
+		"prerequisites": ["Artillery Engines"],
+		"unitTypes": ["Space Artillery","Space Laser","Plasma Launcher"],
+        "column": 6,
+        "row": 3
+    },
 
 
 

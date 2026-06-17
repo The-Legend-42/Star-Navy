@@ -66,7 +66,7 @@
     {
         "name": "Dance of the Aurora",
         "type": "Pantheon",
-        "uniques": ["[+1 Happiness, +1 Faith] from every [Freezing]"]
+        "uniques": ["[+1 Happiness, +1 Faith] from every [Asteroid]"]
     },
 	
 ///////////////////////////////////////// Follower beliefs /////////////////////////////////////////
@@ -122,7 +122,34 @@
 					"[-20]% weight to this choice for AI decisions"
 					]
     },		
-	
+    {
+        "name": "Religious Center",
+        "type": "Follower",
+        "uniques": ["[+2 Happiness] from every [Temple] <in cities with at least [5] [Followers of this Religion]>"]
+    },	
+    {
+        "name": "Hedonistic Festivals",
+        "type": "Follower",
+        "uniques": ["[+10 Happiness] [in cities following this religion] <during We Love The King Day>",
+					"[-2 Production, -1 Science] [in cities following this religion] <during We Love The King Day>",
+					"[-20]% weight to this choice for AI decisions",
+		]
+    },
+    {
+        "name": "Hedonistic Parties",
+        "type": "Follower",
+        "uniques": ["[+5 Happiness] [in cities following this religion]",
+					"[+1 Gold, -1 Science] [in cities following this religion] <during We Love The King Day>",
+					"[-2 Production] [in cities following this religion]",
+					"[-20]% weight to this choice for AI decisions",
+		]
+    },
+    {
+        "name": "Asteroid Watching",
+        "type": "Pantheon",
+        "uniques": ["[+1 Culture] from every [Plantation]"]
+    },
+
 ///////////////////////////////////////// Founder beliefs //////////////////////////////////////////
 
     {
@@ -153,6 +180,7 @@
 					"Gain [100] [Culture] <after enhancing a religion>",
 					"[-100]% weight to this choice for AI decisions <when number of [Remaining [City-State] Civilizations] is less than [1]>",
 					"[-60]% weight to this choice for AI decisions <when number of [Remaining [City-State] Civilizations] is less than [3]>",
+					"[-20]% weight to this choice for AI decisions <when number of [Remaining [City-State] Civilizations] is less than [5]>", //and more than 3
 					]
     },
     {
@@ -199,12 +227,10 @@
         "type": "Enhancer",
         "uniques": ["Provides the cheapest [Production] building in your first [10] cities for free"]
     },
-	/*
     {
         "name": "Endless Expansion",
         "type": "Enhancer",
         "uniques": ["Free [Colony Ship] appears <upon entering a new era>"]
     },
-	*/
 
 ]
