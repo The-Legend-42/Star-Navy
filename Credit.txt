@@ -28,6 +28,7 @@ Resource Icons:
 [Compost] https://www.magnific.com/icon/fertilizer_16968415#fromView=search&page=1&position=59&uuid=d54395d8-d568-4bb4-9390-2e18c886aed4
 [Emeralds] https://www.flaticon.com/free-icon/emerald_1949695
 [Cinnamon] https://www.flaticon.com/free-icon/cinnamon_18128074
+[Space Squid] https://www.flaticon.com/free-icon/squid_6192731
 
 
 
