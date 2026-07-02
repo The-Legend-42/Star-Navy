@@ -118,6 +118,7 @@
 					"Can instantly construct a [Space Fort] improvement <by consuming this unit>",
 					"Can instantly construct a [Space Farm] improvement <by consuming this unit>",
 					"Can instantly construct a [Space Trading post] improvement <by consuming this unit>",
+					"Can instantly construct a [Space Sanctity] improvement <by consuming this unit> <after discovering [Space Sanctities]>",
 					],
     },
 	{
@@ -1560,8 +1561,8 @@
 	//	"obsoleteTech": "Vector Artillery",
 		"upgradesTo": "Early Quasaric Railgun",
 		"uniques": [
-					"Only available to civs with unique [Quasar Culture]"
-					"Only available <after discovering [Basic Warships]> <before discovering [Vector Artillery]>"
+					"Only available to civs with unique [Quasar Culture]",
+					"Only available <after discovering [Basic Warships]> <before discovering [Vector Artillery]>",
 					],
 		"attackSound": "shot"
 	},
@@ -1576,8 +1577,10 @@
 	//	"techRequired": "Vector Artillery",
 	//	"obsoleteTech": "Mega Railguns",
 		"upgradesTo": "Quasaric Railgun",
-		"uniques": ["Only available to civs with unique [Quasar Culture]"
-					"Only available <after discovering [Vector Artillery]> <before discovering [Mega Railguns]>"],
+		"uniques": [
+					"Only available to civs with unique [Quasar Culture]",
+					"Only available <after discovering [Vector Artillery]> <before discovering [Mega Railguns]>",
+					],
 		"attackSound": "shot"
 	},
 	{
@@ -1591,8 +1594,10 @@
 		"techRequired": "Mega Railguns",
 	//	"obsoleteTech": "Gunnary & Plasma", //Temporary
 	//	"upgradesTo": "Plasma Slinger",	//Temporary
-		"uniques": ["Only available to civs with unique [Quasar Culture]"
-					"Only available <after discovering [Mega Railguns]> <before discovering [Gunnary & Plasm]>"],
+		"uniques": [
+					"Only available to civs with unique [Quasar Culture]",
+					"Only available <after discovering [Mega Railguns]> <before discovering [Gunnary & Plasma]>",
+					]   
 		"attackSound": "shot"
 	}, 
 	 

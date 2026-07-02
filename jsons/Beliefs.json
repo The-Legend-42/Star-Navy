@@ -66,9 +66,8 @@
     {
         "name": "Dance of the Aurora",
         "type": "Pantheon",
-        "uniques": ["[+1 Happiness, +1 Faith] from every [Asteroid]"]
-    },
-	
+        "uniques": ["[+1 Happiness, +1 Faith] from every [Freezing]"]
+    },	
 ///////////////////////////////////////// Follower beliefs /////////////////////////////////////////
     {
         "name": "Ancient Wonders",
@@ -132,7 +131,7 @@
         "type": "Follower",
         "uniques": ["[+10 Happiness] [in cities following this religion] <during We Love The King Day>",
 					"[-2 Production, -1 Science] [in cities following this religion] <during We Love The King Day>",
-					"[-20]% weight to this choice for AI decisions",
+					"[-40]% weight to this choice for AI decisions",
 		]
     },
     {
@@ -141,15 +140,19 @@
         "uniques": ["[+5 Happiness] [in cities following this religion]",
 					"[+1 Gold, -1 Science] [in cities following this religion] <during We Love The King Day>",
 					"[-2 Production] [in cities following this religion]",
-					"[-20]% weight to this choice for AI decisions",
+					"[-40]% weight to this choice for AI decisions",
 		]
     },
     {
         "name": "Asteroid Watching",
-        "type": "Pantheon",
-        "uniques": ["[+1 Culture] from every [Plantation]"]
+        "type": "Follower",
+        "uniques": ["[+1 Culture] from every [Asteroid]"]
     },
-
+    {
+        "name": "Sky Farming",
+        "type": "Follower", //Pantheon
+        "uniques": ["[+1 Food] from every [Space Farm]"]
+    },
 ///////////////////////////////////////// Founder beliefs //////////////////////////////////////////
 
     {

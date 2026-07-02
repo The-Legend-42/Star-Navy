@@ -1,5 +1,63 @@
 [
     {
+        "name": "Research",
+        "era": "Early Era",
+        "priorities": {
+            "Neutral": 5,
+        //     "Cultural": 5,
+        //    "Diplomatic": 5,
+            "Domination": 5,
+        //    "Scientific": 5
+        },
+        "uniques": [
+            "Free Technology",
+        ],
+        "policies": [
+            {
+                "name": "First Breakthrough",
+                "uniques": ["Free Technology"],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Second Breakthrough",
+                "uniques": ["Free Technology"],
+                "requires": ["First Breakthrough"],
+                "row": 2,
+                "column": 2
+            },
+            {
+                "name": "Integrated Research",
+                "uniques": ["[+1 Science] [in all cities]", "Gain [100] [Science]",],
+                "requires": ["First Breakthrough"],
+                "row": 2,
+                "column": 4
+            },
+            {
+                "name": "Research Complete",
+                "uniques": [
+					"Free [Colony Ship] appears"
+                    "Get the leader title of [Researcher [leaderName]]"
+                ]
+            }
+        ]
+    },
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+    {
         "name": "Tourism",
         "era": "Early Era",
         "priorities": {

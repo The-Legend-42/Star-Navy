@@ -11,7 +11,7 @@
 		"uniques": ["Generated on every [18] tiles <in [Asteroid Field] tiles>",
 					"Generated on every [35] tiles <in [Asteroid Field] tiles> <in [Asteroid Field] Regions>"
 					]
-	},
+	},		
 	*/
 	
 	
@@ -22,7 +22,8 @@
 		"food": 1,
 		"improvement": "Asteroid Mine",
 		"improvementStats": {"production": 1},
-		"uniques": ["Generated on every [18] tiles <in [Asteroid Field] tiles>",
+		"uniques": ["Freezing"
+					"Generated on every [18] tiles <in [Asteroid Field] tiles>",
 					"Generated on every [35] tiles <in [Asteroid Field] tiles> <in [Asteroid Field] Regions>"
 					]
 	},
@@ -203,7 +204,7 @@
 	{
 		"name": "Space Whale",
 		"resourceType": "Luxury",
-		"terrainsCanBeFoundOn": ["Void"],
+		"terrainsCanBeFoundOn": ["Void","Asteroid Field"],
 		"food": 1,
 		"science": 1,
 		"gold": 1,
@@ -211,9 +212,26 @@
 		"improvementStats": {"gold": 1},
 		"uniques": [
 					"Creatures", "Exotic",
-					"Generated with weight [40] <in [Asteroid Field] Regions>",
-					"Generated with weight [10] <in [Void] Regions>",
-				//	"Generated near City States with weight [15]"
+				//	"Generated with weight [40] <in [Asteroid Field] Regions>",
+				//	"Generated with weight [10] <in [Void] Regions>",
+				"Generated with weight [10] <in [Void] tiles>",
+				"Doesn't generate naturally <in [Asteroid Field] tiles>"		
+					],
+	},
+	{
+		"name": "Space Squid",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Void","Asteroid Field"],
+		"food": 2,
+		"improvement": "Asteroid Mine", //Temporary
+		"improvementStats": {"science": 1},
+		"uniques": [
+					"Creatures", "Exotic",
+				//	"Generated with weight [22] <in [Asteroid Field] Regions>",
+				//	"Generated with weight [10] <in [Void] Regions>",
+				//	"Generated with weight [8] <in [Void] tiles>",
+					"Generated on every [40] tiles <in [Void] tiles>",
+					"Generated with weight [2] <in [Asteroid Field] tiles>",
 					],
 	},
 	{

@@ -76,7 +76,16 @@
 					],
 		"shortcutKey": "M"
 	},	
-	
+	{
+		"name": "Planetary Sanctity",
+		"terrainsCanBeBuiltOn": ["Void"],
+		"turnsToBuild": 16,
+		"faith": 4,
+		"techRequired": "Space Sanctities",
+		"uniques": ["Planetoid Improvement",
+					"Pillaging this improvement yields approximately [+40 Gold]"],
+		"shortcutKey": "R"
+	},	
 	
 	
 	
@@ -160,10 +169,19 @@
 		"uniques": ["Void Improvement",
 					"Gives a defensive bonus of [10]%",
 					"Can be built outside your borders", "Pillaging this improvement yields approximately [+25 Gold]", "[3] Sight"],
-		"shortcutKey": "T"
+		"shortcutKey": "O"
 	},
-	
-	
+	{
+		"name": "Space Sanctity",
+		"terrainsCanBeBuiltOn": ["Void"],
+		"turnsToBuild": 8,
+		"faith": 2,
+		"techRequired": "Space Sanctities",
+		"uniques": ["Void Improvement",
+					"Gives a defensive bonus of [5]%",
+					"Pillaging this improvement yields approximately [+20 Gold]"],
+		"shortcutKey": "R"
+	},	
 	
 	
 	

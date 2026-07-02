@@ -293,7 +293,7 @@
 				"name": "Spreading The Scolls",
 				"row": 1,
 				"prerequisites": ["Solar Holy Incense","Holy Scolls"],		
-	            "uniques": ["[+1 Faith] [in all cities]"],			
+	            "uniques": ["[+1 Faith] [in all cities]","Only available <after discovering [The Great Shift]>"],			
 				"quote": "'More Scrolls Spread through out your space' - Holy One"
 			},
 			{
@@ -346,7 +346,7 @@
 				"name": "Holy Instruments",
 				"row": 1,
 				"prerequisites": ["Spreading The Scolls"],		
-	            "uniques": ["[+1 Faith] [in capital]"],			
+	            "uniques": ["[+1 Faith] [in capital]","Only available <after discovering [The Great Shift]>"],			
 				"quote": "'The sound of faith' - Holy One"
 			},
 			{
@@ -401,14 +401,14 @@
 				"name": "Religious Specialists",
 				"row": 1,
 				"prerequisites": ["Holy Instruments"],		
-	            "uniques": ["[1] free [Holy Emissary] units appear","[+50]% weight to this choice for AI decisions",],			
+	            "uniques": ["[1] free [Holy Emissary] units appear","[+50]% weight to this choice for AI decisions","Only available <after discovering [The Great Shift]>",],			
 				"quote": "'' - Holy One"
 			},
 			{
 				"name": "Holy Emissaries",
 				"row": 2,
 				"prerequisites": ["Holy Instruments"],		
-	            "uniques": ["[1] free [Holy Emissary] units appear",]			
+	            "uniques": ["[1] free [Holy Emissary] units appear","Only available <after discovering [The Great Shift]>",]			
 				"quote": "'To spread the faith we require an emissary if not a vast number' - Holy Two"
 			},
 			*/
@@ -478,13 +478,14 @@
 				"name": "Religious Specialists",
 				"row": 1,
 				"prerequisites": ["Shrines"],				
+	            "uniques": ["Only available <after discovering [The Great Shift]>"],	
 				"quote": "'Experts of the faith' - Holy One"
 			},
 			{
 				"name": "Holy Emissaries",
 				"row": 2,
 				"prerequisites": ["First Emissary"],		
-	            "uniques": ["[1] free [Holy Emissary] units appear", "[+75]% weight to this choice for AI decisions"],			
+	            "uniques": ["[1] free [Holy Emissary] units appear", "[+75]% weight to this choice for AI decisions","Only available <after discovering [The Great Shift]>"],			
 				"quote": "'Now we will be able to train more Emissaries' - Holy Two"
 			},
 			{
@@ -533,6 +534,13 @@
 		"buildingCost": 165,
 		"wonderCost": 400,
 		"techs": [
+			{
+				"name": "Space Sanctities",
+				"row": 1,
+				"prerequisites": ["Religious Specialists","Holy Emissaries"],				
+	            "uniques": ["Only available <after discovering [The Great Shift]>"],	
+				"quote": "'Holy sites situated in the dephs of space' - Holy One"
+			},
 				{
 			//Repair Ships Added 
 				"name": "Repair Ships",
