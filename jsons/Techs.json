@@ -541,7 +541,8 @@
 	            "uniques": ["Only available <after discovering [The Great Shift]>"],	
 				"quote": "'Holy sites situated in the dephs of space' - Holy One"
 			},
-				{
+
+			{
 			//Repair Ships Added 
 				"name": "Repair Ships",
 				"row": 3,
@@ -593,6 +594,13 @@
 		"buildingCost": 185,
 		"wonderCost": 420,
 		"techs": [
+			{
+				"name": "The Great Hall of Faith",
+				"row": 1,
+				"prerequisites": ["Space Sanctities"],				
+	            "uniques": ["Only available <after discovering [The Great Shift]>"],	
+				"quote": "'The hall to all that is holy' - Holy One"
+			},
 				{
 			//New Repair Ship Added 
 				"name": "Larger Repair Ships",
@@ -644,7 +652,15 @@
 		"techCost": 245,
 		"buildingCost": 195,
 		"wonderCost": 435,
-		"techs": [			
+		"techs": [
+			{
+				"name": "Furthering faithful teachings",
+				"row": 1,
+				"prerequisites": ["The Great Hall of Faith"],				
+	            "uniques": ["[+1 Faith] [in capital]","Only available <after discovering [The Great Shift]>"],	
+				"quote": "'Further the teachings' - Holy One"
+			},
+			
 			{
 			//New Building
 				"name": "Active Defence Systems",
@@ -652,8 +668,6 @@
 				"prerequisites": ["Larger Repair Ships","Simple Active Defence Systems",],
 				"quote": "'Further improving our defences' - Spaceman"
 			},
-			
-			
 			{
 			//Ship/s with a defence bonus
 				"name": "Ship Based Active Defence Systems",
@@ -694,7 +708,22 @@
 		"techCost": 250,
 		"buildingCost": 200,
 		"wonderCost": 465,
-		"techs": [			
+		"techs": [
+			{
+				"name": "Religious Writings",
+				"row": 1,
+				"prerequisites": ["Furthering faithful teachings"],				
+	            "uniques": ["[+1 Faith] [in capital]","Only available <after discovering [The Great Shift]>"],	
+				"quote": "'Writing can be holy in its own wright' - Holy One"
+			},
+			{
+				"name": "Religious espionage",
+				"row": 2,
+				"prerequisites": ["Furthering faithful teachings"],				
+	            "uniques": ["Gain an extra spy <for [Major] Civilizations> <when espionage is enabled>",
+							"[+33]% weight to this choice for AI decisions", "Only available <after discovering [The Great Shift]>"],	
+				"quote": "'Sometimes one must do bad for the greater good of all others' - Holy Two"
+			},		
 			{
 			//More war assets
 				"name": "Electronic Dischargers",
@@ -743,6 +772,13 @@
 		"buildingCost": 220,
 		"wonderCost": 485,
 		"techs": [			
+			{
+				"name": "The Cheeper Advancment",
+				"row": 1,
+				"prerequisites": ["Religious Writings","Religious espionage"],				
+	            "uniques": ["Free Technology","Only available <after discovering [The Great Shift]>"],	
+				"quote": "'Skip ahead or take a reward for your investments. You have supported us well enough you disrve a shorcut once in a while.' - Holy One"
+			},
 			{			//More buildings for ecenomic Specialists
 				"name": "Trade Centers",
 				"row": 4,
@@ -795,6 +831,13 @@
 		"buildingCost": 240,
 		"wonderCost": 500,
 		"techs": [
+			{
+				"name": "The Return",
+				"row": 1,
+				"prerequisites": ["The Cheeper Advancment"],				
+	            "uniques": ["Gain [500] [Gold]","Gain [125] [Culture]","Gain [50] [Faith]","Only available <after discovering [The Great Shift]>"],	
+				"quote": "'The return on your investments' - Holy One"
+			},
 	
 			{	//+1 gold Buff from Lux Tiles
 				"name": "Luxary Market",
@@ -849,6 +892,13 @@
 		"buildingCost": 250,
 		"wonderCost": 515,
 		"techs": [
+			{
+				"name": "Tower to faith",
+				"row": 1,
+				"prerequisites": ["The Return"],				
+	            "uniques": ["Only available <after discovering [The Great Shift]>"],	
+				"quote": "'A tower, yes yes.' - Holy One"
+			},
 	
 			{
 				"name": "Combat Repair Ships",
@@ -896,6 +946,13 @@
 		"buildingCost": 265,
 		"wonderCost": 525,
 		"techs": [
+			{
+				"name": "Festival of faith",
+				"row": 1,
+				"prerequisites": ["Tower to faith"],				
+	            "uniques": ["Empire enters a [20]-turn Golden Age","Only available <after discovering [The Great Shift]>"],	
+				"quote": "'A festival for all we've done' - Holy One"
+			},
 	
 			{
 				"name": "Festivals", //Added festival fields where festivals are held due to the production to happniess bug
@@ -948,6 +1005,13 @@
 		"buildingCost": 285,
 		"wonderCost": 555,
 		"techs": [
+			{
+				"name": "Tower to thought",
+				"row": 1,
+				"prerequisites": ["Festival of faith"],				
+	            "uniques": ["Only available <after discovering [The Great Shift]>"],	
+				"quote": "'I'm sick of these holy one and holy two... its time we ask the real questions! Lets build a tower to the questions rather than just the answers!' - Philosopher"
+			},
 	
 			//Evolution that mixed the fast repair ship line with the Farseer line to create a ship with both sight bonuses and repair capabilities
 			{
@@ -995,6 +1059,13 @@
 		"buildingCost": 300,
 		"wonderCost": 575,
 		"techs": [
+			{
+				"name": "Religious Communities",
+				"row": 1,
+				"prerequisites": ["Tower to thought"],				
+	            "uniques": ["[+1 Faith, +1 Happiness] [in capital]","Only available <after discovering [The Great Shift]>"],		
+				"quote": "'Together we are happy, community is key to finding happiness in life' - Holy One"
+			},
 	
 			{
 				"name": "Anti Starfighter Systems",
@@ -1038,6 +1109,13 @@
 		"buildingCost": 313,
 		"wonderCost": 600,
 		"techs": [
+			{
+				"name": "Religious Debate",
+				"row": 1,
+				"prerequisites": ["Religious Communities"],				
+	            "uniques": ["[+1 Faith, +1 Science] [in capital]","Only available <after discovering [The Great Shift]>"],		
+				"quote": "'Sometimes debate can help us reach a better understanding we might have been to blind or stuborn to have seen otherwise.' - Holy One"
+			},
 	
 			{
 				"name": "Repair & Support Advancments",
@@ -1081,6 +1159,13 @@
 		"buildingCost": 323,
 		"wonderCost": 610,
 		"techs": [
+			{
+				"name": "The Cosmic Abode",
+				"row": 1,
+				"prerequisites": ["Religious Debate"],				
+	            "uniques": ["Only available <after discovering [The Great Shift]>"],		
+				"quote": "'Amongst the stars one may find a way.' - Holy One"
+			},
 	
 			{
 				"name": "Gunnary & Plasma",
@@ -1125,6 +1210,13 @@
 		"buildingCost": 333,
 		"wonderCost": 625,
 		"techs": [
+			{
+				"name": "The secrets first clue",
+				"row": 1,
+				"prerequisites": ["The Cosmic Abode"],				
+	            "uniques": ["Only available <after discovering [The Great Shift]>"],		
+				"quote": "'Well done, you've found it. The secret to it all. How to utlize faith in a more practical manner. But then again, how do we actually do so? Without the answer you would not expect a reward now would you?' - Holy One"
+			},
 	
 			{
 				"name": "Entertainers"
@@ -1154,6 +1246,13 @@
 		"buildingCost": 335,
 		"wonderCost": 635,
 		"techs": [
+			{
+				"name": "The Second clue",
+				"row": 1,
+				"prerequisites": ["The secrets first clue"],				
+	            "uniques": ["Only available <after discovering [The Great Shift]>"],		
+				"quote": "'So close yet so far, how far will you go?' - Holy One"
+			},
 	
 			{
 				"name": "Culture Specialists",
@@ -1186,6 +1285,160 @@
 			},
 		] 
 	},	
+	{
+		"columnNumber": 25,
+		"era": "Early Post-Shift Era",
+		"techCost": 2000,
+		"buildingCost": 350,
+		"wonderCost": 700,
+		"techs": [
+			{
+				"name": "Psychics arts",
+				"row": 1,
+				"prerequisites": ["The Second clue"],				
+	            "uniques": ["Only available <after discovering [The Great Shift]>"],		
+				"quote": "'The phychics are among us but so far the power is limited.' - Holy One"
+			},
+			
+				{
+				"name": "Solar Utilization",
+				"row": 4,
+				"prerequisites": ["The Great Shift"],
+				"uniques": ["[+2 Production, +2 Happiness, +2 Science] from [Star] tiles [in all cities]"],
+				"quote": "'Lets make the stars work for us' - Spaceman"
+			},
+	
+			{
+				"name": "Push for Expansion",
+				"row": 6,
+				"prerequisites": ["The Great Shift"],
+				"uniques": ["[+3 Production] [in capital]", "[1] free [Planetary Colony Ship] units appear","[1] free [Deployable Space Station] units appear"],
+				"quote": "'Time to expand' - Spaceman"
+			},
+			{
+				"name": "Drones",
+				"row": 8,
+				"prerequisites": ["The Great Shift"],
+				"quote": "'Who let the drones out?' - Space Bozo"		
+			},
+		] 
+	},
+	{
+		"columnNumber": 26,
+		"era": "Early Post-Shift Era",
+		"techCost": 2000,
+		"buildingCost": 400,
+		"wonderCost": 800,
+		"techs": [
+			{
+				"name": "Psychic reactive Tecnology",
+				"row": 1,
+				"prerequisites": ["Psychics arts"],				
+	            "uniques": ["[+3 Faith] [in capital]", "Only available <after discovering [The Great Shift]>"],		
+				"quote": "'Technology that reacts to our holy phychics. What better proof could their be?' - Holy One"
+			},
+			{
+				"name": "Solar Cannons",
+				"row": 3,
+				"prerequisites": ["Solar Utilization"],
+				"quote": "'We used the stars, why not artificially mimic them and use their coppies to fire on our foes?' - Spaceman"
+			},
+			{
+				"name": "Post-Shift Arthouses",
+				"row": 4,
+				"prerequisites": ["Solar Utilization"],
+                "uniques": ["[-25]% weight to this choice for AI decisions"],
+				"quote": "'Who doesn't like a little culture?' - Spaceman"
+			},
+			{
+				"name": "Post-Shift Engines",
+				"row": 5,
+				"prerequisites": ["Push for Expansion"],
+				"quote": "'Make em small make em good ay?' - Space Bozo"
+			},
+			{
+				"name": "Ultra Servers",
+				"row": 6,
+				"prerequisites": ["Push for Expansion"],
+				"quote": "'Servers? You're still using that junk?' - Tech Guy"
+			},
+			{
+				"name": "Drone Production",
+				"row": 7,
+				"prerequisites": ["Push for Expansion", "Drones"],
+				"uniques": ["[+2 Production] [in capital]"],
+				"quote": "'Catch up with the times, we can make more with these!' - Tech Guy"
+			},
+			{
+				"name": "Increased Starfighter Range",
+				"row": 8,
+				"prerequisites": ["Drones"],				
+				"quote": "'Distance, in the vastness of space... does it matter?' - Philosopher"
+			},
+			{
+				"name": "Civilian Drones",
+				"row": 9,
+				"prerequisites": ["Drones"],
+                "uniques": ["[+25]% weight to this choice for AI decisions"],
+				"quote": "'So no more fighting?' - Space Bozo"		
+			},
+		] 
+	},
+	
+	{
+		"columnNumber": 27,
+		"era": "Early Post-Shift Era",
+		"techCost": 2000,
+		"buildingCost": 420,
+		"wonderCost": 840,
+		"techs": [
+			{
+				"name": "Psychic warships",
+				"row": 2,
+				"prerequisites": ["Psychic reactive Tecnology","Solar Cannons"],				
+	            "uniques": ["Only available <if [Psychic worship hall] is constructed>", "Only available <if [Psychic reaserch Center] is constructed>", "[1] free [Psychic Corvette] units appear"],		
+				"quote": "'Psychic warships! Our devotion, now manifested!' - Holy Two"
+			},
+			{
+				"name": "Cultural Spread",
+				"row": 4,
+				"prerequisites": ["Post-Shift Arthouses"],
+                "uniques": ["[+3 Culture] [in capital]"],
+				"quote": "'What good is out culture if it refuses to spread?' - Philosopher"
+			},
+			{
+				"name": "Elegant Battleships",
+				"row": 5,
+				"prerequisites": ["Post-Shift Arthouses","Post-Shift Engines"],
+				"quote": "'I don't know why this happned but for some reason it just did.' - Spaceman"
+			},
+			{
+				"name": "The Supreme Data Matrix",
+				"row": 6,
+				"prerequisites": ["Ultra Servers"],
+				"uniques": ["[+75]% weight to this choice for AI decisions"],
+				"quote": "'I'm not even going to bother to try to expain this to anyone with less than a decade of experince...' - Engineer"
+			},
+			{
+				"name": "Money growing plants",
+				"row": 7,
+				"prerequisites": ["Drone Production"],
+				"quote": "Whose stupid idea was it to make a plant that literally grows money? I can't make jokes about how it doesn't grow on trees anymore! Wait... what do you mean its my idea?!?' - Space Bozo"
+			},
+			{
+				"name": "Bomber Enhancements",
+				"row": 8,
+				"prerequisites": ["Increased Starfighter Range"],
+				"quote": "'No fair, why to the fighters get all the fun? I wanna see more kABOOOMMS!!!.' - Space Bozo"
+			},
+			{
+				"name": "Post-Shift Carriers",
+				"row": 9,
+				"prerequisites": ["Increased Starfighter Range","Civilian Drones"],
+				"quote": "'A small step but a nessesary one.' - Spaceman"
+			},
+		] 
+	},
 	
 	
 ]

@@ -61,6 +61,27 @@
 					"[+1 Gold] [in this city] <after discovering [Laser Mining]>"
 					//Science
 					"[+1 Science] [in this city] <after discovering [Planetary Minning]>"
+					//production
+					"[+1 Production] [in this city] <after discovering [Drone Production]>"					
+					]
+	},
+	{ 
+		"name": "Ultra Servers",
+		"science": 3,
+		"culture": 3,
+		"production": 3,
+		"gold": 3,
+		"requiredTech": "Ultra Servers",
+		"requiredBuilding": "Servers",
+		"uniques": [
+					//population based buffs
+					"[+1 Science] per [5] population [in this city]"
+					"[+1 Culture] per [5] population [in this city]"
+					"[+1 Production] per [5] population [in this city]"
+					//population based buff if advanced enough (will likely increase to a later era later on)
+					"[+1 Gold] per [20] population [in this city] <starting from the [Early Post-Shift Era]>"
+					//population based debuff if too primitive
+					"[-1 Gold] per [20] population [in this city] <before the [Early Post-Shift Era]>"
 					]
 	},
 	{ 
@@ -303,6 +324,7 @@
 		"requiredResource": "Silicon",
 		"uniques": [
 					"Destroyed when the city is captured"
+					"[+1 Production] [in this city] <after discovering [Drone Production]>"							
 					"[+25]% Production when constructing [Patrol Ship] units [in this city]",
 					],
 		"requiredTech": "Automated Patrol Ship Factories",
@@ -556,6 +578,8 @@
 					"Destroyed when the city is captured"
 					"Provides [1] [Iron]"
 					"[+1 Production] from [Iron] tiles [in this city]",
+					"[+1 Production] from [Iron] tiles [in this city] <after discovering [Drone Production]>",	
+					
 					],
 		"requiredTech": "Iron Warehouses",
 	},	
@@ -681,7 +705,8 @@
 	{ 
 		"name": "Iconic Tower",
 		"culture": 4,	
-	//	"uniques": ["[+1 Science] [in this city] <after discovering [                                              ]>"]
+		"uniques": [//"[+1 Science] [in this city] <after discovering [                                              ]> //yet to be added
+					  "[+1 culture] [in this city] <after discovering [Cultural Spread]",]
 		"requiredTech": "Architectural Shift",
 	},	
 	{ 
@@ -760,18 +785,47 @@
 		"requiredTech": "Religious Specialists",
 		"requiredBuilding": "Temple",
 	},
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	{
+		"name": "Post-Shift Arthouse",
+		"specialistSlots": {"Artist": 2},
+		"culture": 3,
+		"maintenance": 3,
+		"uniques": ["Destroyed when the city is captured",],
+		"requiredTech": "Post-Shift Arthouses",
+	},	
+	{
+		"name": "Money Bushes",
+		"specialistSlots": {"Agronomist": 1},
+		"cost": 240,
+		"Gold": 2,
+		"uniques": ["Destroyed when the city is captured"],
+		"requiredBuilding": "Advanced Greenhouse",
+		"requiredTech": "Money growing plants",
+	},	
+	{
+		"name": "Money Trees",
+		"specialistSlots": {"Agronomist": 1, "Ecologist": 1},
+		"cost": 480,
+		"Gold": 4,
+		"uniques": ["Destroyed when the city is captured"],
+		"requiredBuilding": "Advanced Greenhouse",
+		"requiredTech": "Money growing plants",
+	},	
+	{
+		"name": "Faithful Tower",
+		"faith": 3,
+		"requiredTech": "Tower to faith",
+	},
+	{
+		"name": "Thoughtful Tower",
+		"specialistSlots": {"Philosopher": 1},
+		"culture": 1,
+		"science": 1,	
+		"requiredTech": "Tower to thought",
+	},	
+
+
+
 	
 	
 	
@@ -862,10 +916,21 @@
 					"Cost increases by [20] per owned city"],
 		"requiredTech": "Great Altars"
 	},
-
-
-
-
+	{
+		"name": "Psychic reaserch Center",
+		"faith": 4,
+		"science": 4,
+		"isNationalWonder": true,
+		"uniques": ["Only available <in cities without a [Psychic worship hall]>", "Only available <when religion is enabled>", "Cost increases by [30] per owned city"],
+		"requiredTech": "Psychics arts"
+	},
+	{
+		"name": "Psychic worship hall",
+		"happiness": 8,
+		"isNationalWonder": true,
+		"uniques": ["Only available <in cities without a [Psychic reaserch Center]>", "Only available <when religion is enabled>",  "Cost increases by [30] per owned city" ],
+		"requiredTech": "Psychics arts"
+	},
 
 
 
@@ -985,12 +1050,46 @@
 		"requiredTech": "Great Altars"
 		"requiredBuilding": "Altar",
 	},
-	
-	
-	
-	
-	
-	
+		{
+		"name": "Supreme Data Matrix",
+		"production": 10,
+		"science": 10,
+		"maintenance": 10,
+		"isWonder": true,
+		"uniques": ["Cost increases by [50] per owned city"
+					"[+1 Science] from [Void] tiles [in all cities]",],
+		"requiredTech": "The Supreme Data Matrix"
+	},
+	{
+		"name": "Great Hall of Faith",
+		"specialistSlots": {"Spiritual Leader": 1, "Philosopher": 2, "Theologian": 3},
+		"Faith": 6,
+		"isWonder": true,
+		"uniques": [
+					"Only available <when religion is enabled>",
+					"Cost increases by [15] per owned city"
+					"Gain a free [Hall of Faith] [in this city]"
+					"[1] Free Social Policies"
+					"[+1 Faith] per [3] population [in this city]"],
+		"requiredTech": "The Great Hall of Faith"
+	},	
+	{
+		"name": "Cosmic Abode",
+		"specialistSlots": {"Muscitian": 1, "Philosopher": 1, "Theologian": 1},
+		"Faith": 4,
+		"culture": 2,
+		"science": 2,
+		"food": 2,
+		"cityHealth": 10,
+		"isWonder": true,
+		"uniques": [
+					"Only available <when religion is enabled>",
+					"Cost increases by [15] per owned city"
+					"[+3 Faith] from [Solar Incense] tiles [in this city]",
+					"[+1 Faith] from [Star] tiles [in this city]",
+						],
+		"requiredTech": "The Cosmic Abode"
+	},		
 	
 	
 	

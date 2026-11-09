@@ -6,4 +6,11 @@
         "victoryString": "The world has been convulsed by war. Many great and powerful civilizations have fallen, but you have survived - and emerged victorious! The world will long remember your glorious triumph!",
         "defeatString": "You have been defeated. Your civilization has been overwhelmed by its many foes. But your people do not despair, for they know that one day you shall return - and lead them forward to victory!"
     }
+    {
+        "name": "Supreme Data Matrix",
+        "victoryScreenHeader": "Complete all the spaceship parts to win!",
+        "milestones": ["Build [Supreme Data Matrix]"],
+        "victoryString": "You have achieved victory through mastery of Tecnology! With the Supreme Data Matrix at hand you hold the advantage over anyone who threatens your hegemony. Your triumph will be remembered for eons to come!",
+        "defeatString": "You have been defeated. Your civilization has lost the race, somone else has the Supreme Data Matrix. But your people do not despair, for they know that one day you shall return - and lead them forward to victory!"
+    },
 ]

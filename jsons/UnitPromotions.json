@@ -113,7 +113,7 @@
     },
 	{
 		"name": "Thick Plating II",
-		"prerequisites": ["Carrier Plating I"],
+		"prerequisites": ["Carrier Plating I", "Thick Plating I",],
 		"uniques": ["[+25]% Strength <when defending>"],
 		"unitTypes": ["Light cruiser", "Cruiser", "Battle Cruiser", "Battleship"],
         "column": 3,
@@ -121,7 +121,7 @@
     },
 	{
 		"name": "Thick Plating III",
-		"prerequisites": ["Carrier Plating I"],
+		"prerequisites": ["Carrier Plating II", "Thick Plating II",],
 		"uniques": ["[+25]% Strength <when defending>"],
 		"unitTypes": ["Light cruiser", "Cruiser", "Battle Cruiser", "Battleship"],
         "column": 3,
@@ -140,7 +140,7 @@
 	{
 		"name": "Carrier Plating I",
 		"uniques": ["[+15]% Strength <when defending>"],
-		"unitTypes": ["Standard Carrier"],
+		"unitTypes": ["Standard Carrier", "Drone Carrier"],
         "column": 4,
         "row": 1
     },
@@ -148,7 +148,7 @@
 		"name": "Carrier Plating II",
 		"prerequisites": ["Carrier Plating I"],
 		"uniques": ["[+15]% Strength <when defending>"],
-		"unitTypes": ["Standard Carrier"],
+		"unitTypes": ["Standard Carrier", "Drone Carrier"],
         "column": 4,
         "row": 2
 	},

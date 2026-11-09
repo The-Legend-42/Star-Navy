@@ -24,7 +24,7 @@
 	
 	
 	
-	
+
 		//Civies
 	{
         "name": "Colony Ship",
@@ -60,6 +60,8 @@
 		"cost": 120,
         "uniques": ["Can instantly construct a [Asteroid Mine] improvement <by consuming this unit>", "Automation is a primary action", "[-1] Sight"],
 		"requiredTech": "Fast Workships",
+		"obsoleteTech": "Civilian Drones",
+		"upgradesTo": "Civilian Multipurpose Drone",		
     },
 	{
         "name": "Reusable Spacework Ship",
@@ -68,7 +70,16 @@
 		"cost": 200,
         "uniques": ["Can build [Asteroid Field] improvements on tiles", "Automation is a primary action", "[-1] Sight"],
 		"requiredTech": "Reusable Workships",
+		"obsoleteTech": "Civilian Drones",	
 		"upgradesTo": "Fast Mining Ship",
+    },
+	{
+        "name": "Civilian Multipurpose Drone",
+        "unitType": "Civilian",
+        "movement": 5,
+		"cost": 100,
+        "uniques": ["Can build [Land] improvements on tiles", "Automation is a primary action", "[-1] Sight",],
+		"requiredTech": "Civilian Drones",	
     },
 	{
         "name": "Planetary Mining Ship",
@@ -80,6 +91,8 @@
 					"Can instantly construct a [Planitary Mine] improvement <by consuming this unit>", "Automation is a primary action"
 					"Can build [Farm] improvements on tiles <for [3] movement> <[2] times> <after which this unit is consumed>"],
 		"requiredTech": "Planetary Minning",
+		"obsoleteTech": "Civilian Drones",
+		"upgradesTo": "Civilian Multipurpose Drone",		
     },
 	{
         "name": "Amphibious Planetary Workship",
@@ -107,6 +120,8 @@
 					"Can build [Planetoid Improvement] improvements on tiles", "Automation is a primary action",	
 					],
 		"requiredTech": "Advanced Water Works",
+		"obsoleteTech": "Civilian Drones",
+		"upgradesTo": "Civilian Multipurpose Drone",
     },
 	{
         "name": "Deployable Space Station",
@@ -158,15 +173,14 @@
 		"obsoleteTech": "Military Shift",
 		"upgradesTo": "Early Starfighter",
 		"uniques": [//Combat
-					"[10]% chance to intercept air attacks"
+					"[10]% chance to intercept air attacks",
 					//Type
-					"Solo"
+					"Solo",
 					//Alternate Upgrades:
-					"Can upgrade to [Primitive Starfighter Wing]"
+					"Can upgrade to [Primitive Starfighter Wing]",
 					],
 		"attackSound": "machinegun"
 	},
-	
 	{
 		"name": "Early Starfighter",
 		"unitType": "Starfighter",
@@ -177,12 +191,53 @@
 		"interceptRange": 4,
 		"cost": 200,
 		"requiredTech": "Military Shift",
+		"obsoleteTech": "Increased Starfighter Range",
+		"upgradesTo": "Starfighter",
 		"uniques": [//Combat
-					"[15]% chance to intercept air attacks"
+					"[15]% chance to intercept air attacks",
 					//Type
-					"Solo"
+					"Solo",
 					//Alternate Upgrades:
-					"Can upgrade to [Early Starfighter Wing]"
+					"Can upgrade to [Early Starfighter Wing]",
+					],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Starfighter",
+		"unitType": "Starfighter",
+		"movement": 1,
+		"strength": 50,
+		"rangedStrength": 50,
+		"range": 5,
+		"interceptRange": 5,
+		"cost": 210,
+		"requiredTech": "Increased Starfighter Range",
+		"uniques": [//Combat
+					"[28]% chance to intercept air attacks",
+					//Type
+					"Solo",
+					//Alternate Upgrades:
+					"Can upgrade to [Starfighter Wing]",
+					],
+		"attackSound": "machinegun"
+	},	
+	//seperate line
+	{
+		"name": "Dronefighter",
+		"unitType": "Dronefighter",
+		"movement": 1,
+		"strength": 30,
+		"rangedStrength": 30,
+		"range": 4,
+		"interceptRange": 4,
+		"cost": 100,
+		"requiredTech": "Drones",
+		"uniques": [//Combat
+					"[25]% chance to intercept air attacks",
+					//Type
+					"Solo",
+					//Alternate Upgrades:
+					"Can upgrade to [Dronefighter Swarm]",
 					],
 		"attackSound": "machinegun"
 	},
@@ -200,9 +255,9 @@
 		"obsoleteTech": "Military Shift",
 		"upgradesTo": "Early Starfighter Wing",
 		"uniques": [//Combat
-					"[15]% chance to intercept air attacks"
+					"[15]% chance to intercept air attacks",
 					//Type
-					"Swarm"
+					"Swarm",
 					],
 		"attackSound": "machinegun"
 	},	
@@ -216,13 +271,51 @@
 		"interceptRange": 4,
 		"cost": 500,
 		"requiredTech": "Military Shift",
+		"obsoleteTech": "Increased Starfighter Range",
+		"upgradesTo": "Starfighter Wing",
 		"uniques": [//Combat
-					"[25]% chance to intercept air attacks"
+					"[25]% chance to intercept air attacks",
 					//Type
-					"Swarm"
+					"Swarm",
 					],
 		"attackSound": "machinegun"
-	},	
+	},
+	{
+		"name": "Starfighter Wing",
+		"unitType": "Starfighter",
+		"movement": 1,
+		"strength": 160,
+		"rangedStrength": 160,
+		"range": 5,
+		"interceptRange": 5,
+		"cost": 550,
+		"requiredTech": "Increased Starfighter Range",
+		"uniques": [//Combat
+					"[40]% chance to intercept air attacks",
+					//Type
+					"Swarm",
+					],
+		"attackSound": "machinegun"
+	},
+	//seperate line
+	{
+		"name": "Dronefighter Swarm",
+		"unitType": "Dronefighter",
+		"movement": 1,
+		"strength": 90,
+		"rangedStrength": 90,
+		"range": 4,
+		"interceptRange": 4,
+		"cost": 350,
+		"requiredTech": "Drones",
+		"uniques": [//Combat
+					"[35]% chance to intercept air attacks",
+					"[+20]% Strength <vs [Solo] units>",
+					//Type
+					"Solo"
+					],
+		"attackSound": "machinegun"
+	},
 	//Bombers
 	{
 		"name": "Primitive Starbomber",
@@ -251,10 +344,28 @@
 		"range": 5,
 		"cost": 250,
 		"requiredTech": "Military Shift",
+		"obsoleteTech": "Bomber Enhancements",
+		"upgradesTo": "Starbomber",
 		"uniques": [//Type
 					"Solo"
 					//Alternate Upgrades:
 					"Can upgrade to [Early Starbomber Wing]"
+					],
+		"attackSound": "machinegun" //Will change
+	},
+	{
+		"name": "Starbomber",
+		"unitType": "Starbomber", 
+		"movement": 1,
+		"strength": 80,
+		"rangedStrength": 120,
+		"range": 5,
+		"cost": 250,
+		"requiredTech": "Bomber Enhancements",
+		"uniques": [//Type
+					"Solo"
+					//Alternate Upgrades:
+					"Can upgrade to [Starbomber Wing]"
 					],
 		"attackSound": "machinegun" //Will change
 	},
@@ -269,7 +380,7 @@
 		"cost": 500,
 		"requiredTech": "Bomber Wings",
 		"obsoleteTech": "Military Shift",
-		"upgradesTo": "Early Starbomber",
+		"upgradesTo": "Early Starbomber Wing",
 		"uniques": [//Type
 					"Swarm"
 					],
@@ -284,12 +395,27 @@
 		"range": 5,
 		"cost": 550,
 		"requiredTech": "Military Shift",
+		"obsoleteTech": "Bomber Enhancements",
+		"upgradesTo": "Starbomber Wing",
 		"uniques": [//Type
 					"Swarm"
 					],
 		"attackSound": "machinegun" //Will change
 	},
-	
+	{
+		"name": "Starbomber Wing",
+		"unitType": "Starbomber", 
+		"movement": 1,
+		"strength": 120,
+		"rangedStrength": 240,
+		"range": 5,
+		"cost": 650,
+		"requiredTech": "Bomber Enhancements",
+		"uniques": [//Type
+					"Swarm"
+					],
+		"attackSound": "machinegun" //Will change
+	},	
 
 	
 	
@@ -546,7 +672,7 @@
 		"uniques": ["Can move after attacking"],
 		"promotions": ["Artillery Adjustments I"]
 		"attackSound": "shot"
-	},	
+	},
 	//Lasers
 	{
 		"name": "Spaceborn Laser",
@@ -640,7 +766,22 @@
 		"rangedStrength": 300,
 		"cost": 175,
 		"requiredResource": "Ethelium",
+		"uniques": [//Alt upgrade
+					"Can upgrade to [Solarized Iron Wideplate Super Slicer]"
+					],
 		"requiredTech": "Military Shift",
+		"attackSound": "shot"	//Will change
+	},
+	{
+		"name": "Solarized Iron Wideplate Super Slicer",
+		"unitType": "Space Laser",
+		"movement": 1,
+		"strength": 25,
+        "range": 2,
+		"rangedStrength": 260,
+		"cost": 150,
+		"requiredResource": "Iron",
+		"requiredTech": "Solar Cannons",
 		"attackSound": "shot"	//Will change
 	},
 	{ //Sucessor to both the Railguns and the Lasers
@@ -683,9 +824,26 @@
 		"cost": 230,
 		"requiredResource": "Helium 3",
 		"requiredTech": "Gunnary & Plasma",
+		"obsoleteTech": "Solar Cannons",
+		"upgradesTo": "Solar Cannon",
 		"uniques": ["[+10]% Strength <vs cities>", "Can move after attacking"],
 		"attackSound": "shot"
+	},
+	{
+		"name": "Solar Cannon",
+		"unitType": "Plasma Launcher",
+		"movement": 2,
+		"strength": 20,
+        "range": 3,
+		"rangedStrength": 200,
+		"cost": 360,
+		"requiredResource": "Helium 3",
+		"requiredTech": "Solar Cannons",
+		"uniques": ["[+30]% Strength <vs cities>", "Can move after attacking"],
+		"attackSound": "shot"
 	},	
+	
+	
 	
 	
 	//Patrol Vessels
@@ -829,6 +987,26 @@
 		"uniques": ["[+1] Sight"],
 		"promotions": ["Electronic Countermeasures I"],		
 		"attackSound": "shot",
+	},
+	{
+		"name": "Psychic Corvette",
+		"unitType": "Corvette",
+		"movement": 6,
+		"strength": 70,
+		"cost": 250,
+	//	"requiredResource": "Silicon",
+		"requiredTech": "Psychic warships",
+		"uniques": ["[+3] Sight",
+					"Can move after attacking", 
+					"[+20]% to Flank Attack bonuses", 
+					"[1] additional attacks per turn",
+					//How to get
+					"Unbuildable","Can be purchased for [1000] [Faith] [in all cities]"		
+					//what it is
+					"Psychic Unit"],
+		"promotions": [///"Psychic", still unimplemented yet
+						],		
+		"attackSound": "shot",
 	},	
 	//Frigs
 	{
@@ -886,11 +1064,28 @@
 		"interceptRange": 2,
 		"cost": 150,
 		"requiredTech": "Military Shift",
+		"obsoleteTech": "Post-Shift Engines",
+		"upgradesTo": "Advanced Assaulter",
 		"uniques": [
 					//Offencive
 				"[1] additional attacks per turn","[+15]% Strength <vs [Escort] units>",
 					//Defencive
 				"[35]% chance to intercept air attacks", "[+65]% Strength <vs [Smallcraft] units>",]
+		"attackSound": "shot"
+	},	
+	{
+		"name": "Advanced Assaulter",
+		"unitType": "Frigate",
+		"movement": 6,
+		"strength": 70,
+		"interceptRange": 2,
+		"cost": 165,
+		"requiredTech": "Post-Shift Engines",
+		"uniques": [
+					//Offencive
+				"[1] additional attacks per turn","[+15]% Strength <vs [Escort] units>",
+					//Defencive
+				"[40]% chance to intercept air attacks", "[+65]% Strength <vs [Smallcraft] units>",]
 		"attackSound": "shot"
 	},	
 	//Destroyers
@@ -1007,6 +1202,8 @@
 		"interceptRange": 2,
 		"cost": 200,
 		"requiredTech": "Military Shift",
+		"obsoleteTech": "Post-Shift Engines",
+		"upgradesTo": "Advanced Assaulter",
 		"uniques": [
 					"Requires at least [2] population"
 					"[40]% chance to intercept air attacks",
@@ -1314,7 +1511,7 @@
 		"cost": 365,
 		"requiredResource": "Ethelium",
 		"requiredTech": "Ethelium Tecnology",
-	//	"obsoleteTech": "Military Shift",
+		"obsoleteTech": "Elegant Battleships",
 		"upgradesTo": "Ethelium Plasma Battle Cruiser",
 		"uniques": ["[+33]% Strength <vs cities>", "Consumes [3] [Iron]", "Requires at least [7] population"],
 		"attackSound": "shot"
@@ -1327,7 +1524,7 @@
 		"cost": 365,
 		"requiredResource": "Ethelium",
 		"requiredTech": "Gunnary & Plasma",
-	//	"obsoleteTech": "Military Shift",
+		"obsoleteTech": "Elegant Battleships",
 		"upgradesTo": "Ethelium Powered Railgun Battleship",
 		"uniques": ["[+33]% Strength <vs cities>", "Consumes [3] [Iron]", "Consumes [1] [Helium 3]", "Requires at least [7] population"],
 		"attackSound": "shot"
@@ -1409,11 +1606,31 @@
 		"cost": 425,
 		"requiredResource": "Ethelium",
 		"requiredTech": "Ethelium Tecnology",
-		"upgradesTo": "Ethelium Plasma Battle Cruiser",
+		"obsoleteTech": "Elegant Battleships",
+		"upgradesTo": "Elegant Battleship",
 		"uniques": ["[+33]% Strength <vs cities>", "Consumes [5] [Iron]", "Requires at least [10] population"],
 		"promotions": ["Basic Active Defence Systems", "Artillery Adjustments I"], //Usually battleships shouldn't have Artillery abilities but this ones an exeption	
 		"attackSound": "shot"
-	},	
+	},
+	//New line
+	{ 
+		"name": "Elegant Battleship",
+		"unitType": "Battleship",
+		"movement": 2,
+        "range": 2,
+		"interceptRange": 2,
+		"rangedStrength": 200,
+		"strength": 180,
+		"cost": 500,
+		"requiredTech": "Elegant Battleships",
+		"uniques": [
+				//production
+				"Consumes [5] [Iron]", "Requires at least [10] population" , 
+				//combat
+				"[+40]% Strength <vs cities>", "[10]% chance to intercept air attacks", "[+20]% Strength <vs [Swarm] units>", "Can move after attacking",],
+		"promotions": ["Basic Active Defence Systems",],
+		"attackSound": "shot"
+	},
 	//The First Carrier line
 	{
 		"name": "Primitive Carrier",
@@ -1447,7 +1664,20 @@
 		"strength": 80,
 		"cost": 400,
 		"requiredTech": "Military Shift",
+		"obsoleteTech": "Post-Shift Carriers",
+		"upgradesTo": "Post-Shift Carrier", 
 		"uniques": ["Cannot attack", "All adjacent units heal [+1] HP when healing", "Can carry [1] [Smallcraft] units"]
+		"promotions": ["Basic Active Defence Systems", "Additional Hangar I"],
+	},
+	{
+		"name": "Post-Shift Carrier",
+		"unitType": "Standard Carrier",
+		"movement": 2,
+		"strength": 120,
+		"cost": 445,
+		"requiredTech": "Post-Shift Carriers",
+		"uniques": ["Cannot attack", "All adjacent units heal [+2] HP when healing", "Can carry [1] [Smallcraft] units", 
+					"Can upgrade to [Post-Shift Double Hangared Carrier]"]
 		"promotions": ["Basic Active Defence Systems", "Additional Hangar I"],
 	},
 	//Seperate Line
@@ -1471,8 +1701,36 @@
 		"movement": 2,
 		"strength": 95,
 		"cost": 520,
-		"requiredTech": "Military Shift",	
+		"requiredTech": "Military Shift",
+		"obsoleteTech": "Post-Shift Carriers",
+		"upgradesTo": "Post-Shift Double Hangared Carrier", 
 		"uniques": ["Cannot attack", "All adjacent units heal [+1] HP when healing", "Can carry [2] [Smallcraft] units"]
+		"promotions": ["Basic Active Defence Systems"],
+	},
+	{
+		"name": "Post-Shift Double Hangared Carrier",
+		"unitType": "Standard Carrier",
+		"movement": 2,
+		"strength": 135,
+		"cost": 540,
+		"requiredTech": "Post-Shift Carriers",	
+		"uniques": ["Cannot attack", "All adjacent units heal [+2] HP when healing", "Can carry [2] [Smallcraft] units"]
+		"promotions": ["Basic Active Defence Systems"],
+	},
+	//Drone Carrier Line
+	{
+		"name": "Drone Carrier",
+		"unitType": "Drone Carrier",
+		"movement": 2,
+		"strength": 75,
+	//	"strength": 40,
+		"cost": 600,
+		"requiredTech": "Drones",
+		"uniques": [
+					"Cannot attack", "Can carry [1] [Drone] units",
+					//Comes with a swarm built in
+					"[1] free [Dronefighter Swarm] units appear",
+					]
 		"promotions": ["Basic Active Defence Systems"],
 	},
 

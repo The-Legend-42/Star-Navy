@@ -20,8 +20,38 @@
 		"type": "Land",
 		"movementCost": 1.0,
         "RGB": [10, 10, 10],
-        "uniques": ["[-1] to Fertility for Map Generation",]
+        "uniques": [
+				"[-1] to Fertility for Map Generation",
+				"A Region is formed with at least [80]% [Void] tiles and [Asteroid Field] tiles, with priority [7]",
+				"A Region is formed with at least [33]% [Void] tiles and [Frost] tiles, with priority [2]",
+				]
     }
+	
+	
+	//Stars
+	
+		{
+		"name": "Red Dwarf",
+		"type": "Land",
+		"impassable": true,
+		"defenceBonus": 0.25,
+		"production": 1,
+		"RGB": [200, 33, 33],
+		"uniques": [
+			"Star"
+			"Rough terrain",
+			"Becomes [Barren Planet] when adjacent to [Red Dwarf]",
+			"A Region is formed with at least [10]% [Red Dwarf] tiles and [Lush Planet] tiles, with priority [3]",
+            "Has an elevation of [2] for visibility calculations",
+			"Blocks line-of-sight from tiles at same elevation",
+            "Occurs in chains at high elevations",
+            "Units ending their turn on this terrain take [100] damage",
+            "Always Fertility [3] for Map Generation",
+			"Considered [Desirable] when determining start locations"]
+	},
+	
+	
+	//Planets
 	
 	{
 		"name": "Barren Planet",
@@ -51,6 +81,9 @@
         "uniques": ["Planet"	
 					"Sands"
 					"Rough terrain"
+					"A Region is formed with at least [20]% [Desert Planet] tiles and [Sandy-Moon] tiles, with priority [2]",
+					"A Region is formed with at least [20]% [Desert Planet] tiles and [Barren Planet] tiles, with priority [2]",
+					"A Region is formed with at least [20]% [Desert Planet] tiles and [Fertile Sands] tiles, with priority [1]",
 					"Occurs in chains at high elevations",
 					"Has an elevation of [1] for visibility calculations",
 					"Blocks line-of-sight from tiles at same elevation",
@@ -70,6 +103,9 @@
         "uniques": ["Planet"	
 					"Rough terrain"
 					"Waters" // Contains large bodies of water such as Seas or Oceans
+					"Becomes [Desert Planet] when adjacent to [Red Dwarf]",
+					"A Region is formed with at least [33]% [Lush Planet] tiles and [Moon] tiles, with priority [3]",
+					"A Region is formed with at least [20]% [Lush Planet] tiles and [Barren Planet] tiles, with priority [2]",
 					"Occurs in chains at high elevations",
 					"Has an elevation of [1] for visibility calculations",
 					"Blocks line-of-sight from tiles at same elevation",
@@ -113,6 +149,9 @@
 			"Asteroid"
 			"Rough terrain",		
 			"Rare feature",
+			"A Region is formed with at least [35]% [Asteroid Field] tiles and [Barren Planet] tiles, with priority [4]",
+			"A Region is formed with at least [35]% [Desert Planet] tiles and [Barren Planet] tiles, with priority [4]",
+			"A Region is formed with at least [35]% [Lush Planet] tiles and [Barren Planet] tiles, with priority [4]",
 			"Blocks line-of-sight from tiles at same elevation",
 			"Considered [Desirable] when determining start locations",
 			"Considered [Production] when determining start locations",	
@@ -170,6 +209,8 @@
 		    "Fresh water",
 			"Waters" // Contains large bodies of water such as Seas or Oceans
 			"Freezing"
+			"Becomes [Fertile Sands] when adjacent to [Red Dwarf]",
+			"A Region is formed with at least [20]% [Frost] tiles and [Snowy] tiles, with priority [2]",
 			"Has an elevation of [1] for visibility calculations",
 			"Blocks line-of-sight from tiles at same elevation",
 			"Considered [Food] when determining start locations",
