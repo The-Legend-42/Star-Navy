@@ -894,12 +894,60 @@
 		"[+1 Production] from [Iron] tiles [in this city]",],	
 		"requiredTech": "Psychically enhanced metal",
 	},	
+	{
+		"name": "Robotic Farm",
+		"specialistSlots": {"Engineer": 1, "Agronomist": 1},	
+		"food": 4,		
+		"gold": 2,
+		"production": 1,		
+		"uniques": ["Destroyed when the city is captured"],	
+		"requiredTech": "Robotic Farms",
+	},	
+	{
+		"name": "Calm Cabin",
+		"cost": 30,	
+		"culture": 1,		
+		"Faith": 1,	
+		"uniques": ["Destroyed when the city is captured"],	
+		"requiredTech": "Calm Cabins",
+	},		
+	{ 
+		"name": "Psychic Defencive Array",
+		"specialistSlots": {"Psychic Defender": 1, "Psychic Attacker": 1},
+		"cityStrength": 6,
+		"cityHealth": 60,
+		"faith": 1,
+		"maintenance": 3,
+		"uniques": ["Destroyed when the city is captured"],
+		"requiredTech": "Psychic Defencive Arrays",
+	},
 
-	
-	
-	
-	
-	
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
 	
 	//National Wonders
 	{
@@ -1009,7 +1057,20 @@
 		"uniques": ["Cost increases by [30] per owned city" ],
 		"requiredTech": "Psychic Temple"
 	},
-
+	{
+		"name": "Superheavy Element Factory",
+		"specialistSlots": {"Scientist": 1, "Engineer": 3},	
+		"percentStatBonus": {"Production": 5},
+		"production": 8,
+		"science": 3,		
+		"maintenance": 2,
+		"isNationalWonder": true,
+		"uniques": ["Provides [6] [Iron]"
+					"Provides [3] [Silicon]"
+					"Provides [3] [Uranium]"
+					"Provides [1] [Gold Ore]"],	
+		"requiredTech": "Industrial particle accelerators",
+	},	
 
 
 
@@ -1167,7 +1228,17 @@
 						],
 		"requiredTech": "The Cosmic Abode"
 	},		
-	
+	{ 
+		"name": "Holy Eye Statue",
+		"percentStatBonus": {"Faith": 10},
+		"Faith": 6,
+		"happiness": 4,
+		"culture": 4,
+		"Gold": 4,
+		"isWonder": true,
+		"uniques": ["Can only be built <when not at war>" ],
+		"requiredTech": "The Holy Eye Statue",
+	},	
 	
 	
 	

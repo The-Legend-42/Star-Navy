@@ -669,7 +669,7 @@
 				"quote": "'Further improving our defences' - Spaceman"
 			},
 			{
-			//Ship/s with a defence bonus
+			//Ship's with a defence bonus
 				"name": "Ship Based Active Defence Systems",
 				"row": 5,
 				"prerequisites": ["Simple Active Defence Systems", "Long Range Radar Systems"],		
@@ -1505,7 +1505,76 @@
 				"quote": "'A small step but a nessesary one.' - Spaceman"
 			},
 		] 
+	},
+	{
+		"columnNumber": 29,
+		"era": "Middle Post-Shift Era",
+		"techCost": 2200,
+		"buildingCost": 460,
+		"wonderCost": 900,
+		"techs": [
+
+			{
+				"name": "The Holy Eye Statue",
+				"row": 1,
+				"prerequisites": ["Psychic Temple"],					
+				"quote": "'Statues to decorate our sacred halls are a must! Why not start with the door to anyones soul? The eye!' - Holy One"
+			},
+			{
+				"name": "Psychic Defencive Arrays",
+				"row": 2,
+				"prerequisites": ["Psychic Frigates"],				
+	            "uniques": ["Only available <if [Psychic worship hall] is constructed>", "Only available <if [Psychic reaserch Center] is constructed>"],		
+				"quote": "'To defend! We must!' - Holy Two"
+			},
+			{
+				"name": "Calm Cabins",
+				"row": 3,
+				"prerequisites": ["Psychically enhanced metal"],					
+				"quote": "'Let me rest.' - Philosopher"
+			},
+			{
+				"name": "Industrial particle accelerators",
+				"row": 4,
+				"prerequisites": ["Solar Transmitters"],
+                "uniques": ["[+25]% weight to this choice for AI decisions"],
+				"quote": "'We can use particle accelerators to crearte rare material' - Engineer"
+			},
+			{
+				"name": "Warpable Support Ships",
+				"row": 5,
+				"prerequisites": ["Elegant Plasma Cruisers","Warp Portals",],
+				"quote": "'Our Improved support ships can now also warp' - Spaceman"
+			},
+			{
+				"name": "Colonial Warpers",
+				"row": 6,
+				"prerequisites": ["Warp Portals",],
+				"uniques": ["[+15]% weight to this choice for AI decisions"],
+				"quote": "'We could use our existing portals to move colonial vessels faster than ever before' - Spaceman"
+			},
+			{
+				"name": "Warpable Artilery",
+				"row": 7,
+				"prerequisites": ["Warp Portals","Large Drone Carriers"],
+				"quote": "Artilery is slow, but what if we warped them all to the frontlines? - Spaceman."
+			},
+			{
+				"name": "IPBM's 2",
+				"row": 8,
+				"prerequisites": ["IPBM's"],
+				"uniques": ["[-50]% weight to this choice for AI decisions"],
+				"quote": "'How quickly can tecnology improve?' - Philosopher"
+			},
+			{
+				"name": "Robotic Farms",
+				"row": 9,
+				"prerequisites": ["Magnetic  Communication Beacons"],
+				"quote": "'Food machines that make food.' - Spaceman"
+			},
+		] 
 	},	
+
 	
 ]
 

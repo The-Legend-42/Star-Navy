@@ -25,7 +25,7 @@
 	{
         "name": "Dronefighter",
         "movementType": "Air",
-        "uniques": ["[+1] Sight", "Can perform Air Sweep", "Smallcraft", "Fighter", "Drone",]
+        "uniques": ["[+1] Sight", "Can perform Air Sweep", "Smallcraft", "Fighter", "Drone", "Unmanned",]
     },
 	{
         "name": "Starbomber",
@@ -38,7 +38,7 @@
 	{
         "name": "IPBM", //Interplanetary Ballistic Missile
         "movementType": "Air",
-        "uniques": ["missile", "Self-destructs when attacking",]
+        "uniques": ["missile", "Self-destructs when attacking", "Unmanned",]
     },		
 	
 	

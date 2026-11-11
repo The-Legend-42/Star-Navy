@@ -468,10 +468,25 @@
 		"cost": 400,
 		"requiredResource": "Uranium",
 		"requiredTech": "Ship Based Active Defence Systems",
+		"obsoleteTech": "Colonial Warpers",
+		"upgradesTo": "Colonial Warper",
 		"uniques": ["[-1] Sight","Founds a new city <by consuming this unit>","Requires at least [5] population"],
 		"promotions": ["Basic Active Defence Systems"],	
 		"attackSound": "shot"
 	},
+	{
+		"name": "Colonial Warper",
+		"unitType": "Rocket Ship",
+		"movement": 6,
+		"strength": 45,
+		"cost": 420,
+		"requiredResource": "Uranium",
+		"requiredTech": "Colonial Warpers",
+		"uniques": ["[-1] Sight","Founds a new city <by consuming this unit>","Requires at least [5] population", "May Paradrop to [Exit Portal] tiles up to [12] tiles away",],
+		"promotions": ["Basic Active Defence Systems"],	
+		"attackSound": "shot"
+	},	
+
 	//Repair ships
 	{
 		"name": "Repair Ship",
@@ -581,11 +596,23 @@
 		"strength": 35,
 		"cost": 145,
 		"requiredTech": "Repair & Support Advancments",
+		"obsoleteTech": "Warpable Support Ships",
+		"upgradesTo": "Warpable Support Ship",	
 		"uniques": ["All adjacent units heal [+4] HP when healing", "[+2] Sight"],
 		"promotions": ["Basic Active Defence Systems"],		
 		"attackSound": "shot"
 	},	
-
+	{
+		"name": "Warpable Support Ship",
+		"unitType": "Support Ship",
+		"movement": 4,
+		"strength": 60,
+		"cost": 190,
+		"requiredTech": "Warpable Support Ships",
+		"uniques": ["All adjacent units heal [+5] HP when healing", "[+3] Sight", "May Paradrop to [Exit Portal] tiles up to [12] tiles away"],
+		"promotions": ["Basic Active Defence Systems"],		
+		"attackSound": "shot"
+	},	
 	
 	
 	//Railguns
@@ -669,10 +696,27 @@
 		"rangedStrength": 135,
 		"cost": 195,
 		"requiredTech": "Gunnary & Plasma",
+		"upgradesTo": "Warpable Railgun",
+		"obsoleteTech": "Warpable Artilery",
 		"uniques": ["Can move after attacking"],
 		"promotions": ["Artillery Adjustments I"]
 		"attackSound": "shot"
 	},
+	{
+		"name": "Warpable Railgun",
+		"unitType": "Space Artillery",
+		"movement": 2,
+		"strength": 28,
+        "range": 3,
+		"rangedStrength": 175,
+		"cost": 210,
+		"requiredTech": "Warpable Artilery",
+		"uniques": ["Can move after attacking", "May Paradrop to [Exit Portal] tiles up to [12] tiles away"],
+		"promotions": ["Artillery Adjustments I"]
+		"attackSound": "shot"
+	},	
+	
+	
 	//Lasers
 	{
 		"name": "Spaceborn Laser",
@@ -1848,7 +1892,21 @@
 		"range": 8,
 		"cost": 150,
 		"requiredTech": "IPBM's",
-		"uniques": ["[+500]% Strength <vs cities>", "Damage taken from interception reduced by [50]%"],
+		"obsoleteTech": "IPBM's 2",
+		"upgradesTo": "Basic Interplanetary Ballistic Missile", 
+		"uniques": ["[+500]% Strength <vs cities>", "Damage taken from interception reduced by [50]%", "[-25]% maintenance costs"],
+		"attackSound": "machinegun" //will change
+	},
+	{
+		"name": "Basic Interplanetary Ballistic Missile",
+		"unitType": "IPBM",
+		"movement": 1,
+		"strength": 65,
+		"rangedStrength": 65,
+		"range": 8,
+		"cost": 165,
+		"requiredTech": "IPBM's 2",
+		"uniques": ["[+500]% Strength <vs cities>", "Damage taken from interception reduced by [50]%", "[-25]% maintenance costs"],
 		"attackSound": "machinegun" //will change
 	},
 

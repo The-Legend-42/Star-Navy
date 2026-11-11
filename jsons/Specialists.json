@@ -290,4 +290,34 @@
 	//	"greatPersonPoints": {"Great Artist":3},
 		"color": [160,32,240]
 	},	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+	//Other
+	{
+		"name":"Psychic Defender",
+		"cityHealth": 3,
+		"happiness": 1,		
+	//	"greatPersonPoints": {"Great Artist":3},
+		"color": [178,178,178]
+	},	
+	{
+		"name":"Psychic Attacker",
+		"cityStrength": 1,
+		"gold": 1,
+	//	"greatPersonPoints": {"Great Artist":3},
+		"color": [178,178,178]
+	},	
+	
 ]

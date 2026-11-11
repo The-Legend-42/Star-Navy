@@ -111,7 +111,7 @@
         "citySound": "cityAncient",
         "iconRGB": [71, 0, 97]
     }
-		{
+	{
         "name": "Early Post-Shift Era",
         "researchAgreementCost": 550,
         "startingSettlerCount": 2, 
@@ -124,5 +124,19 @@
         "startPercent": 0,
         "citySound": "cityAncient",
         "iconRGB": [101, 3, 101]
+    }
+	{
+        "name": "Middle Post-Shift Era",
+        "researchAgreementCost": 570,
+        "startingSettlerCount": 2, 
+        "startingWorkerCount": 0,
+        "startingMilitaryUnitCount": 2,
+        "startingMilitaryUnit": "Advanced Assaulter",
+        "settlerPopulation": 1,
+        "baseUnitBuyCost": 660,
+        "embarkDefense": 100,
+        "startPercent": 0,
+        "citySound": "cityAncient",
+        "iconRGB": [51, 3, 201]
     }
 ]
