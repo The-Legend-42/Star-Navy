@@ -36,10 +36,66 @@
 					"[+1 Culture] [in this city] <after discovering [Festivals]>"
 					]
 	},
+	{ 
+		"name": "Simple Solar Panel",
+		"cost": 40,
+		"production": 1,
+		"uniques": [
+					"Only available <after adopting [Orbital Supply Chain Complete]>"
+					"[+1 Food] [in this city] <for every adjacent [Star]>", "<if [Greenhouse] is constructed>",	
+					],
+	},
 
 
 
 
+
+
+
+
+	//Civ uniques
+	{ 
+		"name": "Frost Farm",
+		"uniqueTo": "Terrevik Union",
+		"food": 1,
+		"gold": 1,
+		"requiredTech": "Water Conversion",
+		"uniques": [
+					"[+1 Food] from [Freezing] tiles [in this city]", "Must have an owned [Freezing] within [3] tiles",			
+					],
+	},
+	{ 
+		"name": "Prosperity Garden",
+		"uniqueTo": "Iota Persei",
+		"food": 1,
+		"science": 1,
+		"culture": 1,
+		"gold": 1,
+		"happiness": 1,
+		"requiredTech": "Artificial Lighting",
+	},
+	{ 
+		"name": "Voidshaker",
+		"uniqueTo": "Gezoic",
+		"cost": 300,
+		"maintenance": 1,
+		"requiredTech": "Space Travel",
+		"uniques": [
+					"[+1 Science] from [Void] tiles [in this city]",			
+					"[+1 Food] from [Void] tiles [in this city] <starting from the [Middle Post-Shift Era]>" ,	
+		//			"[+1 Production] from [Void] tiles [in this city] <starting from the [???]>" , //will add in the future	
+					],
+	},
+	{ 
+		"name": "Tribal court of war",
+		"uniqueTo": "Ermmer Tribes",
+		"cost": 60,
+		"cityStrength": 2,
+		"cityHealth": 20,
+		"Production": 1,
+		"uniques": ["Can only be built <when at war>"],
+		"requiredTech": "Basic Warships",
+	},	
 
 
 
@@ -823,8 +879,21 @@
 		"science": 1,	
 		"requiredTech": "Tower to thought",
 	},	
-
-
+	{
+		"name": "Magnetic Communication Becon",
+		"science": 3,
+		"culture": 2,
+		"requiredTech": "Magnetic  Communication Beacons",
+	},	
+	{
+		"name": "Psychically enhanced metal production line",
+		"production": 4,
+		"gold": 2,
+		"uniques": ["Destroyed when the city is captured",
+		"[+25]% Production when constructing [Psy-metal] units [in this city]",
+		"[+1 Production] from [Iron] tiles [in this city]",],	
+		"requiredTech": "Psychically enhanced metal",
+	},	
 
 	
 	
@@ -931,7 +1000,15 @@
 		"uniques": ["Only available <in cities without a [Psychic reaserch Center]>", "Only available <when religion is enabled>",  "Cost increases by [30] per owned city" ],
 		"requiredTech": "Psychics arts"
 	},
-
+	{
+		"name": "Psychic Temple",
+		"faith": 6,
+		"culture": 3,
+		"happiness": 2,
+		"isNationalWonder": true,
+		"uniques": ["Cost increases by [30] per owned city" ],
+		"requiredTech": "Psychic Temple"
+	},
 
 
 

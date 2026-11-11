@@ -1439,7 +1439,73 @@
 			},
 		] 
 	},
-	
+	{
+		"columnNumber": 28,
+		"era": "Middle Post-Shift Era",
+		"techCost": 2200,
+		"buildingCost": 440,
+		"wonderCost": 880,
+		"techs": [
+
+			{
+				"name": "Psychic Temple",
+				"row": 1,
+				"prerequisites": ["Psychic warships"],					
+				"quote": "'A temple empowered by the phychic arts that stengthen our beliefs and our phychics!' - Holy One"
+			},
+			{
+				"name": "Psychic Frigates",
+				"row": 2,
+				"prerequisites": ["Psychic warships"],				
+	            "uniques": ["Only available <if [Psychic worship hall] is constructed>", "Only available <if [Psychic reaserch Center] is constructed>"],		
+				"quote": "'Even larger than the Corvette!' - Holy Two"
+			},
+			{
+				"name": "Psychically enhanced metal",
+				"row": 3,
+				"prerequisites": ["Psychic warships"],					
+				"quote": "'We're using the Psychic's to enhance metals.' - Spaceman"
+			},
+			{
+				"name": "Solar Transmitters",
+				"row": 4,
+				"prerequisites": ["Cultural Spread"],
+                "uniques": ["[+2 Production] from [Star] tiles [in all cities]"],
+				"quote": "'The power of the sun, who could compete with that?' - Engineer"
+			},
+			{
+				"name": "Elegant Plasma Cruisers",
+				"row": 5,
+				"prerequisites": ["Elegant Battleships"],
+				"quote": "'Once a trend is started it is dificult to stop.' - Spaceman"
+			},
+			{
+				"name": "Warp Portals",
+				"row": 6,
+				"prerequisites": ["The Supreme Data Matrix", "Money growing plants"],
+				"uniques": ["[+150]% weight to this choice for AI decisions"],
+				"quote": "'Using our most cutting edge tecnologies in tandem to enable instantaneous travel' - Engineer"
+			},
+			{
+				"name": "Large Drone Carriers",
+				"row": 7,
+				"prerequisites": ["Money growing plants"],
+				"quote": "A wise man once said: Bigger is better. He was right. - Spaceman."
+			},
+			{
+				"name": "IPBM's",
+				"row": 8,
+				"prerequisites": ["Bomber Enhancements"],
+				"quote": "'Wouldn't it be more simple to fire a missile at a distant planet and let it do the rest? Why fight on the frontlines and risk losing your men?' - Spaceman"
+			},
+			{
+				"name": "Magnetic  Communication Beacons",
+				"row": 9,
+				"prerequisites": ["Post-Shift Carriers"],
+				"quote": "'A small step but a nessesary one.' - Spaceman"
+			},
+		] 
+	},	
 	
 ]
 

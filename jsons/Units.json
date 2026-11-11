@@ -78,7 +78,7 @@
         "unitType": "Civilian",
         "movement": 5,
 		"cost": 100,
-        "uniques": ["Can build [Land] improvements on tiles", "Automation is a primary action", "[-1] Sight",],
+        "uniques": ["Can build [Void Improvement] improvements on tiles","Can build [Planetoid Improvement] improvements on tiles","Automation is a primary action", "[-1] Sight",],
 		"requiredTech": "Civilian Drones",	
     },
 	{
@@ -766,6 +766,8 @@
 		"rangedStrength": 300,
 		"cost": 175,
 		"requiredResource": "Ethelium",
+		"obsoleteTech": "Psychically enhanced metal",
+		"upgradesTo": "Psychically Enhanced Wideplate Super Slicer",
 		"uniques": [//Alt upgrade
 					"Can upgrade to [Solarized Iron Wideplate Super Slicer]"
 					],
@@ -781,7 +783,20 @@
 		"rangedStrength": 260,
 		"cost": 150,
 		"requiredResource": "Iron",
+		"upgradesTo": "Psychically Enhanced Wideplate Super Slicer",
 		"requiredTech": "Solar Cannons",
+		"attackSound": "shot"	//Will change
+	},
+	{
+		"name": "Psychically Enhanced Wideplate Super Slicer",
+		"unitType": "Space Laser",
+		"movement": 1,
+		"strength": 33,
+        "range": 2,
+		"rangedStrength": 300,
+		"cost": 300,
+		"requiredTech": "Psychically enhanced metal",
+		"uniques": ["Psy-metal"],	
 		"attackSound": "shot"	//Will change
 	},
 	{ //Sucessor to both the Railguns and the Lasers
@@ -1055,6 +1070,28 @@
 		"uniques": ["[40]% chance to intercept air attacks","[+60]% Strength <vs [Smallcraft] units>"],
 		"attackSound": "shot"
 	},
+	//Psychic line
+	{
+		"name": "Psychic Frigate",
+		"unitType": "Frigate",
+		"movement": 5,
+		"strength": 90,
+		"cost": 320,
+	//	"requiredResource": "Silicon",
+		"requiredTech": "Psychic Frigates",
+		"uniques": ["[+3] Sight",
+					"Can move after attacking", 
+					"[+25]% to Flank Attack bonuses", 
+					"[1] additional attacks per turn",
+					//How to get
+					"Unbuildable","Can be purchased for [1400] [Faith] [in all cities]"		
+					//what it is
+					"Psychic Unit"],
+		"promotions": [///"Psychic", still unimplemented yet
+						],		
+		"attackSound": "shot",
+	},
+	
 	//New Line
 	{
 		"name": "Assaulter",
@@ -1333,7 +1370,20 @@
 		"cost": 235,
 		"requiredResource": "Iron",
 		"requiredTech": "Gunnary & Plasma",
+		"obsoleteTech": "Warp Portals",
+		"upgradesTo": "Warpable Ultra Bludgeoner",	
 		"uniques": ["[+25]% Strength <vs cities>", "Requires at least [3] population"],
+		"attackSound": "shot"
+	},	
+	{
+		"name": "Warpable Ultra Bludgeoner",
+		"unitType": "Light cruiser",
+		"movement": 4,
+		"strength": 110,
+		"cost": 245,
+		"requiredResource": "Iron",
+		"requiredTech": "Warp Portals",
+		"uniques": ["[+25]% Strength <vs cities>", "Requires at least [3] population", "May Paradrop to [Exit Portal] tiles up to [12] tiles away"],
 		"attackSound": "shot"
 	},	
 	//The standard Cruisers	
@@ -1418,7 +1468,24 @@
 		"cost": 265,
 		"requiredResource": "Ethelium",
 		"requiredTech": "Gunnary & Plasma",
+		"obsoleteTech": "Elegant Plasma Cruisers",
+		"upgradesTo": "Elegant Ethelium Plasma Cruiser",
 		"uniques": ["[+25]% Strength <vs cities>", "Consumes [2] [Iron]", "Consumes [1] [Helium 3]", "Requires at least [4] population"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Elegant Ethelium Plasma Cruiser",
+		"unitType": "Cruiser",
+		"movement": 3,
+		"strength": 142,
+		"cost": 330,
+		"requiredResource": "Ethelium",
+		"requiredTech": "Elegant Plasma Cruisers",
+		"uniques": [
+				//Combat
+				"[+25]% Strength <vs cities>", "[15]% chance to intercept air attacks", "[+12]% Strength <vs [Swarm] units>", "Can move after attacking",
+				//Production
+				"Consumes [2] [Iron]", "Consumes [1] [Helium 3]", "Requires at least [4] population"],
 		"attackSound": "shot"
 	},
 	 //Heavy Cruiser: A Bulkier Form of Crusier
@@ -1719,7 +1786,7 @@
 	},
 	//Drone Carrier Line
 	{
-		"name": "Drone Carrier",
+		"name": "Drone Carrier", //Cannot upgrade to a large drone carrier
 		"unitType": "Drone Carrier",
 		"movement": 2,
 		"strength": 75,
@@ -1730,6 +1797,21 @@
 					"Cannot attack", "Can carry [1] [Drone] units",
 					//Comes with a swarm built in
 					"[1] free [Dronefighter Swarm] units appear",
+					]
+		"promotions": ["Basic Active Defence Systems"],
+	},
+	{
+		"name": "Large Drone Carrier",
+		"unitType": "Drone Carrier",
+		"movement": 2,
+		"strength": 100,
+	//	"strength": 40,
+		"cost": 800,
+		"requiredTech": "Large Drone Carriers",
+		"uniques": [
+					"Cannot attack", "Can carry [3] [Drone] units",
+					//Comes with a swarm built in
+					"[3] free [Dronefighter Swarm] units appear",
 					]
 		"promotions": ["Basic Active Defence Systems"],
 	},
@@ -1747,6 +1829,28 @@
 
 
 
+
+
+
+
+
+
+
+
+
+	//Missles rockets and the like
+	{
+		"name": "Simple Interplanetary Ballistic Missile",
+		"unitType": "IPBM",
+		"movement": 1,
+		"strength": 45,
+		"rangedStrength": 25,
+		"range": 8,
+		"cost": 150,
+		"requiredTech": "IPBM's",
+		"uniques": ["[+500]% Strength <vs cities>", "Damage taken from interception reduced by [50]%"],
+		"attackSound": "machinegun" //will change
+	},
 
 
 
@@ -1810,6 +1914,7 @@
 	{
 		"name": "Primitive Quasaric Railgun",
 		"unitType": "Space Artillery",
+	//	"uniqueTo": "Quasar Union",
 		"movement": 1,
 		"strength": 3,
         "range": 3,

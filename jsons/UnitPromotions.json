@@ -13,6 +13,16 @@
     */
 	
 	
+	//Starfighters
+	{
+		"name": "Armor Busting Munitions",
+		"uniques": ["[+20]% Strength <vs [Warship] units>", "[+10]% Strength <vs [Carrier] units>"],
+		"unitTypes": ["Starfighter",],
+        "column": 10,
+        "row": 1,
+    },
+	
+	
 	
 	// Repair Ships & Support Ships
 	{

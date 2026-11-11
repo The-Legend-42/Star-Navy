@@ -78,7 +78,7 @@
 	},	
 	{
 		"name": "Planetary Sanctity",
-		"terrainsCanBeBuiltOn": ["Void"],
+		"terrainsCanBeBuiltOn": ["Barren Planet", "Desert Planet", "Lush Planet"],
 		"turnsToBuild": 16,
 		"faith": 4,
 		"techRequired": "Space Sanctities",
@@ -188,6 +188,22 @@
 	
 	
 	
+	
+	
+	
+	///
+	{
+		"name": "Exit Portal",
+		"terrainsCanBeBuiltOn": ["Void", "Barren Planet", "Desert Planet", "Lush Planet"],
+		"turnsToBuild": 30,
+		"techRequired": "Warp Portals",
+		"uniques": ["Void Improvement"
+					"Planetoid Improvement",
+		            "Will not be replaced by automated units"
+					"Costs [1] [Gold] per turn"
+					"Pillaging this improvement yields approximately [+50 Gold]"],
+		"shortcutKey": "P"
+	},
 	
 	
 	
