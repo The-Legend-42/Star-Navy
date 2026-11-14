@@ -30,6 +30,14 @@
 					 "[+1 Happiness, +1 Faith] from every [Moons]"
 					]
     },
+	{
+        "name": "Sun Worship",
+        "type": "Pantheon",
+        "uniques": [
+					 //"[+4 Faith] from every [Star]", "[-33]% weight to this choice for AI decisions",
+					 "[+1 Faith, +1 Food, +1 Production] from every [Star]",
+					]
+    },
 	/*
 	{
         "name": "Luddites",
@@ -153,6 +161,17 @@
         "type": "Follower", //Pantheon
         "uniques": ["[+1 Food] from every [Space Farm]"]
     },
+    {
+        "name": "Tower Rituals",
+        "type": "Follower",
+        "uniques": ["[+3 Faith] from every [Faithful Tower] <in cities with at least [15] [Followers of this Religion]>"]
+    },
+    {
+        "name": "Public Prayers",
+        "type": "Follower",
+        "uniques": ["[+2 Faith, -1 Production] [in cities following this religion]",
+					"[-20]% weight to this choice for AI decisions",]
+    },
 ///////////////////////////////////////// Founder beliefs //////////////////////////////////////////
 
     {
@@ -235,5 +254,9 @@
         "type": "Enhancer",
         "uniques": ["Free [Colony Ship] appears <upon entering a new era>"]
     },
-
+    {
+        "name": "Advancing all aspects in lockstep", //science boost for peacefully expanding outwards
+        "type": "Enhancer",
+        "uniques": ["Gain [100] [Science] <upon founding a city> <(modified by game speed)>"]
+    },
 ]

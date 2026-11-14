@@ -13,7 +13,7 @@
 	
 	{
 		"name": "Planitary Mine",
-		"terrainsCanBeBuiltOn": ["Barren Planet", "Desert Planet", "Lush Planet"],
+		"terrainsCanBeBuiltOn": ["Barren Planet", "Frost", "Desert Planet","Fertile Sands", "Lush Planet","Snowy","Islands","Earth-Like"],
 		"production": 2,
 		"turnsToBuild": 7,
 		"techRequired": "Planetary Minning",
@@ -24,7 +24,7 @@
 	
 	{
 		"name": "Farm",
-		"terrainsCanBeBuiltOn": ["Fertile Sands", "Lush Planet"],
+		"terrainsCanBeBuiltOn": ["Fertile Sands", "Lush Planet", "Snowy","Islands","Earth-Like"],
 		"food": 1,
 		"turnsToBuild": 7,
 		"techRequired": "Planetary Minning",
@@ -36,7 +36,7 @@
 	},
 	{
 		"name": "Fishery",
-		"terrainsCanBeBuiltOn": ["Lush Planet","Water-World","Water-Moon","Islands"],
+		"terrainsCanBeBuiltOn": ["Lush Planet","Water-World","Water-Moon","Islands","Earth-Like","Snowy",],
 		"food": 1,
 		"turnsToBuild": 7,
 		"techRequired": "Water Works",
@@ -78,7 +78,7 @@
 	},	
 	{
 		"name": "Planetary Sanctity",
-		"terrainsCanBeBuiltOn": ["Barren Planet", "Desert Planet", "Lush Planet"],
+		"terrainsCanBeBuiltOn": ["Barren Planet", "Frost", "Desert Planet","Fertile Sands", "Lush Planet","Snowy","Islands","Earth-Like","Water-World"],
 		"turnsToBuild": 16,
 		"faith": 4,
 		"techRequired": "Space Sanctities",
@@ -194,7 +194,7 @@
 	///
 	{
 		"name": "Exit Portal",
-		"terrainsCanBeBuiltOn": ["Void", "Barren Planet", "Desert Planet", "Lush Planet"],
+		"terrainsCanBeBuiltOn": ["Barren Planet", "Frost", "Desert Planet","Fertile Sands", "Lush Planet","Snowy","Islands","Earth-Like","Water-World"],
 		"turnsToBuild": 30,
 		"techRequired": "Warp Portals",
 		"uniques": ["Void Improvement"

@@ -248,7 +248,7 @@
 					"Must have an owned [Farm] within [3] tiles",
 					"Requires at least [7] population",
 					//Food Boosts\
-					"[+1 Food, +1 Gold] from [Lush Planet] tiles [in this city]", //Might be good to adjust for moons and newer planet veriations
+					"[+1 Food, +1 Gold] from [Lush Planet Type] tiles [in this city]", //Might be good to adjust for moons and newer planet veriations
 					"[+1 Food] from [Barren Planet] tiles [in this city]",
 					"[+1 Food] from [Desert Planet] tiles [in this city]",
 					"[+1 Food] from [Fertile Sands] tiles [in this city]",

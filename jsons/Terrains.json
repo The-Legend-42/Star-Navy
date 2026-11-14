@@ -53,6 +53,7 @@
 	
 	//Planets
 	//rocky Planets
+	//Barren Type
 	{
 		"name": "Barren Planet",
 		"type": "Land",
@@ -60,25 +61,61 @@
 		"production": 1,
 		"defenceBonus": 1.0,
         "RGB": [163, 0, 0],
-        "uniques": ["Planet"	
-					"Rough terrain"
+        "uniques": ["Planet",
+					"Rocky Planet",
+					"Barren Planet Type",
+					"Rough terrain",
 					"Occurs in chains at high elevations",
 					"Has an elevation of [1] for visibility calculations",
 					"Blocks line-of-sight from tiles at same elevation",
 					"[3] Strength for cities built on this terrain"
-					"[+7] to Fertility for Map Generation",
+					"[+8] to Fertility for Map Generation",
 					"Considered [Desirable] when determining start locations",
 					"Considered [Production] when determining start locations",	
 		],
     }
+	{
+		"name": "Frost",
+		"type": "Land",
+		"food": 1,
+		"production": 1,
+		"movementCost": 3,
+		"defenceBonus": 0.7,
+        "RGB": [163, 0, 0],
+		"uniques": [
+			"Planet"
+			"Rocky Planet",
+			"Barren Planet Type"
+			"Rough terrain"
+		    "Fresh water",
+			"Waters" // Contains large bodies of water such as Seas or Oceans
+			"Freezing"
+			"[+8] to Fertility for Map Generation",
+			"Becomes [Fertile Sands] when adjacent to [Red Dwarf]",
+			"A Region is formed with at least [20]% [Frost] tiles and [Snowy] tiles, with priority [2]",
+			"Occurs in chains at high elevations",
+			"Has an elevation of [1] for visibility calculations",
+			"Blocks line-of-sight from tiles at same elevation",
+			"Considered [Food] when determining start locations",
+			"Considered [Production] when determining start locations",
+			"Considered [Desirable] when determining start locations"
+			
+			]
+	},
+	
+	//Desert Type
 	{
 		"name": "Desert Planet",
 		"type": "Land",
 		"movementCost": 3,
 		"production": 1,
 		"defenceBonus": 1,
-        "RGB": [163, 0, 0],
-        "uniques": ["Planet"	
+        "RGB": [229, 198, 76],
+        "uniques": ["Planet"
+					"Rocky Planet",
+					"Desert Planet Type"
+					//Spesifics:
+					"[+9] to Fertility for Map Generation",
 					"Sands"
 					"Rough terrain"
 					"A Region is formed with at least [20]% [Desert Planet] tiles and [Sandy-Moon] tiles, with priority [2]",
@@ -87,12 +124,45 @@
 					"Occurs in chains at high elevations",
 					"Has an elevation of [1] for visibility calculations",
 					"Blocks line-of-sight from tiles at same elevation",
-					"[+8] to Fertility for Map Generation",
+
 					"[3] Strength for cities built on this terrain"
 					"Considered [Desirable] when determining start locations",
 					"Considered [Production] when determining start locations",	
 		]
     }
+	{
+		"name": "Fertile Sands",
+		"type": "Land",
+		"movementCost": 3,
+		"food": 2,
+		//May become buildable if i ever add teraforming
+		"food": 2,
+		"production": 1,
+		"defenceBonus": 0.7,
+        "RGB": [229, 198, 76],
+		"uniques": [
+					"Planet"
+					"Rocky Planet",
+					"Desert Planet Type"
+					//Spesifics:
+					"[+11] to Fertility for Map Generation",
+					"Planet"
+					"Fresh water",
+					"Sands",
+					"Rough terrain"
+					"Has an elevation of [1] for visibility calculations",
+					"Occurs in chains at high elevations",
+					"Considered [Food] when determining start locations",
+					"Considered [Desirable] when determining start locations",
+					"Considered [Production] when determining start locations",	],
+	},
+	
+	
+	
+	
+	
+	
+	//Lush type
 	{
 		"name": "Lush Planet",
 		"type": "Land",
@@ -100,7 +170,11 @@
 		"food": 3,
 		"defenceBonus": 1.2,
         "RGB": [1, 86, 0],
-        "uniques": ["Planet"	
+        "uniques": [
+					"Planet"
+					"Rocky Planet",
+					"Lush Planet Type"
+					//Spesifics:
 					"Rough terrain"
 					"Waters" // Contains large bodies of water such as Seas or Oceans
 					"Becomes [Desert Planet] when adjacent to [Red Dwarf]",
@@ -109,13 +183,129 @@
 					"Occurs in chains at high elevations",
 					"Has an elevation of [1] for visibility calculations",
 					"Blocks line-of-sight from tiles at same elevation",
-					"[+10] to Fertility for Map Generation",
+					"[+12] to Fertility for Map Generation",
 					"[5] Strength for cities built on this terrain"
 					"Considered [Desirable] when determining start locations",
 					"Considered [Food] when determining start locations",	
 		],
-    }
-	
+    },
+
+	{
+		"name": "Snowy",
+		"type": "Land",
+		"movementCost": 3,
+		"food": 2,
+		"production": 1,
+		"defenceBonus": 1.2,
+        "RGB": [1, 86, 0],
+		"uniques": [
+					"Planet"
+					"Rocky Planet",
+					"Lush Planet Type"
+					//Spesifics:
+					"[+9] to Fertility for Map Generation",
+					"Fresh water",
+					"Waters" // Contains large bodies of water such as Seas or Oceans
+					"Freezing"
+				//	"Occurs at temperature between [-1] and [-0.8] and humidity between [0] and [1]"
+					"Occurs in chains at high elevations",
+					"Has an elevation of [1] for visibility calculations",
+					"Blocks line-of-sight from tiles at same elevation",
+			]
+	},	
+	{
+		"name": "Islands",
+		"type": "Land",
+		"movementCost": 3,
+		"food": 3,
+		"gold": 1,
+		"culture": 1,
+		"defenceBonus": 1.2,
+        "RGB": [1, 86, 0],
+		"uniques": [
+					"Planet"
+					"Rocky Planet",
+					"Lush Planet Type"
+					//Spesifics:
+					"[+12] to Fertility for Map Generation",
+					"Fresh water",
+					"Aquatic" 	//Water-World //This ones close enough to bearly count
+					"Waters" // Contains large bodies of water such as Seas or Oceans
+					"Occurs in chains at high elevations",
+					"Has an elevation of [1] for visibility calculations",
+					"A Region is formed with at least [10]% [Islands] tiles and [Water-World] tiles, with priority [1]",
+					"Blocks line-of-sight from tiles at same elevation",
+					]
+	},
+
+
+	{
+		"name": "Earth-Like",
+		"type": "Land",
+		"movementCost": 3,
+		"food": 3,	
+		"happiness": 2,
+		"production": 1,		
+		"defenceBonus": 1.2,
+        "RGB": [1, 240, 0],
+		"uniques": [
+			"Planet"
+			"Rocky Planet",
+			"Lush Planet Type"
+			//Spesifics:
+			"[+13] to Fertility for Map Generation",
+		    "Fresh water",
+			"Waters" // Contains large bodies of water such as Seas or Oceans
+			"Occurs in chains at high elevations",
+			"Has an elevation of [1] for visibility calculations",
+			"A Region is formed with at least [10]% [Earth-Like] tiles and [Barren Planet] tiles, with priority [1]",
+			"Blocks line-of-sight from tiles at same elevation",
+			],
+	},
+	{
+		"name": "Water-World",
+		"type": "Land",
+		"movementCost": 3,
+		"food": 3,			
+		"gold": 2,
+		"production": -1,
+		"defenceBonus": 1.2,
+        "RGB": [1, 86, 0],
+		"uniques": [
+			"Planet"
+			"Rocky Planet",
+			"Lush Planet Type"
+			//Spesifics:
+		    "Fresh water",
+			"Aquatic" 	//Water-World
+			"Waters" // Contains large bodies of water such as Seas or Oceans
+			"[+12] to Fertility for Map Generation",
+			"Occurs in chains at high elevations",
+			"Has an elevation of [1] for visibility calculations",
+			"Blocks line-of-sight from tiles at same elevation",
+			],
+	},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 	{
@@ -139,7 +329,27 @@
 					"Considered [Production] when determining start locations",	
 		],
     }
-	
+		{
+		"name": "Frost Giant",
+		"type": "TerrainFeature",
+		"production": 1,
+		"culture": 1,
+		"overrideStats": true,
+		"unbuildable": true,
+		"occursOn": ["Gas Giant"],
+		"uniques": [
+			"Gas Giant"
+			"Rough terrain",		
+			"Rare feature",
+			"Units ending their turn on this terrain take [15] damage",
+			"Has an elevation of [2] for visibility calculations",
+			"Blocks line-of-sight from tiles at same elevation",
+			"[-1] Strength for cities built on this terrain"
+			"[+7] to Fertility for Map Generation",
+			"Considered [Desirable] when determining start locations",
+			"Considered [Production] when determining start locations",	
+		]
+	},
 
 
 
@@ -155,7 +365,7 @@
 
      /////Improvments
 	
-	
+		//Void
 	{
 		"name": "Asteroid Field",
 		"type": "TerrainFeature",
@@ -187,119 +397,7 @@
 	
 	
 	
-	//Planets
-	{
-		"name": "Fertile Sands",
-		"type": "TerrainFeature",
-		"food": 2,
-		"overrideStats": true,
-		//May become buildable if i ever add teraforming
-		"movementCost": 3,
-		"food": 2,
-		"production": 1,
-		"defenceBonus": 0.7,
-		"occursOn": ["Desert Planet"],
-		"uniques": [
-			"[+9] to Fertility for Map Generation",
-			"Rare feature"
-			"Planet"
-		    "Fresh water",
-			"Sands"
-			"Rough terrain"
-			"Has an elevation of [1] for visibility calculations",
-			"Considered [Food] when determining start locations",
-			"Considered [Desirable] when determining start locations"
-			"Considered [Production] when determining start locations",	]
-	},
-	
-	{
-		"name": "Frost",
-		"type": "TerrainFeature",
-		"overrideStats": true,
-		"unbuildable": true,
-		"food": 1,
-		"production": 1,
-	//	"movementCost": 1,
-		"defenceBonus": 0.7,
-		"occursOn": ["Barren Planet"],
-		"uniques": [
-			"[+7] to Fertility for Map Generation",
-			"Rare feature"
-			"Rough terrain"
-		    "Fresh water",
-			"Waters" // Contains large bodies of water such as Seas or Oceans
-			"Freezing"
-			"Becomes [Fertile Sands] when adjacent to [Red Dwarf]",
-			"A Region is formed with at least [20]% [Frost] tiles and [Snowy] tiles, with priority [2]",
-			"Has an elevation of [1] for visibility calculations",
-			"Blocks line-of-sight from tiles at same elevation",
-			"Considered [Food] when determining start locations",
-			"Considered [Production] when determining start locations",
-			"Considered [Desirable] when determining start locations"
-			
-			]
-	},
-	{
-		"name": "Snowy",
-		"type": "TerrainFeature",
-		"food": -1,
-		"production": 1,
-	//	"movementCost": 1,
-		"occursOn": ["Lush Planet"],
-		"uniques": [
-		//	"Occurs at temperature between [-1] and [-0.8] and humidity between [0] and [1]"
-			"[+8] to Fertility for Map Generation",
-			"Rare feature"
-		    "Fresh water",
-			"Waters" // Contains large bodies of water such as Seas or Oceans
-			"Freezing"
-			]
-	},	
-	{
-		"name": "Islands",
-		"type": "TerrainFeature",
-		"culture": 1,
-		"gold": 1,
-	//	"movementCost": 1,
-		"occursOn": ["Lush Planet"],
-		"uniques": [
-			"[+10] to Fertility for Map Generation",
-			"Rare feature"
-		    "Fresh water",
-			"Aquatic" 	//Water-World //This ones close enough to bearly count
-			"Waters" // Contains large bodies of water such as Seas or Oceans
-			]
-	},
-	{
-		"name": "Earth-Like",
-		"type": "TerrainFeature",
-		"happiness": 2,
-		"production": 1,		
-	//	"movementCost": 1,
-		"occursOn": ["Lush Planet"],
-		"uniques": [
-			"[+11] to Fertility for Map Generation",
-			"Rare feature"
-		    "Fresh water",
-			"Waters" // Contains large bodies of water such as Seas or Oceans
-			],
-	},
-	{
-		"name": "Water-World",
-		"type": "TerrainFeature",
-		"production": -1,	
-		"gold": 2,
-	//	"movementCost": 1,
-		"occursOn": ["Lush Planet"],
-		"uniques": [
-			"Rare feature"
-		    "Fresh water",
-			"Aquatic" 	//Water-World
-			"Waters" // Contains large bodies of water such as Seas or Oceans
-			"[+10] to Fertility for Map Generation",
-			],
-	},
-	
+	//???
 	
 	//Iron+Asteroid Mine
 	//Iron+Asteroid Mine
@@ -520,11 +618,13 @@
 		"happiness": -4,
 		"overrideStats": true,
 		"occursOn": ["Red Dwarf"],
+		"occursOn": ["Red Dwarf"],
 		"turnsInto": "Red Dwarf",
 		"impassable": true,
 		"unbuildable": true,
 		"uniques": ["Must be adjacent to [0] [Star] tiles",
 			//"Must be adjacent to [1] to [6] [???] tiles",
+			"Horror"
 			"Considered [Undesirable] when determining start locations"
 			"Grants [+500 Science] to the first civilization to discover it"],
 		"weight": 1
