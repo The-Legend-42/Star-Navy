@@ -1423,7 +1423,7 @@
 				"name": "Money growing plants",
 				"row": 7,
 				"prerequisites": ["Drone Production"],
-				"quote": "Whose stupid idea was it to make a plant that literally grows money? I can't make jokes about how it doesn't grow on trees anymore! Wait... what do you mean its my idea?!?' - Space Bozo"
+				"quote": "'Whose stupid idea was it to make a plant that literally grows money? I can't make jokes about how it doesn't grow on trees anymore! Wait... what do you mean its my idea?!?' - Space Bozo"
 			},
 			{
 				"name": "Bomber Enhancements",
@@ -1490,7 +1490,7 @@
 				"name": "Large Drone Carriers",
 				"row": 7,
 				"prerequisites": ["Money growing plants"],
-				"quote": "A wise man once said: Bigger is better. He was right. - Spaceman."
+				"quote": "'A wise man once said: Bigger is better. He was right.' - Spaceman."
 			},
 			{
 				"name": "IPBM's",
@@ -1557,7 +1557,7 @@
 				"name": "Warpable Artilery",
 				"row": 7,
 				"prerequisites": ["Warp Portals","Large Drone Carriers"],
-				"quote": "Artilery is slow, but what if we warped them all to the frontlines? - Spaceman."
+				"quote": "'Artilery is slow, but what if we warped them all to the frontlines?' - Spaceman."
 			},
 			{
 				"name": "IPBM's 2",
@@ -1571,6 +1571,74 @@
 				"row": 9,
 				"prerequisites": ["Magnetic  Communication Beacons"],
 				"quote": "'Food machines that make food.' - Spaceman"
+			},
+		] 
+	},	
+	{
+		"columnNumber": 30,
+		"era": "Middle Post-Shift Era",
+		"techCost": 2200,
+		"buildingCost": 480,
+		"wonderCost": 990,
+		"techs": [
+
+			{
+				"name": "Religious Podcasts",
+				"row": 1,
+				"prerequisites": ["The Holy Eye Statue"],					
+				"quote": "'Speak to the faithful across time and space!' - Holy One"
+			},
+			{
+				"name": "Enhanced Psychic Defencive Arrays",
+				"row": 2,
+				"prerequisites": ["Psychic Defencive Arrays"],				
+	            "uniques": ["Only available <if [Psychic worship hall] is constructed>", "Only available <if [Psychic reaserch Center] is constructed>"],		
+				"quote": "'Stronger! We must increase the power!' - Holy Two"
+			},
+			{
+				"name": "Culture Centers",
+				"row": 3,
+				"prerequisites": ["Calm Cabins", "Industrial particle accelerators"],					
+				"quote": "'What is the center of our culutre? A important question at that.' - Philosopher"
+			},
+			{
+				"name": "Secondary particle accelerators",
+				"row": 4,
+				"prerequisites": ["Industrial particle accelerators"],
+                "uniques": ["[+25]% weight to this choice for AI decisions"],
+				"quote": "'Someone did the math. we can make a big one or many small ones, and it seems the latter is more efficient.' - Engineer"
+			},
+			{
+				"name": "Cosmic Composters",
+				"row": 5,
+				"prerequisites": ["Industrial particle accelerators","Warpable Support Ships",],
+				"quote": "'Making compost in space? Yeheee leme throw some mud!' - Space Bozo"
+			},
+			{
+				"name": "Extended Warp Range",
+				"row": 6,
+				"prerequisites": ["Colonial Warpers",],
+				"uniques": ["[+50]% weight to this choice for AI decisions"],
+				"quote": "'Lets warp further than ever before!' - Spaceman"
+			},
+			{
+				"name": "Warpable Destroyers",
+				"row": 7,
+				"prerequisites": ["Warpable Artilery", "IPBM's 2"],
+				"quote": "'The power of mass Production.' - Spaceman."
+			},
+			{
+				"name": "Gasinators",
+				"row": 8,
+				"prerequisites": ["IPBM's 2"],
+				"uniques": ["[+1 Production] from [Gas Giants] tiles [in all cities]",],
+				"quote": "'Lets make those gas giants more productive!' - Spaceman"
+			},
+			{
+				"name": "Discovering Green Spice",
+				"row": 9,
+				"prerequisites": ["Robotic Farms"],
+				"quote": "'Spice, now in Green!' - Spaceman"
 			},
 		] 
 	},	

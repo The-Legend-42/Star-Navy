@@ -853,7 +853,7 @@
 		"name": "Money Bushes",
 		"specialistSlots": {"Agronomist": 1},
 		"cost": 240,
-		"Gold": 2,
+		"gold": 2,
 		"uniques": ["Destroyed when the city is captured"],
 		"requiredBuilding": "Advanced Greenhouse",
 		"requiredTech": "Money growing plants",
@@ -862,7 +862,7 @@
 		"name": "Money Trees",
 		"specialistSlots": {"Agronomist": 1, "Ecologist": 1},
 		"cost": 480,
-		"Gold": 4,
+		"gold": 4,
 		"uniques": ["Destroyed when the city is captured"],
 		"requiredBuilding": "Advanced Greenhouse",
 		"requiredTech": "Money growing plants",
@@ -907,7 +907,7 @@
 		"name": "Calm Cabin",
 		"cost": 30,	
 		"culture": 1,		
-		"Faith": 1,	
+		"faith": 1,	
 		"uniques": ["Destroyed when the city is captured"],	
 		"requiredTech": "Calm Cabins",
 	},		
@@ -921,17 +921,67 @@
 		"uniques": ["Destroyed when the city is captured"],
 		"requiredTech": "Psychic Defencive Arrays",
 	},
-
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
+	{
+		"name": "Gas producing particle accelerator",
+		"specialistSlots": {"Scientist": 1, "Engineer": 1, "Lab Assistent": 1},	
+		"production": 3,
+		"science": 1,
+		"maintenance": 1,
+		"uniques": ["Destroyed when the city is captured",
+					"Limited to [4] per Civilization",
+					"Provides [3] [Helium 3]",
+					"Provides [1] [Methane]",
+					"Particle Accelerator",],	
+		"requiredTech": "Secondary particle accelerators",
+	},
+	{
+		"name": "Micro particle accelerator",
+		"specialistSlots": {"Scientist": 1, "Engineer": 1},
+		"cost": 280,
+		"production": 1,
+		"science": 1,
+		"uniques": ["Particle Accelerator"],	
+		"requiredTech": "Secondary particle accelerators",
+	},
+	{
+		"name": "Cosmic Composter",
+		"specialistSlots": {"Scientist": 1,"Agronomist": 1, "Engineer": 1, "Chemist": 1, "Farmer": 1},	
+		"percentStatBonus": {"Production": 5},
+		"food": 4,
+		"production": 2,
+		"science": 2,		
+		"gold": 1,	
+		"uniques": ["Provides [1] [Compost]", "Destroyed when the city is captured", ],	
+		"requiredTech": "Cosmic Composters",
+	},	
+	{
+		"name": "Local culture center",
+		"specialistSlots": {"Artist": 1,"Muscitian": 1, "Comedian": 1, "Celebrity": 1, "Entertainer": 1},	
+		"culture": 3,
+		"happiness": 1,		
+		"gold": 1,	
+		"uniques": ["Destroyed when the city is captured", ],	
+		"requiredTech": "Culture Centers",
+	},	
+	{
+		"name": "Religious Podcast Studio",
+		"specialistSlots": {"Podcaster": 3,"Writer": 1, "Theologian": 1},	
+		"faith": 3,
+		"culture": 2,
+		"happiness": 1,	
+		"requiredTech": "Religious Podcasts",
+	},	
+	{ 
+		"name": "Enhanced Psychic Defencive Array",
+		"specialistSlots": {"Psychic Defender": 2, "Psychic Attacker": 2},
+		"cityStrength": 4,
+		"cityHealth": 120,
+		"faith": 2,
+		"maintenance": 2,
+		"uniques": ["Destroyed when the city is captured"],
+		"requiredTech": "Enhanced Psychic Defencive Arrays",
+		"requiredBuilding": "Psychic Defencive Array",
+	},
 					
 					
 					
@@ -1065,16 +1115,26 @@
 		"science": 3,		
 		"maintenance": 2,
 		"isNationalWonder": true,
-		"uniques": ["Provides [6] [Iron]"
+		"uniques": ["Particle Accelerator"
+					"Provides [6] [Iron]"
 					"Provides [3] [Silicon]"
 					"Provides [3] [Uranium]"
 					"Provides [1] [Gold Ore]"],	
 		"requiredTech": "Industrial particle accelerators",
 	},	
+	{
+		"name": "National Culture Center ",
+		"specialistSlots": {"Artist": 3, "Muscitian": 2, "Author": 2, "Writer": 1, "Celebrity": 1, "Entertainer": 1, "Movie Star": 1, "Comedian": 1,},	
+		"percentStatBonus": {"culture": 33},
+		"culture": 7,
+		"gold": 3,
+		"happiness": 2,
+		"isNationalWonder": true,
+		"requiredTech": "Culture Centers",
+	},	
 
 
 
-	
 
 
 
@@ -1084,11 +1144,6 @@
 
 
 
-
-
-
-	
-	
 	
 
 
@@ -1214,7 +1269,7 @@
 	{
 		"name": "Cosmic Abode",
 		"specialistSlots": {"Muscitian": 1, "Philosopher": 1, "Theologian": 1},
-		"Faith": 4,
+		"faith": 4,
 		"culture": 2,
 		"science": 2,
 		"food": 2,
@@ -1231,14 +1286,31 @@
 	{ 
 		"name": "Holy Eye Statue",
 		"percentStatBonus": {"Faith": 10},
-		"Faith": 6,
+		"faith": 6,
 		"happiness": 4,
 		"culture": 4,
 		"Gold": 4,
 		"isWonder": true,
-		"uniques": ["Can only be built <when not at war>" ],
+		"uniques": ["Can only be built <when not at war>"],
 		"requiredTech": "The Holy Eye Statue",
 	},	
+	{ 
+		"name": "Grand Cultural Center",
+		"specialistSlots": {"Artist": 2, "Muscitian": 1, "Author": 1, "Writer": 1, "Celebrity": 1, "Philosopher": 1},	
+		"percentStatBonus": {"culture": 33},
+		"culture": 6,
+		"happiness": 4,
+		"isWonder": true,
+		"uniques": ["Cost increases by [15] per owned city",
+					"Only available <if [Local culture center] is constructed in all [non-[Puppeted]] cities>",
+					"[1] Free Social Policies",
+					"[+10]% Golden Age length",],
+		"requiredTech": "Culture Centers",
+	},
+	
+
+	
+	
 	
 	
 	

@@ -208,7 +208,7 @@
 		"food": 1,
 		"science": 1,
 		"gold": 1,
-		"improvement": "Asteroid Mine", //Temporary
+		"improvedBy": ["Asteroid Mine", "Space Farm"], //Temporary
 		"improvementStats": {"gold": 1},
 		"uniques": [
 					"Creatures", "Exotic",
@@ -223,7 +223,7 @@
 		"resourceType": "Luxury",
 		"terrainsCanBeFoundOn": ["Void","Asteroid Field"],
 		"food": 2,
-		"improvement": "Asteroid Mine", //Temporary
+		"improvedBy": ["Asteroid Mine", "Space Farm"], //Temporary
 		"improvementStats": {"science": 1},
 		"uniques": [
 					"Creatures", "Exotic",
@@ -506,7 +506,34 @@
 		"minorDepositAmount": {"sparse": 1, "default": 1, "abundant": 1}
 	},		
 
-	
+	{
+		"name": "Green Spice",
+		"resourceType": "Luxury",
+		"revealedBy": "Discovering Green Spice",
+		"terrainsCanBeFoundOn": ["Lush Planet","Earth-Like","Complex-Moon","Islands","Strange-Moon","Exotic-Moon","Fertile Sands", "Snowy","Sandy-Moon", "Water-World",],
+		"gold": 1,
+		"improvementStats": {"production": 1,"happiness": 1,},
+		"improvedBy": ["Subsea Mine", "Planitary Mine"],	//Temporary?
+		"uniques": [
+					"Spice",
+					
+					//May generate more than 1
+					"Generated with weight [7] <in [Lush Planet] tiles>",
+					"Generated with weight [6] <in [Earth-Like] tiles>",
+					"Generated with weight [4] <in [Complex-Moon] tiles>",
+					"Generated with weight [4] <in [Islands] tiles>",
+					"Generated with weight [4] <in [Strange-Moon] tiles>",					
+					"Generated with weight [4] <in [Exotic-Moon] tiles>",						
+					//Will always only have 1,
+					"Minor deposits generated with weight [3] <in [Fertile Sands] tiles>",
+					"Minor deposits generated with weight [2] <in [Snowy] tiles>",
+					"Minor deposits generated with weight [2] <in [Sandy-Moon] tiles>",
+					"Minor deposits generated with weight [1] <in [Water-World] tiles>"	,
+					
+					],
+		"majorDepositAmount": {"sparse": 1, "default": 2, "abundant": 2},
+		"minorDepositAmount": {"sparse": 1, "default": 1, "abundant": 1}
+	},	
 	
 	
 //		"terrainsCanBeFoundOn": ["Asteroid Field","Desert Planet","Barren Planet","Earth-Like","Islands","Snowy","Frost","Snowy","Water-World","Earth-Like","Islands",],

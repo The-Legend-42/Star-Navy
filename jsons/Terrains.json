@@ -316,8 +316,8 @@
 		"culture": 1,
         "RGB": [120, 79, 48],
         "uniques": [
-					"Gas Giant"
-				//	"Planet"	
+					"Gas Giants"
+					"Planet"	
 					"Rough terrain"
 					"Occurs in chains at high elevations",
 					"Units ending their turn on this terrain take [10] damage",
@@ -329,16 +329,18 @@
 					"Considered [Production] when determining start locations",	
 		],
     }
-		{
+	{
 		"name": "Frost Giant",
 		"type": "TerrainFeature",
 		"production": 1,
 		"culture": 1,
 		"overrideStats": true,
 		"unbuildable": true,
+		"impassable": true,
 		"occursOn": ["Gas Giant"],
 		"uniques": [
-			"Gas Giant"
+			"Gas Giants"
+			"Planet"	
 			"Rough terrain",		
 			"Rare feature",
 			"Units ending their turn on this terrain take [15] damage",

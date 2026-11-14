@@ -482,7 +482,10 @@
 		"cost": 420,
 		"requiredResource": "Uranium",
 		"requiredTech": "Colonial Warpers",
-		"uniques": ["[-1] Sight","Founds a new city <by consuming this unit>","Requires at least [5] population", "May Paradrop to [Exit Portal] tiles up to [12] tiles away",],
+		"uniques": ["[-1] Sight","Founds a new city <by consuming this unit>","Requires at least [5] population",
+					"May Paradrop to [Exit Portal] tiles up to [12] tiles away <before discovering [Extended Warp Range]>",
+					"May Paradrop to [Exit Portal] tiles up to [14] tiles away <after discovering [Extended Warp Range]>",
+					],
 		"promotions": ["Basic Active Defence Systems"],	
 		"attackSound": "shot"
 	},	
@@ -609,7 +612,10 @@
 		"strength": 60,
 		"cost": 190,
 		"requiredTech": "Warpable Support Ships",
-		"uniques": ["All adjacent units heal [+5] HP when healing", "[+3] Sight", "May Paradrop to [Exit Portal] tiles up to [12] tiles away"],
+		"uniques": ["All adjacent units heal [+5] HP when healing", "[+3] Sight", 
+					"May Paradrop to [Exit Portal] tiles up to [12] tiles away <before discovering [Extended Warp Range]>",
+					"May Paradrop to [Exit Portal] tiles up to [14] tiles away <after discovering [Extended Warp Range]>",
+					],
 		"promotions": ["Basic Active Defence Systems"],		
 		"attackSound": "shot"
 	},	
@@ -711,7 +717,10 @@
 		"rangedStrength": 175,
 		"cost": 210,
 		"requiredTech": "Warpable Artilery",
-		"uniques": ["Can move after attacking", "May Paradrop to [Exit Portal] tiles up to [12] tiles away"],
+		"uniques": ["Can move after attacking", 
+					"May Paradrop to [Exit Portal] tiles up to [12] tiles away <before discovering [Extended Warp Range]>",
+					"May Paradrop to [Exit Portal] tiles up to [14] tiles away <after discovering [Extended Warp Range]>",
+					],
 		"promotions": ["Artillery Adjustments I"]
 		"attackSound": "shot"
 	},	
@@ -1317,6 +1326,25 @@
 		"upgradesTo": "Fast Destroyer",
 		"uniques": ["[+35]% Strength <vs cities>", "Requires at least [3] population"],
 		"attackSound": "shot"
+	},
+	//New line
+	{
+		"name": "Warpable Destroyer",
+		"unitType": "Destroyer",
+		"movement": 5,
+		"strength": 100,
+		"interceptRange": 1,
+		"cost": 225,
+		"requiredResource": "Silicon",
+		"requiredTech": "Warpable Destroyers",
+		"uniques": ["Requires at least [3] population", 
+					"[+25]% Strength <vs cities>", 
+					"[35]% chance to intercept air attacks",
+					"[+50]% Strength <vs [Smallcraft] units>",
+					"May Paradrop to [Exit Portal] tiles up to [12] tiles away <before discovering [Extended Warp Range]>",
+					"May Paradrop to [Exit Portal] tiles up to [14] tiles away <after discovering [Extended Warp Range]>",
+					],
+		"attackSound": "shot"
 	},	
 	//Smaller faster cheeper Cruisers
 	{
@@ -1427,7 +1455,10 @@
 		"cost": 245,
 		"requiredResource": "Iron",
 		"requiredTech": "Warp Portals",
-		"uniques": ["[+25]% Strength <vs cities>", "Requires at least [3] population", "May Paradrop to [Exit Portal] tiles up to [12] tiles away"],
+		"uniques": ["[+25]% Strength <vs cities>", "Requires at least [3] population", 
+					"May Paradrop to [Exit Portal] tiles up to [12] tiles away <before discovering [Extended Warp Range]>",
+					"May Paradrop to [Exit Portal] tiles up to [14] tiles away <after discovering [Extended Warp Range]>",
+					],
 		"attackSound": "shot"
 	},	
 	//The standard Cruisers	
