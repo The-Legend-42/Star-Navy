@@ -831,21 +831,14 @@ TechIcons/Photonic Computing
   index: -1
 TileSets/HexaRealm/Lush Planet
   rotate: false
-  xy: 580, 4
+  xy: 652, 4
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Lush Planet
   rotate: false
-  xy: 580, 4
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Asteroid Feild
-  rotate: false
-  xy: 1732, 93
+  xy: 652, 4
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
@@ -913,35 +906,35 @@ TileSets/HexaRealm/Tiles/Frost
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Gas Giant
+TileSets/HexaRealm/Tiles/Frost Giant
   rotate: false
   xy: 220, 4
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Great Horror
+TileSets/HexaRealm/Tiles/Gas Giant
   rotate: false
   xy: 292, 4
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Ice+Asteroid Field
+TileSets/HexaRealm/Tiles/Great Horror
   rotate: false
   xy: 364, 4
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Ice+Asteroid Field
+  rotate: false
+  xy: 436, 4
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Space Ice+Asteroid Field
-  rotate: false
-  xy: 364, 4
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Iron+Asteroid Field
   rotate: false
   xy: 436, 4
   size: 64, 56
@@ -950,117 +943,117 @@ TileSets/HexaRealm/Tiles/Iron+Asteroid Field
   index: -1
 TileSets/HexaRealm/Tiles/Iron+Asteroid Mine
   rotate: false
-  xy: 436, 4
+  xy: 508, 4
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Islands
+TileSets/HexaRealm/Tiles/Void+Asteroid-Field+Iron
   rotate: false
   xy: 508, 4
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Magma-Moon
+TileSets/HexaRealm/Tiles/Islands
   rotate: false
-  xy: 652, 4
+  xy: 580, 4
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Red Dwarf
+TileSets/HexaRealm/Tiles/Magma-Moon
   rotate: false
   xy: 724, 4
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Rocky-Moon
+TileSets/HexaRealm/Tiles/Red Dwarf
   rotate: false
   xy: 796, 4
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Salt+Barren Planet
+TileSets/HexaRealm/Tiles/Rocky-Moon
   rotate: false
   xy: 868, 4
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Salt+Barren Planet
+  rotate: false
+  xy: 940, 4
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Salt+Barren-Planet
   rotate: false
-  xy: 868, 4
+  xy: 940, 4
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Salt+Desert Planet
   rotate: false
-  xy: 940, 4
+  xy: 1012, 4
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Salt+Desert-Planet
   rotate: false
-  xy: 940, 4
+  xy: 1012, 4
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Sandy-Moon
   rotate: false
-  xy: 1012, 4
+  xy: 1084, 4
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Snowy
   rotate: false
-  xy: 1084, 4
+  xy: 1156, 4
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Space Ice
   rotate: false
-  xy: 1156, 4
+  xy: 1228, 4
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Standard-Moon
   rotate: false
-  xy: 1228, 4
+  xy: 1300, 4
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Strange-Moon
   rotate: false
-  xy: 1300, 4
+  xy: 1372, 4
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Tectonic-Moon
   rotate: false
-  xy: 1372, 4
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Template
-  rotate: false
   xy: 1444, 4
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Tester Boi
+TileSets/HexaRealm/Tiles/Template
   rotate: false
   xy: 1516, 4
   size: 64, 56
@@ -1587,27 +1580,41 @@ UnitIcons/Wideplate Spaceborn Laser
   index: -1
 
 game3.png
-size: 256, 64
+size: 512, 64
 format: RGBA8888
 filter: MipMapLinearLinear, MipMapLinearLinear
 repeat: none
-TileSets/HexaRealm/Tiles/Void
+TileSets/HexaRealm/Tiles/Tester Boi
   rotate: false
   xy: 4, 4
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Water-Moon
+TileSets/HexaRealm/Tiles/Void
   rotate: false
   xy: 76, 4
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Water-World
+TileSets/HexaRealm/Tiles/Void+Exit Portal
   rotate: false
   xy: 148, 4
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Water-Moon
+  rotate: false
+  xy: 220, 4
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Water-World
+  rotate: false
+  xy: 292, 4
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
