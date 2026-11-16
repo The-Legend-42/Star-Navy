@@ -1056,6 +1056,37 @@
 		"promotions": ["Electronic Countermeasures I"],		
 		"attackSound": "shot",
 	},
+	//New line
+	{
+		"name": "Darter",
+		"unitType": "Corvette",
+		"movement": 7,
+		"strength": 64,
+		"cost": 178,
+		"requiredResource": "Uranium",
+		"requiredTech": "NTP Engines",
+		"obsoleteTech": "Evasive Darters",
+		"upgradesTo": "Evasive Darter",
+		"uniques": ["[1] additional attacks per turn",
+					"[+50]% Strength <vs [Escort] units>",
+					"[+25]% Strength <vs [Artilery] units>",
+					"May Paradrop to [Exit Portal] tiles up to [14] tiles away",],
+		"attackSound": "shot"
+	},	
+	{
+		"name": "Evasive Darter",
+		"unitType": "Corvette",
+		"movement": 7,
+		"strength": 68,
+		"cost": 178,
+		"requiredResource": "Uranium",
+		"requiredTech": "Evasive Darters",
+		"uniques": ["[1] additional attacks per turn",
+					"[+50]% Strength <vs [Escort] units>",
+					"[+28]% Strength <vs [Artilery] units>",
+					"May Paradrop to [Exit Portal] tiles up to [14] tiles away",],
+		"attackSound": "shot"
+	},	
 	{
 		"name": "Psychic Corvette",
 		"unitType": "Corvette",
@@ -1337,6 +1368,8 @@
 		"cost": 225,
 		"requiredResource": "Silicon",
 		"requiredTech": "Warpable Destroyers",
+		"obsoleteTech": "Torpedo Destroyers",
+		"upgradesTo": "Torpedo Destroyer",
 		"uniques": ["Requires at least [3] population", 
 					"[+25]% Strength <vs cities>", 
 					"[35]% chance to intercept air attacks",
@@ -1345,7 +1378,48 @@
 					"May Paradrop to [Exit Portal] tiles up to [14] tiles away <after discovering [Extended Warp Range]>",
 					],
 		"attackSound": "shot"
-	},	
+	},
+	
+		{
+		"name": "Simple Heavy Torpedo",
+		"unitType": "Heavy Torpedo",
+		"movement": 1,
+		"strength": 20,
+		"rangedStrength": 25,
+		"range": 3,
+		"cost": 80,
+		"requiredTech": "Heavy Space Torpedoes",
+		"uniques": ["[+500]% Strength <vs [Battleship] units>",
+					"[+400]% Strength <vs [Carrier] units>",
+					"[+350]% Strength <vs [Cruiser] units>",
+					"Damage taken from interception reduced by [50]%", 
+					"[-25]% maintenance costs"],
+		"attackSound": "machinegun" //will change
+	},
+	{
+		"name": "Torpedo Destroyer",
+		"unitType": "Destroyer",
+		"movement": 5,
+		"strength": 105,
+		"interceptRange": 1,
+		"cost": 235,
+		"requiredResource": "Silicon",
+		"requiredTech": "Torpedo Destroyers",
+		"uniques": [//Limits
+					"Requires at least [3] population", 
+					//Combat
+					"[+25]% Strength <vs cities>", 
+					"[38]% chance to intercept air attacks",
+					"[+50]% Strength <vs [Smallcraft] units>",
+					//Other
+					"May Paradrop to [Exit Portal] tiles up to [14] tiles away",
+					"Can carry [1] [Torpedo] units",
+					"[1] free [Simple Heavy Torpedo] units appear",
+					],
+		"attackSound": "shot"
+	},		
+	
+	
 	//Smaller faster cheeper Cruisers
 	{
 		"name": "Simple Light cruiser",
@@ -1392,7 +1466,7 @@
 		"requiredTech": "Mass Production Cruisers",
 		"obsoleteTech": "Efficient Production Methodology",
 		"upgradesTo": "Efficient Light Cruiser",
-		"uniques": ["[+25]% Strength <vs cities>", "Consumes [1] [Iron]", "Requires at least [3] population"],
+		"uniques": ["[+25]% Strength <vs cities>", "Consumes [1] [Iron]", "Requires at least [3] population", "Can upgrade to [Elegant Ethelium Plasma Cruiser] <after discovering [Elegant Plasma Cruisers>"],
 		"attackSound": "shot"
 	},
 	{
@@ -1767,12 +1841,54 @@
 		"requiredTech": "Elegant Battleships",
 		"uniques": [
 				//production
-				"Consumes [5] [Iron]", "Requires at least [10] population" , 
+				"Consumes [5] [Iron]", "Requires at least [10] population", "Can upgrade to [Little Dreadnought]"
 				//combat
 				"[+40]% Strength <vs cities>", "[10]% chance to intercept air attacks", "[+20]% Strength <vs [Swarm] units>", "Can move after attacking",],
 		"promotions": ["Basic Active Defence Systems",],
 		"attackSound": "shot"
 	},
+	//Hybrid carrier battleship line
+	{
+		"name": "Simple Battleship-carrier",
+		"unitType": "Battleship-carrier",
+		"movement": 2,
+        "range": 2,
+		"interceptRange": 2,
+		"rangedStrength": 185,
+		"strength": 175,
+		"cost": 520,
+		"requiredTech": "Battleship-carriers",
+		"uniques": [
+					//Carrier capability
+					"Can carry [1] [Smallcraft] units",
+					//production
+					"Consumes [5] [Iron]", "Requires at least [10] population" , 
+					//combat
+					"[+40]% Strength <vs cities>", "[20]% chance to intercept air attacks", "[+20]% Strength <vs [Swarm] units>", "[+20]% Strength <vs [Smallcraft] units>", "Can move after attacking",
+		],
+		"promotions": ["Basic Active Defence Systems"],
+	},
+	//Little Dreadnoughts
+	{ 
+		"name": "Little Dreadnought", //should upgrade it to the actual Dreadnought
+		"unitType": "Battleship",
+		"movement": 2,
+        "range": 2,
+		"interceptRange": 2, //the actual one will have a range of 3
+		"rangedStrength": 240,
+		"strength": 225,
+		"cost": 740,
+		"requiredResource": "Uranium",
+		"requiredTech": "Little Dreadnoughts",
+		"uniques": [
+				//production
+				"Consumes [6] [Iron]", "Requires at least [12] population" , 
+				//combat
+				"[+40]% Strength <vs cities>", "[10]% chance to intercept air attacks", "[+20]% Strength <vs [Swarm] units>",],
+		"promotions": ["Basic Active Defence Systems","Artillery Adjustments I"],
+		"attackSound": "shot"
+	}, 
+	
 	//The First Carrier line
 	{
 		"name": "Primitive Carrier",
@@ -1868,6 +1984,8 @@
 	//	"strength": 40,
 		"cost": 600,
 		"requiredTech": "Drones",
+		"obsoleteTech": "Super Drone Carriers",
+		"upgradesTo": "Super Drone Carrier", 
 		"uniques": [
 					"Cannot attack", "Can carry [1] [Drone] units",
 					//Comes with a swarm built in
@@ -1883,6 +2001,8 @@
 	//	"strength": 40,
 		"cost": 800,
 		"requiredTech": "Large Drone Carriers",
+		"obsoleteTech": "Super Drone Carriers",
+		"upgradesTo": "Super Drone Carrier", 
 		"uniques": [
 					"Cannot attack", "Can carry [3] [Drone] units",
 					//Comes with a swarm built in
@@ -1890,6 +2010,26 @@
 					]
 		"promotions": ["Basic Active Defence Systems"],
 	},
+	{
+		"name": "Super Drone Carrier",
+		"unitType": "Drone Carrier",
+		"movement": 3,
+		"strength": 140,
+	//	"strength": 40,
+		"cost": 1000,
+		"requiredTech": "Super Drone Carriers",
+		"uniques": [
+					"Cannot attack", "Can carry [4] [Drone] units",
+					//Comes with a swarm built in
+					"[4] free [Dronefighter Swarm] units appear",
+					//Warp
+					"May Paradrop to [Exit Portal] tiles up to [12] tiles away <before discovering [Extended Warp Range]>",
+					"May Paradrop to [Exit Portal] tiles up to [14] tiles away <after discovering [Extended Warp Range]>",
+					]
+		"promotions": ["Basic Active Defence Systems"],
+	},
+	
+	
 
 // "Can upgrade to [Standard Double Hangared Carrier]"
 
@@ -1914,6 +2054,28 @@
 
 
 	//Missles rockets and the like
+	
+	//Torpedo
+	
+		{
+		"name": "Simple Heavy Torpedo",
+		"unitType": "Heavy Torpedo",
+		"movement": 1,
+		"strength": 20,
+		"rangedStrength": 25,
+		"range": 3,
+		"cost": 80,
+		"requiredTech": "Heavy Space Torpedoes",
+		"uniques": ["[+500]% Strength <vs [Battleship] units>",
+					"[+400]% Strength <vs [Carrier] units>",
+					"[+350]% Strength <vs [Cruiser] units>",
+					"Damage taken from interception reduced by [50]%", 
+					"[-75]% maintenance costs"],
+		"attackSound": "machinegun" //will change
+	},
+	
+	
+	//IBPM
 	{
 		"name": "Simple Interplanetary Ballistic Missile",
 		"unitType": "IPBM",

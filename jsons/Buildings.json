@@ -92,10 +92,54 @@
 		"cost": 60,
 		"cityStrength": 2,
 		"cityHealth": 20,
-		"Production": 1,
+		"production": 1,
 		"uniques": ["Can only be built <when at war>"],
 		"requiredTech": "Basic Warships",
 	},	
+	{ 
+		"name": "Mechan Factory",
+		"uniqueTo": "Mechan Alliance",
+		"percentStatBonus": {"production": 5},
+		"cost": 400,
+		"production": 4,
+		"maintenance": 2,
+		"uniques": ["[+10]% Production when constructing [All] buildings [in this city]"],
+		"requiredTech": "Iron Recycling",
+	},	
+	{ 
+		"name": "Local Corparate Headqaurters",
+		"uniqueTo": "Stellar Corp",
+		"percentStatBonus": {"gold": 5},
+		"specialistSlots": {"Economist": 3, "Trader": 1, "Merchant": 1, "Mathematician": 1,},
+		"cost": 800,
+		"gold": 6,
+		"production": 2,
+		"requiredTech": "Trade Centers",
+	},	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -273,7 +317,7 @@
 	},
 	{ 
 		"name": "Small Bank",
-		"percentStatBonus": {"Gold": 25},
+		"percentStatBonus": {"gold": 25},
 		"specialistSlots": {"Banker": 2},
 		"gold": 2,
 		"culture": 1,	
@@ -293,7 +337,7 @@
 	{ 
 		"name": "Ecology Lab",
 		"specialistSlots": {"Ecologist": 1, "Scientist": 1},
-		"percentStatBonus": {"Science": 10, "Food": 5,},
+		"percentStatBonus": {"science": 10, "food": 5,},
 		"science": 3,
 		"food": 1,
 		"maintenance": 1,
@@ -308,7 +352,7 @@
 	{ 
 		"name": "Space Telescope",
 		"specialistSlots": {"Astronomer": 2},
-		"percentStatBonus": {"Science": 15},
+		"percentStatBonus": {"science": 15},
 		"science": 3,
 		"production": 1,
 		"maintenance": 1,
@@ -321,7 +365,7 @@
 	{ 
 		"name": "Local Collage",
 		"specialistSlots": {"Scientist": 1, "Economist": 1, "Professor": 1, "Lab Assistent": 1},
-		"percentStatBonus": {"Science": 10, "Culture": 5},
+		"percentStatBonus": {"science": 10, "culture": 5},
 		"science": 3,
 		"culture": 1,
 		"maintenance": 2,
@@ -335,7 +379,7 @@
 	{ 
 		"name": "Engineering Collage",
 		"specialistSlots": {"Professor": 1, "Engineer": 1,"Mathematician": 1,"Architect": 1, "Chemist": 1,},
-		"percentStatBonus": {"Production": 10, "Culture": 5},
+		"percentStatBonus": {"production": 10, "culture": 5},
 		"production": 3,
 		"culture": 1,
 		"maintenance": 2,
@@ -454,7 +498,7 @@
 	},	
 	{ 
 		"name": "Regular Bank",
-		"percentStatBonus": {"Gold": 33},
+		"percentStatBonus": {"gold": 33},
 		"specialistSlots": {"Banker": 3},
 		"gold": 5,
 		"requiredTech": "Trade Centers",
@@ -462,7 +506,7 @@
 	},
 	{ 
 		"name": "Trade Center",
-		"percentStatBonus": {"Gold": 10},
+		"percentStatBonus": {"gold": 10},
 		"specialistSlots": {"Trader": 2, "Merchant": 2, "Economist": 2},
 		"gold": 5,
 		"uniques": [
@@ -517,7 +561,7 @@
 	{ 
 		"name": "International Campus",
 		"specialistSlots": {"Professor": 1, "Lab Assistent": 1},
-		"percentStatBonus": {"Science": 7, "Culture": 7},
+		"percentStatBonus": {"science": 7, "culture": 7},
 		"science": 5,
 		"culture": 2,
 		"happiness":  2,
@@ -549,7 +593,7 @@
 	{ 
 		"name": "Food Lab",
 		"specialistSlots": {"Agronomist": 1, "Ecologist": 1, "Scientist": 1},
-		"percentStatBonus": {"Food": 10, "Science": 5,},
+		"percentStatBonus": {"food": 10, "science": 5,},
 		"cost": 275,
 		"science": 4,
 		"food": 4,
@@ -612,7 +656,7 @@
 	},
 	{ 
 		"name": "Stock Exchange",
-		"percentStatBonus": {"Gold": 10},
+		"percentStatBonus": {"gold": 10},
 		"specialistSlots": {"Economist": 3, "Trader": 1,},
 		"gold": 6,
 		"science": 1,
@@ -621,7 +665,7 @@
 	},	
 	{ 
 		"name": "3D printing factory",
-		"percentStatBonus": {"Production": 15},
+		"percentStatBonus": {"production": 15},
 		"production": 6,
 		"maintenance": 3,
 		"requiredTech": "3D printing factories",
@@ -918,7 +962,8 @@
 		"cityHealth": 60,
 		"faith": 1,
 		"maintenance": 3,
-		"uniques": ["Destroyed when the city is captured"],
+		"uniques": ["Destroyed when the city is captured", 
+					"Provides [1] [Consolidated Psychic Energy] <after discovering [Discovering Consolidated Psychic Energy]>",],
 		"requiredTech": "Psychic Defencive Arrays",
 	},
 	{
@@ -946,7 +991,7 @@
 	{
 		"name": "Cosmic Composter",
 		"specialistSlots": {"Scientist": 1,"Agronomist": 1, "Engineer": 1, "Chemist": 1, "Farmer": 1},	
-		"percentStatBonus": {"Production": 5},
+		"percentStatBonus": {"production": 5},
 		"food": 4,
 		"production": 2,
 		"science": 2,		
@@ -978,10 +1023,58 @@
 		"cityHealth": 120,
 		"faith": 2,
 		"maintenance": 2,
-		"uniques": ["Destroyed when the city is captured"],
+		"uniques": ["Destroyed when the city is captured",
+					"Provides [1] [Consolidated Psychic Energy] <after discovering [Discovering Consolidated Psychic Energy]>",],
 		"requiredTech": "Enhanced Psychic Defencive Arrays",
 		"requiredBuilding": "Psychic Defencive Array",
 	},
+	{ 
+		"name": "Ring Extractor",
+		"production": 4,
+		"gold": 4,	
+		"uniques": [
+					"Must have an owned [Ring] within [3] tiles",
+					"[+2 Production] from [Ring] tiles [in this city]",
+					],
+		"requiredTech": "Ring Architecture",
+	},					
+	{ 
+		"name": "Ring Farms",
+		"food": 4,
+		"gold": 2,
+		"production": 1,
+		"culture": 1,		
+		"uniques": [
+					"Must have an owned [Ring] within [3] tiles",
+					"[+2 Food] from [Ring] tiles [in this city]",
+					],
+		"requiredTech": "Ring Architecture",
+	},					
+	{ //Secret-ish bonus building
+		"name": "Ring Hotel",
+		"specialistSlots": {"Entertainer": 1, "Chef": 1, "Architect": 1},	
+		"happiness": 4,
+		"gold": 4,
+		"culture": 2,		
+		"uniques": ["Must have an owned [Ring] within [3] tiles",],
+		"requiredTech": "Ring Architecture",
+		"requiredBuilding": "Hotel",
+	},			
+	{ 
+		"name": "Barracks",
+		"cost": 433,
+		"cityHealth": 10,
+		"maintenance": 1,	
+		"uniques": [
+					"New [Military] units start with [15] XP [in this city]", 
+					"Destroyed when the city is captured"],
+		"requiredTech": "Wartime Preperations",
+	},		
+					
+					
+					
+					
+					
 					
 					
 					
@@ -1011,7 +1104,7 @@
 	{ 
 		"name": "Plasma Lab",
 		"specialistSlots": {"Scientist": 3, "Lab Assistent": 3},
-		"percentStatBonus": {"Science": 25},
+		"percentStatBonus": {"science": 25},
 		"science": 10,
 		"maintenance": 4,
 		"isNationalWonder": true,
@@ -1024,7 +1117,7 @@
 	},	
 	{ 
 		"name": "National Trade Center",
-		"percentStatBonus": {"Gold": 25},
+		"percentStatBonus": {"gold": 25},
 		"specialistSlots": {"Trader": 4, "Merchant": 3, "Economist": 3},
 		"gold": 10,
 		"happiness": 2,
@@ -1046,7 +1139,7 @@
 	},
 	{ 
 		"name": "National Stock Exchange",
-		"percentStatBonus": {"Gold": 35},
+		"percentStatBonus": {"gold": 35},
 		"specialistSlots": {"Economist": 8, "Trader": 2, "Mathematician": 1,},
 		"gold": 10,
 		"science": 1,
@@ -1088,14 +1181,20 @@
 		"faith": 4,
 		"science": 4,
 		"isNationalWonder": true,
-		"uniques": ["Only available <in cities without a [Psychic worship hall]>", "Only available <when religion is enabled>", "Cost increases by [30] per owned city"],
+		"uniques": ["Only available <in cities without a [Psychic worship hall]>",
+					"Only available <when religion is enabled>", "Cost increases by [30] per owned city",
+					"Provides [1] [Consolidated Psychic Energy] <after discovering [Discovering Consolidated Psychic Energy]>",],
 		"requiredTech": "Psychics arts"
 	},
 	{
 		"name": "Psychic worship hall",
 		"happiness": 8,
 		"isNationalWonder": true,
-		"uniques": ["Only available <in cities without a [Psychic reaserch Center]>", "Only available <when religion is enabled>",  "Cost increases by [30] per owned city" ],
+		"uniques": ["Only available <in cities without a [Psychic reaserch Center]>", 
+					"Only available <when religion is enabled>", 
+					"Cost increases by [30] per owned city",
+					"Provides [1] [Consolidated Psychic Energy] <after discovering [Discovering Consolidated Psychic Energy]>",
+					],
 		"requiredTech": "Psychics arts"
 	},
 	{
@@ -1104,13 +1203,13 @@
 		"culture": 3,
 		"happiness": 2,
 		"isNationalWonder": true,
-		"uniques": ["Cost increases by [30] per owned city" ],
+		"uniques": ["Cost increases by [30] per owned city"],
 		"requiredTech": "Psychic Temple"
 	},
 	{
 		"name": "Superheavy Element Factory",
 		"specialistSlots": {"Scientist": 1, "Engineer": 3},	
-		"percentStatBonus": {"Production": 5},
+		"percentStatBonus": {"production": 5},
 		"production": 8,
 		"science": 3,		
 		"maintenance": 2,
@@ -1285,7 +1384,7 @@
 	},		
 	{ 
 		"name": "Holy Eye Statue",
-		"percentStatBonus": {"Faith": 10},
+		"percentStatBonus": {"faith": 10},
 		"faith": 6,
 		"happiness": 4,
 		"culture": 4,
@@ -1307,6 +1406,18 @@
 					"[+10]% Golden Age length",],
 		"requiredTech": "Culture Centers",
 	},
+	{ 
+		"name": "Logiastrix",
+		"specialistSlots": {"Economist": 2, "Mathematician": 2, "Author": 1, "Architect": 1,},	
+		"percentStatBonus": {"gold": 33},
+		"gold": 6,
+		"happiness": 3,
+		"culture": 2,
+		"isWonder": true,
+		"uniques": ["[Gold] cost of purchasing items in cities [-10]%"],
+		"requiredTech": "The Logiastrix",
+	},	
+	
 	
 
 	

@@ -40,8 +40,11 @@
 		"uniques": [
 			"Star"
 			"Rough terrain",
+			"Must be adjacent to [2] to [6] [Void] tiles",
 			"Becomes [Barren Planet] when adjacent to [Red Dwarf]",
+			"Becomes [Barren Planet] when adjacent to [Orange Dwarf]",
 			"A Region is formed with at least [10]% [Red Dwarf] tiles and [Lush Planet] tiles, with priority [3]",
+			"A Region is formed with at least [10]% [Red Dwarf] tiles and [Orange Dwarf] tiles, with priority [3]",
             "Has an elevation of [3] for visibility calculations",
 			"Blocks line-of-sight from tiles at same elevation",
             "Occurs in chains at high elevations",
@@ -49,6 +52,32 @@
             "Always Fertility [10] for Map Generation",
 			"Considered [Desirable] when determining start locations"]
 	},
+	{
+		"name": "Orange Dwarf",
+		"type": "Land",
+		"impassable": true,
+		"defenceBonus": 0.25,
+		"production": 2,
+		"RGB": [200, 33, 33],
+		"uniques": [
+			"Star"
+			"Rough terrain",
+			"Must be adjacent to [2] to [6] [Void] tiles",
+			"Becomes [Barren Planet] when adjacent to [Orange Dwarf]",
+			"A Region is formed with at least [10]% [Orange Dwarf] tiles and [Frost Giant] tiles, with priority [2]",
+	        "A Region can not contain more [Orange Dwarf] tiles than [Red Dwarf] tiles",
+            "Has an elevation of [3] for visibility calculations",
+			"Blocks line-of-sight from tiles at same elevation",
+            "Occurs in chains at high elevations",
+            "Units ending their turn on this terrain take [100] damage",
+            "Always Fertility [10] for Map Generation",
+			"Considered [Desirable] when determining start locations"]
+	},
+	
+	
+	
+	
+	
 	
 	
 	//Planets
@@ -331,18 +360,16 @@
     }
 	{
 		"name": "Frost Giant",
-		"type": "TerrainFeature",
+		"type": "Land",
+		"impassable": true,
 		"production": 1,
 		"culture": 1,
-		"overrideStats": true,
-		"unbuildable": true,
-		"impassable": true,
-		"occursOn": ["Gas Giant"],
+        "RGB": [120, 179, 248],
 		"uniques": [
 			"Gas Giants"
 			"Planet"	
-			"Rough terrain",		
-			"Rare feature",
+			"Rough terrain",
+			"Occurs in chains at high elevations",			
 			"Units ending their turn on this terrain take [15] damage",
 			"Has an elevation of [2] for visibility calculations",
 			"Blocks line-of-sight from tiles at same elevation",
@@ -352,7 +379,25 @@
 			"Considered [Production] when determining start locations",	
 		]
 	},
-
+	{
+		"name": "Ring",
+		"type": "TerrainFeature",
+		"production": 3,
+		"science": 1,
+		"defenceBonus": 2, //massive defence bonus
+		"unbuildable": true,
+		"impassable": true,
+		"occursOn": ["Gas Giant", "Frost Giant"],
+		"uniques": [
+			"Ring"
+			"Rough terrain",		
+			"Rare feature",
+			"[+3] Strength for cities built on this terrain"
+			"[+10] to Fertility for Map Generation",
+			"Considered [Desirable] when determining start locations",
+			"Considered [Production] when determining start locations",	
+		]
+	},
 
 
 
@@ -603,7 +648,7 @@
 	
 	
 	
-	
+	//Tile provides yield without assigned population
 	
 	
 	
@@ -620,15 +665,43 @@
 		"happiness": -4,
 		"overrideStats": true,
 		"occursOn": ["Red Dwarf"],
-		"occursOn": ["Red Dwarf"],
 		"turnsInto": "Red Dwarf",
 		"impassable": true,
 		"unbuildable": true,
 		"uniques": ["Must be adjacent to [0] [Star] tiles",
 			//"Must be adjacent to [1] to [6] [???] tiles",
 			"Horror"
+			"Star"
 			"Considered [Undesirable] when determining start locations"
 			"Grants [+500 Science] to the first civilization to discover it"],
 		"weight": 1
 	},
+	{
+		"name": "Trapist One",
+		"type": "NaturalWonder",
+		"production": 2,
+		"science": 2,
+		"happiness": 2,
+		"overrideStats": true,
+		"occursOn": ["Red Dwarf"],
+		"turnsInto": "Red Dwarf",
+		"impassable": true,
+		"unbuildable": true,
+		"uniques": ["Must be adjacent to [0] [Star] tiles",
+					"[+10] to Fertility for Map Generation",
+		//"Must be adjacent to [6] [Planet] tiles",
+		//	"Must be adjacent to [1] to [3] [Barren Planet] tiles",
+		//	"Must be adjacent to [1] to [2] [Frost] tiles",
+		//	"Must be adjacent to [0] to [1] [Water-World] tiles",
+		//	"Must be adjacent to [0] to [1] [Islands] tiles",
+		//	"Must be adjacent to [0] to [1] [Earth-Like] tiles",
+		//	"Must be adjacent to [0] to [3] [Asteroid Field] tiles",
+		//"Must be adjacent to [0] [Gas Giants] tiles",
+			"Must be adjacent to [1] to [6] [Barren Planet] tiles",
+			"Tile provides yield without assigned population",
+			"Considered [Desirable] when determining start locations",
+			"Grants [+120 Science] to the first civilization to discover it",],
+		"weight": 2
+	},	
+
 ]

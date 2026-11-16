@@ -1642,7 +1642,99 @@
 			},
 		] 
 	},	
+	{
+		"columnNumber": 31,
+		"era": "Late Post-Shift Era",
+		"techCost": 2400,
+		"buildingCost": 500,
+		"wonderCost": 1010,
+		"techs": [
 
+			{
+				"name": "Psychic Research",
+				"row": 2,
+				"prerequisites": ["Religious Podcasts","Enhanced Psychic Defencive Arrays","Culture Centers"],				
+	            "uniques": ["[+5 Science] [in all cities]", "Only available <if [Psychic worship hall] is constructed>", "Only available <if [Psychic reaserch Center] is constructed>"],		
+				"quote": "'Lets look more deeply into it all... what lies behind the veil of mystery?' - Holy One & Holy Two"
+			},
+			{
+				"name": "Wartime Preperations",
+				"row": 3,
+				"prerequisites": ["Culture Centers"],					
+				"quote": "'War, what can be said?' - Philosopher"
+			},
+			{
+				"name": "Ring Architecture",
+				"row": 4,
+				"prerequisites": ["Secondary particle accelerators"],
+				"quote": "'Those Gas Giants have rings full of useful material and great realastate. Its time we start to use it.' - Engineer"
+			},
+			{
+				"name": "Battleship-carriers",
+				"row": 5,
+				"prerequisites": ["Cosmic Composters",],
+				"quote": "'A battleship? A carrier? COMBINE!!!' - Space Bozo"
+			},
+			{
+				"name": "NTP Engines",
+				"row": 6,
+				"prerequisites": ["Extended Warp Range",],
+				"quote": "'Using nuclear power to race across the stars at greater speeds than ever before!' - Spaceman"
+			},
+			{
+				"name": "Super Drone Carriers",
+				"row": 7,
+				"prerequisites": ["Warpable Destroyers"],
+				"quote": "'Let them fear the drone carrier that can warp behind enemy lines!' - Spymaster"
+			},
+			{
+				"name": "Heavy Space Torpedoes",
+				"row": 8,
+				"prerequisites": ["Gasinators", "Discovering Green Spice"],
+				"quote": "'Heavy Torpedoes are an effective counter to heavier Warships!' - Spaceman"
+			},
+		] 
+	},
+	{
+		"columnNumber": 32,
+		"era": "Late Post-Shift Era",
+		"techCost": 2400,
+		"buildingCost": 520,
+		"wonderCost": 1040,
+		"techs": [
+
+			{
+				"name": "Discovering Consolidated Psychic Energy",
+				"row": 3,
+				"prerequisites": ["Psychic Research", "Wartime Preperations"],					
+				"quote": "'Imagine our surpise when we discovered we can consolidate psycic energy into a stable yet hyperenergetic state we could store to use it elsewhere? The uses for such a thing are infinite!' - Psychic Reaserher"
+			},
+			{
+				"name": "The Logiastrix",
+				"row": 4,
+				"prerequisites": ["Ring Architecture"],
+				"quote": "'Those Gas Giants have rings full of useful material and great realastate. Its time we start to use it.' - Engineer"
+			},
+			{
+				"name": "Little Dreadnoughts",
+				"row": 5,
+				"prerequisites": ["Battleship-carriers","NTP Engines",],
+				"quote": "'A battleship but bigger!' - Spaceman"
+			},
+			{
+				"name": "Evasive Darters",
+				"row": 6,
+				"prerequisites": ["NTP Engines",],
+				"quote": "'Why not make it even harder to hit and increase its firepower too?' - Spaceman"
+			},
+			{
+				"name": "Torpedo Destroyers",
+				"row": 7,
+				"prerequisites": ["NTP Engines","Super Drone Carriers", "Heavy Space Torpedoes",],
+				"quote": "'Giving the smaller vessels a fighting chance against the titans!' - Spaceman"
+			},
+		] 
+	},
 	
 ]
 
