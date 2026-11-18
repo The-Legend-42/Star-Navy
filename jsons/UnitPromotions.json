@@ -81,7 +81,23 @@
         "row": 5
 	},
 	
-	
+	//Suport Ships and maybe Carriers
+	{
+		"name": "Expanded Radar I",
+		"prerequisites": ["Experienced Repair Crew I","Carrier Plating I",],
+		"uniques": ["[+1] Sight"],
+		"unitTypes": ["Support Ship","Standard Carrier", "Drone Carrier"],
+        "column": 8,
+        "row": 2
+    },	
+	{
+		"name": "Expanded Radar II",
+		"prerequisites": ["Expanded Radar I"],
+		"uniques": ["[+1] Sight"],
+		"unitTypes": ["Support Ship","Standard Carrier", "Drone Carrier"],
+        "column": 8,
+        "row": 3
+    },	
 
 
 	//Destroyers + Larger Warships + Artillery
@@ -89,8 +105,8 @@
 	{
 		"name": "Anti City", //Destructive Fire
 		"uniques": ["[+50]% Strength <vs cities>"],
-		"unitTypes": ["Destroyer","Light cruiser", "Cruiser", "Battle Cruiser", "Battleship", "Battleship-carrier", "Space Artillery", "Space Laser","Plasma Launcher",],
-        "column": 20,
+		"unitTypes": ["Destroyer","Light cruiser", "Cruiser", "Heavy Cruiser", "Battle Cruiser", "Battleship", "Battleship-carrier", "Space Artillery", "Space Laser","Plasma Launcher",],
+        "column": 20, 
         "row": 1
     },	
 	*/
@@ -133,7 +149,7 @@
 	{
 		"name": "Thick Plating I",
 		"uniques": ["[+25]% Strength <when defending>"],
-		"unitTypes": ["Light cruiser", "Cruiser", "Battle Cruiser", "Battleship", "Battleship-carrier",],
+		"unitTypes": ["Light cruiser", "Cruiser", "Heavy Cruiser", "Battle Cruiser", "Battleship", "Battleship-carrier", "Dreadnought",],
         "column": 3,
         "row": 1
     },
@@ -141,7 +157,7 @@
 		"name": "Thick Plating II",
 		"prerequisites": ["Carrier Plating I", "Thick Plating I",],
 		"uniques": ["[+25]% Strength <when defending>"],
-		"unitTypes": ["Light cruiser", "Cruiser", "Battle Cruiser", "Battleship", "Battleship-carrier",],
+		"unitTypes": ["Light cruiser", "Cruiser", "Heavy Cruiser", "Battle Cruiser", "Battleship", "Battleship-carrier", "Dreadnought",],
         "column": 3,
         "row": 2
     },
@@ -149,7 +165,7 @@
 		"name": "Thick Plating III",
 		"prerequisites": ["Carrier Plating II", "Thick Plating II",],
 		"uniques": ["[+25]% Strength <when defending>"],
-		"unitTypes": ["Light cruiser", "Cruiser", "Battle Cruiser", "Battleship", "Battleship-carrier",],
+		"unitTypes": ["Light cruiser", "Cruiser", "Heavy Cruiser", "Battle Cruiser", "Battleship", "Battleship-carrier", "Dreadnought",],
         "column": 3,
         "row": 3
     },		
@@ -267,7 +283,7 @@
 	{
 		"name": "Artillery Adjustments I",
 		"uniques": ["[+25]% Strength <when attacking>"],
-		"unitTypes": ["Space Artillery","Space Laser","Plasma Launcher",],
+		"unitTypes": ["Space Artillery","Space Laser","Plasma Launcher", "Dreadnought",],
         "column": 5,
         "row": 1
     },
@@ -275,7 +291,7 @@
 		"name": "Artillery Adjustments II",
 		"prerequisites": ["Artillery Adjustments I"],
 		"uniques": ["[+25]% Strength <when attacking>"],
-		"unitTypes": ["Space Artillery","Space Laser","Plasma Launcher"],
+		"unitTypes": ["Space Artillery","Space Laser","Plasma Launcher", "Dreadnought",],
         "column": 5,
         "row": 2
     },
@@ -283,7 +299,7 @@
 		"name": "Artillery Adjustments III",
 		"prerequisites": ["Artillery Adjustments II"],
 		"uniques": ["[+25]% Strength <when attacking>"],
-		"unitTypes": ["Space Artillery","Space Laser","Plasma Launcher"],
+		"unitTypes": ["Space Artillery","Space Laser","Plasma Launcher", "Dreadnought",],
         "column": 5,
         "row": 3
     },

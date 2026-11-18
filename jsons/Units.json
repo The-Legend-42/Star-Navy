@@ -1093,8 +1093,9 @@
 		"movement": 6,
 		"strength": 70,
 		"cost": 250,
-	//	"requiredResource": "Silicon",
 		"requiredTech": "Psychic warships",
+		"obsoleteTech": "Psychic Utilization",
+		"upgradesTo": "Psychic Destroyer",
 		"uniques": ["[+3] Sight",
 					"Can move after attacking", 
 					"[+20]% to Flank Attack bonuses", 
@@ -1106,7 +1107,7 @@
 		"promotions": [///"Psychic", still unimplemented yet
 						],		
 		"attackSound": "shot",
-	},	
+	},
 	//Frigs
 	{
 		"name": "Simple Frigate",
@@ -1163,6 +1164,8 @@
 		"cost": 320,
 	//	"requiredResource": "Silicon",
 		"requiredTech": "Psychic Frigates",
+		"obsoleteTech": "Psychic Utilization",
+		"upgradesTo": "Psychic Destroyer",
 		"uniques": ["[+3] Sight",
 					"Can move after attacking", 
 					"[+25]% to Flank Attack bonuses", 
@@ -1237,6 +1240,22 @@
 		"attackSound": "shot"
 	},
 	{
+		"name": "Ermmer Iron Head",
+		"unitType": "Destroyer",
+        "replaces": "Solar Hardned Iron Head",
+		"uniqueTo": "Ermmer Tribes",
+		"movement": 3,
+		"strength": 20,
+		"cost": 120,
+		"requiredResource": "Iron",
+		"requiredTech": "Solar Hardned Iron",
+		"obsoleteTech": "Super Iron Heads",
+		"upgradesTo": "Super Iron Head",
+		"uniques": ["[+52]% Strength <vs cities>", "Requires at least [2] population"], 
+		"promotions": ["Harasser"],		
+		"attackSound": "shot"
+	},
+	{
 		"name": "Super Iron Head",
 		"unitType": "Destroyer",
 		"movement": 3,
@@ -1275,6 +1294,21 @@
 		"attackSound": "shot"
 	},
 	{
+		"name": "Ermmer Macer",
+		"unitType": "Destroyer",
+        "replaces": "Mobile Macer",
+		"uniqueTo": "Ermmer Tribes",
+		"movement": 4,
+		"strength": 43,
+		"cost": 185,
+		"requiredTech": "Lightweight Engines",
+		"obsoleteTech": "Verticy Speed Systems",
+		"upgradesTo": "Bludgeoner",
+		"uniques": ["[+45]% Strength <vs cities>", "Requires at least [2] population"],
+		"promotions": ["Harasser"],		
+		"attackSound": "shot"
+	},
+	{
 		"name": "Bludgeoner",
 		"unitType": "Destroyer",
 		"movement": 4,
@@ -1287,6 +1321,36 @@
 		"attackSound": "shot"
 	},
 	{
+		"name": "Syndicate Class Destroyer",
+		"unitType": "Destroyer",
+        "replaces": "Bludgeoner",
+		"uniqueTo": "Crime Lords of Bazzik",
+		"movement": 5,
+		"strength": 45,
+		"cost": 185,
+		"requiredTech": "Verticy Speed Systems",
+		"obsoleteTech": "Efficient Production Methodology",
+		"upgradesTo": "Efficient Bludgeoner",
+		"uniques": ["[1] additional attacks per turn", "Requires at least [2] population"],
+		"promotions": ["Expanded Radar I"],		
+		"attackSound": "shot"
+	},
+	{
+		"name": "Union Defender I",
+		"unitType": "Destroyer",
+        "replaces": "Bludgeoner",
+		"uniqueTo": "Galactic Union",
+		"movement": 4,
+		"strength": 60,
+		"cost": 195,
+		"requiredTech": "Verticy Speed Systems",
+		"obsoleteTech": "Efficient Production Methodology",
+		"upgradesTo": "Efficient Bludgeoner",
+		"uniques": ["[+45]% Strength <vs cities>", "Requires at least [2] population"],
+		"promotions": ["Thick Plating I"],		
+		"attackSound": "shot"
+	},
+	{
 		"name": "Efficient Bludgeoner",
 		"unitType": "Destroyer",
 		"movement": 4,
@@ -1296,6 +1360,21 @@
 		"obsoleteTech": "Carrier Era Warships",
 		"upgradesTo": "Super Bludgeoner",
 		"uniques": ["[+45]% Strength <vs cities>", "Requires at least [2] population"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Union Defender II",
+		"unitType": "Destroyer",
+        "replaces": "Efficient Bludgeoner",
+		"uniqueTo": "Galactic Union",
+		"movement": 4,
+		"strength": 65,
+		"cost": 170,
+		"requiredTech": "Efficient Production Methodology",
+		"obsoleteTech": "Carrier Era Warships",
+		"upgradesTo": "Super Bludgeoner",
+		"uniques": ["[+45]% Strength <vs cities>", "Requires at least [2] population"],
+		"promotions": ["Thick Plating I"],		
 		"attackSound": "shot"
 	},
 	// New Line
@@ -1417,9 +1496,28 @@
 					"[1] free [Simple Heavy Torpedo] units appear",
 					],
 		"attackSound": "shot"
-	},		
-	
-	
+	},
+	{
+		"name": "Psychic Destroyer",
+		"unitType": "Destroyer",
+		"movement": 5,
+		"strength": 140,
+		"cost": 450,
+		"requiredTech": "Psychic Utilization",
+		"uniques": ["[+3] Sight",
+					"Can move after attacking", 
+					"[1] additional attacks per turn",
+					"[+25]% to Flank Attack bonuses", 
+					"[+10]% Strength <vs [Artillery] units> <when attacking>",
+					//How to get
+					"Unbuildable","Can be purchased for [0] [Faith] [in all cities]" //Stopgap solution
+								  "Costs [500] [Consolidated Psychic Energy]"					
+					//what it is
+					"Psychic Unit"],
+		"promotions": [///"Psychic", still unimplemented yet
+						],		
+		"attackSound": "shot",
+	},	
 	//Smaller faster cheeper Cruisers
 	{
 		"name": "Simple Light cruiser",
@@ -1839,11 +1937,33 @@
 		"strength": 180,
 		"cost": 500,
 		"requiredTech": "Elegant Battleships",
+		"obsoleteTech": "Warpable Battleships",
+		"upgradesTo": "Warpable Battleship",
 		"uniques": [
 				//production
 				"Consumes [5] [Iron]", "Requires at least [10] population", "Can upgrade to [Little Dreadnought]"
 				//combat
 				"[+40]% Strength <vs cities>", "[10]% chance to intercept air attacks", "[+20]% Strength <vs [Swarm] units>", "Can move after attacking",],
+		"promotions": ["Basic Active Defence Systems",],
+		"attackSound": "shot"
+	},
+	{ 
+		"name": "Warpable Battleship",
+		"unitType": "Battleship",
+		"movement": 2,
+        "range": 2,
+		"interceptRange": 2,
+		"rangedStrength": 225,
+		"strength": 195,
+		"cost": 515,
+		"requiredTech": "Warpable Battleships",
+		"uniques": [
+				//production
+				"Consumes [5] [Iron]", "Requires at least [10] population",
+				//combat
+				"[+40]% Strength <vs cities>", "[10]% chance to intercept air attacks", "[+20]% Strength <vs [Swarm] units>", "Can move after attacking",
+				//Warpable
+				"May Paradrop to [Exit Portal] tiles up to [6] tiles away",],
 		"promotions": ["Basic Active Defence Systems",],
 		"attackSound": "shot"
 	},
@@ -1862,13 +1982,14 @@
 					//Carrier capability
 					"Can carry [1] [Smallcraft] units",
 					//production
-					"Consumes [5] [Iron]", "Requires at least [10] population" , 
+					"Consumes [5] [Iron]", "Requires at least [10] population", 
 					//combat
 					"[+40]% Strength <vs cities>", "[20]% chance to intercept air attacks", "[+20]% Strength <vs [Swarm] units>", "[+20]% Strength <vs [Smallcraft] units>", "Can move after attacking",
 		],
 		"promotions": ["Basic Active Defence Systems"],
 	},
-	//Little Dreadnoughts
+	//Little Dreadnoughts (battleships but bigger)
+	//new line
 	{ 
 		"name": "Little Dreadnought", //should upgrade it to the actual Dreadnought
 		"unitType": "Battleship",
@@ -1882,9 +2003,31 @@
 		"requiredTech": "Little Dreadnoughts",
 		"uniques": [
 				//production
-				"Consumes [6] [Iron]", "Requires at least [12] population" , 
+				"Consumes [6] [Iron]", "Requires at least [12] population", "Can upgrade to [Simple Dreadnought]"
 				//combat
 				"[+40]% Strength <vs cities>", "[10]% chance to intercept air attacks", "[+20]% Strength <vs [Swarm] units>",],
+		"promotions": ["Basic Active Defence Systems","Artillery Adjustments I"],
+		"attackSound": "shot"
+	}, 
+	//Dreadnoughts
+	//new line
+	{ 
+		"name": "Simple Dreadnought",
+		"unitType": "Dreadnought",
+		"movement": 2,
+        "range": 3,
+		"interceptRange": 2,
+		"rangedStrength": 260,
+		"strength": 250,
+	//	"cost": 1200,
+		"cost": 1000,
+		"requiredResource": "Ethelium",
+		"requiredTech": "True Dreadnoughts",
+		"uniques": [
+				//production
+				"Consumes [7] [Iron]", "Requires at least [15] population" , 
+				//combat
+				"[+40]% Strength <vs cities>", "[12]% chance to intercept air attacks", "[+15]% Strength <vs [Swarm] units>",],
 		"promotions": ["Basic Active Defence Systems","Artillery Adjustments I"],
 		"attackSound": "shot"
 	}, 
@@ -1902,6 +2045,22 @@
 		"obsoleteTech": "Military Shift",
 		"uniques": ["Cannot attack", "Can carry [1] [Smallcraft] units"]
 		"promotions": ["Basic Active Defence Systems"],
+	},
+	{
+		"name": "Railgun Carrier",
+		"unitType": "Battleship-carrier", //not really a Standard Carrier but also not truely a Battleship-carrier, will likely be changed in the future
+        "replaces": "Primitive Carrier",
+		"uniqueTo": "Human Empire",
+		"movement": 2,
+		"strength": 55,
+        "range": 2,
+		"rangedStrength": 60,
+		"cost": 480,
+		"requiredTech": "Carriers",
+		"upgradesTo": "Simple Battleship-carrier",
+		"obsoleteTech": "Battleship-carriers",
+		"uniques": ["Can upgrade to [Post-Shift Double Hangared Carrier]", "Can carry [1] [Smallcraft] units"]
+		"promotions": ["Basic Active Defence Systems","Additional Hangar I"],
 	},
 	{
 		"name": "Early Carrier",
@@ -2163,53 +2322,109 @@
 	 //		
 
 	{
-		"name": "Primitive Quasaric Railgun",
+		"name": "Primitive Quasaric Railgun-U",
 		"unitType": "Space Artillery",
-	//	"uniqueTo": "Quasar Union",
+		"uniqueTo": "Quasar Union",
 		"movement": 1,
 		"strength": 3,
         "range": 3,
 		"rangedStrength": 10,
 		"cost": 30,
-	//	"techRequired": "Basic Warships",
-	//	"obsoleteTech": "Vector Artillery",
-		"upgradesTo": "Early Quasaric Railgun",
+		"techRequired": "Basic Warships",
+		"obsoleteTech": "Vector Artillery",
+		"upgradesTo": "Early Quasaric Railgun-U",
 		"uniques": [
-					"Only available to civs with unique [Quasar Culture]",
+				//	"Only available to civs with unique [Quasar Culture]", //unfortunatley this doesnt seem to work
 					"Only available <after discovering [Basic Warships]> <before discovering [Vector Artillery]>",
 					],
 		"attackSound": "shot"
 	},
 	{
-		"name": "Early Quasaric Railgun",
+		"name": "Primitive Quasaric Railgun-C",
 		"unitType": "Space Artillery",
+		"uniqueTo": "Quasar Coalition",
+		"movement": 1,
+		"strength": 3,
+        "range": 3,
+		"rangedStrength": 10,
+		"cost": 30,
+		"techRequired": "Basic Warships",
+		"obsoleteTech": "Vector Artillery",
+		"upgradesTo": "Early Quasaric Railgun-C",
+		"uniques": [
+				//	"Only available to civs with unique [Quasar Culture]", //unfortunatley this doesnt seem to work
+					"Only available <after discovering [Basic Warships]> <before discovering [Vector Artillery]>",
+					],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Early Quasaric Railgun-U",
+		"unitType": "Space Artillery",
+		"uniqueTo": "Quasar Union",
 		"movement": 1,
 		"strength": 6,
         "range": 4,
 		"rangedStrength": 40,
 		"cost": 100,
-	//	"techRequired": "Vector Artillery",
-	//	"obsoleteTech": "Mega Railguns",
-		"upgradesTo": "Quasaric Railgun",
+		"techRequired": "Vector Artillery",
+		"obsoleteTech": "Mega Railguns",
+		"upgradesTo": "Quasaric Railgun-U",
 		"uniques": [
-					"Only available to civs with unique [Quasar Culture]",
+				//	"Only available to civs with unique [Quasar Culture]", //unfortunatley this doesnt seem to work
 					"Only available <after discovering [Vector Artillery]> <before discovering [Mega Railguns]>",
 					],
 		"attackSound": "shot"
 	},
 	{
-		"name": "Quasaric Railgun",
+		"name": "Early Quasaric Railgun-C",
 		"unitType": "Space Artillery",
+		"uniqueTo": "Quasar Coalition",
+		"movement": 1,
+		"strength": 6,
+        "range": 4,
+		"rangedStrength": 40,
+		"cost": 100,
+		"techRequired": "Vector Artillery",
+		"obsoleteTech": "Mega Railguns",
+		"upgradesTo": "Quasaric Railgun-C",
+		"uniques": [
+				//	"Only available to civs with unique [Quasar Culture]", //unfortunatley this doesnt seem to work
+					"Only available <after discovering [Vector Artillery]> <before discovering [Mega Railguns]>",
+					],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Quasaric Railgun-U",
+		"unitType": "Space Artillery",
+		"uniqueTo": "Quasar Union",
 		"movement": 1,
 		"strength": 10,
         "range": 5,
 		"rangedStrength": 100,
 		"cost": 100,
 		"techRequired": "Mega Railguns",
-	//	"obsoleteTech": "Gunnary & Plasma", //Temporary
-	//	"upgradesTo": "Plasma Slinger",	//Temporary
+		"obsoleteTech": "Gunnary & Plasma", //Temporary
+		"upgradesTo": "Plasma Slinger",	//Temporary
 		"uniques": [
-					"Only available to civs with unique [Quasar Culture]",
+				//	"Only available to civs with unique [Quasar Culture]", //unfortunatley this doesnt seem to work
+					"Only available <after discovering [Mega Railguns]> <before discovering [Gunnary & Plasma]>",
+					]   
+		"attackSound": "shot"
+	}, 
+	{
+		"name": "Quasaric Railgun-C",
+		"unitType": "Space Artillery",
+		"uniqueTo": "Quasar Coalition",
+		"movement": 1,
+		"strength": 10,
+        "range": 5,
+		"rangedStrength": 100,
+		"cost": 100,
+		"techRequired": "Mega Railguns",
+		"obsoleteTech": "Gunnary & Plasma", //Temporary
+		"upgradesTo": "Plasma Slinger",	//Temporary
+		"uniques": [
+				//	"Only available to civs with unique [Quasar Culture]", //unfortunatley this doesnt seem to work
 					"Only available <after discovering [Mega Railguns]> <before discovering [Gunnary & Plasma]>",
 					]   
 		"attackSound": "shot"

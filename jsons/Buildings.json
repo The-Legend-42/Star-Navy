@@ -115,14 +115,14 @@
 		"gold": 6,
 		"production": 2,
 		"requiredTech": "Trade Centers",
+	},
+	{ 
+		"name": "Gambleing Hub",
+		"uniqueTo": "Crime Lords of Bazzik",
+		"gold": 2,
+		"uniques": ["[+1 Gold] [in this city] <after discovering [Luxary Market]>"],
+		"requiredTech": "Tournaments",
 	},	
-
-
-
-
-
-
-
 
 
 
@@ -1069,11 +1069,30 @@
 					"New [Military] units start with [15] XP [in this city]", 
 					"Destroyed when the city is captured"],
 		"requiredTech": "Wartime Preperations",
-	},		
-					
-					
-					
-					
+	},							
+	{ 
+		"name": "Multifarm",
+		"specialistSlots": {"Farmer": 8, "Agronomist": 2, "Ecologist": 2},
+		"cost": 600,
+		"food": 6,		
+		"gold": 2,
+		"production": 1,
+		"science": 1,
+		"requiredResource": "Compost", //Consumes a Luxary
+		"requiredTech": "Multifarms",
+		"requiredBuilding": "Super Farm",
+	},					
+	{
+		"name": "Psychic Consolidation Center",
+		"specialistSlots": {"Psychic Consolidator": 1,},	
+		"science": 2,
+		"production": 2,
+		"uniques": [
+			//		"Provides [1] [Consolidated Psychic Energy]" //this will only be triggerd if Psychic Consolidator's turn out unable to generate 1 each themselves...
+							]	
+		"requiredBuilding": "Psychic Defencive Array",
+		"requiredTech": "Psychic Utilization",
+	},					
 					
 					
 					
@@ -1222,7 +1241,7 @@
 		"requiredTech": "Industrial particle accelerators",
 	},	
 	{
-		"name": "National Culture Center ",
+		"name": "National Culture Center",
 		"specialistSlots": {"Artist": 3, "Muscitian": 2, "Author": 2, "Writer": 1, "Celebrity": 1, "Entertainer": 1, "Movie Star": 1, "Comedian": 1,},	
 		"percentStatBonus": {"culture": 33},
 		"culture": 7,
@@ -1231,14 +1250,18 @@
 		"isNationalWonder": true,
 		"requiredTech": "Culture Centers",
 	},	
-
-
-
-
-
-
-
-
+	{
+		"name": "National Psychic Consolidation Center",
+		"specialistSlots": {"Psychic Consolidator": 3,},	
+		"science": 8,
+		"production": 2,
+		"isNationalWonder": true,
+		"uniques": [
+						"Gain a free [Psychic Consolidation Center] [in this city]"
+			//		"Provides [3] [Consolidated Psychic Energy]" //this will only be triggerd if Psychic Consolidator's turn out unable to generate 1 each themselves...
+							]	
+		"requiredTech": "Psychic Utilization",
+	},
 
 
 
@@ -1417,8 +1440,31 @@
 		"uniques": ["[Gold] cost of purchasing items in cities [-10]%"],
 		"requiredTech": "The Logiastrix",
 	},	
-	
-	
+	{
+		"name": "Athleton",
+		"specialistSlots": {"Athlete": 6},	
+		"percentStatBonus": {"happiness": 5},
+		"happiness": 10,
+		"culture": 6,
+		"isWonder": true,
+		"uniques": [		//population based boosts
+							"[+1 Happiness] per [10] population [in this city]",
+							"[+3 Culture] per [25] population [in this city]",
+							"[+10 Gold] per [50] population [in this city]",
+							//Other boosts
+							"Free Social Policy",
+							"Empire enters golden age",
+							"[+1] population in a random city",
+							//Restrictions
+		"Requires at least [50 population", "Triggers a global alert upon completion", "Cannot be hurried"],
+		"requiredTech": "The Athleton",
+	},	
+
+
+
+
+
+
 
 	
 	

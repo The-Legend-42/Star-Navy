@@ -1735,6 +1735,46 @@
 			},
 		] 
 	},
+	{
+		"columnNumber": 33,
+		"era": "Late Post-Shift Era",
+		"techCost": 2400,
+		"buildingCost": 525,
+		"wonderCost": 1050,
+		"techs": [
+
+			{
+				"name": "Psychic Utilization",
+				"row": 3,
+				"prerequisites": ["Discovering Consolidated Psychic Energy"],					
+				"quote": "'Ends up faith is tied to Psychic energy, we suspect it is a type of Psychic energy. Thanks to these conections we've managed to derive better methods to produce it and to utlize it.' - Psychic Reaserher"
+			},
+			{
+				"name": "True Dreadnoughts",
+				"row": 4,
+				"prerequisites": ["The Logiastrix","Little Dreadnoughts"],
+				"quote": "'Do you know the distruction one of these can unleash? No? ... Would you like to see?' - Spymaster"
+			},
+			{
+				"name": "Multifarms",
+				"row": 5,
+				"prerequisites": ["Little Dreadnoughts",],
+				"quote": "'Farm farm farm like you neva have!!' - Space Bozo"
+			},
+			{
+				"name": "Warpable Battleships",
+				"row": 6,
+				"prerequisites": ["Little Dreadnoughts","Evasive Darters",],
+				"quote": "'Do you know how hard it is to get something so massive to warp and safely without getting everyone killed? So what if it can barely warp!? Be happy it can!' - Engineer"
+			},
+			{
+				"name": "The Athleton",
+				"row": 7,
+				"prerequisites": ["Torpedo Destroyers",],
+				"quote": "'Giving the smaller vessels a fighting chance against the titans!' - Spaceman"
+			},
+		] 
+	},
 	
 ]
 

@@ -165,7 +165,16 @@
 					],
         "movementType": "Land"
     },
-	
+	{
+        "name": "Dreadnought",
+		"uniques": [
+					"Warship", "Dreadnoughts", "Military",
+					"[+25]% Strength <vs [Escort] units> <when attacking>",			
+					"[+25]% Strength <vs [Cruisers] units> <when attacking>",
+					"[+10]% Strength <vs [Battleships] units> <when attacking>",
+					],
+        "movementType": "Land"
+    },	
 	
 	
 	//Artillery

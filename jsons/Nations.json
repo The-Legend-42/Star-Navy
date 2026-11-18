@@ -347,7 +347,7 @@
 		"name": "Ermmer Tribes",
 		"adjective": ["Ermmerish"],			
 		"leaderName": "Hakkutah of War",
-		"preferredVictoryType": "Domination", //Will definetly be changed
+		"preferredVictoryType": "Domination",
 		
 		"startIntroPart1": "Sample text.",
 		"startIntroPart2": "Sample text.",
