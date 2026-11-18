@@ -11,6 +11,9 @@ Units:
 [Colony Ship] https://www.flaticon.com/free-icon/apolo-project_96667
 [Planetary Colony Ship] https://www.flaticon.com/free-icon/apolo-project_96667
 
+Promotions:
+[Expanded Radar] https://www.flaticon.com/free-icon/radar_8279917?related_id=8257496&origin=search
+
 Religions:
 [God Emperor] Edited version of https://www.magnific.com/icon/eagle_4600694#fromView=search&page=2&position=6&uuid=648ab6e0-af7a-4368-92f5-66da8d48e537
 [Machine God] Re-coloured Version of https://www.flaticon.com/free-icon/gear_17784401
@@ -28,7 +31,6 @@ Resource Icons:
 [Compost] https://www.magnific.com/icon/fertilizer_16968415#fromView=search&page=1&position=59&uuid=d54395d8-d568-4bb4-9390-2e18c886aed4
 [Emeralds] https://www.flaticon.com/free-icon/emerald_1949695
 [Cinnamon] https://www.flaticon.com/free-icon/cinnamon_18128074
-[Space Squid] https://www.flaticon.com/free-icon/squid_6192731
 
 
 
