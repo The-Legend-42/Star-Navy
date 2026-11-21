@@ -182,8 +182,30 @@
         "column": 3,
         "row": 3
     },		
-	
-	
+	{
+		"name": "Powerful Volleys I",
+		"uniques": ["[+20]% Strength <when attacking>"],
+		"unitTypes": ["Light cruiser", "Cruiser", "Heavy Cruiser", "Battle Cruiser", "Battleship", "Battleship-carrier", "Dreadnought",],
+        "column": 9,
+        "row": 1
+    },
+	{
+		"name": "Powerful Volleys II",
+		"prerequisites": ["Powerful Volley I",],
+		"uniques": ["[+20]% Strength <when attacking>"],
+		"unitTypes": ["Light cruiser", "Cruiser", "Heavy Cruiser", "Battle Cruiser", "Battleship", "Battleship-carrier", "Dreadnought",],
+        "column": 9,
+        "row": 2
+    },
+	{
+		"name": "Powerful Volleys III",
+		"prerequisites": ["Powerful Volley II",],
+		"uniques": ["[+20]% Strength <when attacking>"],
+		"unitTypes": ["Light cruiser", "Cruiser", "Heavy Cruiser", "Battle Cruiser", "Battleship", "Battleship-carrier", "Dreadnought",],
+        "column": 9,
+        "row": 3
+    },
+		
 	
 	
 	
@@ -332,6 +354,23 @@
         "row": 3
     },
 
+
+
+
+
+
+	
+	
+
+		//Ranged units
+	{
+		"name": "Extended Volley Range",
+		"prerequisites": ["Artillery Adjustments III", "Powerful Volleys III", "Thick Plating III",],
+		"uniques": ["[+1] Range"],
+		"unitTypes": ["Battleship", "Battleship-carrier", "Dreadnought", "Space Artillery","Space Laser","Plasma Launcher"],
+		"column": 11
+        "row": 3
+	},
 
 
 

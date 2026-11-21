@@ -44,6 +44,21 @@
         "uniques": ["Founds a new city <by consuming this unit>","Requires at least [3] population"]
     },
 	{
+        "name": "Planetary Exploration Vessel",
+        "unitType": "Civilian",
+        "replaces": "Planetary Colony Ship",
+		"uniqueTo": "Human Empire",
+        "movement": 4,
+		"cost": 360,
+		"requiredTech": "Planetary Minning",
+        "uniques": ["Founds a new city <by consuming this unit>","Requires at least [3] population"
+					//Exploration
+					"Can move immediately once bought", "All tiles cost 1 movement",
+					//construction
+					"Can build [Farm] improvements on tiles", "[+20]% construction time for [Farm] improvements"],
+		"promotions": ["Expanded Radar I"],	
+    },
+	{
         "name": "Simple Mining Ship",
         "unitType": "Civilian",
         "movement": 3,
@@ -598,7 +613,7 @@
 		"obsoleteTech": "Repair & Support Advancments",
 		"upgradesTo": "Sturdy Combat Repair Ship",		
 		"attackSound": "shot"
-	},
+	},	
 	{
 		"name": "Sturdy Combat Repair Ship",
 		"unitType": "Repair Ship",
@@ -612,6 +627,19 @@
 		"uniques": ["[10]% chance to intercept air attacks",],		
 		"attackSound": "shot"
 	},
+	{
+		"name": "Yortten",
+		"unitType": "Repair Ship",
+        "replaces": "Sturdy Combat Repair Ship",
+		"uniqueTo": "Iota Persei",
+		"movement": 3,
+		"strength": 80,
+		"cost": 250,
+		"requiredTech": "Combat Repair Ships"
+		"obsoleteTech": "Repair & Support Advancments",
+		"upgradesTo": "Tough Repair Ship",		
+		"attackSound": "shot"
+	},	
 	{
 		"name": "Tough Repair Ship",
 		"unitType": "Repair Ship",
@@ -1007,8 +1035,38 @@
 		"uniques": ["[+30]% Strength <vs cities>", "Can move after attacking"],
 		"attackSound": "shot"
 	},	
-	
-	
+	{
+		"name": "Giannic Solar Cannon",
+		"unitType": "Plasma Launcher",
+        "replaces": "Solar Cannon",
+		"uniqueTo": "Giannic Alliance",
+		"movement": 2,
+		"strength": 22,
+        "range": 3,
+		"rangedStrength": 220,
+		"cost": 380,
+		"requiredResource": "Helium 3",
+		"requiredTech": "Solar Cannons",
+		"uniques": ["[+30]% Strength <vs cities>", "Can move after attacking"],
+		"promotions": ["Extended Volley Range"],
+		"attackSound": "shot"
+	},		
+	{
+		"name": "Railgun Carrier",
+		"unitType": "Battleship-carrier", //not really a Standard Carrier but also not truely a Battleship-carrier, will likely be changed in the future
+        "replaces": "Primitive Carrier",
+		"uniqueTo": "Human Empire",
+		"movement": 2,
+		"strength": 55,
+        "range": 2,
+		"rangedStrength": 60,
+		"cost": 480,
+		"requiredTech": "Carriers",
+		"upgradesTo": "Simple Battleship-carrier",
+		"obsoleteTech": "Battleship-carriers",
+		"uniques": ["Can upgrade to [Post-Shift Double Hangared Carrier]", "Can carry [1] [Smallcraft] units"]
+		"promotions": ["Basic Active Defence Systems","Additional Hangar I"],
+	},
 	
 	
 	//Patrol Vessels
@@ -1528,6 +1586,27 @@
 		"attackSound": "shot"
 	},	
 	{
+		"name": "Repossesser",
+		"unitType": "Destroyer",
+        "replaces": "Anti Fighter Destroyer",
+		"uniqueTo": "Stellar Corp",
+		"movement": 4,
+		"strength": 66,
+		"interceptRange": 2,
+		"cost": 174,
+		"requiredTech": "Anti Starfighter Systems",
+		"obsoleteTech": "Military Shift",
+		"upgradesTo": "Fast Destroyer",
+		"uniques": [
+					"Requires at least [2] population"
+					"[40]% chance to intercept air attacks",
+					"[+60]% Strength <vs [Smallcraft] units>"
+					"May capture killed [Escort] units"
+					"May capture killed [Rocket Ship] units"
+					],
+		"promotions": ["Basic Active Defence Systems","Additional Hangar I"],
+	},
+	{
 		"name": "Fast Destroyer",
 		"unitType": "Destroyer",
 		"movement": 5,
@@ -2007,6 +2086,21 @@
 		"uniques": ["[+33]% Strength <vs cities>", "Consumes [3] [Iron]", "Requires at least [7] population"],
 		"attackSound": "shot"
 	},	
+	{
+		"name": "Dekkaton",
+		"unitType": "Battle Cruiser",
+        "replaces": "Ethelium Based Battle Cruiser",
+		"uniqueTo": "Iota Persei",
+		"movement": 2,
+		"strength": 144,
+		"cost": 385,
+		"requiredTech": "Ethelium Tecnology",
+		"obsoleteTech": "Elegant Battleships",
+		"upgradesTo": "Ethelium Plasma Battle Cruiser",
+		"uniques": ["[+33]% Strength <vs cities>", "Consumes [2] [Ethelium]", "Requires at least [7] population"],
+		"promotions": ["Thick Plating I"],	
+		"attackSound": "shot"
+	},
 	{
 		"name": "Ethelium Plasma Battle Cruiser",
 		"unitType": "Battle Cruiser",

@@ -115,9 +115,38 @@
 		"uniques": ["[1] population [in this city]", "[+5]% Production when constructing [Culture] buildings [in this city]"],
 		"requiredTech": "Support Ships",
 	},	
-
-
-
+	{ 
+		"name": "Planetary Coordination Center",
+		"uniqueTo": "Giannic Alliance",
+		"specialistSlots": {"Scientist": 1, "Economist": 1, "Architect": 1, "Banker": 1, "Trader": 1, "Merchant": 1, "Mathematician": 1, "Spiritual Leader": 1, "Chef": 1,}, //unlike the other leaders of their field the chef is just there to cook for em
+		"cost": 600,
+		"cityStrength": 2,
+		"cityHealth": 35,
+		"food": 1,
+		"science": 1,
+		"production": 1,
+		"culture": 1,
+		"gold": 1,
+		"uniques": ["Requires at least [10] population", "[10]% Food is carried over after population increases [in this city]"],
+		"requiredTech": "Psychic warships",
+	},	
+	{ 
+		"name": "Humanity Piazza",
+		"uniqueTo": "Human Empire",
+		"percentStatBonus": {"happiness": 5},
+		"specialistSlots": {"Theologian": 1, "Spiritual Leader": 1, "Philosopher": 1, "Scientist": 1, "Ecologist": 1, "Astronomer": 1, "Professor": 1, "Lab Assistent": 1, "Merchant": 1, "Economist": 1, "Banker": 1, "Trader": 1, "Engineer": 1, "Mathematician": 1, "Architect": 1, "Chemist": 1, "Farmer": 1, "Baker": 1, "Chef": 1, "Fisherman": 1, "Agronomist": 1, "Comedian": 1, "Entertainer": 1, "Movie Star": 1,  "Celebrity": 1,  "Athlete": 1,  "Podcaster": 1,  "Artist": 1,  "Muscitian": 1, "Author": 1, "Writer": 1, "Psychic Defender": 1, "Psychic Attacker": 1, "Psychic Consolidator": 1,},
+		"uniques": ["Requires at least [10] population",],
+		"requiredTech": "Psychic Utilization",
+	},	
+	{ 
+		"name": "Pyramid of Luxury",
+		"uniqueTo": "Teal Epire",
+		"cost": 400,
+		"gold": 2,
+		"happiness": 1,
+		"uniques": ["Must have an owned [Luxury] within [3] tiles", "[+1 Happiness,+1 Production,+1 Gold] from [Luxury] tiles [in this city]",],
+		"requiredTech": "Discovering Red Spice",
+	},
 
 
 
@@ -1510,7 +1539,7 @@
 	},	
 	{ 
 		"name": "Restaurant of a thousand worlds",
-		"specialistSlots": {"Chef": 10, "Baker": 4, "Muscitian": 2, "Fisherman": 1, "Farmer": 1, "Artist": 1, "Entertainer": 1, "Architect": 1, "Philosopherf": 1,},
+		"specialistSlots": {"Chef": 10, "Baker": 4, "Muscitian": 2, "Fisherman": 1, "Farmer": 1, "Artist": 1, "Entertainer": 1, "Architect": 1, "Philosopher": 1,},
 		"culture": 12,		
 		"happiness": 10,
 		"gold": 10,	
