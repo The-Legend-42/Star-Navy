@@ -212,6 +212,8 @@
 		"interceptRange": 5,
 		"cost": 210,
 		"requiredTech": "Increased Starfighter Range",
+		"obsoleteTech": "Increased Starfighter Speed",
+		"upgradesTo": "Swift Starfighter",
 		"uniques": [//Combat
 					"[28]% chance to intercept air attacks",
 					//Type
@@ -220,24 +222,23 @@
 					"Can upgrade to [Starfighter Wing]",
 					],
 		"attackSound": "machinegun"
-	},	
-	//seperate line
+	},
 	{
-		"name": "Dronefighter",
-		"unitType": "Dronefighter",
+		"name": "Swift Starfighter",
+		"unitType": "Starfighter",
 		"movement": 1,
-		"strength": 30,
-		"rangedStrength": 30,
-		"range": 4,
-		"interceptRange": 4,
-		"cost": 100,
-		"requiredTech": "Drones",
+		"strength": 70,
+		"rangedStrength": 70,
+		"range": 6,
+		"interceptRange": 6,
+		"cost": 240,
+		"requiredTech": "Increased Starfighter Speed",
 		"uniques": [//Combat
-					"[25]% chance to intercept air attacks",
+					"[35]% chance to intercept air attacks",
 					//Type
 					"Solo",
 					//Alternate Upgrades:
-					"Can upgrade to [Dronefighter Swarm]",
+					"Can upgrade to [Swift Starfighter Wing]",
 					],
 		"attackSound": "machinegun"
 	},
@@ -290,6 +291,8 @@
 		"interceptRange": 5,
 		"cost": 550,
 		"requiredTech": "Increased Starfighter Range",
+		"obsoleteTech": "Increased Starfighter Speed",
+		"upgradesTo": "Swift Starfighter Wing",
 		"uniques": [//Combat
 					"[40]% chance to intercept air attacks",
 					//Type
@@ -297,7 +300,44 @@
 					],
 		"attackSound": "machinegun"
 	},
+	{
+		"name": "Swift Starfighter Wing",
+		"unitType": "Starfighter",
+		"movement": 1,
+		"strength": 210,
+		"rangedStrength": 210,
+		"range": 6,
+		"interceptRange": 6,
+		"cost": 600,
+		"requiredTech": "Increased Starfighter Speed",
+		"uniques": [//Combat
+					"[65]% chance to intercept air attacks",
+					//Type
+					"Swarm",
+					],
+		"attackSound": "machinegun"
+	},
 	//seperate line
+	{
+		"name": "Dronefighter",
+		"unitType": "Dronefighter",
+		"movement": 1,
+		"strength": 30,
+		"rangedStrength": 30,
+		"range": 4,
+		"interceptRange": 4,
+		"cost": 100,
+		"requiredTech": "Drones",
+		"uniques": [//Combat
+					"[25]% chance to intercept air attacks",
+					//Type
+					"Solo",
+					//Alternate Upgrades:
+					"Can upgrade to [Dronefighter Swarm]",
+					],
+		"attackSound": "machinegun"
+	},
+	//Drone Swarms
 	{
 		"name": "Dronefighter Swarm",
 		"unitType": "Dronefighter",
@@ -311,6 +351,26 @@
 		"uniques": [//Combat
 					"[35]% chance to intercept air attacks",
 					"[+20]% Strength <vs [Solo] units>",
+					//upgrade
+					"Can upgrade to [Expanded Dronefighter Swarm]"
+					//Type
+					"Solo"
+					],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Expanded Dronefighter Swarm",
+		"unitType": "Dronefighter",
+		"movement": 1,
+		"strength": 115,
+		"rangedStrength": 115,
+		"range": 4,
+		"interceptRange": 4,
+		"cost": 400,
+		"requiredTech": "Expanded Dronefighter Swarms",
+		"uniques": [//Combat
+					"[38]% chance to intercept air attacks",
+					"[+22]% Strength <vs [Solo] units>",
 					//Type
 					"Solo"
 					],
@@ -484,7 +544,9 @@
 		"requiredTech": "Colonial Warpers",
 		"uniques": ["[-1] Sight","Founds a new city <by consuming this unit>","Requires at least [5] population",
 					"May Paradrop to [Exit Portal] tiles up to [12] tiles away <before discovering [Extended Warp Range]>",
-					"May Paradrop to [Exit Portal] tiles up to [14] tiles away <after discovering [Extended Warp Range]>",
+					"May Paradrop to [Exit Portal] tiles up to [14] tiles away <after discovering [Extended Warp Range]> <before discovering [Central Warp Matrix]>",
+					"May Paradrop to [Exit Portal] tiles up to [15] tiles away <after discovering [Central Warp Matrix]>",
+					"May Paradrop to [City center] tiles up to [15] tiles away <after discovering [Central Warp Matrix]>",
 					],
 		"promotions": ["Basic Active Defence Systems"],	
 		"attackSound": "shot"
@@ -544,8 +606,26 @@
 		"strength": 64,
 		"interceptRange": 1,
 		"cost": 250,
-		"requiredTech": "Repair & Support Advancments",	
+		"requiredTech": "Repair & Support Advancments",
+		"obsoleteTech": "Tough Repair Ships",
+		"upgradesTo": "Tough Repair Ship",	
 		"uniques": ["[10]% chance to intercept air attacks",],		
+		"attackSound": "shot"
+	},
+	{
+		"name": "Tough Repair Ship",
+		"unitType": "Repair Ship",
+		"movement": 2,
+		"strength": 100,
+		"interceptRange": 1,
+		"cost": 200,
+		"requiredTech": "Tough Repair Ships",	
+		"uniques": [
+					"[20]% chance to intercept air attacks", 
+					"May Paradrop to [Exit Portal] tiles up to [14] tiles away <before discovering [Central Warp Matrix]>",
+					"May Paradrop to [Exit Portal] tiles up to [15] tiles away <after discovering [Central Warp Matrix]>",
+					"May Paradrop to [City center] tiles up to [15] tiles away <after discovering [Central Warp Matrix]>",	
+		],		
 		"attackSound": "shot"
 	},
 	//Seperate line from the repair ships abouve
@@ -719,7 +799,9 @@
 		"requiredTech": "Warpable Artilery",
 		"uniques": ["Can move after attacking", 
 					"May Paradrop to [Exit Portal] tiles up to [12] tiles away <before discovering [Extended Warp Range]>",
-					"May Paradrop to [Exit Portal] tiles up to [14] tiles away <after discovering [Extended Warp Range]>",
+					"May Paradrop to [Exit Portal] tiles up to [14] tiles away <after discovering [Extended Warp Range]> <before discovering [Central Warp Matrix]>",
+					"May Paradrop to [Exit Portal] tiles up to [15] tiles away <after discovering [Central Warp Matrix]>",
+					"May Paradrop to [City center] tiles up to [15] tiles away <after discovering [Central Warp Matrix]>",
 					],
 		"promotions": ["Artillery Adjustments I"]
 		"attackSound": "shot"
@@ -838,6 +920,7 @@
 		"requiredResource": "Iron",
 		"upgradesTo": "Psychically Enhanced Wideplate Super Slicer",
 		"requiredTech": "Solar Cannons",
+		"obsoleteTech": "Psychic Wideplate Super Slicers",
 		"attackSound": "shot"	//Will change
 	},
 	{
@@ -849,7 +932,21 @@
 		"rangedStrength": 300,
 		"cost": 300,
 		"requiredTech": "Psychically enhanced metal",
+		"upgradesTo": "Psychic Wideplate Super Slicer",
+		"obsoleteTech": "Psychic Wideplate Super Slicers",
 		"uniques": ["Psy-metal"],	
+		"attackSound": "shot"	//Will change
+	},
+	{
+		"name": "Psychic Wideplate Super Slicer",
+		"unitType": "Space Laser",
+		"movement": 2,
+		"strength": 36,
+        "range": 2,
+		"rangedStrength": 300,
+		"cost": 200,
+		"requiredTech": "Psychic Wideplate Super Slicers",
+		"uniques": ["Psy-metal", "Costs [50] [Consolidated Psychic Energy]"],	
 		"attackSound": "shot"	//Will change
 	},
 	{ //Sucessor to both the Railguns and the Lasers
@@ -1081,12 +1178,31 @@
 		"cost": 178,
 		"requiredResource": "Uranium",
 		"requiredTech": "Evasive Darters",
+		"obsoleteTech": "Dreadnought Era Escorts",
+		"upgradesTo": "Dreadnought Era Darter",
 		"uniques": ["[1] additional attacks per turn",
 					"[+50]% Strength <vs [Escort] units>",
 					"[+28]% Strength <vs [Artilery] units>",
 					"May Paradrop to [Exit Portal] tiles up to [14] tiles away",],
 		"attackSound": "shot"
-	},	
+	},
+	{
+		"name": "Dreadnought Era Darter",
+		"unitType": "Destroyer",
+		"movement": 7,
+		"strength": 80,
+		"cost": 180,
+		"requiredResource": "Uranium",
+		"requiredTech": "Dreadnought Era Escorts",
+		"uniques": ["[1] additional attacks per turn",
+					"[+50]% Strength <vs [Escort] units>",
+					"[+30]% Strength <vs [Artilery] units>",
+					"May Paradrop to [Exit Portal] tiles up to [14] tiles away <before discovering [Central Warp Matrix]>",
+					"May Paradrop to [Exit Portal] tiles up to [15] tiles away <after discovering [Central Warp Matrix]>",
+					"May Paradrop to [City center] tiles up to [15] tiles away <after discovering [Central Warp Matrix]>",
+					],
+		"attackSound": "shot"
+	},
 	{
 		"name": "Psychic Corvette",
 		"unitType": "Corvette",
@@ -1205,6 +1321,23 @@
 		"interceptRange": 2,
 		"cost": 165,
 		"requiredTech": "Post-Shift Engines",
+		"obsoleteTech": "Dreadnought Era Escorts",
+		"upgradesTo": "Dreadnought Era Assaulter",
+		"uniques": [
+					//Offencive
+				"[1] additional attacks per turn","[+15]% Strength <vs [Escort] units>",
+					//Defencive
+				"[40]% chance to intercept air attacks", "[+65]% Strength <vs [Smallcraft] units>",]
+		"attackSound": "shot"
+	},	
+	{
+		"name": "Dreadnought Era Assaulter",
+		"unitType": "Frigate",
+		"movement": 6,
+		"strength": 96,
+		"interceptRange": 2,
+		"cost": 190,
+		"requiredTech": "Dreadnought Era Escorts",
 		"uniques": [
 					//Offencive
 				"[1] additional attacks per turn","[+15]% Strength <vs [Escort] units>",
@@ -1458,23 +1591,6 @@
 					],
 		"attackSound": "shot"
 	},
-	
-		{
-		"name": "Simple Heavy Torpedo",
-		"unitType": "Heavy Torpedo",
-		"movement": 1,
-		"strength": 20,
-		"rangedStrength": 25,
-		"range": 3,
-		"cost": 80,
-		"requiredTech": "Heavy Space Torpedoes",
-		"uniques": ["[+500]% Strength <vs [Battleship] units>",
-					"[+400]% Strength <vs [Carrier] units>",
-					"[+350]% Strength <vs [Cruiser] units>",
-					"Damage taken from interception reduced by [50]%", 
-					"[-25]% maintenance costs"],
-		"attackSound": "machinegun" //will change
-	},
 	{
 		"name": "Torpedo Destroyer",
 		"unitType": "Destroyer",
@@ -1484,7 +1600,9 @@
 		"cost": 235,
 		"requiredResource": "Silicon",
 		"requiredTech": "Torpedo Destroyers",
-		"uniques": [//Limits
+		"obsoleteTech": "Dreadnought Era Escorts",
+		"upgradesTo": "Dreadnought Era Destroyer",
+		"uniques": [//Limits		
 					"Requires at least [3] population", 
 					//Combat
 					"[+25]% Strength <vs cities>", 
@@ -1496,6 +1614,31 @@
 					"[1] free [Simple Heavy Torpedo] units appear",
 					],
 		"attackSound": "shot"
+	},
+	{
+		"name": "Dreadnought Era Destroyer",
+		"unitType": "Destroyer",
+		"movement": 5,
+		"strength": 120,
+		"interceptRange": 1,
+		"cost": 238,
+		"requiredResource": "Silicon",
+		"requiredTech": "Dreadnought Era Escorts",
+		"uniques": [//Limits
+					"Requires at least [3] population", 
+					//Combat
+					"[+25]% Strength <vs cities>", 
+					"[40]% chance to intercept air attacks",
+					"[+50]% Strength <vs [Smallcraft] units>",
+					//Other
+					"May Paradrop to [Exit Portal] tiles up to [14] tiles away <before discovering [Central Warp Matrix]>",
+					"May Paradrop to [Exit Portal] tiles up to [15] tiles away <after discovering [Central Warp Matrix]>",
+					"May Paradrop to [City center] tiles up to [15] tiles away <after discovering [Central Warp Matrix]>",
+					"Can carry [1] [Torpedo] units",
+					"[1] free [Simple Heavy Torpedo] units appear",
+					],
+		"attackSound": "shot"
+
 	},
 	{
 		"name": "Psychic Destroyer",
@@ -1627,9 +1770,26 @@
 		"cost": 245,
 		"requiredResource": "Iron",
 		"requiredTech": "Warp Portals",
+		"obsoleteTech": "Dreadnought Era Warships",
+		"upgradesTo": "Hyper Bludgeoner",	
 		"uniques": ["[+25]% Strength <vs cities>", "Requires at least [3] population", 
 					"May Paradrop to [Exit Portal] tiles up to [12] tiles away <before discovering [Extended Warp Range]>",
 					"May Paradrop to [Exit Portal] tiles up to [14] tiles away <after discovering [Extended Warp Range]>",
+					],
+		"attackSound": "shot"
+	},	
+	{
+		"name": "Hyper Bludgeoner",
+		"unitType": "Light cruiser",
+		"movement": 5,
+		"strength": 140,
+		"cost": 250,
+		"requiredResource": "Iron",
+		"requiredTech": "Dreadnought Era Warships",
+		"uniques": ["[+25]% Strength <vs cities>", "Requires at least [3] population", 
+					"May Paradrop to [Exit Portal] tiles up to [14] tiles away <before discovering [Central Warp Matrix]>",
+					"May Paradrop to [Exit Portal] tiles up to [15] tiles away <after discovering [Central Warp Matrix]>",
+					"May Paradrop to [City center] tiles up to [15] tiles away <after discovering [Central Warp Matrix]>",	
 					],
 		"attackSound": "shot"
 	},	
@@ -1728,11 +1888,28 @@
 		"cost": 330,
 		"requiredResource": "Ethelium",
 		"requiredTech": "Elegant Plasma Cruisers",
+		"obsoleteTech": "Plasot Plates",
+		"upgradesTo": "Improved Elegant Cruiser",
 		"uniques": [
 				//Combat
 				"[+25]% Strength <vs cities>", "[15]% chance to intercept air attacks", "[+12]% Strength <vs [Swarm] units>", "Can move after attacking",
 				//Production
 				"Consumes [2] [Iron]", "Consumes [1] [Helium 3]", "Requires at least [4] population"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Improved Elegant Cruiser",
+		"unitType": "Cruiser",
+		"movement": 3,
+		"strength": 180,
+		"cost": 384,
+		"requiredResource": "Ethelium",
+		"requiredTech": "Plasot Plates",
+		"uniques": [
+				//Combat
+				"[+25]% Strength <vs cities>", "[30]% chance to intercept air attacks", "[+14]% Strength <vs [Swarm] units>", "Can move after attacking",
+				//Production
+				"Consumes [3] [Iron]", "Requires at least [4] population"],
 		"attackSound": "shot"
 	},
 	 //Heavy Cruiser: A Bulkier Form of Crusier
@@ -1948,6 +2125,29 @@
 		"attackSound": "shot"
 	},
 	{ 
+		"name": "Nightcrawler",
+		"unitType": "Battleship",
+        "replaces": "Elegant Battleship",
+		"uniqueTo": "Gezoic",
+		"movement": 3,
+		"interceptRange": 1,
+		"strength": 220,
+		"cost": 520,
+		"requiredTech": "Elegant Battleships",
+		"obsoleteTech": "Dreadnought Hangars",
+		"upgradesTo": "Warpable Battleship",
+		"uniques": [
+				//production
+				"Consumes [3] [Iron]", "Requires at least [8] population", "Can upgrade to [Little Dreadnought]"
+				//combat
+				"[+40]% Strength <vs cities>", "[33]% chance to intercept air attacks", "Can move after attacking",
+				//Warp
+				"May Paradrop to [Exit Portal] tiles up to [6] tiles away <before discovering [Warpable Battleships]>",
+				],
+		"promotions": ["Void Native",],
+		"attackSound": "shot"
+	},
+	{ 
 		"name": "Warpable Battleship",
 		"unitType": "Battleship",
 		"movement": 2,
@@ -1978,6 +2178,28 @@
 		"strength": 175,
 		"cost": 520,
 		"requiredTech": "Battleship-carriers",
+		"obsoleteTech": "Dreadnought Era Warships",
+		"upgradesTo": "Dreadnought Era Battleship-carrier",
+		"uniques": [
+					//Carrier capability
+					"Can carry [1] [Smallcraft] units",
+					//production
+					"Consumes [5] [Iron]", "Requires at least [10] population", 
+					//combat
+					"[+40]% Strength <vs cities>", "[20]% chance to intercept air attacks", "[+20]% Strength <vs [Swarm] units>", "[+20]% Strength <vs [Smallcraft] units>", "Can move after attacking",
+		],
+		"promotions": ["Basic Active Defence Systems"],
+	},
+	{
+		"name": "Dreadnought Era Battleship-carrier",
+		"unitType": "Battleship-carrier",
+		"movement": 2,
+        "range": 2,
+		"interceptRange": 2,
+		"rangedStrength": 195,
+		"strength": 200,
+		"cost": 540,
+		"requiredTech": "Dreadnought Era Warships",
 		"uniques": [
 					//Carrier capability
 					"Can carry [1] [Smallcraft] units",
@@ -2001,6 +2223,8 @@
 		"cost": 740,
 		"requiredResource": "Uranium",
 		"requiredTech": "Little Dreadnoughts",
+		"obsoleteTech": "Dreadnought Era Warships",
+		"upgradesTo": "Dreadnought Era Little Dreadnought",
 		"uniques": [
 				//production
 				"Consumes [6] [Iron]", "Requires at least [12] population", "Can upgrade to [Simple Dreadnought]"
@@ -2008,8 +2232,27 @@
 				"[+40]% Strength <vs cities>", "[10]% chance to intercept air attacks", "[+20]% Strength <vs [Swarm] units>",],
 		"promotions": ["Basic Active Defence Systems","Artillery Adjustments I"],
 		"attackSound": "shot"
-	}, 
-	//Dreadnoughts
+	},
+	{ 
+		"name": "Dreadnought Era Little Dreadnought",
+		"unitType": "Battleship",
+		"movement": 2,
+        "range": 2,
+		"interceptRange": 2, //the actual one will have a range of 3
+		"rangedStrength": 250,
+		"strength": 242,
+		"cost": 755,
+		"requiredResource": "Uranium",
+		"requiredTech": "Dreadnought Era Warships",
+		"uniques": [
+				//production
+				"Consumes [6] [Iron]", "Requires at least [12] population", "Can upgrade to [Simple Dreadnought]"
+				//combat
+				"[+40]% Strength <vs cities>", "[10]% chance to intercept air attacks", "[+20]% Strength <vs [Swarm] units>",],
+		"promotions": ["Basic Active Defence Systems","Artillery Adjustments I"],
+		"attackSound": "shot"
+	},
+	//Dreadnoughts //                            
 	//new line
 	{ 
 		"name": "Simple Dreadnought",
@@ -2023,16 +2266,59 @@
 		"cost": 1000,
 		"requiredResource": "Ethelium",
 		"requiredTech": "True Dreadnoughts",
+		"obsoleteTech": "Dreadnought Hangars",
+		"upgradesTo": "Hangared Dreadnought",
 		"uniques": [
 				//production
-				"Consumes [7] [Iron]", "Requires at least [15] population" , 
+				"Consumes [7] [Iron]", "Requires at least [15] population", "Can upgrade to [Plastot Dreadnought]"
 				//combat
 				"[+40]% Strength <vs cities>", "[12]% chance to intercept air attacks", "[+15]% Strength <vs [Swarm] units>",],
 		"promotions": ["Basic Active Defence Systems","Artillery Adjustments I"],
 		"attackSound": "shot"
 	}, 
-	
-	//The First Carrier line
+	{ 
+		"name": "Plastot Dreadnought",
+		"unitType": "Dreadnought",
+		"movement": 2,
+        "range": 3,
+		"interceptRange": 2,
+		"rangedStrength": 280,
+		"strength": 275,
+	//	"cost": 1250,
+		"cost": 1200,
+		"requiredResource": "Ethelium",
+		"requiredTech": "Plasot Plates",
+		"uniques": [
+				//production
+				"Consumes [8] [Iron]", "Requires at least [15] population" , 
+				//combat
+				"[+40]% Strength <vs cities>", "[12]% chance to intercept air attacks", "[+15]% Strength <vs [Swarm] units>",
+				//other
+				"Can upgrade to [Hangared Dreadnought]"
+				],
+		"promotions": ["Basic Active Defence Systems","Artillery Adjustments I"],
+		"attackSound": "shot"
+	}, 	
+	{ 
+		"name": "Hangared Dreadnought",
+		"unitType": "Dreadnought",
+		"movement": 2,
+        "range": 3,
+		"interceptRange": 2,
+		"rangedStrength": 285,
+		"strength": 277,
+		"cost": 1250,
+		"requiredResource": "Ethelium",
+		"requiredTech": "Dreadnought Hangars",
+		"uniques": [
+				//production
+				"Consumes [7] [Iron]", "Requires at least [15] population" , 
+				//combat
+				"[+40]% Strength <vs cities>", "[14]% chance to intercept air attacks", "[+15]% Strength <vs [Swarm] units>",],
+		"promotions": ["Basic Active Defence Systems","Artillery Adjustments I","Additional Hangar I"],
+		"attackSound": "shot"
+	}, 
+	//The First Carrier line //                            
 	{
 		"name": "Primitive Carrier",
 		"unitType": "Standard Carrier",
@@ -2094,7 +2380,7 @@
 		"cost": 445,
 		"requiredTech": "Post-Shift Carriers",
 		"uniques": ["Cannot attack", "All adjacent units heal [+2] HP when healing", "Can carry [1] [Smallcraft] units", 
-					"Can upgrade to [Post-Shift Double Hangared Carrier]"]
+					"Can upgrade to [Post-Shift Double Hangared Carrier]","Can upgrade to [Grand Carrier]",]
 		"promotions": ["Basic Active Defence Systems", "Additional Hangar I"],
 	},
 	//Seperate Line
@@ -2130,9 +2416,23 @@
 		"movement": 2,
 		"strength": 135,
 		"cost": 540,
-		"requiredTech": "Post-Shift Carriers",	
+		"requiredTech": "Post-Shift Carriers",
+		"obsoleteTech": "Grand Carriers",
+		"upgradesTo": "Grand Carrier", 
 		"uniques": ["Cannot attack", "All adjacent units heal [+2] HP when healing", "Can carry [2] [Smallcraft] units"]
 		"promotions": ["Basic Active Defence Systems"],
+	},
+	//New line
+	{
+		"name": "Grand Carrier",
+		"unitType": "Standard Carrier",
+		"movement": 2,
+		"strength": 200,
+		"cost": 650,
+		"requiredTech": "Grand Carriers",
+		"uniques": ["Cannot attack", "All adjacent units heal [+2] HP when healing", "Can carry [3] [Smallcraft] units", 
+					]
+		"promotions": ["Basic Active Defence Systems",],
 	},
 	//Drone Carrier Line
 	{
@@ -2174,16 +2474,18 @@
 		"unitType": "Drone Carrier",
 		"movement": 3,
 		"strength": 140,
-	//	"strength": 40,
 		"cost": 1000,
 		"requiredTech": "Super Drone Carriers",
 		"uniques": [
 					"Cannot attack", "Can carry [4] [Drone] units",
 					//Comes with a swarm built in
-					"[4] free [Dronefighter Swarm] units appear",
+					"[4] free [Dronefighter Swarm] units appear <before discovering [Expanded Dronefighter Swarms]>",
+					"[4] free [Expanded Dronefighter Swarm] units appear <after discovering [Expanded Dronefighter Swarms]>",					
 					//Warp
 					"May Paradrop to [Exit Portal] tiles up to [12] tiles away <before discovering [Extended Warp Range]>",
-					"May Paradrop to [Exit Portal] tiles up to [14] tiles away <after discovering [Extended Warp Range]>",
+					"May Paradrop to [Exit Portal] tiles up to [14] tiles away <after discovering [Extended Warp Range]> <before discovering [Central Warp Matrix]>",
+					"May Paradrop to [Exit Portal] tiles up to [15] tiles away <after discovering [Central Warp Matrix]>",
+					"May Paradrop to [City center] tiles up to [15] tiles away <after discovering [Central Warp Matrix]>",
 					]
 		"promotions": ["Basic Active Defence Systems"],
 	},
@@ -2225,13 +2527,35 @@
 		"range": 3,
 		"cost": 80,
 		"requiredTech": "Heavy Space Torpedoes",
-		"uniques": ["[+500]% Strength <vs [Battleship] units>",
+		"obsoleteTech": "Crude Missile technology",
+		"upgradesTo": "Crude Heavy Torpedo", 
+		"uniques": ["[+250]% Strength <vs [Dreadnought] units>",
+					"[+500]% Strength <vs [Battleship] units>",
 					"[+400]% Strength <vs [Carrier] units>",
 					"[+350]% Strength <vs [Cruiser] units>",
 					"Damage taken from interception reduced by [50]%", 
 					"[-75]% maintenance costs"],
 		"attackSound": "machinegun" //will change
 	},
+	{
+		"name": "Crude Heavy Torpedo",
+		"unitType": "Heavy Torpedo",
+		"movement": 1,
+		"strength": 25,
+		"rangedStrength": 30,
+		"range": 4,
+		"cost": 80,
+		"requiredTech": "Crude Missile technology",
+		"uniques": [
+					"[+500]% Strength <vs [Battleship] units>",	
+					"[+450]% Strength <vs [Dreadnought] units>",
+					"[+400]% Strength <vs [Carrier] units>",
+					"[+350]% Strength <vs [Cruiser] units>",
+					"Damage taken from interception reduced by [50]%", 
+					"[-75]% maintenance costs"],
+		"attackSound": "machinegun" //will change
+	},
+	
 	
 	
 	//IBPM
@@ -2258,10 +2582,23 @@
 		"range": 8,
 		"cost": 165,
 		"requiredTech": "IPBM's 2",
+		"obsoleteTech": "Crude Missile technology",
+		"upgradesTo": "Crude Interplanetary Ballistic Missile", 
 		"uniques": ["[+500]% Strength <vs cities>", "Damage taken from interception reduced by [50]%", "[-25]% maintenance costs"],
 		"attackSound": "machinegun" //will change
 	},
-
+	{
+		"name": "Crude Interplanetary Ballistic Missile",
+		"unitType": "IPBM",
+		"movement": 1,
+		"strength": 85,
+		"rangedStrength": 85,
+		"range": 9,
+		"cost": 150,
+		"requiredTech": "Crude Missile technology",
+		"uniques": ["[+500]% Strength <vs cities>", "Damage taken from interception reduced by [50]%", "[-25]% maintenance costs"],
+		"attackSound": "machinegun" //will change
+	},
 
 
 

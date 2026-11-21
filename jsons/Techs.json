@@ -1775,7 +1775,170 @@
 			},
 		] 
 	},
-	
+	{
+		"columnNumber": 34,
+		"era": "Dreadnought Era",
+		"techCost": 2500,
+		"buildingCost": 540,
+		"wonderCost": 1080,
+		"techs": [
+
+			{
+				"name": "Psychically preserved food",
+				"row": 3,
+				"prerequisites": ["Psychic Utilization","True Dreadnoughts"],					
+				"quote": "'We basicaly used psychically enhanced materials to preseve food by killing any and all unwanted microscopic entities.' - Psychic Reaserher"
+			},
+			{
+				"name": "Dreadnought Era Warships",
+				"row": 4,
+				"prerequisites": ["True Dreadnoughts"],
+				"quote": "'The larger side of the new warships.' - Spaceman"
+			},
+			{
+				"name": "Expanded Cuisine",
+				"row": 5,
+				"prerequisites": ["Multifarms",],
+				"quote": "'EAT EAT EAT! HAVE A PIE!' - Space Bozo"
+			},
+			{
+				"name": "Dreadnought Era Escorts",
+				"row": 6,
+				"prerequisites": ["Warpable Battleships","The Athleton",],
+				"quote": "'The smaller side of the new warships.' - Spaceman"
+			},
+			{
+				"name": "Muscial Advancment",
+				"row": 7,
+				"prerequisites": ["The Athleton",],
+				"quote": "'what is music if not the rythem of sound?' - Philosopher"
+			},
+		] 
+	},
+	{
+		"columnNumber": 35,
+		"era": "Dreadnought Era",
+		"techCost": 2650,
+		"buildingCost": 550,
+		"wonderCost": 1100,
+		"techs": [
+
+			{
+				"name": "Psychic Wideplate Super Slicers",
+				"row": 3,
+				"prerequisites": ["Psychically preserved food"],					
+				"quote": "'We basicaly used psychically enhanced materials to preseve food by killing any and all unwanted microscopic entities.' - Psychic Reaserher"
+			},
+			{
+				"name": "Plasot Plates",
+				"row": 4,
+				"prerequisites": ["Dreadnought Era Warships","Expanded Cuisine",],
+				"quote": "'The Increased durablility allows for better armour and more reliable Cannons.' - Spaceman"
+			},
+			{
+				"name": "Grand Cuisine",
+				"row": 5,
+				"prerequisites": ["Expanded Cuisine",],
+				"quote": "'EVEN MORE FOOD!! AMAZING!' - Space Bozo"
+			},
+			{
+				"name": "Crude Missile technology",
+				"row": 6,
+				"prerequisites": ["Dreadnought Era Escorts"],
+				"quote": "'What goes up into space... might not come down, or it may come down on the wrong world after all.' - Spaceman"
+			},
+			{
+				"name": "Engineered food",
+				"row": 7,
+				"prerequisites": ["Muscial Advancment",],
+				"quote": "'Food designed to be good.' - Spaceman"
+			},
+		] 
+	},
+	{
+		"columnNumber": 36,
+		"era": "Dreadnought Era",
+		"techCost": 2800,
+		"buildingCost": 600,
+		"wonderCost": 1200,
+		"techs": [
+
+			{
+				"name": "Psychic Integration Program",
+				"row": 3,
+				"prerequisites": ["Psychic Wideplate Super Slicers"],				
+                "uniques": ["[+1 Food, +1 Production, +1 Gold] [in all cities]"	],
+				"quote": "'Better integrating the psychics into our society will benefit us all.' - Psychic Reaserher"
+			},
+			{
+				"name": "Tough Repair Ships",
+				"row": 4,
+				"prerequisites": ["Plasot Plates",],
+				"quote": "'With Increased durablility we can make repair ships cappable of taking the damage expected of todays vessels.' - Spaceman"
+			},
+			{
+				"name": "Dreadnought Hangars",
+				"row": 5,
+				"prerequisites": ["Plasot Plates","Grand Cuisine","Crude Missile technology"],
+                "uniques": ["[+100]% weight to this choice for AI decisions"],
+				"quote": "'WHO PUT FIGHTERS IN MAH... whats it called again? AH YES! In mah Dreadnought!' - Space Bozo"
+			},
+			{
+				"name": "Central Warp Matrix",
+				"row": 6,
+				"prerequisites": ["Crude Missile technology"],
+                "uniques": ["[+60]% weight to this choice for AI decisions"],
+				"quote": "'It is time we connect cities via warp gates.' - Engineer"
+			},
+			{
+				"name": "Discovering Pink Spice",
+				"row": 7,
+				"prerequisites": ["Engineered food"],
+				"quote": "'Pink spice, a great way to sweeten the mood.' - Diplomat"
+			},
+		] 
+	},
+	{
+		"columnNumber": 37,
+		"era": "Dreadnought Era",
+		"techCost": 3000,
+		"buildingCost": 625,
+		"wonderCost": 1250,
+		"techs": [
+
+			{
+				"name": "The Monmoro",
+				"row": 3,
+				"prerequisites": ["Psychic Integration Program"],				
+				"quote": "'A grand monument.' - Spaceman"
+			},
+			{
+				"name": "Grand Carriers",
+				"row": 4,
+				"prerequisites": ["Tough Repair Ships",],
+				"quote": "'Giant carriers. Need I say more?' - Space Bozo"
+			},
+			{
+				"name": "Increased Starfighter Speed",
+				"row": 5,
+				"prerequisites": ["Dreadnought Hangars"],
+				"quote": "'Faster, Deadlier, and cappable of striking more distant opponents!' - Spymaster"
+			},
+			{
+				"name": "Expanded Dronefighter Swarms",
+				"row": 6,
+				"prerequisites": ["Central Warp Matrix"],
+				"quote": "'We made the drone swarms even bigger' - Engineer"
+			},
+			{
+				"name": "Trade Paths",
+				"row": 7,
+				"prerequisites": ["Central Warp Matrix","Discovering Pink Spice"],
+				"uniques": ["[-10]% weight to this choice for AI decisions","[+1 Gold] from [Space Trading post] tiles [in all cities]"],
+				"quote": "'Pink spice, a great way to sweeten the mood.' - Diplomat"
+			},
+		] 
+	},	
 ]
 
 //News

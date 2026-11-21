@@ -1349,7 +1349,7 @@
     "science": 7,
     "culture": 7,
     "happiness": 7,
- // "faith": 6,
+	"faith": 6,
     "military": 7,
     "aggressive": 6,
     "declareWar": 6,
@@ -1359,9 +1359,12 @@
     "expansion": 6,
     "denounceWillingness": 6,
     "priorities": {
+	  "Orbital Logistics": 7,
+	  "Research": 6,
 	  "Tourism": 8,
       "Gardening": 5,
 	  "Handcrafting": 4,
+	  "Architectural Admiration": 7,
 				  }
 	},
     {
@@ -1372,7 +1375,7 @@
     "science": 9,
     "culture": 8,
     "happiness": 8,
- // "faith": 6,
+	"faith": 6,
     "military": 5,
     "aggressive": 3,
     "declareWar": 3,
@@ -1382,9 +1385,12 @@
     "expansion": 2,
     "denounceWillingness": 9,
     "priorities": {
+	  "Orbital Logistics": 7,
+	  "Research": 6,
 	  "Tourism": 3,
       "Gardening": 8,
 	  "Handcrafting": 7,
+	  "Architectural Admiration": 10,
 				  }
 	},
     {
@@ -1395,7 +1401,7 @@
     "science": 6,
     "culture": 5,
     "happiness": 4,
- // "faith": 6,
+	"faith": 2,
     "military": 10,
     "aggressive": 10,
     "declareWar": 10,
@@ -1405,9 +1411,12 @@
     "expansion": 4,
     "denounceWillingness": 3,
     "priorities": {
+	  "Orbital Logistics": 7,
+	  "Research": 8,
 	  "Tourism": 2,
       "Gardening": 1,
 	  "Handcrafting": 3,
+	  "Architectural Admiration": 4,
 				  }
 	},
    {
@@ -1418,7 +1427,7 @@
     "science": 5,
     "culture": 6,
     "happiness": 5,
- // "faith": 6,
+	"faith": 6,
     "military": 7,
     "aggressive": 9,
     "declareWar": 9,
@@ -1428,9 +1437,12 @@
     "expansion": 8,
     "denounceWillingness": 6,
     "priorities": {
+	  "Orbital Logistics": 7,
+	  "Research": 6,
 	  "Tourism": 6,
       "Gardening": 4,
 	  "Handcrafting": 4,
+	  "Architectural Admiration": 9,
 				  }
 	},
 	{
@@ -1441,7 +1453,7 @@
     "science": 9,
     "culture": 6,
     "happiness": 6,
- // "faith": 6,
+	"faith": 6,
     "military": 7,
     "aggressive": 6,
     "declareWar": 6,
@@ -1451,12 +1463,42 @@
     "expansion": 8,
     "denounceWillingness": 5,
     "priorities": {
+	  "Orbital Logistics": 8,
+	  "Research": 9,
 	  "Tourism": 7,
       "Gardening": 5,
 	  "Handcrafting": 6,
+	  "Architectural Admiration": 7,
 				  }
 	},
-
-
+	{
+    "name": "01110010-00110001",
+    "production": 10,
+    "food": 7,
+    "gold": 6,
+    "science": 8,
+    "culture": 6,
+    "happiness": 6,
+	"faith": 6,
+    "military": 7,
+    "aggressive": 6,
+    "declareWar": 6,
+    "commerce": 6,
+    "diplomacy": 6,
+    "loyal": 7,
+    "expansion": 10,
+    "denounceWillingness": 6,
+    "priorities": {
+	  "Orbital Logistics": 10,
+	  "Research": 8,
+	  "Tourism": 4,
+      "Gardening": 3,
+	  "Handcrafting": 7,
+	  "Architectural Admiration": 4,
+				  }
+	},
+	
+	
+	
 
 ]

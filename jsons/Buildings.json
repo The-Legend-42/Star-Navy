@@ -21,30 +21,12 @@
 */
 
 
-	//Specials
-	{ 
-		"name": "Handcrafting Workshop",
-		"cost": 280,
-		"production": 2,
-		"happiness": 1,
-		"uniques": [
-					//Restriction
-					"Only available <after adopting [Handcrafting Workshops]>"
-					//Bonuses
-					"[+1 Production] [in this city] <after discovering [Iron Recycling]>"
-					"[+1 Gold] [in this city] <after discovering [Luxary Market]>"					
-					"[+1 Culture] [in this city] <after discovering [Festivals]>"
-					]
-	},
-	{ 
-		"name": "Simple Solar Panel",
-		"cost": 40,
-		"production": 1,
-		"uniques": [
-					"Only available <after adopting [Orbital Supply Chain Complete]>"
-					"[+1 Food] [in this city] <for every adjacent [Star]>", "<if [Greenhouse] is constructed>",	
-					],
-	},
+
+
+
+
+
+
 
 
 
@@ -123,7 +105,16 @@
 		"uniques": ["[+1 Gold] [in this city] <after discovering [Luxary Market]>"],
 		"requiredTech": "Tournaments",
 	},	
-
+	{ 
+		"name": "Union Internal Migration Hall",
+		"uniqueTo": "Galactic Union",
+		"cost": 372,
+		"production": 2,
+		"culture": 2,
+		"gold": 2,
+		"uniques": ["[1] population [in this city]", "[+5]% Production when constructing [Culture] buildings [in this city]"],
+		"requiredTech": "Support Ships",
+	},	
 
 
 
@@ -598,14 +589,16 @@
 		"science": 4,
 		"food": 4,
 		"maintenance": 4,
-		"uniques": [
+		"uniques": [//Bonuses
 					"[+1 Food, +1 Gold] from [Farm] tiles [in this city]",
 					"[+1 Food, +1 Gold] from [Space Farm] tiles [in this city]",
-					"[+1 Food, +1 Gold] from [Fishery] tiles [in this city]"
+					"[+1 Food, +1 Gold] from [Fishery] tiles [in this city]",
+					//restrictions
+					"Only available <in cities without a [Foodatorium]>",
 					],
 		"requiredBuilding": "Ecology Lab",
 		"requiredTech": "Food Specialists",
-	},	
+	},
 	{ 
 		"name": "Bakery",
 		"specialistSlots": {"Baker": 2},
@@ -1092,7 +1085,50 @@
 							]	
 		"requiredBuilding": "Psychic Defencive Array",
 		"requiredTech": "Psychic Utilization",
+	},								
+	{ 
+		"name": "Famous Restaurant",
+		"specialistSlots": {"Chef": 3, "Baker": 1, "Entertainer": 1},
+		"happiness": 5,
+		"culture": 4,
+		"gold": 4,	
+		"food": 2,
+		"requiredBuilding": "Restaurant"
+		"requiredTech": "Expanded Cuisine",
 	},					
+	{ 
+		"name": "Orchestra",
+		"specialistSlots": {"Muscitian": 4, "Writer": 1,},
+		"culture": 4,
+		"happiness": 2,	
+		"maintenance": 2,
+		"requiredBuilding": "Simple Theater"
+		"requiredTech": "Muscial Advancment",
+	},						
+	{ 
+		"name": "Psychic food preservation plant",
+		"science": 2,
+		"uniques": ["[10]% Food is carried over after population increases [in this city]", "Costs [125] [Consolidated Psychic Energy]"],
+		"requiredTech": "Psychically preserved food",
+	},						
+	{ 
+		"name": "Foodatorium",
+		"specialistSlots": {"Agronomist": 1, "Ecologist": 1, "Scientist": 1},
+		"percentStatBonus": {"food": 15,},
+		"cost": 275,
+		"food": 5,
+		"production": 2,
+		"science": 2,
+		"maintenance": 4,
+		"uniques": ["Only available <in cities without a [Food Lab]>",],
+		"requiredTech": "Engineered food",
+	},
+	
+
+	
+					
+					
+					
 					
 					
 					
@@ -1262,7 +1298,20 @@
 							]	
 		"requiredTech": "Psychic Utilization",
 	},
-
+	{ 
+		"name": "National Restaurant",
+		"specialistSlots": {"Chef": 8, "Baker": 2, "Fisherman": 1, "Farmer": 1},
+		"happiness": 12,
+		"culture": 8,
+		"gold": 8,	
+		"food": 4,
+		"isNationalWonder": true,
+		"uniques": [
+					"Only available <if [Restaurant] is constructed in all [non-[Puppeted]] cities>", 
+					]	
+		"requiredBuilding": "Famous Restaurant"
+		"requiredTech": "Grand Cuisine",
+	},	
 
 
 
@@ -1459,10 +1508,37 @@
 		"Requires at least [50 population", "Triggers a global alert upon completion", "Cannot be hurried"],
 		"requiredTech": "The Athleton",
 	},	
-
-
-
-
+	{ 
+		"name": "Restaurant of a thousand worlds",
+		"specialistSlots": {"Chef": 10, "Baker": 4, "Muscitian": 2, "Fisherman": 1, "Farmer": 1, "Artist": 1, "Entertainer": 1, "Architect": 1, "Philosopherf": 1,},
+		"culture": 12,		
+		"happiness": 10,
+		"gold": 10,	
+		"food": 4,
+		"science": 2,
+		"isWonder": true,
+		"uniques": [
+					"Only available <if [Famous Restaurant] is constructed in all [non-[Puppeted]] cities>",
+					"Cannot be hurried",
+					"Science gained from research agreements [+20]%"
+					"Influence of all other civilizations with all city-states degrades [-10]% faster",
+					]
+		"requiredTech": "Grand Cuisine",
+	},	
+	{ 
+		"name": "Monmoro",
+		"culture": 6,		
+		"happiness": 6,
+		"isWonder": true,
+		"uniques": [
+					"[+1 Production] from [Asteroid Mine] tiles [in all cities]"
+					"[+1 Food] from [Space Farm] tiles [in all cities]"
+					"[+1 Gold] from [Space Trading post] tiles [in all cities]"
+					"[+1 Culture] from [Space Fort] tiles [in all cities]"
+					"[+1 Faith] from [Space Sanctity] tiles [in all cities]"
+					]
+		"requiredTech": "The Monmoro",
+	},	
 
 
 
@@ -1519,14 +1595,46 @@
 					"Only available <after adopting [Motels]>"
 					]
 	},
+	{ 
+		"name": "Handcrafting Workshop",
+		"cost": 280,
+		"production": 2,
+		"happiness": 1,
+		"uniques": [
+					//Restriction
+					"Only available <after adopting [Handcrafting Workshops]>"
+					//Bonuses
+					"[+1 Production] [in this city] <after discovering [Iron Recycling]>"
+					"[+1 Gold] [in this city] <after discovering [Luxary Market]>"					
+					"[+1 Culture] [in this city] <after discovering [Festivals]>"
+					]
+	},
+	{
+		"name": "Majestic Tower",
+		"cost": 0,
+		"culture": 5,
+		"happiness": 2,
+		"uniques": ["Unbuildable",
+					"Only available <after adopting [Majestic Towers]>"
+					]
+	},	
+	{ 
+		"name": "Simple Solar Panel",
+		"cost": 40,
+		"production": 1,
+		"uniques": [
+					"Only available <after adopting [Orbital Supply Chain Complete]>"
+					"[+1 Food] [in this city] <for every adjacent [Star]>", "<if [Greenhouse] is constructed>",	
+					],
+	},	
+	{ 
+		"name": "Simple Monument",
+		"cost": 20,
+		"culture": 1,
+		"uniques": ["Only available <after adopting [Simple Monuments]>"],
+	},	
 	
-	
-	
-	
-	
-	
-	
-	
+
 	
 	
 	

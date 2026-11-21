@@ -38,6 +38,19 @@
         "row": 3,
     },
 
+
+	{
+		"name": "Sortie",
+		"prerequisites": ["Armor Busting Munitions II"],
+		"uniques": [
+					"Only available <after discovering [Increased Starfighter Speed]>",		
+					"[1] extra interceptions may be made per turn", 
+					"[-100]% weight to this choice for AI decisions"],
+		"unitTypes": ["Starfighter", "Dronefighter"], //Drones can't get it yet
+       "column": 11,
+        "row": 2
+	},
+
 	
 	
 	// Repair Ships & Support Ships
@@ -196,7 +209,7 @@
 	},
 	{
 		"name": "Additional Hangar I", //May be moved to a seperate coloum in the future
-		"prerequisites": ["Carrier Plating II"],
+		"prerequisites": ["Carrier Plating II", "Thick Plating II"],
 		"uniques": [
 					//Boost
 					"Can carry [1] extra [Smallcraft] units"
@@ -249,8 +262,6 @@
         "column": 7,
         "row": 2
 	},	
-		/////Add these further down the line when more tech is available
-		/*
 	{
 		"name": "Expanded Drone Assortment III",
 		"prerequisites": ["Expanded Drone Assortment II"],
@@ -258,12 +269,14 @@
 					//Boost
 					"Can carry [1] extra [Drone] units"
 					//Restriction
-					 "Only available <after discovering [Super Drone Carriers]>"
+					 "Only available <after discovering [Dreadnought Hangars]>"
 					]
 		"unitTypes": ["Drone Carrier",],
         "column": 7,
         "row": 3
 	},	
+	/////Add these further down the line when more tech is available
+	/*
 	{
 		"name": "Expanded Drone Assortment IV",
 		"prerequisites": ["Expanded Drone Assortment III"],
@@ -337,5 +350,17 @@
 		"uniques": ["[+25]% Strength <when defending>"],
     },	
 	
+	{
+		"name": "Void Native",
+		"uniques": ["[+10]% Strength <when fighting in [Void] tiles>"],
+    },
+
+	//{
+	//	"name": "Central Warp System",
+	//	"uniques": [
+	//				"May Paradrop to [City center] tiles up to [15] tiles away"
+	//				"May Paradrop to [Exit Portal] tiles up to [15] tiles away"
+	//				],
+    //},
 
 ]
