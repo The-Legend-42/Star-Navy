@@ -94,12 +94,12 @@
         "row": 5
 	},
 	
-	//Suport Ships and maybe Carriers
+	//Suport Ships Carriers and Recon
 	{
 		"name": "Expanded Radar I",
 		"prerequisites": ["Experienced Repair Crew I","Carrier Plating I",],
 		"uniques": ["[+1] Sight"],
-		"unitTypes": ["Support Ship","Standard Carrier", "Drone Carrier"],
+		"unitTypes": ["Recon", "Support Ship","Standard Carrier", "Drone Carrier"],
         "column": 8,
         "row": 2
     },	
@@ -107,7 +107,7 @@
 		"name": "Expanded Radar II",
 		"prerequisites": ["Expanded Radar I"],
 		"uniques": ["[+1] Sight"],
-		"unitTypes": ["Support Ship","Standard Carrier", "Drone Carrier"],
+		"unitTypes": ["Recon", "Support Ship","Standard Carrier", "Drone Carrier"],
         "column": 8,
         "row": 3
     },	

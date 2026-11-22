@@ -1365,6 +1365,7 @@
       "Gardening": 5,
 	  "Handcrafting": 4,
 	  "Architectural Admiration": 7,
+	  "Civic Maintenance": 9,
 				  }
 	},
     {
@@ -1391,6 +1392,7 @@
       "Gardening": 8,
 	  "Handcrafting": 7,
 	  "Architectural Admiration": 10,
+	  "Civic Maintenance": 8,
 				  }
 	},
     {
@@ -1417,6 +1419,7 @@
       "Gardening": 1,
 	  "Handcrafting": 3,
 	  "Architectural Admiration": 4,
+	  "Civic Maintenance": 3,
 				  }
 	},
    {
@@ -1443,6 +1446,7 @@
       "Gardening": 4,
 	  "Handcrafting": 4,
 	  "Architectural Admiration": 9,
+	  "Civic Maintenance": 6,
 				  }
 	},
 	{
@@ -1464,11 +1468,12 @@
     "denounceWillingness": 5,
     "priorities": {
 	  "Orbital Logistics": 8,
-	  "Research": 9,
+	  "Research": 10,
 	  "Tourism": 7,
       "Gardening": 5,
 	  "Handcrafting": 6,
 	  "Architectural Admiration": 7,
+	  "Civic Maintenance": 9,
 				  }
 	},
 	{
@@ -1495,6 +1500,7 @@
       "Gardening": 3,
 	  "Handcrafting": 7,
 	  "Architectural Admiration": 4,
+	  "Civic Maintenance": 9,
 				  }
 	},
 	

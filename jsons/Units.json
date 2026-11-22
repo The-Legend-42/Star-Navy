@@ -197,6 +197,29 @@
 		"attackSound": "machinegun"
 	},
 	{
+		"name": "Talluan",
+		"unitType": "Starfighter",
+        "replaces": "Primitive Starfighter",
+		"uniqueTo": "Teal Empire",
+		"movement": 1,
+		"strength": 20,
+		"rangedStrength": 20,
+		"range": 3,
+		"interceptRange": 3,
+		"cost": 185,
+		"requiredTech": "Ethelium Destroyers",
+		"obsoleteTech": "Military Shift",
+		"upgradesTo": "Early Starfighter",
+		"uniques": [//Combat
+					"[10]% chance to intercept air attacks",
+					//Type
+					"Solo",
+					//Alternate Upgrades:
+					"Can upgrade to [Primitive Starfighter Wing]",
+					],
+		"attackSound": "machinegun"
+	},	
+	{
 		"name": "Early Starfighter",
 		"unitType": "Starfighter",
 		"movement": 1,
@@ -270,6 +293,27 @@
 		"requiredTech": "Fighter Wings",
 		"obsoleteTech": "Military Shift",
 		"upgradesTo": "Early Starfighter Wing",
+		"uniques": [//Combat
+					"[15]% chance to intercept air attacks",
+					//Type
+					"Swarm",
+					],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Talluan Wing",
+		"unitType": "Starfighter",
+        "replaces": "Primitive Starfighter Wing",
+		"uniqueTo": "Teal Empire",
+		"movement": 1,
+		"strength": 60,
+		"rangedStrength": 60,
+		"range": 3,
+		"interceptRange": 3,
+		"cost": 445,
+		"requiredTech": "First Starfighters",
+		"obsoleteTech": "Military Shift",
+		"upgradesTo": "Early Starfighter",
 		"uniques": [//Combat
 					"[15]% chance to intercept air attacks",
 					//Type
@@ -1170,6 +1214,21 @@
 		"promotions": ["Basic Active Defence Systems"],	
 		"attackSound": "shot"
 	},
+	{
+		"name": "Allseer", 
+		"unitType": "Recon",
+        "replaces": "Guarded Farseer",
+		"uniqueTo": "Terrevik Union",
+		"movement": 3,
+		"strength": 40,
+		"cost": 180,
+		"requiredTech": "Electronic Dischargers",
+		"obsoleteTech": "Support Ships",
+		"upgradesTo": "Support Ship",
+		"uniques": ["[+2] Sight", "Can see over obstacles"],
+		"promotions": ["Expanded Radar I"],	
+		"attackSound": "shot"
+	},	
 	//Corvette
 	{
 		"name": "Simple Corvette",

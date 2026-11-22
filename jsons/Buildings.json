@@ -118,7 +118,7 @@
 	{ 
 		"name": "Planetary Coordination Center",
 		"uniqueTo": "Giannic Alliance",
-		"specialistSlots": {"Scientist": 1, "Economist": 1, "Architect": 1, "Banker": 1, "Trader": 1, "Merchant": 1, "Mathematician": 1, "Spiritual Leader": 1, "Chef": 1,}, //unlike the other leaders of their field the chef is just there to cook for em
+		"specialistSlots": {"Scientist": 1, "Economist": 1, "Architect": 1, "Banker": 1, "Trader": 1, "Merchant": 1, "Mathematician": 1, "Spiritual Leader": 1, "Chef": 1,},
 		"cost": 600,
 		"cityStrength": 2,
 		"cityHealth": 35,
