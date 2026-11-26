@@ -144,10 +144,18 @@
 		"cost": 400,
 		"gold": 2,
 		"happiness": 1,
-		"uniques": ["Must have an owned [Luxury] within [3] tiles", "[+1 Happiness,+1 Production,+1 Gold] from [Luxury] tiles [in this city]",],
+		"uniques": ["Must have an owned [Luxury] within [3] tiles", "[+1 Happiness, +1 Production, +1 Gold] from [Luxury] tiles [in this city]",],
 		"requiredTech": "Discovering Red Spice",
 	},
-
+	{ 
+		"name": "Spice Hall",
+		"uniqueTo": "Spice Hunting Guild",
+		"cost": 340,
+		"happiness": 2,
+		"gold": 1,
+		"uniques": ["Must have an owned [Spice] within [3] tiles", "[+1 Happiness, +1 Food, +1 Gold] from [Spice] tiles [in this city]",],
+		"requiredTech": "Discovering Red Spice",
+	},
 
 
 

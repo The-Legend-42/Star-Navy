@@ -365,13 +365,100 @@
 		"cities": [	"Gooka", "Rooka", "Grudoo", "Groopoo", "Rookan", "Rarookoo", "Narun", "Gooroon", "Garra", "Gorro", "Girru", "Ruttu", "Groomoo",],
 	}
 	
+	/*
+	{ 	//Spice Hunting Guild
+		"name": "Spice Hunting Guild",
+		"adjective": ["Spice Guild"],			
+		"leaderName": "Hergon?",
+		"preferredVictoryType": "Domination",
+		 
+		"startIntroPart1": "Sample text.",
+		"startIntroPart2": "Sample text.",
+		"declaringWar": "You are the spice must flow, you are in our way.",
+		"attacked": "You dare get between us and our spice? Prepare for pain!",
+		"defeated": "NO! UNACCEPTABLE!",
+		"introduction": "We are the Spice Hunting Guild. If you require spice we are your guides",
+		"tradeRequest": "",
+		"innerColor": [92, 0, 3],
+		"outerColor": [255, 0, 192],
+		"uniqueName": "Spice"
+		"uniques": [
+					"Poop"
+					]			
+		"cities": [	"1",],
+	}
+	*/
+	
+	{ 	//Spice Hunting Guild
+		"name": "Spice Hunting Guild",
+		"adjective": ["Spice Guild"],			
+		"leaderName": "Hergon",
+		"preferredVictoryType": "Domination",
+		 
+		"startIntroPart1": "Sample text.",
+		"startIntroPart2": "Sample text.",
+		"declaringWar": "You are the spice must flow, you are in our way.",
+		"attacked": "You dare get between us and our spice? Prepare for pain!",
+		"defeated": "NO! UNACCEPTABLE!",
+		"introduction": "We are the Spice Hunting Guild. We search for spice and trade in it. If you require spice we are your guides.",
+		"tradeRequest": "We have an offer we think you'd want to see.",
+		"innerColor": [92, 0, 3],
+		"outerColor": [255, 0, 192],
+		"uniqueName": "Spice"
+		"uniques": [
+					"Provides [1] [Red Spice] <after discovering [Discovering Red Spice]>"
+					"Provides [1] [Yellow Spice] <after discovering [Discovering Yellow Spice]>"
+					"Provides [1] [Blue Spice] <after discovering [Discovering Blue Spice]>"
+					"Provides [1] [Green Spice] <after discovering [Discovering Green Spice]>"
+					"Provides [1] [Pink Spice] <after discovering [Discovering Pink Spice]>"
+					"[+1 Gold] from [Spice] tiles [in all cities]"					
+					]			
+		"cities": [	"Harvest", "Dust", "Sand", "Earth", "Ash", "Dirt", "Shard", "Fragment", "Glass", "Powder", "Flake", "Gravel", "Flint", 
+					"Dusts", "Sands", "Endless Earths", "Ashes", "Dirts", "Shards", "Fragments", "Shattered Glass", "Powders", "Flakes", "Great Gravel", "Flints",],
+	}	
 	
 	
+	{
+		"name": "Biotans",
+		"adjective": ["Biotan"],		
+		"leaderName": "Wuggluf",
+		"preferredVictoryType": "Domination",
+
+		"startIntroPart1": "Sample text.",
+		"startIntroPart2": "Sample text.",
+		"declaringWar": "Regretfully, our to people must go to war.",
+		"attacked": "If you want war then you will have war!",
+		"defeated": "A day will come and you will regret what you have done.",
+		"introduction": "Greetings to the unkown, we are Biotans, we have mastered our biology and have ascended thanks to biotechnology, we would be happy to have you join our ranks.",
+		"tradeRequest": "We belive in muturally benneficial trade agreements, we belive this will be a win/win agreement where everyone gets what they need.",
+		"innerColor": [130,28, 28],
+		"outerColor": [0, 225, 23],
+		"uniqueName": "Biomastery",
+		"uniques": [
+					//will probably add something Here
+					"Biotan"
+					],
+		"cities": ["The Heart", "True Brain", "Nomadic Eye", "Chest Garden", "Tendril Town", "Pinzer Hive", "Dark Maw", "Humble Claw", "Long Leg", "Bright Eye",
+					"Blue Wings", "Finger Hope", "Grey Gills", "Hairless City", "Petal Park", "Red Leg", "White Blood", "Abhorrent Abdomen", "Peaceful Hand",
+					"Mighty Claw", "Knife Fang", "Brown Fur", "Second Brain", "Second Eye", "Second Heart", "Yellow Leg", "Pretty Tentacle", "Black Leaf", "Crazy Eye"],
+	},
+
+	
+	/*
+
+
+	//821C1C
+	//168200
 	
 	
-	
+		*/
 	
 		//	"outerColor": [12, 31, 32],
+	
+	
+	
+	
+	
 	
 	
 	

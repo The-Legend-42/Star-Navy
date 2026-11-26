@@ -418,7 +418,7 @@
             },
             {
                 "name": "Larger Farms", //Majestic Towers
-                "uniques": [ "[+2 Food] from [Space Trading Farm] tiles [in all cities]"],
+                "uniques": [ "[+2 Food] from [Farm] tiles [in all cities]"],
                 "row": 1,
                 "column": 5
             },

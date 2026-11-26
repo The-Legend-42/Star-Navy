@@ -75,7 +75,24 @@
         "name": "Dance of the Aurora",
         "type": "Pantheon",
         "uniques": ["[+1 Happiness, +1 Faith] from every [Freezing]"]
-    },	
+    },
+	{
+        "name": "Life Worship",
+        "type": "Pantheon",
+        "uniques": [
+					 "[+1 Faith] from every [Life-sustaining]",
+					 "[+1 Happiness] from every [Life]",
+					]
+    },
+	{
+        "name": "Death Worship",
+        "type": "Pantheon",
+        "uniques": [
+					"[-10 Happiness] <when not at war>",
+					"Earn [10]% of killed [Military] unit's [Strength] as [Faith]",
+					"[-90]% weight to this choice for AI decisions",
+					]
+    },
 ///////////////////////////////////////// Follower beliefs /////////////////////////////////////////
     {
         "name": "Ancient Wonders",

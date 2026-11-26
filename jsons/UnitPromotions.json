@@ -183,14 +183,14 @@
         "row": 3
     },		
 	{
-		"name": "Powerful Volleys I",
+		"name": "Powerful Volley I",
 		"uniques": ["[+20]% Strength <when attacking>"],
 		"unitTypes": ["Light cruiser", "Cruiser", "Heavy Cruiser", "Battle Cruiser", "Battleship", "Battleship-carrier", "Dreadnought",],
         "column": 9,
         "row": 1
     },
 	{
-		"name": "Powerful Volleys II",
+		"name": "Powerful Volley II",
 		"prerequisites": ["Powerful Volley I",],
 		"uniques": ["[+20]% Strength <when attacking>"],
 		"unitTypes": ["Light cruiser", "Cruiser", "Heavy Cruiser", "Battle Cruiser", "Battleship", "Battleship-carrier", "Dreadnought",],
@@ -198,7 +198,7 @@
         "row": 2
     },
 	{
-		"name": "Powerful Volleys III",
+		"name": "Powerful Volley III",
 		"prerequisites": ["Powerful Volley II",],
 		"uniques": ["[+20]% Strength <when attacking>"],
 		"unitTypes": ["Light cruiser", "Cruiser", "Heavy Cruiser", "Battle Cruiser", "Battleship", "Battleship-carrier", "Dreadnought",],
@@ -365,7 +365,7 @@
 		//Ranged units
 	{
 		"name": "Extended Volley Range",
-		"prerequisites": ["Artillery Adjustments III", "Powerful Volleys III", "Thick Plating III",],
+		"prerequisites": ["Artillery Adjustments III", "Powerful Volley III", "Thick Plating III",],
 		"uniques": ["[+1] Range"],
 		"unitTypes": ["Battleship", "Battleship-carrier", "Dreadnought", "Space Artillery","Space Laser","Plasma Launcher"],
 		"column": 11
@@ -401,5 +401,11 @@
 	//				"May Paradrop to [Exit Portal] tiles up to [15] tiles away"
 	//				],
     //},
+	
+	{
+		"name": "Living Ship",
+		"uniques": [ "May heal outside of friendly territory", "All healing effects doubled",],
+    },	
+	
 
 ]

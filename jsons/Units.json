@@ -1477,6 +1477,22 @@
 		"attackSound": "shot"
 	},
 	{
+		"name": "Blood Head",
+		"unitType": "Destroyer",
+        "replaces": "Iron Head",
+		"uniqueTo": "Biotans",
+		"movement": 2,
+		"strength": 12,
+		"cost": 90,
+		"requiredResource": "Iron",
+		"requiredTech": "Iron Heads",
+		"obsoleteTech": "Solar Hardned Iron",
+		"upgradesTo": "Solar Hardned Iron Head",
+		"uniques": ["[+50]% Strength <vs cities>", "Requires at least [2] population", "Heals [1] damage if it kills a unit"], 
+		"promotions": ["Living Ship"],		
+		"attackSound": "shot"
+	},
+	{
 		"name": "Solar Hardned Iron Head",
 		"unitType": "Destroyer",
 		"movement": 2,
